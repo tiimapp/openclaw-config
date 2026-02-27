@@ -8,3 +8,6 @@ __pycache__/
 # Local-only files
 .env
 secrets.json
+
+# Git repos within backup
+workspace/*/.git

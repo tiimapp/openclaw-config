@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.22-2",
+    "lastTouchedAt": "2026-02-26T13:32:57.336Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-23T13:25:29.036Z",
+    "lastRunVersion": "2026.2.22-2",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "custom-api-20260215": {
+        "baseUrl": "https://api.xstx.info/v1",
+        "apiKey": "sk-1l0wvQ1BwVoXjoMfiYESOJnnHkbdGJJgGtmriGtipzBXWNby",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "claude-opus-4-6",
+            "name": "claude-opus-4-6 (Custom Provider)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 150000,
+            "maxTokens": "<$MAXTOKENS>"
+          }
+        ]
+      },
+      "qwen3-max-2026-01-23": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "sk-sp-92055d32b2ee4988bb5cb8d468e64c46",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 2e-06,
+              "output": 6e-06,
+              "cacheRead": 1e-06,
+              "cacheWrite": 2e-06
+            },
+            "contextWindow": 262144,
+            "maxTokens": "<$MAXTOKENS>"
+          },
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 4e-06,
+              "output": 1.2e-05,
+              "cacheRead": 1e-06,
+              "cacheWrite": 3e-06
+            },
+            "contextWindow": 1000000,
+            "maxTokens": "<$MAXTOKENS>"
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": "<$MAXTOKENS>"
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 3e-06,
+              "output": 9e-06,
+              "cacheRead": 1e-06,
+              "cacheWrite": 2e-06
+            },
+            "contextWindow": 1000000,
+            "maxTokens": "<$MAXTOKENS>"
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 1e-06,
+              "output": 3e-06,
+              "cacheRead": 5e-07,
+              "cacheWrite": 1e-06
+            },
+            "contextWindow": 202752,
+            "maxTokens": "<$MAXTOKENS>"
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": "<$MAXTOKENS>"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "qwen3-max-2026-01-23/kimi-k2.5"
+      },
+      "models": {
+        "qwen3-max-2026-01-23/qwen3.5-plus": {},
+        "qwen3-max-2026-01-23/kimi-k2.5": {},
+        "qwen3-max-2026-01-23/qwen3-max-2026-01-23": {},
+        "qwen3-max-2026-01-23/qwen3-coder-plus": {},
+        "qwen3-max-2026-01-23/qwen3-coder-next": {},
+        "qwen3-max-2026-01-23/glm-4.7": {}
+      },
+      "workspace": "/home/admin/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "timeoutSeconds": 600,
+      "maxConcurrent": 8,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "code_g",
+        "name": "Code_G",
+        "workspace": "/home/admin/.openclaw/workspace-code_g",
+        "agentDir": "/home/admin/.openclaw/agents/code_g/agent"
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "perplexity",
+        "maxResults": 4,
+        "timeoutSeconds": 30,
+        "perplexity": {
+          "apiKey": "sk-sp-92055d32b2ee4988bb5cb8d468e64c46",
+          "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+          "model": "qwen3-max-2026-01-23"
+        }
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "discord": {
+      "enabled": true,
+      "token": "<$TOKEN>",
+      "groupPolicy": "allowlist",
+      "streaming": "off",
+      "guilds": {
+        "1238361831328845896": {
+          "requireMention": true,
+          "users": [
+            "431977287446167554",
+            "1158838996441501786",
+            "1476484590959853701"
+          ],
+          "roles": [
+            "1474758461798486200",
+            "1476495121187999836"
+          ]
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "auth": "<$AUTH>",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "calendar.add",
+        "contacts.add",
+        "reminders.add"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "discord": {
+        "enabled": true
+      }
+    }
+  }
+}
