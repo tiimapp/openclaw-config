@@ -1,4 +1,30 @@
 {
   "version": 1,
-  "jobs": []
+  "jobs": [
+    {
+      "id": "7086e6e4-5cda-4c06-9e9d-972e74f4c05e",
+      "name": "config-backup",
+      "enabled": true,
+      "createdAtMs": 1772155573016,
+      "updatedAtMs": 1772155573016,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 3600000,
+        "anchorMs": 1772155573016
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: python3 ~/openclaw-config-backup/backup.py"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772159173016
+      }
+    }
+  ]
 }

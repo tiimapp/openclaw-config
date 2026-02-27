@@ -31,7 +31,7 @@
               "cacheWrite": 0
             },
             "contextWindow": 150000,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 8192
           }
         ]
       },
@@ -55,7 +55,7 @@
               "cacheWrite": 2e-06
             },
             "contextWindow": 262144,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 65536
           },
           {
             "id": "qwen3.5-plus",
@@ -72,7 +72,7 @@
               "cacheWrite": 3e-06
             },
             "contextWindow": 1000000,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 65536
           },
           {
             "id": "qwen3-coder-next",
@@ -89,7 +89,7 @@
               "cacheWrite": 0
             },
             "contextWindow": 262144,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 65536
           },
           {
             "id": "qwen3-coder-plus",
@@ -106,7 +106,7 @@
               "cacheWrite": 2e-06
             },
             "contextWindow": 1000000,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 65536
           },
           {
             "id": "glm-4.7",
@@ -123,7 +123,7 @@
               "cacheWrite": 1e-06
             },
             "contextWindow": 202752,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 16384
           },
           {
             "id": "kimi-k2.5",
@@ -140,7 +140,7 @@
               "cacheWrite": 0
             },
             "contextWindow": 262144,
-            "maxTokens": "<$MAXTOKENS>"
+            "maxTokens": 32768
           }
         ]
       }

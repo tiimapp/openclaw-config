@@ -18,14 +18,21 @@ SOURCE_DIR = Path.home() / ".openclaw"
 BACKUP_DIR = Path.home() / "openclaw-config-backup"
 LOG_FILE = BACKUP_DIR / "backup.log"
 
-# Secrets to sanitize (key paths in JSON) - case insensitive matching
+# Secrets to sanitize (exact key matches only)
 SENSITIVE_KEYS: Set[str] = {
-    "apikey",
-    "token",
-    "auth",
-    "password",
-    "secret",
-    "api_key",
+    "apiKey",      # Exact match for API keys
+    "token",       # Exact match for tokens (not maxTokens, etc.)
+    "auth",        # Auth objects
+    "password",    # Passwords
+}
+
+# Keys that should NEVER be sanitized (config settings, not secrets)
+CONFIG_KEYS: Set[str] = {
+    "maxTokens",
+    "contextWindow",
+    "cost",
+    "input",
+    "output",
 }
 
 # Files to backup
@@ -73,7 +80,11 @@ def sanitize_config(data, parent_key: str = "") -> dict:
     for key, value in data.items():
         full_key = f"{parent_key}.{key}" if parent_key else key
         
-        if any(sk in key.lower() for sk in SENSITIVE_KEYS):
+        # Never sanitize config settings (maxTokens, contextWindow, etc.)
+        if key in CONFIG_KEYS:
+            sanitized[key] = value
+        # Sanitize exact sensitive key matches only
+        elif key in SENSITIVE_KEYS:
             sanitized[key] = f"<${key.upper()}>"
         elif isinstance(value, dict):
             sanitized[key] = sanitize_config(value, full_key)
