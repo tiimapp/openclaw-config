@@ -18,13 +18,14 @@ SOURCE_DIR = Path.home() / ".openclaw"
 BACKUP_DIR = Path.home() / "openclaw-config-backup"
 LOG_FILE = BACKUP_DIR / "backup.log"
 
-# Secrets to sanitize (key paths in JSON)
+# Secrets to sanitize (key paths in JSON) - case insensitive matching
 SENSITIVE_KEYS: Set[str] = {
-    "apiKey",
+    "apikey",
     "token",
     "auth",
     "password",
     "secret",
+    "api_key",
 }
 
 # Files to backup

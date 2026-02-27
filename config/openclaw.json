@@ -14,7 +14,7 @@
     "providers": {
       "custom-api-20260215": {
         "baseUrl": "https://api.xstx.info/v1",
-        "apiKey": "sk-1l0wvQ1BwVoXjoMfiYESOJnnHkbdGJJgGtmriGtipzBXWNby",
+        "apiKey": "<$APIKEY>",
         "api": "openai-completions",
         "models": [
           {
@@ -37,7 +37,7 @@
       },
       "qwen3-max-2026-01-23": {
         "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
-        "apiKey": "sk-sp-92055d32b2ee4988bb5cb8d468e64c46",
+        "apiKey": "<$APIKEY>",
         "api": "openai-completions",
         "models": [
           {
@@ -189,7 +189,7 @@
         "maxResults": 4,
         "timeoutSeconds": 30,
         "perplexity": {
-          "apiKey": "sk-sp-92055d32b2ee4988bb5cb8d468e64c46",
+          "apiKey": "<$APIKEY>",
           "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
           "model": "qwen3-max-2026-01-23"
         }
