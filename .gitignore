@@ -1,0 +1,10 @@
+# Runtime files
+*.log
+*.lock
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local-only files
+.env
+secrets.json
