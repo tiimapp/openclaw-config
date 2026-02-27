@@ -1,6 +1,6 @@
 # HEARTBEAT.md - Periodic Checks
 
-## Check Schedule (every ~30 minutes)
+## Check Schedule (every 2 hours)
 
 ### 1. System Status
 - Check OpenClaw gateway status
@@ -23,7 +23,7 @@
 **Stay quiet when:**
 - Late night (23:00-08:00) unless urgent
 - Nothing new since last check
-- Just checked <30 minutes ago
+- Just checked <2 hours ago
 
 ---
 Last updated: 2026-02-25
