@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772245893178,
+      "updatedAtMs": 1772249180279,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772249173247,
-        "lastRunAtMs": 1772245573247,
+        "nextRunAtMs": 1772252773251,
+        "lastRunAtMs": 1772249173251,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 319931,
+        "lastDurationMs": 7028,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772249173249
+        "runningAtMs": 1772252773255
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours",
       "enabled": true,
       "createdAtMs": 1772245127998,
-      "updatedAtMs": 1772245127998,
+      "updatedAtMs": 1772252335723,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -53,7 +53,13 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
       },
       "state": {
-        "nextRunAtMs": 1772252327998
+        "nextRunAtMs": 1772259528003,
+        "lastRunAtMs": 1772252328003,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 7720,
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 0
       }
     }
   ]
