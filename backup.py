@@ -17,6 +17,7 @@ from typing import Dict, List, Set
 SOURCE_DIR = Path.home() / ".openclaw"
 BACKUP_DIR = Path.home() / "openclaw-config-backup"
 LOG_FILE = BACKUP_DIR / "backup.log"
+GITHUB_REPO = "https://github.com/tiimapp/openclaw-config"
 
 # Secrets to sanitize (exact key matches only)
 SENSITIVE_KEYS: Set[str] = {
@@ -155,7 +156,63 @@ def backup_workspace(logger: logging.Logger) -> bool:
         return False
 
 
-def git_commit(logger: logging.Logger) -> bool:
+def git_setup_remote(logger: logging.Logger) -> bool:
+    """Setup GitHub remote if not already configured."""
+    try:
+        # Check if remote exists
+        result = subprocess.run(
+            ["git", "remote", "get-url", "origin"],
+            cwd=BACKUP_DIR,
+            capture_output=True
+        )
+        
+        if result.returncode != 0:
+            # Add remote
+            subprocess.run(
+                ["git", "remote", "add", "origin", GITHUB_REPO],
+                cwd=BACKUP_DIR,
+                check=True,
+                capture_output=True
+            )
+            logger.info(f"Added GitHub remote: {GITHUB_REPO}")
+        else:
+            logger.info("GitHub remote already configured")
+        
+        return True
+        
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Failed to setup remote: {e}")
+        return False
+    except Exception as e:
+        logger.error(f"Unexpected error during remote setup: {e}")
+        return False
+
+
+def git_push(logger: logging.Logger) -> bool:
+    """Push commits to GitHub."""
+    try:
+        subprocess.run(
+            ["git", "push", "-u", "origin", "master"],
+            cwd=BACKUP_DIR,
+            check=True,
+            capture_output=True,
+            timeout=60
+        )
+        logger.info("Pushed to GitHub successfully")
+        return True
+        
+    except subprocess.TimeoutExpired:
+        logger.error("Git push timed out")
+        return False
+    except subprocess.CalledProcessError as e:
+        logger.error(f"Git push failed: {e}")
+        return False
+    except Exception as e:
+        logger.error(f"Unexpected error during git push: {e}")
+        return False
+
+
+def git_commit(logger: logging.Logger, push_to_github: bool = False) -> bool:
     """Commit changes to git repository."""
     try:
         # Add all changes first
@@ -175,6 +232,9 @@ def git_commit(logger: logging.Logger) -> bool:
         
         if result.returncode == 0:
             logger.info("No changes to commit")
+            # Still push in case there are pending commits
+            if push_to_github:
+                git_push(logger)
             return True
         
         # Commit
@@ -187,6 +247,11 @@ def git_commit(logger: logging.Logger) -> bool:
         )
         
         logger.info(f"Committed changes at {timestamp}")
+        
+        # Push to GitHub if enabled
+        if push_to_github:
+            git_push(logger)
+        
         return True
         
     except subprocess.CalledProcessError as e:
@@ -202,6 +267,9 @@ def main():
     logger = setup_logging()
     logger.info("Starting OpenClaw config backup")
     
+    # Setup GitHub remote if needed
+    git_setup_remote(logger)
+    
     changed = False
     
     # Backup config files
@@ -213,12 +281,15 @@ def main():
     if backup_workspace(logger):
         changed = True
     
-    # Git commit if changes detected
+    # Git commit and push if changes detected
     if changed:
-        git_commit(logger)
+        git_commit(logger, push_to_github=True)
+    else:
+        # Even if no changes, try to push in case there are pending commits
+        git_push(logger)
     
     logger.info("Backup completed")
-    return 0 if changed else 1
+    return 0
 
 
 if __name__ == "__main__":

@@ -39,6 +39,14 @@ Set up automated backup of OpenClaw configuration to a local git repository with
 - [x] Secrets properly sanitized
 - [x] Cron job scheduled and ready
 
+### [ ] Step 6: Push Backup to GitHub Daily
+- [ ] Create GitHub repo: `tiimapp/openclaw-config`
+- [ ] Add GitHub remote to local backup repo
+- [ ] Update backup script to push to GitHub after commit
+- [ ] Set up daily cron job for GitHub push (or combine with hourly backup)
+- [ ] Ensure secrets are sanitized before push
+- [ ] Do initial push to GitHub
+
 ---
 
 ## Files to Backup
