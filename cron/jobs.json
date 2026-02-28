@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772274386247,
+      "updatedAtMs": 1772278088100,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772277973321,
-        "lastRunAtMs": 1772274373321,
+        "nextRunAtMs": 1772281573335,
+        "lastRunAtMs": 1772277973335,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12926,
+        "lastDurationMs": 114765,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772277973334
+        "runningAtMs": 1772281573346
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772273729322,
+      "updatedAtMs": 1772280937297,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,13 +58,13 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772280891447,
-        "lastRunAtMs": 1772273691447,
+        "nextRunAtMs": 1772288091455,
+        "lastRunAtMs": 1772280891455,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 37875,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 45842,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     }
