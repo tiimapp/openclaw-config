@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772252782773,
+      "updatedAtMs": 1772256381216,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,43 +23,42 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772256373256,
-        "lastRunAtMs": 1772252773256,
+        "nextRunAtMs": 1772259973261,
+        "lastRunAtMs": 1772256373261,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9517,
+        "lastDurationMs": 7955,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772256373260
+        "runningAtMs": 1772259973265
       }
     },
     {
-      "id": "4718dade-879d-4c5f-9e3d-65afef35d526",
+      "id": "8dd8e885-6dec-4428-b33f-31324072d942",
       "name": "heartbeat",
-      "description": "Automatic heartbeat check every 2 hours",
+      "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
-      "createdAtMs": 1772245127998,
-      "updatedAtMs": 1772252335723,
+      "createdAtMs": 1772259291434,
+      "updatedAtMs": 1772259291434,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
-        "anchorMs": 1772245127998
+        "anchorMs": 1772259291434
       },
-      "sessionTarget": "main",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
-        "kind": "systemEvent",
-        "text": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+        "kind": "agentTurn",
+        "message": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772259528003,
-        "lastRunAtMs": 1772252328003,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 7720,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1772266491434
       }
     }
   ]

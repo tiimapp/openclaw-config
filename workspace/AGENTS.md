@@ -48,6 +48,24 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 ## Safety
 
 - Don't exfiltrate private data. Ever.
+
+### 🔒 Config Changes Rule
+
+**Before modifying `~/.openclaw/openclaw.json`:**
+
+1. **Backup first** — copy to `openclaw.json.bak` or let the backup system capture it
+2. **Wait for backup** — ensure the hourly backup job completes (or trigger manually)
+3. **Then edit** — make your changes
+4. **Verify** — check gateway still works after restart
+
+**Why:** `openclaw.json` contains all system config. A bad edit can break the gateway. Always have a restore point.
+
+**Quick backup command:**
+```bash
+cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak.$(date +%F)
+```
+
+Or wait for the auto-backup cron job (runs hourly).
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
