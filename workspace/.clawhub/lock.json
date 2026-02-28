@@ -4,6 +4,10 @@
     "self-improving-agent": {
       "version": "1.0.11",
       "installedAt": 1771861873160
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1772247309904
     }
   }
 }
