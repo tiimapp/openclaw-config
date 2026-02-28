@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.22-2",
-    "lastTouchedAt": "2026-02-26T13:32:57.336Z"
+    "lastTouchedAt": "2026-02-28T02:14:02.545Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -149,7 +149,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "qwen3-max-2026-01-23/kimi-k2.5"
+        "primary": "qwen3-max-2026-01-23/qwen3.5-plus"
       },
       "models": {
         "qwen3-max-2026-01-23/qwen3.5-plus": {},
