@@ -194,10 +194,32 @@
           "model": "qwen3-max-2026-01-23"
         }
       }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "maxBytes": 20971520,
+        "models": [
+          {
+            "provider": "groq",
+            "model": "whisper-large-v3-turbo"
+          }
+        ]
+      }
     }
   },
   "messages": {
-    "ackReactionScope": "group-mentions"
+    "ackReactionScope": "group-mentions",
+    "tts": {
+      "auto": "inbound",
+      "provider": "edge",
+      "edge": {
+        "enabled": true,
+        "voice": "en-US-MichelleNeural",
+        "lang": "en-US",
+        "outputFormat": "audio-24khz-48kbitrate-mono-mp3"
+      }
+    }
   },
   "commands": {
     "native": "auto",
