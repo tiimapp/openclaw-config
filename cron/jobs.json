@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772385983517,
+      "updatedAtMs": 1772389581558,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772389573600,
-        "lastRunAtMs": 1772385973600,
+        "nextRunAtMs": 1772393173612,
+        "lastRunAtMs": 1772389573612,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9917,
+        "lastDurationMs": 7946,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772389573611
+        "runningAtMs": 1772393173616
       }
     },
     {
