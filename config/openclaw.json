@@ -35,6 +35,17 @@
           }
         ]
       },
+      "qwen-stt": {
+        "apiKey": "<$APIKEY>",
+        "models": [
+          {
+            "id": "qwen3-asr-flash-filetrans",
+            "name": "qwen3-asr-flash-filetrans"
+          }
+        ],
+        "api": "openai-completions",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      },
       "qwen3-max-2026-01-23": {
         "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
         "apiKey": "<$APIKEY>",
@@ -201,23 +212,10 @@
         "maxBytes": 20971520,
         "models": [
           {
-            "provider": "groq",
-            "model": "whisper-large-v3-turbo"
+            "provider": "qwen-stt",
+            "model": "qwen3-asr-flash-filetrans"
           }
         ]
-      }
-    }
-  },
-  "messages": {
-    "ackReactionScope": "group-mentions",
-    "tts": {
-      "auto": "inbound",
-      "provider": "edge",
-      "edge": {
-        "enabled": true,
-        "voice": "en-US-MichelleNeural",
-        "lang": "en-US",
-        "outputFormat": "audio-24khz-48kbitrate-mono-mp3"
       }
     }
   },
