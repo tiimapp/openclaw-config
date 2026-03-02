@@ -83,6 +83,7 @@ Or wait for the auto-backup cron job (runs hourly).
 - Sending emails, tweets, public posts
 - Anything that leaves the machine
 - Anything you're uncertain about
+- whenever you need to modify openclaw.json
 
 ## Group Chats
 
@@ -228,3 +229,15 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## General_Agent
+ 
+- **Primary_Model**: default
+- **Max_Retries**: 2
+- **Retry_Strategy**: 
+    - **Trigger**: [ "output_validation_failed", "tool_timeout", "empty_response" ]
+    - **On_Failure_Count_2**: 
+        - **Action**: "switch_model"
+        - **Target_Model**: "gemini-3-flash-preview"
+        - **Instruction**: "Previous attempts failed. Please re-do the original prompt with higher reasoning depth."
+        - **Include_Message**:"retry via provider: custom-G"

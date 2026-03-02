@@ -2,7 +2,7 @@
 
 /**
  * DashScope QWen ASR CLI Wrapper
- * Uses the audio transcription API with task submission
+ * Uses the task submission API
  * Usage: dashscope-asr --file <audio_file> [--model <model_name>]
  */
 
@@ -42,20 +42,14 @@ const audioBuffer = fs.readFileSync(filePath);
 const audioBase64 = audioBuffer.toString('base64');
 const fileExt = path.extname(filePath).toLowerCase().replace('.', '');
 
-// Build task submission request
+// Build task submission request - using proper DashScope task format
 const requestBody = {
   model: model,
   input: {
     file_url: `data:audio/${fileExt};base64,${audioBase64}`
   },
   task_group: 'audio',
-  task: 'transcription',
-  function: {
-    type: 'transcription'
-  },
-  parameters: {
-    format: fileExt
-  }
+  task: 'transcription'
 };
 
 const requestJson = JSON.stringify(requestBody);
@@ -63,12 +57,13 @@ const requestJson = JSON.stringify(requestBody);
 const options = {
   hostname: 'dashscope.aliyuncs.com',
   port: 443,
-  path: '/api/v1/services/audio/transcription',
+  path: '/api/v1/tasks',
   method: 'POST',
   headers: {
     'Authorization': `Bearer ${API_KEY}`,
     'Content-Type': 'application/json',
-    'Content-Length': Buffer.byteLength(requestJson)
+    'Content-Length': Buffer.byteLength(requestJson),
+    'X-DashScope-DataInspection': 'enable'
   }
 };
 

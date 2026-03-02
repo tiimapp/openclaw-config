@@ -12,14 +12,14 @@
   "models": {
     "mode": "merge",
     "providers": {
-      "custom-api-20260215": {
+      "custom-G": {
         "baseUrl": "https://api.xstx.info/v1",
         "apiKey": "<$APIKEY>",
         "api": "openai-completions",
         "models": [
           {
-            "id": "claude-opus-4-6",
-            "name": "claude-opus-4-6 (Custom Provider)",
+            "id": "gemini-3-flash-preview",
+            "name": "gemini-3-flash-preview",
             "reasoning": false,
             "input": [
               "text"
@@ -213,14 +213,8 @@
         "maxBytes": 20971520,
         "models": [
           {
-            "type": "cli",
-            "command": "/home/admin/.openclaw/workspace/scripts/dashscope-asr.sh",
-            "args": [
-              "--file",
-              "{{MediaPath}}",
-              "--model",
-              "qwen3-asr-flash"
-            ]
+            "provider": "groq",
+            "model": "whisper-large-v3-turbo"
           }
         ]
       }
