@@ -37,14 +37,15 @@
       },
       "qwen-stt": {
         "apiKey": "<$APIKEY>",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api": "openai-completions",
         "models": [
           {
             "id": "qwen3-asr-flash-filetrans",
-            "name": "qwen3-asr-flash-filetrans"
+            "name": "qwen3-asr-flash-filetrans",
+            "api": "openai-completions"
           }
-        ],
-        "api": "openai-completions",
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+        ]
       },
       "qwen3-max-2026-01-23": {
         "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
@@ -212,8 +213,14 @@
         "maxBytes": 20971520,
         "models": [
           {
-            "provider": "qwen-stt",
-            "model": "qwen3-asr-flash-filetrans"
+            "type": "cli",
+            "command": "/home/admin/.openclaw/workspace/scripts/dashscope-asr.sh",
+            "args": [
+              "--file",
+              "{{MediaPath}}",
+              "--model",
+              "qwen3-asr-flash"
+            ]
           }
         ]
       }
