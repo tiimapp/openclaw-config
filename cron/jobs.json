@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772504782052,
+      "updatedAtMs": 1772540803418,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772508373852,
-        "lastRunAtMs": 1772504773852,
+        "nextRunAtMs": 1772544373917,
+        "lastRunAtMs": 1772540773917,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8200,
+        "lastDurationMs": 29501,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772508373856
+        "runningAtMs": 1772544373928
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772504156384,
+      "updatedAtMs": 1772540191685,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,14 +58,48 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772511291730,
-        "lastRunAtMs": 1772504091730,
+        "nextRunAtMs": 1772547291766,
+        "lastRunAtMs": 1772540091766,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 64654,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 99919,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": true
+        "lastDelivered": false
+      }
+    },
+    {
+      "id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+      "name": "self-improvement-review",
+      "description": "Weekly self-improvement review - summarizes learnings and corrections",
+      "enabled": true,
+      "createdAtMs": 1772519400000,
+      "updatedAtMs": 1772519400000,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 604800000,
+        "anchorMs": 1772519400000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Review the self-improvement skill learnings from the past week. Read any learnings stored in MEMORY.md or memory/*.md files related to errors, corrections, or improvements. Summarize: (1) What errors or failures were captured, (2) What corrections or better approaches were discovered, (3) What actions were taken to improve. Keep the summary concise and actionable. This is a weekly self-improvement review."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "discord:431977287446167554"
+      },
+      "state": {
+        "nextRunAtMs": 1773124200000,
+        "lastRunAtMs": null,
+        "lastRunStatus": null,
+        "lastStatus": null,
+        "lastDurationMs": null,
+        "lastDeliveryStatus": null,
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     }
   ]
