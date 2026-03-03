@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772540803418,
+      "updatedAtMs": 1772555178814,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772544373917,
-        "lastRunAtMs": 1772540773917,
+        "nextRunAtMs": 1772558773957,
+        "lastRunAtMs": 1772555173957,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 29501,
+        "lastDurationMs": 4857,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772544373928
+        "runningAtMs": 1772558773962
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772540191685,
+      "updatedAtMs": 1772554584638,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,14 +58,14 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772547291766,
-        "lastRunAtMs": 1772540091766,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 99919,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
+        "nextRunAtMs": 1772561691783,
+        "lastRunAtMs": 1772554491783,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 92855,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -100,6 +100,34 @@
         "lastDeliveryStatus": null,
         "consecutiveErrors": 0,
         "lastDelivered": false
+      }
+    },
+    {
+      "id": "022b6ff3-b437-4ff0-92a5-24d48379844e",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "Stock Tracker Daily Report",
+      "enabled": true,
+      "createdAtMs": 1772547580788,
+      "updatedAtMs": 1772547723621,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 15 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
+      },
+      "state": {
+        "nextRunAtMs": 1772609400000
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "discord:1475775915844960428"
       }
     }
   ]

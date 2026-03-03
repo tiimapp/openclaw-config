@@ -87,9 +87,9 @@ def fetch_historical_prices_sina(symbol: str, days: int = 100) -> List[dict]:
     Returns:
         List of daily price data
     """
-    # Sina uses different scale: 60=minute, 300=5min, 900=15min, 1800=30min, 3600=60min, 86400=daily
+    # Sina scale: 240=daily K-line (best for historical data)
     # Request more days to ensure we get enough data points
-    url = SINA_HISTORY_URL.format(symbol=symbol, scale=86400, days=max(days, 100))
+    url = SINA_HISTORY_URL.format(symbol=symbol, scale=240, days=max(days, 100))
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',

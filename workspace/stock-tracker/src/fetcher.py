@@ -13,11 +13,11 @@ from datetime import datetime
 logger = logging.getLogger(__name__)
 
 # Multiple API endpoints for redundancy
-# Sina Finance API (primary, but often blocked)
-SINA_PRICE_URL = "https://hq.sinajs.cn/list={symbol}"
-
-# Alternative: Tencent Finance API
+# Tencent Finance API (primary - most reliable from overseas VPS)
 TENCENT_PRICE_URL = "https://qt.gtimg.cn/q={symbol}"
+
+# Alternative: Sina Finance API
+SINA_PRICE_URL = "https://hq.sinajs.cn/list={symbol}"
 
 # Alternative: 163 Finance API
 NETEASE_PRICE_URL = "https://api.money.126.net/data/feed/{symbol}"
@@ -27,7 +27,7 @@ HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-    'Referer': 'https://finance.sina.com.cn/',
+    'Referer': 'https://finance.qq.com/',
     'Connection': 'keep-alive',
 }
 
@@ -40,7 +40,7 @@ SSE_ANNOUNCEMENTS = "https://www.sse.com.cn/disclosure/listedinfo/announcement/c
 def fetch_price_data(symbol: str, retry: int = 3, delay: int = 5) -> Optional[Dict]:
     """
     Fetch real-time price data from multiple Chinese finance APIs.
-    Tries Sina first, then Tencent, then NetEase as fallback.
+    Tries Tencent first (most reliable), then Sina, then NetEase as fallback.
     
     Args:
         symbol: Stock symbol (e.g., 'sh688777')
@@ -50,10 +50,10 @@ def fetch_price_data(symbol: str, retry: int = 3, delay: int = 5) -> Optional[Di
     Returns:
         Dictionary with price data or None if failed
     """
-    # Try multiple APIs in order of preference
+    # Try multiple APIs in order of preference (Tencent first - works from overseas)
     apis = [
-        ('Sina', fetch_price_sina),
         ('Tencent', fetch_price_tencent),
+        ('Sina', fetch_price_sina),
         ('NetEase', fetch_price_netease),
     ]
     

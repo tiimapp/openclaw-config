@@ -267,15 +267,12 @@ def send_to_discord(report: str, channel_id: str = None) -> bool:
     
     try:
         # Use OpenClaw message tool via subprocess
-        # Command: openclaw message send --target <channel_id> --text "<report>"
-        
-        # Escape quotes in report for shell
-        escaped_report = report.replace('"', '\\"').replace('$', '\\$')
+        # Command: openclaw message send --target <channel_id> --message "<report>"
         
         cmd = [
             'openclaw', 'message', 'send',
             '--target', channel_id,
-            '--text', escaped_report
+            '--message', report
         ]
         
         logger.info(f"Executing: {' '.join(cmd)}")
