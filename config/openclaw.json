@@ -183,7 +183,12 @@
     },
     "list": [
       {
-        "id": "main"
+        "id": "main",
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        }
       },
       {
         "id": "code_g",
