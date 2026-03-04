@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772605581849,
+      "updatedAtMs": 1772609188323,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772609174067,
-        "lastRunAtMs": 1772605574067,
+        "nextRunAtMs": 1772612774072,
+        "lastRunAtMs": 1772609174072,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7782,
+        "lastDurationMs": 14251,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772609174071
+        "runningAtMs": 1772612774078
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772604965640,
+      "updatedAtMs": 1772612180269,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,11 +58,11 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772612091839,
-        "lastRunAtMs": 1772604891839,
+        "nextRunAtMs": 1772619291851,
+        "lastRunAtMs": 1772612091851,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 73801,
+        "lastDurationMs": 88418,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -109,7 +109,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1772547723621,
+      "updatedAtMs": 1772609491816,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -122,7 +122,14 @@
         "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
       },
       "state": {
-        "nextRunAtMs": 1772609400000
+        "nextRunAtMs": 1772695800000,
+        "lastRunAtMs": 1772609400006,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 91810,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       },
       "delivery": {
         "mode": "announce",
