@@ -11,7 +11,10 @@
 ### Day Session (Monday-Friday)
 - **Morning:** 09:00-10:15, 10:30-11:30
 - **Afternoon:** 13:30-15:00
-- **No night session** for corn futures
+
+### Night Session (Sunday-Thursday)
+- **Night:** 21:00-23:00
+- Note: Night session belongs to next trading day (e.g., Monday 21:00 = Tuesday's session)
 
 ### Holidays (No Trading)
 - Chinese New Year
