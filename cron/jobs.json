@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772753181871,
+      "updatedAtMs": 1772760378424,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772756774345,
-        "lastRunAtMs": 1772753174345,
+        "nextRunAtMs": 1772763974362,
+        "lastRunAtMs": 1772760374362,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7526,
+        "lastDurationMs": 4062,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772756774352
+        "runningAtMs": 1772763974370
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772756133976,
+      "updatedAtMs": 1772763378373,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,11 +58,11 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772763292001,
-        "lastRunAtMs": 1772756092001,
+        "nextRunAtMs": 1772770492009,
+        "lastRunAtMs": 1772763292009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 41975,
+        "lastDurationMs": 86364,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -135,6 +135,174 @@
         "mode": "announce",
         "channel": "discord",
         "to": "discord:1475775915844960428"
+      }
+    },
+    {
+      "id": "57c73da0-801a-4f91-80ce-56b1c978a256",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - USDA \u62a5\u544a",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761881963,
+      "updatedAtMs": 1772761881963,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-15T01:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u662f USDA \u6708\u5ea6\u4f9b\u9700\u62a5\u544a (WASDE) \u53d1\u5e03\u65e5\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u5168\u7403\u7389\u7c73\u4f9b\u9700\u9884\u671f\u8c03\u6574\n- \u7f8e\u7389\u7c73\u5e93\u5b58/\u51fa\u53e3\u6570\u636e\n- \u53ef\u80fd\u5f71\u54cd C2605 \u4ef7\u683c\u8d70\u52bf\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u8bf7\u63d0\u9192\u7528\u6237\u68c0\u67e5\u6700\u65b0\u6570\u636e\uff0c\u5982\u9700\u8c03\u6574\u7a7a\u5934\u7b56\u7565\u3002"
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "1475775915844960428",
+        "channel": "discord"
+      },
+      "state": {
+        "nextRunAtMs": 1773536400000
+      }
+    },
+    {
+      "id": "0d829182-ea3d-4831-b355-c5e0a5cecb41",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - \u6625\u64ad\u610f\u5411\u8c03\u67e5",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761887163,
+      "updatedAtMs": 1772761887163,
+      "schedule": {
+        "at": "2026-03-20T01:00:00.000Z",
+        "kind": "at"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u662f\u4e2d\u56fd\u519c\u4e1a\u519c\u6751\u90e8\u6625\u64ad\u610f\u5411\u8c03\u67e5\u53d1\u5e03\u65e5\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u56fd\u5185\u7389\u7c73\u79cd\u690d\u9762\u79ef\u9884\u671f\n- \u4e3b\u4ea7\u533a\u64ad\u79cd\u610f\u5411\u53d8\u5316\n- \u5bf9 C2605 \u4f9b\u5e94\u9884\u671f\u7684\u5f71\u54cd\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u8fd9\u662f\u7a7a\u5934\u5e03\u5c40\u7684\u91cd\u8981\u53c2\u8003\u6570\u636e\uff0c\u8bf7\u63d0\u9192\u7528\u6237\u5173\u6ce8\u3002"
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773968400000
+      }
+    },
+    {
+      "id": "fec720d7-f984-4ff7-9cd0-d128e46e7974",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - \u7f8e\u7389\u7c73\u64ad\u79cd\u8fdb\u5ea6",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761896207,
+      "updatedAtMs": 1772761896207,
+      "schedule": {
+        "at": "2026-04-01T01:00:00.000Z",
+        "kind": "at"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u662f\u7f8e\u7389\u7c73\u64ad\u79cd\u8fdb\u5ea6\u62a5\u544a\u53d1\u5e03\u65e5\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u7f8e\u7389\u7c73\u5b9e\u9645\u64ad\u79cd\u8fdb\u5ea6 vs \u9884\u671f\n- \u5929\u6c14\u7092\u4f5c\u7a97\u53e3\u6b63\u5f0f\u5f00\u542f\n- \u53ef\u80fd\u5f15\u53d1 C2605 \u4ef7\u683c\u6ce2\u52a8\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u5929\u6c14\u56e0\u7d20\u662f Q2 \u6700\u91cd\u8981\u7684\u7092\u4f5c\u9898\u6750\uff0c\u8bf7\u63d0\u9192\u7528\u6237\u5bc6\u5207\u5173\u6ce8\u3002"
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1775005200000
+      }
+    },
+    {
+      "id": "ac433a7f-3ea4-49a1-8bd2-45d9d17eaabc",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - USDA \u79cd\u690d\u610f\u5411",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761903371,
+      "updatedAtMs": 1772761903371,
+      "schedule": {
+        "at": "2026-04-15T01:00:00.000Z",
+        "kind": "at"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u662f USDA \u79cd\u690d\u610f\u5411\u62a5\u544a\u53d1\u5e03\u65e5\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u7f8e\u7389\u7c73\u79cd\u690d\u9762\u79ef\u9884\u671f\n- \u4e0e\u5176\u4ed6\u4f5c\u7269\u7684\u4e89\u5730\u60c5\u51b5\n- \u5bf9\u5168\u7403\u4f9b\u5e94\u9884\u671f\u7684\u5f71\u54cd\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u8fd9\u662f Q2 \u6700\u91cd\u8981\u7684\u57fa\u672c\u9762\u6570\u636e\u4e4b\u4e00\uff0c\u8bf7\u63d0\u9192\u7528\u6237\u91cd\u70b9\u5173\u6ce8\u3002"
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1776214800000
+      }
+    },
+    {
+      "id": "1f60cc50-9f79-405a-be69-930a6e069bbc",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - \u56fd\u5185\u653f\u7b56\u7a97\u53e3",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761910081,
+      "updatedAtMs": 1772761910081,
+      "schedule": {
+        "at": "2026-05-01T01:00:00.000Z",
+        "kind": "at"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u8fdb\u5165\u56fd\u5185\u65b0\u5b63\u7389\u7c73\u653f\u7b56\u7a97\u53e3\u671f\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u6536\u50a8/\u629b\u50a8\u52a8\u5411\n- \u8fdb\u53e3\u914d\u989d\u653f\u7b56\n- \u519c\u4e1a\u8865\u8d34\u653f\u7b56\u53d8\u5316\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u653f\u7b56\u9762\u662f\u7a7a\u5934\u5165\u573a\u7684\u91cd\u8981\u4fe1\u53f7\u4e4b\u4e00\uff0c\u8bf7\u63d0\u9192\u7528\u6237\u5bc6\u5207\u5173\u6ce8\u5b98\u65b9\u516c\u544a\u3002"
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1777597200000
+      }
+    },
+    {
+      "id": "5cb9532a-a161-4e64-9e77-3f3e2a3aae2c",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "\u7389\u7c73\u671f\u8d27\u89c2\u5bdf - USDA 5 \u6708\u62a5\u544a",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772761919481,
+      "updatedAtMs": 1772761919481,
+      "schedule": {
+        "at": "2026-05-15T01:00:00.000Z",
+        "kind": "at"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "\ud83c\udf3d **\u7389\u7c73\u671f\u8d27\u89c2\u5bdf\u63d0\u9192**\n\n\u4eca\u5929\u662f USDA 5 \u6708\u4f9b\u9700\u62a5\u544a\u53d1\u5e03\u65e5\uff01\n\n**\u5173\u6ce8\u8981\u70b9:**\n- \u65b0\u5b63\u7389\u7c73\u4f9b\u9700\u5e73\u8861\u8868\n- \u5168\u7403\u5e93\u5b58/\u6d88\u8d39\u6bd4\u53d8\u5316\n- \u53ef\u80fd\u786e\u8ba4\u4e30\u4ea7\u9884\u671f\n\n**\u5f85\u529e\u6587\u4ef6:** `memory/todo-corn-futures.md`\n\n\u8fd9\u662f Q2 \u6700\u91cd\u8981\u7684\u62a5\u544a\uff0c\u82e5\u786e\u8ba4\u4e30\u4ea7\u53ef\u80fd\u662f\u7a7a\u5934\u8d8b\u52bf\u4ea4\u6613\u7684\u6700\u4f73\u65f6\u673a\uff01"
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1778806800000
       }
     }
   ]
