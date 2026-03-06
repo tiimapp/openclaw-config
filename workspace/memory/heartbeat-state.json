@@ -1,18 +1,18 @@
 {
   "lastChecks": {
-    "trading_day_verify": "2026-03-06",
-    "is_trading_day": true,
-    "system": 1741277640,
+    "trading_day_verify": "2026-03-07",
+    "is_trading_day": false,
+    "system": 1741313640,
     "github": 1740733740,
-    "heartbeat": 1741312440,
+    "heartbeat": 1741313640,
     "email": null,
     "calendar": null,
     "weather": null
   },
-  "lastHeartbeat": "2026-03-06T22:14:00+08:00",
+  "lastHeartbeat": "2026-03-07T00:14:00+08:00",
   "reportSchedule": {
-    "ashare_daily": "15:30",
-    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
-    "c2605_daily": "15:30"
+    "ashare_daily": null,
+    "c2605_hourly": null,
+    "c2605_daily": null
   }
 }
