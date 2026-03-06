@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772778397716,
+      "updatedAtMs": 1772781994253,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772781974416,
-        "lastRunAtMs": 1772778374416,
+        "nextRunAtMs": 1772785574423,
+        "lastRunAtMs": 1772781974423,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 23300,
+        "lastDurationMs": 19830,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772781974421
+        "runningAtMs": 1772785574431
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
       "enabled": true,
       "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772777877484,
+      "updatedAtMs": 1772785058572,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -58,14 +58,14 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772784892027,
-        "lastRunAtMs": 1772777692027,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 185457,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772792092047,
+        "lastRunAtMs": 1772784892047,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 166525,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": false
       }
     },
     {
@@ -109,7 +109,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1772695861332,
+      "updatedAtMs": 1772782258121,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -122,11 +122,11 @@
         "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
       },
       "state": {
-        "nextRunAtMs": 1772782200000,
-        "lastRunAtMs": 1772695800006,
+        "nextRunAtMs": 1773041400000,
+        "lastRunAtMs": 1772782200012,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 61326,
+        "lastDurationMs": 58109,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
