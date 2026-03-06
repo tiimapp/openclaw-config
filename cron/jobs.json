@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772760378424,
+      "updatedAtMs": 1772763982194,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772763974362,
-        "lastRunAtMs": 1772760374362,
+        "nextRunAtMs": 1772767574372,
+        "lastRunAtMs": 1772763974372,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 4062,
+        "lastDurationMs": 7822,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772763974370
+        "runningAtMs": 1772767574380
       }
     },
     {
@@ -303,6 +303,52 @@
       },
       "state": {
         "nextRunAtMs": 1778806800000
+      }
+    },
+    {
+      "id": "78e89dfd-3894-411a-8ed4-f7f0065569d6",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1479305137649483777",
+      "name": "\u82f1\u8bed\u590d\u4e60 - Globalization of Services (\u7b2c3\u5929)",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772764697343,
+      "updatedAtMs": 1772764697343,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-08T01:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "\ud83d\udcda \u82f1\u8bed\u590d\u4e60\u63d0\u9192\uff08\u7b2c3\u5929\uff09\n\n\u6587\u7ae0\uff1aGlobalization of Services\n\u6536\u5230\u65e5\u671f\uff1a2026-03-05\n\n\u4eca\u5929\u662f\u590d\u4e60\u8fd9\u7bc7\u6587\u7ae0\u7684\u7b2c3\u5929\uff01\u8bf7\u56de\u987e\u6587\u7ae0\u5185\u5bb9\uff0c\u91cd\u70b9\u5173\u6ce8\uff1a\n- \u65b0\u8bcd\u6c47\n- \u91cd\u70b9\u53e5\u578b\n- \u4e3b\u8981\u5185\u5bb9\n\n\u590d\u4e60\u5b8c\u6210\u540e\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u8bb0\u5f55\u8fdb\u5ea6\u3002"
+      },
+      "state": {
+        "nextRunAtMs": 1772931600000
+      }
+    },
+    {
+      "id": "357e1782-2974-4068-8568-d6e230568ef1",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1479305137649483777",
+      "name": "\u82f1\u8bed\u590d\u4e60 - Globalization of Services (\u7b2c7\u5929)",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1772764697380,
+      "updatedAtMs": 1772764697380,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-12T01:00:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "\ud83d\udcda \u82f1\u8bed\u590d\u4e60\u63d0\u9192\uff08\u7b2c7\u5929\uff09\n\n\u6587\u7ae0\uff1aGlobalization of Services\n\u6536\u5230\u65e5\u671f\uff1a2026-03-05\n\n\u4eca\u5929\u662f\u590d\u4e60\u8fd9\u7bc7\u6587\u7ae0\u7684\u7b2c7\u5929\uff01\u8fd9\u662f\u6700\u540e\u4e00\u6b21\u6b63\u5f0f\u590d\u4e60\uff0c\u8bf7\u786e\u4fdd\u638c\u63e1\uff1a\n- \u6240\u6709\u65b0\u8bcd\u6c47\n- \u6838\u5fc3\u53e5\u578b\u7ed3\u6784\n- \u6587\u7ae0\u4e3b\u65e8\n\n\u590d\u4e60\u5b8c\u6210\u540e\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u6807\u8bb0\u8fd9\u7bc7\u6587\u7ae0\u4e3a\u5df2\u5b8c\u6210\u3002"
+      },
+      "state": {
+        "nextRunAtMs": 1773277200000
       }
     }
   ]
