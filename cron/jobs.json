@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772774780164,
+      "updatedAtMs": 1772778397716,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772778374410,
-        "lastRunAtMs": 1772774774410,
+        "nextRunAtMs": 1772781974416,
+        "lastRunAtMs": 1772778374416,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5754,
+        "lastDurationMs": 23300,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772778374415
+        "runningAtMs": 1772781974421
       }
     },
     {
@@ -349,6 +349,153 @@
       },
       "state": {
         "nextRunAtMs": 1773277200000
+      }
+    },
+    {
+      "id": "707aed9a-b72c-4781-bc3b-f89cd6cad61f",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605  hourly-09:00",
+      "enabled": true,
+      "createdAtMs": 1772779072620,
+      "updatedAtMs": 1772779072620,
+      "schedule": {
+        "expr": "0 9 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773018000000
+      }
+    },
+    {
+      "id": "09ff3c9f-6229-4b90-96ce-6e92f2b8816d",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605  hourly-10:00",
+      "enabled": true,
+      "createdAtMs": 1772779093880,
+      "updatedAtMs": 1772779093880,
+      "schedule": {
+        "expr": "0 10 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773021600000
+      }
+    },
+    {
+      "id": "72326ed4-25b6-4177-a970-35ae5f827f8d",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605  hourly-11:00",
+      "enabled": true,
+      "createdAtMs": 1772779127218,
+      "updatedAtMs": 1772779127218,
+      "schedule": {
+        "expr": "0 11 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773025200000
+      }
+    },
+    {
+      "id": "2b2d154a-f3df-4106-b160-5d7c550583b0",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605  hourly-14:00",
+      "enabled": true,
+      "createdAtMs": 1772779163606,
+      "updatedAtMs": 1772779163606,
+      "schedule": {
+        "expr": "0 14 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773036000000
+      }
+    },
+    {
+      "id": "2d41c55b-d387-4ff3-afc1-07777446484a",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605  hourly-15:00",
+      "enabled": true,
+      "createdAtMs": 1772779225355,
+      "updatedAtMs": 1772780531031,
+      "schedule": {
+        "expr": "0 15 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773039600000,
+        "lastRunAtMs": 1772780400008,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 131023,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]
