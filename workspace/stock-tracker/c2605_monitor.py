@@ -226,6 +226,8 @@ def main():
     parser.add_argument('--type', type=str, choices=['hourly', 'daily'], 
                        default='hourly', help='Report type')
     parser.add_argument('--test', action='store_true', help='Test mode')
+    parser.add_argument('--skip-trading-check', action='store_true', 
+                       help='Skip trading time verification (for daily summary)')
     
     args = parser.parse_args()
     
@@ -234,8 +236,16 @@ def main():
     
     # Check if it's a trading day
     if not is_trading_day():
-        print("Not a trading day. Skipping report.")
+        print("📭 Not a trading day (weekend or holiday). Skipping hourly report.")
         return
+    
+    # Check if currently in trading hours (for hourly reports only)
+    if args.type == 'hourly' and not args.skip_trading_check:
+        if not is_trading_time():
+            now = datetime.now()
+            print(f"📭 Outside trading hours ({now.strftime('%H:%M')}). Skipping hourly report.")
+            print(f"   Trading sessions: 09:00-10:15, 10:30-11:30, 13:30-15:00")
+            return
     
     # Fetch data
     data = fetch_c2605_data()

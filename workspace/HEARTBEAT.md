@@ -19,6 +19,98 @@
 ### 4. Notifications
 - Check for any urgent alerts or messages
 
+### 5. Daily Trading Day Verification ⭐ (FIRST heartbeat only)
+**When:** First heartbeat of each day (before 10:00)
+**State File:** `memory/heartbeat-state.json`
+**Script:** `heartbeat_trading_check.py`
+
+**Check Steps:**
+1. Run: `python3 heartbeat_trading_check.py`
+2. Script reads `memory/heartbeat-state.json` to check if already verified today
+3. If NOT verified → Run trading day check → Update state
+4. If already verified → Skip (don't repeat)
+
+**Decision Logic:**
+| Result | A-Share Report | C2605 Futures Report |
+|--------|----------------|---------------------|
+| Trading Day | ✅ Send at 15:30 | ✅ Send hourly + 15:30 |
+| Non-Trading Day | ❌ Skip | ❌ Skip |
+
+**State File After Check:**
+```json
+{
+  "lastChecks": {
+    "trading_day_verify": "2026-03-06",
+    "is_trading_day": true
+  },
+  "reportSchedule": {
+    "ashare_daily": "15:30",
+    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
+    "c2605_daily": "15:30"
+  }
+}
+```
+
+**Test Commands:**
+```bash
+# Normal check (skips if already verified today)
+python3 heartbeat_trading_check.py
+
+# Force re-verification
+python3 heartbeat_trading_check.py --force
+
+# JSON output (for automation)
+python3 heartbeat_trading_check.py --json
+```
+
+### 6. C2605 Trading Time Check (During Trading Hours)
+- Verify hourly reports are being generated
+- Alert if reports missed during active trading
+
+**Trading Hours (Asia/Shanghai UTC+8):**
+- Morning: 09:00-10:15, 10:30-11:30
+- Afternoon: 13:30-15:00
+- Days: Monday-Friday (exclude Chinese holidays)
+- **No night session for corn futures**
+
+---
+
+## State File Management
+
+**File:** `memory/heartbeat-state.json`
+
+**Purpose:** Track what has been checked today to avoid redundant verification
+
+**Reset:** Date check resets at midnight (new day = new verification)
+
+**Example Structure:**
+```json
+{
+  "lastChecks": {
+    "trading_day_verify": "2026-03-06",
+    "is_trading_day": true,
+    "email": 1703275200,
+    "calendar": 1703260800
+  }
+}
+```
+
+---
+
+## When to Notify User
+
+**Reach out when:**
+- Cron job failures detected
+- Model health check fails (primary or fallback)
+- Trading day verification complete (report schedule confirmed)
+- Important system events occur
+- It's been >8h since last interaction (and not late night)
+
+**Stay quiet when:**
+- Late night (23:00-08:00) unless urgent
+- Nothing new since last check
+- Just checked <2 hours ago
+
 ## When to Notify User
 
 **Reach out when:**
