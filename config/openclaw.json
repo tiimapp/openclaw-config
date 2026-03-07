@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.22-2",
-    "lastTouchedAt": "2026-02-28T02:14:02.545Z"
+    "lastTouchedAt": "2026-02-26T13:32:57.336Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -12,14 +12,14 @@
   "models": {
     "mode": "merge",
     "providers": {
-      "custom-G": {
+      "custom-api-20260215": {
         "baseUrl": "https://api.xstx.info/v1",
         "apiKey": "<$APIKEY>",
         "api": "openai-completions",
         "models": [
           {
-            "id": "gemini-3-flash-preview",
-            "name": "gemini-3-flash-preview",
+            "id": "claude-opus-4-6",
+            "name": "claude-opus-4-6 (Custom Provider)",
             "reasoning": false,
             "input": [
               "text"
@@ -32,18 +32,6 @@
             },
             "contextWindow": 150000,
             "maxTokens": 8192
-          }
-        ]
-      },
-      "qwen-stt": {
-        "apiKey": "<$APIKEY>",
-        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "api": "openai-completions",
-        "models": [
-          {
-            "id": "qwen3-asr-flash-filetrans",
-            "name": "qwen3-asr-flash-filetrans",
-            "api": "openai-completions"
           }
         ]
       },
@@ -161,7 +149,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "qwen3-max-2026-01-23/qwen3.5-plus"
+        "primary": "qwen3-max-2026-01-23/kimi-k2.5"
       },
       "models": {
         "qwen3-max-2026-01-23/qwen3.5-plus": {},
@@ -183,12 +171,7 @@
     },
     "list": [
       {
-        "id": "main",
-        "subagents": {
-          "allowAgents": [
-            "*"
-          ]
-        }
+        "id": "main"
       },
       {
         "id": "code_g",
@@ -211,19 +194,10 @@
           "model": "qwen3-max-2026-01-23"
         }
       }
-    },
-    "media": {
-      "audio": {
-        "enabled": true,
-        "maxBytes": 20971520,
-        "models": [
-          {
-            "provider": "groq",
-            "model": "whisper-large-v3-turbo"
-          }
-        ]
-      }
     }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
   },
   "commands": {
     "native": "auto",
@@ -231,7 +205,9 @@
     "restart": true,
     "ownerDisplay": "raw"
   },
-  "session": {},
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
   "channels": {
     "discord": {
       "enabled": true,
