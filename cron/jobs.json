@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772871987425,
+      "updatedAtMs": 1772879181692,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772875574703,
-        "lastRunAtMs": 1772871974703,
+        "nextRunAtMs": 1772882774721,
+        "lastRunAtMs": 1772879174721,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12722,
+        "lastDurationMs": 6971,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772875574709
+        "runningAtMs": 1772882774728
       }
     },
     {
@@ -461,6 +461,35 @@
         "lastDurationMs": 131023,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "15c45cce-a054-4d93-a747-f91ff7a9c24e",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1479649544458338405",
+      "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
+      "enabled": true,
+      "createdAtMs": 1772878291499,
+      "updatedAtMs": 1772881949558,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1772878291499
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf 30 \u5206\u949f\uff09"
+      },
+      "state": {
+        "nextRunAtMs": 1772883691518,
+        "lastRunAtMs": 1772881891518,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 58040,
+        "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
     }
