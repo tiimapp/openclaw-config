@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772857587856,
+      "updatedAtMs": 1772864780023,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772861174642,
-        "lastRunAtMs": 1772857574642,
+        "nextRunAtMs": 1772868374663,
+        "lastRunAtMs": 1772864774663,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 13214,
+        "lastDurationMs": 5360,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772861174651
+        "runningAtMs": 1772868374690
       }
     },
     {
@@ -462,39 +462,6 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "bc53653d-8d1d-4d11-a825-97ce280793b0",
-      "name": "heartbeat",
-      "description": "Heartbeat check 4x/day at 08:00, 12:00, 17:00, 22:00 (Asia/Shanghai)",
-      "enabled": true,
-      "createdAtMs": 1772846999689,
-      "updatedAtMs": 1772856131584,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8,12,17,22 * * *"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "discord:431977287446167554"
-      },
-      "state": {
-        "nextRunAtMs": 1772874000000,
-        "lastRunAtMs": 1772856000012,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 131572,
-        "lastError": "cron announce delivery failed",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
       }
     }
   ]
