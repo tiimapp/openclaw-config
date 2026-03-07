@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772850386931,
+      "updatedAtMs": 1772853981676,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772853974623,
-        "lastRunAtMs": 1772850374623,
+        "nextRunAtMs": 1772857574632,
+        "lastRunAtMs": 1772853974632,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12308,
+        "lastDurationMs": 7044,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772853974631
+        "runningAtMs": 1772857574641
       }
     },
     {
@@ -470,7 +470,7 @@
       "description": "Heartbeat check 4x/day at 08:00, 12:00, 17:00, 22:00 (Asia/Shanghai)",
       "enabled": true,
       "createdAtMs": 1772846999689,
-      "updatedAtMs": 1772846999689,
+      "updatedAtMs": 1772856131584,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,12,17,22 * * *"
@@ -487,7 +487,14 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1772856000000
+        "nextRunAtMs": 1772874000000,
+        "lastRunAtMs": 1772856000012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 131572,
+        "lastError": "cron announce delivery failed",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
