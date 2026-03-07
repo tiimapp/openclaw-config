@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1772839580088,
+      "updatedAtMs": 1772846778907,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,49 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772843174594,
-        "lastRunAtMs": 1772839574594,
+        "nextRunAtMs": 1772850374612,
+        "lastRunAtMs": 1772846774612,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5494,
+        "lastDurationMs": 4295,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
-        "runningAtMs": 1772843174603
-      }
-    },
-    {
-      "id": "8dd8e885-6dec-4428-b33f-31324072d942",
-      "name": "heartbeat",
-      "description": "Automatic heartbeat check every 2 hours - delivers to Discord DM",
-      "enabled": true,
-      "createdAtMs": 1772259291434,
-      "updatedAtMs": 1772842553579,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 7200000,
-        "anchorMs": 1772259291434
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord",
-        "to": "discord:431977287446167554"
-      },
-      "state": {
-        "nextRunAtMs": 1772849692143,
-        "lastRunAtMs": 1772842492143,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 61436,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "runningAtMs": 1772850374621
       }
     },
     {
@@ -496,6 +462,32 @@
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "bc53653d-8d1d-4d11-a825-97ce280793b0",
+      "name": "heartbeat",
+      "description": "Heartbeat check 4x/day at 08:00, 12:00, 17:00, 22:00 (Asia/Shanghai)",
+      "enabled": true,
+      "createdAtMs": 1772846999689,
+      "updatedAtMs": 1772846999689,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,12,17,22 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord",
+        "to": "discord:431977287446167554"
+      },
+      "state": {
+        "nextRunAtMs": 1772856000000
       }
     }
   ]
