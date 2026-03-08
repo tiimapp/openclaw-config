@@ -163,7 +163,7 @@
       "compaction": {
         "mode": "safeguard"
       },
-      "timeoutSeconds": 600,
+      "timeoutSeconds": 3600,
       "maxConcurrent": 8,
       "subagents": {
         "maxConcurrent": 8
