@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "trading_day_verify": "2026-03-08",
-    "is_trading_day": false,
+    "trading_day_verify": "2026-03-09",
+    "is_trading_day": true,
     "system": 1741334040,
     "github": 1740733740,
     "heartbeat": 1741334040,
@@ -12,9 +12,9 @@
   },
   "lastHeartbeat": "2026-03-08T00:20:00+08:00",
   "reportSchedule": {
-    "ashare_daily": null,
-    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00 (Mon-Fri)",
-    "c2605_daily": "15:30 (Mon-Fri)",
+    "ashare_daily": "15:30",
+    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
+    "c2605_daily": "15:30",
     "heartbeat_cron": "STOPPED"
   }
 }
