@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773030388715,
+      "updatedAtMs": 1773033987657,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773033973534,
-        "lastRunAtMs": 1773030373534,
+        "nextRunAtMs": 1773037573545,
+        "lastRunAtMs": 1773033973545,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15181,
+        "lastDurationMs": 14112,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773033973543
+        "runningAtMs": 1773037573554
       }
     },
     {
@@ -406,7 +406,7 @@
       "name": "C2605  hourly-14:00",
       "enabled": true,
       "createdAtMs": 1772779163606,
-      "updatedAtMs": 1772779163606,
+      "updatedAtMs": 1773036080031,
       "schedule": {
         "expr": "0 14 * * 1-5",
         "kind": "cron",
@@ -424,7 +424,14 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773036000000
+        "nextRunAtMs": 1773122400000,
+        "lastRunAtMs": 1773036000012,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 80019,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -469,7 +476,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773032414431,
+      "updatedAtMs": 1773036107436,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -482,11 +489,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773036000000,
-        "lastRunAtMs": 1773032400011,
+        "nextRunAtMs": 1773039600000,
+        "lastRunAtMs": 1773036080031,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 14420,
+        "lastDurationMs": 27405,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
