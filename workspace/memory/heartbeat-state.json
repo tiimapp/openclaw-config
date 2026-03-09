@@ -2,15 +2,16 @@
   "lastChecks": {
     "trading_day_verify": "2026-03-09",
     "is_trading_day": true,
-    "system": 1741334040,
+    "system": 1741500480,
     "github": 1740733740,
-    "heartbeat": 1741334040,
+    "heartbeat": 1741500480,
     "email": null,
     "calendar": null,
     "weather": null,
-    "cron_configured": "2026-03-07T08:15:00+08:00"
+    "cron_configured": "2026-03-07T08:15:00+08:00",
+    "model_health": "2026-03-09T18:08:00+08:00"
   },
-  "lastHeartbeat": "2026-03-09T09:53:00+08:00",
+  "lastHeartbeat": "2026-03-09T18:08:00+08:00",
   "reportSchedule": {
     "ashare_daily": "15:30",
     "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
@@ -18,6 +19,13 @@
     "heartbeat_cron": "STOPPED"
   },
   "notes": {
-    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily"
+    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily",
+    "2026-03-09T18:08": "Model health recovered - both primary and fallback APIs responding after ~6h outage"
+  },
+  "modelStatus": {
+    "primary": "recovered",
+    "fallback": "ok",
+    "lastFailure": "2026-03-09T12:00:00+08:00",
+    "recoveredAt": "2026-03-09T18:08:00+08:00"
   }
 }
