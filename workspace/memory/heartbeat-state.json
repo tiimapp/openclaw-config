@@ -10,11 +10,14 @@
     "weather": null,
     "cron_configured": "2026-03-07T08:15:00+08:00"
   },
-  "lastHeartbeat": "2026-03-08T00:20:00+08:00",
+  "lastHeartbeat": "2026-03-09T09:53:00+08:00",
   "reportSchedule": {
     "ashare_daily": "15:30",
     "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
     "c2605_daily": "15:30",
     "heartbeat_cron": "STOPPED"
+  },
+  "notes": {
+    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily"
   }
 }
