@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.22-2",
-    "lastTouchedAt": "2026-02-26T13:32:57.336Z"
+    "lastTouchedVersion": "2026.3.8",
+    "lastTouchedAt": "2026-03-09T10:47:45.222Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -167,7 +167,8 @@
       "maxConcurrent": 8,
       "subagents": {
         "maxConcurrent": 8
-      }
+      },
+      "thinkingDefault": "medium"
     },
     "list": [
       {
@@ -176,11 +177,11 @@
       {
         "id": "code_g",
         "name": "Code_G",
+        "workspace": "/home/admin/.openclaw/workspace-code_g",
+        "agentDir": "/home/admin/.openclaw/agents/code_g/agent",
         "model": {
           "primary": "qwen3-max-2026-01-23/qwen3-coder-plus"
-        },
-        "workspace": "/home/admin/.openclaw/workspace-code_g",
-        "agentDir": "/home/admin/.openclaw/agents/code_g/agent"
+        }
       }
     ]
   },
@@ -211,10 +212,37 @@
   "session": {
     "dmScope": "per-channel-peer"
   },
+  "bindings": [
+    {
+      "type": "route",
+      "agentId": "main",
+      "match": {
+        "channel": "discord",
+        "accountId": "default"
+      }
+    },
+    {
+      "type": "route",
+      "agentId": "code_g",
+      "match": {
+        "channel": "discord",
+        "accountId": "code_g"
+      }
+    }
+  ],
   "channels": {
     "discord": {
       "enabled": true,
-      "token": "<$TOKEN>",
+      "accounts": {
+        "default": {
+          "name": "Main",
+          "token": "<$TOKEN>"
+        },
+        "code_g": {
+          "name": "Code_G",
+          "token": "<$TOKEN>"
+        }
+      },
       "groupPolicy": "allowlist",
       "streaming": "off",
       "guilds": {
@@ -237,6 +265,12 @@
     "port": 18789,
     "mode": "local",
     "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789"
+      ]
+    },
     "auth": "<$AUTH>",
     "tailscale": {
       "mode": "off",

@@ -64,10 +64,13 @@ CHINESE_HOLIDAYS_2026 = {
 }
 
 # Trading sessions (Asia/Shanghai timezone)
+# Note: End times include a 5-minute buffer for report generation after market close
+# UPDATED 2026-03-09: Added night session based on user feedback and latest search results
 TRADING_SESSIONS = [
-    (time(9, 0), time(10, 15)),    # Morning session 1
-    (time(10, 30), time(11, 30)),  # Morning session 2
-    (time(13, 30), time(15, 0)),   # Afternoon session
+    (time(9, 0), time(10, 20)),    # Morning session 1 + 5min buffer
+    (time(10, 30), time(11, 35)),  # Morning session 2 + 5min buffer
+    (time(13, 30), time(15, 5)),   # Afternoon session + 5min buffer (for closing price)
+    (time(21, 0), time(23, 5)),    # Night session + 5min buffer (21:00-23:00)
 ]
 
 

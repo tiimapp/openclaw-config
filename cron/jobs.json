@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773048382001,
+      "updatedAtMs": 1773091583837,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773051973613,
-        "lastRunAtMs": 1773048373613,
+        "nextRunAtMs": 1773095173697,
+        "lastRunAtMs": 1773091573697,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8388,
+        "lastDurationMs": 10140,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773051973622
+        "runningAtMs": 1773095173703
       }
     },
     {
@@ -476,7 +476,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773050408274,
+      "updatedAtMs": 1773068520200,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -489,13 +489,200 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773054000000,
-        "lastRunAtMs": 1773050400010,
+        "nextRunAtMs": 1773097200000,
+        "lastRunAtMs": 1773068400007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8264,
+        "lastDurationMs": 120193,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "ed12c71e-8f4b-4c83-8cae-99d41d1fa65b",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605 hourly-21:00",
+      "enabled": true,
+      "createdAtMs": 1773057809655,
+      "updatedAtMs": 1773061266734,
+      "schedule": {
+        "expr": "0 21 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773147600000,
+        "lastRunAtMs": 1773061245859,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 20875,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "e1bbb157-053b-4213-9ca3-1637d70b43db",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605 hourly-22:00",
+      "enabled": true,
+      "createdAtMs": 1773057830868,
+      "updatedAtMs": 1773064907422,
+      "schedule": {
+        "expr": "0 22 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773151200000,
+        "lastRunAtMs": 1773064874380,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 33042,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "27f1b261-fee1-48a5-8d9e-fd804f4431e9",
+      "agentId": "main",
+      "sessionKey": "agent:main:discord:channel:1475775915844960428",
+      "name": "C2605 hourly-23:00",
+      "enabled": true,
+      "createdAtMs": 1773057871118,
+      "updatedAtMs": 1773068556282,
+      "schedule": {
+        "expr": "0 23 * * 1-5",
+        "kind": "cron",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run: cd /home/admin/.openclaw/workspace/stock-tracker && python3 c2605_monitor.py --type hourly\n\nThis should fetch C2605 corn futures real-time price data and post an hourly report to this Discord channel."
+      },
+      "delivery": {
+        "channel": "discord",
+        "mode": "announce",
+        "to": "1475775915844960428"
+      },
+      "state": {
+        "nextRunAtMs": 1773154800000,
+        "lastRunAtMs": 1773068520200,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 36082,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "69e8ae7f-ef8e-4a62-883c-5fb9c5a5924d",
+      "name": "self-improvement-morning-report",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773069023153,
+      "updatedAtMs": 1773069023153,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-10T01:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read ~/.openclaw/workspace/.learnings/LEARNINGS.md and create a summary report of all learnings from yesterday (2026-03-09). Include: 1) Total learnings logged, 2) High priority items, 3) Resolved items, 4) Pending actions needed. Format as a clean markdown report and send to Discord DM."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord"
+      },
+      "state": {
+        "nextRunAtMs": 1773104400000
+      }
+    },
+    {
+      "id": "0a9b7449-c60f-4213-b790-7505455ab659",
+      "name": "skill-search-1",
+      "enabled": true,
+      "createdAtMs": 1773071409551,
+      "updatedAtMs": 1773094927113,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1773071409551
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Search GitHub and web for OpenClaw skills. Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'. Find useful skills with: name, description, install command, use case. Append to /home/admin/.openclaw/workspace/skill-discovery-log.md in the next available Search # slot. Include timestamp and sources. Keep entries concise."
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1773096609631,
+        "lastRunAtMs": 1773094809631,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 117482,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "7f69e686-1793-4b24-96b8-26b1485d6584",
+      "name": "skill-discovery-final-report",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1773071470727,
+      "updatedAtMs": 1773071470727,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-09T23:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read /home/admin/.openclaw/workspace/skill-discovery-log.md and compile all discovered skills into a final markdown report. Include: 1) Executive summary, 2) Top 10 recommended skills with install commands, 3) Priority ranking (High/Medium/Low), 4) Quick install script, 5) Usage examples. Format as clean markdown and send to Discord DM with the full report."
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "discord"
+      },
+      "state": {
+        "nextRunAtMs": 1773097200000
       }
     }
   ]

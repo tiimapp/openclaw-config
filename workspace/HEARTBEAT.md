@@ -70,8 +70,14 @@ python3 heartbeat_trading_check.py --json
 **Trading Hours (Asia/Shanghai UTC+8):**
 - Morning: 09:00-10:15, 10:30-11:30
 - Afternoon: 13:30-15:00
+- **Night: 21:00-23:00** ⭐
 - Days: Monday-Friday (exclude Chinese holidays)
-- **No night session for corn futures**
+
+**Report Generation Buffer:** +5 minutes after each session end for closing price capture
+- 10:20 (after morning session 1)
+- 11:35 (after morning session 2)
+- 15:05 (after afternoon session - closing price)
+- 23:05 (after night session - closing price)
 
 ---
 
