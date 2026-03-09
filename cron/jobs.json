@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773008779789,
+      "updatedAtMs": 1773012380826,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773012373434,
-        "lastRunAtMs": 1773008773434,
+        "nextRunAtMs": 1773015973447,
+        "lastRunAtMs": 1773012373447,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 6355,
+        "lastDurationMs": 7379,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773012373445
+        "runningAtMs": 1773015973454
       }
     },
     {
@@ -448,7 +448,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773010822861,
+      "updatedAtMs": 1773014412799,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -461,11 +461,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773014400000,
-        "lastRunAtMs": 1773010800013,
+        "nextRunAtMs": 1773018000000,
+        "lastRunAtMs": 1773014400013,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 22848,
+        "lastDurationMs": 12786,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
