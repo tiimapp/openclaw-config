@@ -1,6 +1,6 @@
 {
   "lastChecks": {
-    "trading_day_verify": "2026-03-10",
+    "trading_day_verify": "2026-03-11",
     "is_trading_day": true,
     "system": 1741614240,
     "github": 1740733740,
@@ -9,7 +9,7 @@
     "calendar": null,
     "weather": null,
     "cron_configured": "2026-03-07T08:15:00+08:00",
-    "model_health": "2026-03-10T08:43:00+08:00",
+    "model_health": "2026-03-11T04:07:00+08:00",
     "night_trading_verify": "2026-03-10"
   },
   "lastHeartbeat": "2026-03-10T21:44:00+08:00",
