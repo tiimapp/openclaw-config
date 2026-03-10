@@ -172,7 +172,13 @@
     },
     "list": [
       {
-        "id": "main"
+        "id": "main",
+        "name": "Manager Agent",
+        "subagents": {
+          "allowAgents": [
+            "code_g"
+          ]
+        }
       },
       {
         "id": "code_g",

@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773091583837,
+      "updatedAtMs": 1773116825393,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773095173697,
-        "lastRunAtMs": 1773091573697,
+        "nextRunAtMs": 1773120417822,
+        "lastRunAtMs": 1773116817822,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10140,
+        "lastDurationMs": 7571,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773095173703
+        "runningAtMs": 1773120417826
       }
     },
     {
@@ -75,7 +75,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1773041801960,
+      "updatedAtMs": 1773111603148,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -100,7 +100,7 @@
       "delivery": {
         "mode": "announce",
         "channel": "discord",
-        "to": "discord:1475775915844960428"
+        "to": "1475775915844960428"
       }
     },
     {
@@ -301,7 +301,7 @@
       "name": "C2605  hourly-09:00",
       "enabled": true,
       "createdAtMs": 1772779072620,
-      "updatedAtMs": 1773018062022,
+      "updatedAtMs": 1773104587226,
       "schedule": {
         "expr": "0 9 * * 1-5",
         "kind": "cron",
@@ -319,11 +319,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773104400000,
-        "lastRunAtMs": 1773018000012,
+        "nextRunAtMs": 1773190800000,
+        "lastRunAtMs": 1773104400005,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 62010,
+        "lastDurationMs": 187221,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -336,7 +336,7 @@
       "name": "C2605  hourly-10:00",
       "enabled": true,
       "createdAtMs": 1772779093880,
-      "updatedAtMs": 1773021689164,
+      "updatedAtMs": 1773108055376,
       "schedule": {
         "expr": "0 10 * * 1-5",
         "kind": "cron",
@@ -354,14 +354,14 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773108000000,
-        "lastRunAtMs": 1773021600010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 89154,
-        "lastError": "cron announce delivery failed",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1773194400000,
+        "lastRunAtMs": 1773108000006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 55370,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -371,7 +371,7 @@
       "name": "C2605  hourly-11:00",
       "enabled": true,
       "createdAtMs": 1772779127218,
-      "updatedAtMs": 1773025284277,
+      "updatedAtMs": 1773111641028,
       "schedule": {
         "expr": "0 11 * * 1-5",
         "kind": "cron",
@@ -389,14 +389,14 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773111600000,
-        "lastRunAtMs": 1773025200022,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 84255,
-        "lastError": "cron announce delivery failed",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1773198000000,
+        "lastRunAtMs": 1773111600007,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 41021,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -476,7 +476,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773068520200,
+      "updatedAtMs": 1773119125517,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -489,11 +489,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773097200000,
-        "lastRunAtMs": 1773068400007,
+        "nextRunAtMs": 1773122400000,
+        "lastRunAtMs": 1773118800009,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 120193,
+        "lastDurationMs": 325508,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -606,10 +606,10 @@
     {
       "id": "69e8ae7f-ef8e-4a62-883c-5fb9c5a5924d",
       "name": "self-improvement-morning-report",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1773069023153,
-      "updatedAtMs": 1773069023153,
+      "updatedAtMs": 1773104663273,
       "schedule": {
         "kind": "at",
         "at": "2026-03-10T01:00:00.000Z"
@@ -625,7 +625,13 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773104400000
+        "lastRunAtMs": 1773104624757,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 38516,
+        "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs.",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
@@ -633,7 +639,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773094927113,
+      "updatedAtMs": 1773120178159,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -650,11 +656,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773096609631,
-        "lastRunAtMs": 1773094809631,
+        "nextRunAtMs": 1773121809731,
+        "lastRunAtMs": 1773120009731,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 117482,
+        "lastDurationMs": 168428,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
@@ -663,10 +669,10 @@
     {
       "id": "7f69e686-1793-4b24-96b8-26b1485d6584",
       "name": "skill-discovery-final-report",
-      "enabled": true,
+      "enabled": false,
       "deleteAfterRun": true,
       "createdAtMs": 1773071470727,
-      "updatedAtMs": 1773071470727,
+      "updatedAtMs": 1773097507458,
       "schedule": {
         "kind": "at",
         "at": "2026-03-09T23:00:00.000Z"
@@ -682,7 +688,13 @@
         "channel": "discord"
       },
       "state": {
-        "nextRunAtMs": 1773097200000
+        "lastRunAtMs": 1773097236838,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 270620,
+        "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs.",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     }
   ]
