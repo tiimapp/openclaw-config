@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773116825393,
+      "updatedAtMs": 1773152879700,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773120417822,
-        "lastRunAtMs": 1773116817822,
+        "nextRunAtMs": 1773156457209,
+        "lastRunAtMs": 1773152857209,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 7571,
+        "lastDurationMs": 22491,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773120417826
+        "runningAtMs": 1773156457213
       }
     },
     {
@@ -40,7 +40,7 @@
       "description": "Weekly self-improvement review - summarizes learnings and corrections",
       "enabled": true,
       "createdAtMs": 1772519400000,
-      "updatedAtMs": 1772519400000,
+      "updatedAtMs": 1773124300294,
       "schedule": {
         "kind": "every",
         "everyMs": 604800000,
@@ -58,14 +58,14 @@
         "to": "discord:431977287446167554"
       },
       "state": {
-        "nextRunAtMs": 1773124200000,
-        "lastRunAtMs": null,
-        "lastRunStatus": null,
-        "lastStatus": null,
-        "lastDurationMs": null,
-        "lastDeliveryStatus": null,
+        "nextRunAtMs": 1773729000006,
+        "lastRunAtMs": 1773124200006,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 100288,
+        "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
-        "lastDelivered": false
+        "lastDelivered": true
       }
     },
     {
@@ -75,7 +75,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1773111603148,
+      "updatedAtMs": 1773127870083,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -88,14 +88,14 @@
         "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
       },
       "state": {
-        "nextRunAtMs": 1773127800000,
-        "lastRunAtMs": 1773041400010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 401950,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1773214200000,
+        "lastRunAtMs": 1773127800005,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 70078,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       },
       "delivery": {
         "mode": "announce",
@@ -406,7 +406,7 @@
       "name": "C2605  hourly-14:00",
       "enabled": true,
       "createdAtMs": 1772779163606,
-      "updatedAtMs": 1773036080031,
+      "updatedAtMs": 1773122497494,
       "schedule": {
         "expr": "0 14 * * 1-5",
         "kind": "cron",
@@ -424,11 +424,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773122400000,
-        "lastRunAtMs": 1773036000012,
+        "nextRunAtMs": 1773208800000,
+        "lastRunAtMs": 1773122400014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 80019,
+        "lastDurationMs": 97480,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -441,7 +441,7 @@
       "name": "C2605  hourly-15:00",
       "enabled": true,
       "createdAtMs": 1772779225355,
-      "updatedAtMs": 1773039805177,
+      "updatedAtMs": 1773126059601,
       "schedule": {
         "expr": "0 15 * * 1-5",
         "kind": "cron",
@@ -459,14 +459,14 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773126000000,
-        "lastRunAtMs": 1773039600010,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 205167,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1773212400000,
+        "lastRunAtMs": 1773126000009,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 59592,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -476,7 +476,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773119125517,
+      "updatedAtMs": 1773154864429,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -489,11 +489,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773122400000,
-        "lastRunAtMs": 1773118800009,
+        "nextRunAtMs": 1773183600000,
+        "lastRunAtMs": 1773154800010,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 325508,
+        "lastDurationMs": 64419,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -505,7 +505,7 @@
       "name": "C2605 hourly-21:00",
       "enabled": true,
       "createdAtMs": 1773057809655,
-      "updatedAtMs": 1773061266734,
+      "updatedAtMs": 1773147738241,
       "schedule": {
         "expr": "0 21 * * 1-5",
         "kind": "cron",
@@ -523,11 +523,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773147600000,
-        "lastRunAtMs": 1773061245859,
+        "nextRunAtMs": 1773234000000,
+        "lastRunAtMs": 1773147649631,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20875,
+        "lastDurationMs": 88610,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -540,7 +540,7 @@
       "name": "C2605 hourly-22:00",
       "enabled": true,
       "createdAtMs": 1773057830868,
-      "updatedAtMs": 1773064907422,
+      "updatedAtMs": 1773151782954,
       "schedule": {
         "expr": "0 22 * * 1-5",
         "kind": "cron",
@@ -558,11 +558,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773151200000,
-        "lastRunAtMs": 1773064874380,
+        "nextRunAtMs": 1773237600000,
+        "lastRunAtMs": 1773151232330,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 33042,
+        "lastDurationMs": 550624,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -575,7 +575,7 @@
       "name": "C2605 hourly-23:00",
       "enabled": true,
       "createdAtMs": 1773057871118,
-      "updatedAtMs": 1773068556282,
+      "updatedAtMs": 1773154924213,
       "schedule": {
         "expr": "0 23 * * 1-5",
         "kind": "cron",
@@ -593,11 +593,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773154800000,
-        "lastRunAtMs": 1773068520200,
+        "nextRunAtMs": 1773241200000,
+        "lastRunAtMs": 1773154864429,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 36082,
+        "lastDurationMs": 59784,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -639,7 +639,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773120178159,
+      "updatedAtMs": 1773156307694,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -656,11 +656,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773121809731,
-        "lastRunAtMs": 1773120009731,
+        "nextRunAtMs": 1773157809632,
+        "lastRunAtMs": 1773156009632,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 168428,
+        "lastDurationMs": 298062,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0

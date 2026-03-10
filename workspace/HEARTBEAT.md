@@ -40,12 +40,12 @@
 ```json
 {
   "lastChecks": {
-    "trading_day_verify": "2026-03-06",
+    "trading_day_verify": "2026-03-10",
     "is_trading_day": true
   },
   "reportSchedule": {
     "ashare_daily": "15:30",
-    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
+    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00,21:00,22:00,23:00",
     "c2605_daily": "15:30"
   }
 }
@@ -63,7 +63,36 @@ python3 heartbeat_trading_check.py --force
 python3 heartbeat_trading_check.py --json
 ```
 
-### 6. C2605 Trading Time Check (During Trading Hours)
+### 6. C2605 Night Trading Verification ⭐ NEW
+**When:** Daily (can be combined with trading day check)
+**State File:** `memory/dce-trading-state.json`
+**Script:** `stock-tracker/dce_trading_verifier.py`
+
+**Purpose:** Verify if DCE Corn Futures (C2605) has night trading session (21:00-23:00)
+
+**Current Status:** ⚠️ **UNCERTAIN** (sources conflict)
+- Some sources say: Night trading ENABLED (21:00-23:00)
+- Other sources say: Night trading DISABLED
+- DCE official website: Inaccessible from overseas
+
+**Recommendation:** Continue monitoring (keep night reports active)
+
+**Test Commands:**
+```bash
+# Normal verification
+cd /home/admin/.openclaw/workspace/stock-tracker
+python3 dce_trading_verifier.py
+
+# Force re-verification
+python3 dce_trading_verifier.py --force
+
+# JSON output
+python3 dce_trading_verifier.py --json
+```
+
+**Documentation:** `stock-tracker/docs/C2605-night-trading-research.md`
+
+### 7. C2605 Trading Time Check (During Trading Hours)
 - Verify hourly reports are being generated
 - Alert if reports missed during active trading
 

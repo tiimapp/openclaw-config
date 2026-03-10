@@ -1,0 +1,31 @@
+{
+  "last_verification": "2026-03-10",
+  "night_session_enabled": null,
+  "verification_sources": [
+    {
+      "name": "Perplexity Search #1",
+      "result": "uncertain",
+      "info": "Some sources say corn has night trading 21:00-23:00",
+      "confidence": 0.5
+    },
+    {
+      "name": "Perplexity Search #2",
+      "result": "disabled",
+      "info": "Other sources say corn does NOT have night trading",
+      "confidence": 0.5
+    },
+    {
+      "name": "DCE Official Website",
+      "result": "unknown",
+      "info": "Website fetch failed (overseas IP blocked)",
+      "confidence": 0.0
+    }
+  ],
+  "notes": [
+    {
+      "date": "2026-03-10",
+      "consensus": "uncertain",
+      "action": "continue_monitoring"
+    }
+  ]
+}

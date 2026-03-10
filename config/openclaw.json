@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-09T10:47:45.222Z"
+    "lastTouchedAt": "2026-03-10T14:11:55.488Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -163,17 +163,16 @@
       "compaction": {
         "mode": "safeguard"
       },
+      "thinkingDefault": "medium",
       "timeoutSeconds": 3600,
       "maxConcurrent": 8,
       "subagents": {
         "maxConcurrent": 8
-      },
-      "thinkingDefault": "medium"
+      }
     },
     "list": [
       {
         "id": "main",
-        "name": "Manager Agent",
         "subagents": {
           "allowAgents": [
             "code_g"
@@ -187,6 +186,11 @@
         "agentDir": "/home/admin/.openclaw/agents/code_g/agent",
         "model": {
           "primary": "qwen3-max-2026-01-23/qwen3-coder-plus"
+        },
+        "subagents": {
+          "allowAgents": [
+            "main"
+          ]
         }
       }
     ]
@@ -204,19 +208,10 @@
           "model": "qwen3-max-2026-01-23"
         }
       }
+    },
+    "sessions": {
+      "visibility": "all"
     }
-  },
-  "messages": {
-    "ackReactionScope": "group-mentions"
-  },
-  "commands": {
-    "native": "auto",
-    "nativeSkills": "auto",
-    "restart": true,
-    "ownerDisplay": "raw"
-  },
-  "session": {
-    "dmScope": "per-channel-peer"
   },
   "bindings": [
     {
@@ -236,19 +231,26 @@
       }
     }
   ],
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer",
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "3d",
+      "maxEntries": 50
+    }
+  },
   "channels": {
     "discord": {
       "enabled": true,
-      "accounts": {
-        "default": {
-          "name": "Main",
-          "token": "<$TOKEN>"
-        },
-        "code_g": {
-          "name": "Code_G",
-          "token": "<$TOKEN>"
-        }
-      },
       "groupPolicy": "allowlist",
       "streaming": "off",
       "guilds": {
@@ -263,6 +265,24 @@
             "1474758461798486200",
             "1476495121187999836"
           ]
+        }
+      },
+      "threadBindings": {
+        "enabled": true,
+        "spawnSubagentSessions": true
+      },
+      "accounts": {
+        "default": {
+          "name": "Main",
+          "token": "<$TOKEN>",
+          "groupPolicy": "allowlist",
+          "streaming": "off"
+        },
+        "code_g": {
+          "name": "Code_G",
+          "token": "<$TOKEN>",
+          "groupPolicy": "allowlist",
+          "streaming": "off"
         }
       }
     }

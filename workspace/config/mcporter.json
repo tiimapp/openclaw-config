@@ -4,5 +4,8 @@
       "baseUrl": "https://mcp.exa.ai/mcp"
     }
   },
-  "imports": []
+  "imports": [],
+  "tavily": {
+    "note": "Use tavily-python package directly (not via MCP)"
+  }
 }
