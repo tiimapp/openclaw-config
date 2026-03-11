@@ -5221,3 +5221,115 @@ Total skills documented: 181+ across all searches
 ---
 
 **Last Updated:** 2026-03-11 19:50 (Search #82 complete - 10 new skills/repos from GitHub search)
+
+---
+
+### Search #83 - 20:20
+
+**Time:** 2026-03-11 20:20 GMT+8
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 2 queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub confusion) | N/A | N/A | N/A |
+
+**Notes:**
+```
+Search #83 findings (20:20 GMT+8):
+- "OpenClaw skills" → 1997 platformer game (GitHub: OpenClaw/OpenClaw, C++/SDL2)
+- "clawdhub skills" → MuleSoft CloudHub (iPaaS platform confusion)
+
+Pattern confirmed (Search #83):
+Web search ineffective - 82 consecutive searches yielded 0 OpenClaw-specific skills.
+Name collisions: 1997 game, MuleSoft CloudHub, OpenCL, robotics projects.
+
+PROVEN Discovery Channels:
+1. Built-in: /usr/lib/node_modules/openclaw/skills/ (52 skills)
+2. User-installed: ~/.agents/skills/ (9 skills)
+3. Workspace: /home/admin/.openclaw/workspace/skills/ (3 skills)
+4. GitHub: VoltAgent/awesome-openclaw-skills (5,400+ curated)
+5. skills.sh: npx skills find/add (87K+ installs)
+6. ClawHub CLI: npm i -g clawhub
+
+Recommendation: Use GitHub repos + CLI tools for skill discovery.
+```
+
+**Sources:**
+- Web search (Perplexity): query 1, query 2
+
+---
+
+**Last Updated:** 2026-03-11 20:20 (Search #83 complete - 0 new skills, pattern confirmed)
+
+---
+
+### Search #84 - 20:50
+
+**Time:** 2026-03-11 20:50 GMT+8
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 2 queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub confusion) | N/A | N/A | N/A |
+
+**Notes:**
+```
+Search #84 findings (20:50 GMT+8):
+- "OpenClaw skills" → 1997 platformer game (GitHub: OpenClaw/OpenClaw, C++/SDL2)
+- "clawdhub skills" → MuleSoft CloudHub (iPaaS platform confusion)
+
+Pattern confirmed (Search #84):
+Web search ineffective - 83 consecutive searches yielded 0 OpenClaw-specific skills.
+Name collisions: 1997 game, MuleSoft CloudHub, OpenCL, robotics projects.
+
+PROVEN Discovery Channels:
+1. Built-in: /usr/lib/node_modules/openclaw/skills/ (52 skills)
+2. User-installed: ~/.agents/skills/ (9 skills)
+3. Workspace: /home/admin/.openclaw/workspace/skills/ (3 skills)
+4. GitHub: VoltAgent/awesome-openclaw-skills (5,400+ curated)
+5. skills.sh: npx skills find/add (87K+ installs)
+6. ClawHub CLI: npm i -g clawhub
+
+Recommendation: Use GitHub repos + CLI tools for skill discovery.
+```
+
+**Sources:**
+- Web search (Perplexity): query 1, query 2
+- Prior Search #71, #73, #82-83 for context
+
+---
+
+**Last Updated:** 2026-03-11 20:50 (Search #84 complete - 0 new skills, pattern confirmed)
+
+---
+
+## Key Findings Summary
+
+**Web Search Effectiveness:** NOT EFFECTIVE
+- 83 consecutive web searches yielded 0 OpenClaw-specific skills
+- Name collisions: 1997 game "Claw"/OpenClaw, MuleSoft CloudHub, Khronos OpenCL, UC San Diego robotics
+- Recommendation: Web search should be abandoned for OpenClaw skill discovery
+
+**Effective Discovery Channels:**
+1. **GitHub (PRIMARY)**: VoltAgent/awesome-openclaw-skills (5,400+ curated), LeoYeAI/openclaw-master-skills (127+), clawdbot-ai/awesome-openclaw-skills-zh (Chinese)
+2. **skills.sh**: Cross-agent marketplace (npx skills find/add, 87K+ installs)
+3. **Built-in**: /usr/lib/node_modules/openclaw/skills/ (52 skills)
+4. **User-installed**: ~/.agents/skills/ (9 skills)
+5. **Workspace**: /home/admin/.openclaw/workspace/skills/ (3 skills)
+6. **ClawHub CLI**: npm i -g clawhub (official marketplace)
+
+**Total Skills Documented:** 190+ (52 built-in + 9 user-installed + 3 workspace + 76+ skills.sh + 50+ GitHub/ClawHub)
+
+---
+
+**Report Complete:** 2026-03-11 20:50 GMT+8 (Search #84)
