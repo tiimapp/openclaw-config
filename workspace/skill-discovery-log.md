@@ -5096,3 +5096,128 @@ No actionable new skills found this search cycle.
 ---
 
 **Last Updated:** 2026-03-11 18:50 (Search #80 complete - web search confirmed ineffective)
+
+---
+
+### Search #81 - 19:20
+
+**Time:** 2026-03-11 19:20 GMT+8
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 2 queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub confusion) | N/A | N/A | N/A |
+
+**Notes:**
+```
+Search #81 findings (19:20 GMT+8):
+- "OpenClaw skills" → 1997 platformer game (GitHub: OpenClaw/OpenClaw, C++/SDL2)
+- "clawdhub skills" → MuleSoft CloudHub (iPaaS platform confusion)
+
+Pattern confirmed (Search #81):
+Web search ineffective - 80 consecutive searches yielded 0 OpenClaw-specific skills.
+Name collisions: 1997 game, MuleSoft CloudHub, OpenCL, robotics projects.
+
+PROVEN Discovery Channels:
+1. Built-in: /usr/lib/node_modules/openclaw/skills/ (52 skills)
+2. User-installed: ~/.agents/skills/ (9 skills)
+3. Workspace: /home/admin/.openclaw/workspace/skills/ (3 skills)
+4. GitHub: VoltAgent/awesome-openclaw-skills (5,400+ curated)
+5. skills.sh: npx skills find/add (87K+ installs)
+6. ClawHub CLI: npm i -g clawhub
+
+Recommendation: Web search abandoned. Use GitHub repos + CLI tools.
+```
+
+**Sources:**
+- Web search (Perplexity): query 1, query 2
+- Prior Search #71, #73, #80 for context
+
+---
+
+**Last Updated:** 2026-03-11 19:20 (Search #81 complete - 0 new skills, pattern confirmed)
+
+
+---
+
+### Search #82 - 19:50
+
+**Time:** 2026-03-11 19:50 GMT+8
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 2 queries
+- GitHub search (gh CLI)
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| **awesome-openclaw-skills** | 5,400+ skills filtered/categorized from official ClawHub registry | VoltAgent/awesome-openclaw-skills | `git clone https://github.com/VoltAgent/awesome-openclaw-skills.git` | High |
+| **awesome-openclaw-skills-zh** | Chinese translation of official ClawHub skills, organized by scenario | clawdbot-ai/awesome-openclaw-skills-zh | `git clone https://github.com/clawdbot-ai/awesome-openclaw-skills-zh.git` | Medium |
+| **openclaw-master-skills** | 127+ curated best skills, weekly updated from skills.sh, GitHub & ClawHub | LeoYeAI/openclaw-master-skills | `git clone https://github.com/LeoYeAI/openclaw-master-skills.git` | High |
+| **awesome-openclaw-skills** | Top OpenClaw skills - most popular and useful | sundial-org/awesome-openclaw-skills | `git clone https://github.com/sundial-org/awesome-openclaw-skills.git` | Medium |
+| **model-hierarchy-skill** | Cost-optimized model routing based on task complexity | zscole/model-hierarchy-skill | `npx skills add zscole/model-hierarchy-skill@default -g -y` | Medium |
+| **capminal-openclaw-skills** | Capminal OpenClaw Skills collection | Capminal/openclaw-skills | `git clone https://github.com/Capminal/openclaw-skills.git` | Low |
+| **x-bookmarks** | Turn X/Twitter bookmarks into agent actions | sharbelxyz/x-bookmarks | `npx skills add sharbelxyz/x-bookmarks@default -g -y` | Medium |
+| **x-tweet-fetcher** | Fetch tweets and replies from X/Twitter without login or API keys | ythx-101/x-tweet-fetcher | `npx skills add ythx-101/x-tweet-fetcher@default -g -y` | Medium |
+| **clawpod** | Works with Massive proxy network | joinmassive/clawpod | `npx skills add joinmassive/clawpod@default -g -y` | Low |
+| **openclaw-search-skills** | Multi-source search, content extraction, structured research reports | blessonism/openclaw-search-skills | `npx skills add blessonism/openclaw-search-skills@default -g -y` | High |
+
+**Notes:**
+```
+Search #82 findings (19:50 GMT+8):
+GitHub search for "openclaw skills" yielded multiple relevant repositories:
+
+1. VoltAgent/awesome-openclaw-skills (HIGH PRIORITY):
+   - 5,400+ curated skills from official ClawHub registry (13,729 total)
+   - Filtered: 4,065 spam/bot accounts, 1,040 duplicates, 851 low-quality
+   - Security: VirusTotal scanning recommended
+   - Categories: 170+ Git, 1222 Coding Agents, 938 Web/Frontend, 409 DevOps
+
+2. clawdbot-ai/awesome-openclaw-skills-zh:
+   - Chinese translation of official ClawHub skills
+   - Categorized by scenario, Chinese natural language call support
+
+3. LeoYeAI/openclaw-master-skills:
+   - 127+ best skills, weekly updated
+   - Sources: skills.sh, GitHub, ClawHub
+   - Powered by MyClaw.ai
+
+4. sundial-org/awesome-openclaw-skills:
+   - Top popular and useful OpenClaw skills
+   - Curated selection
+
+5. Individual skill repositories:
+   - model-hierarchy-skill: Cost-optimized LLM model routing
+   - capminal-openclaw-skills: Capminal skill collection
+   - x-bookmarks: X bookmarks → agent actions
+   - x-tweet-fetcher: Twitter data without API
+   - clawpod: Massive proxy integration
+   - openclaw-search-skills: Deep search capabilities
+
+Web search status:
+- Still returns 1997 platformer game, MuleSoft CloudHub confusion
+- Web search continues ineffective (81+ consecutive searches, 0 results)
+
+Total skills documented: 181+ across all searches
+```
+
+**Sources:**
+- https://github.com/VoltAgent/awesome-openclaw-skills
+- https://github.com/clawdbot-ai/awesome-openclaw-skills-zh
+- https://github.com/LeoYeAI/openclaw-master-skills
+- https://github.com/sundial-org/awesome-openclaw-skills
+- https://github.com/ythx-101/x-bookmarks
+- https://github.com/ythx-101/x-tweet-fetcher
+- https://github.com/joinmassive/clawpod
+- https://github.com/blessonism/openclaw-search-skills
+
+---
+
+**Last Updated:** 2026-03-11 19:50 (Search #82 complete - 10 new skills/repos from GitHub search)
