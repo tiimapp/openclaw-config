@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-10T14:11:55.488Z"
+    "lastTouchedAt": "2026-03-10T13:40:30.582Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -177,6 +177,16 @@
           "allowAgents": [
             "code_g"
           ]
+        },
+        "tools": {
+          "allow": [
+            "sessions_list",
+            "sessions_history",
+            "sessions_send",
+            "sessions_spawn",
+            "web_search",
+            "exec"
+          ]
         }
       },
       {
@@ -190,6 +200,16 @@
         "subagents": {
           "allowAgents": [
             "main"
+          ]
+        },
+        "tools": {
+          "allow": [
+            "sessions_list",
+            "sessions_history",
+            "sessions_send",
+            "sessions_spawn",
+            "web_search",
+            "exec"
           ]
         }
       }

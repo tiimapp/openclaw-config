@@ -92,6 +92,45 @@ python3 dce_trading_verifier.py --json
 
 **Documentation:** `stock-tracker/docs/C2605-night-trading-research.md`
 
+#### 🔍 Tavily Search Verification (Recommended Data Source)
+
+**Setup:**
+```bash
+# Install Tavily SDK
+pip install tavily-python
+
+# Set API Key (add to ~/.openclaw/.env)
+export TAVILY_API_KEY='tvly-xxxxxxxxxxxxxxxxxxxx'
+```
+
+**Quick Verification:**
+```python
+from tavily import TavilyClient
+import os
+
+client = TavilyClient(api_key=os.environ['TAVILY_API_KEY'])
+response = client.search(
+    query="大连商品交易所 玉米期货 夜盘交易时间 2026",
+    search_depth="advanced",
+    max_results=5,
+    include_answer=True,
+    topic="finance",  # Finance topic filter
+    days=7  # Last 7 days only
+)
+
+print(response['answer'])  # AI-synthesized answer
+print(response['results'])  # Sources with URLs
+```
+
+**Advantages:**
+- ✅ AI-generated direct answer (no manual reading)
+- ✅ Time filtering (`days=7` for latest info)
+- ✅ Topic filtering (`topic="finance"`)
+- ✅ Cited sources with URLs (traceable)
+- ✅ Clean results, no ads (agent-optimized)
+
+**Integration:** Add Tavily verification to `dce_trading_verifier.py` as primary data source.
+
 ### 7. C2605 Trading Time Check (During Trading Hours)
 - Verify hourly reports are being generated
 - Alert if reports missed during active trading

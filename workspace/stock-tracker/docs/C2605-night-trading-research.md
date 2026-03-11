@@ -162,6 +162,107 @@ python3 dce_trading_verifier.py --json > /tmp/dce_verify.json
 
 ---
 
+## 🔍 Tavily Search 验证方法 (新增)
+
+### 安装与配置
+
+```bash
+# 1. 安装 Tavily Python SDK
+pip install tavily-python
+
+# 2. 设置 API Key (添加到 ~/.openclaw/.env)
+export TAVILY_API_KEY='tvly-xxxxxxxxxxxxxxxxxxxx'
+```
+
+### 验证脚本示例
+
+```python
+from tavily import TavilyClient
+import os
+
+client = TavilyClient(api_key=os.environ['TAVILY_API_KEY'])
+
+# 查询夜盘交易时间
+response = client.search(
+    query="大连商品交易所 玉米期货 C2605 夜盘交易时间 2026",
+    search_depth="advanced",
+    max_results=5,
+    include_answer=True,
+    topic="finance",  # 财经主题过滤
+    days=7  # 仅最近 7 天的信息
+)
+
+print("AI 综合答案:", response['answer'])
+print("\n引用来源:")
+for result in response['results']:
+    print(f"- {result['title']}: {result['url']}")
+```
+
+### 预期输出
+
+```json
+{
+  "query": "大连商品交易所 玉米期货 C2605 夜盘交易时间 2026",
+  "answer": "根据大连商品交易所公告，玉米期货自 20XX 年 X 月 X 日起纳入夜盘交易，交易时间为 21:00-23:00...",
+  "results": [
+    {
+      "title": "大商所关于调整玉米期货夜盘交易时间的通知",
+      "url": "https://www.dce.com.cn/dalianshangpin/tzgg/xxxxxx.html",
+      "content": "...",
+      "score": 0.95,
+      "published_date": "2026-03-05"
+    }
+  ]
+}
+```
+
+### 优势
+
+| 特性 | 说明 |
+|------|------|
+| **AI 综合答案** | 直接返回综合结论，无需人工阅读多个页面 |
+| **时间过滤** | `days=7` 确保获取最新信息 |
+| **主题过滤** | `topic="finance"` 过滤无关结果 |
+| **引用来源** | 每个结果都有 URL 和内容摘要，可追溯 |
+| **无广告** | 干净的搜索结果，适合自动化处理 |
+
+### 集成到自动化流程
+
+```bash
+# 在 dce_trading_verifier.py 中添加 Tavily 验证
+python3 -c "
+from tavily import TavilyClient
+import os, json
+
+client = TavilyClient(api_key=os.environ['TAVILY_API_KEY'])
+r = client.search('玉米期货 夜盘 大商所 2026', topic='finance', days=7)
+
+# 解析结果，判断是否有夜盘
+has_night = '21:00' in r['answer'] or '夜盘' in r['answer']
+print(json.dumps({'has_night_session': has_night, 'answer': r['answer']}))
+"
+```
+
+### 独立验证脚本
+
+**位置:** `stock-tracker/docs/tavily-verification-example.py`
+
+```bash
+# 基本验证
+python3 docs/tavily-verification-example.py
+
+# JSON 输出 (用于自动化)
+python3 docs/tavily-verification-example.py --json
+
+# 自定义搜索时间范围
+python3 docs/tavily-verification-example.py --days 14
+
+# 自定义查询
+python3 docs/tavily-verification-example.py --query "大商所 夜盘品种列表 2026"
+```
+
+---
+
 ## 🔍 可靠数据源优先级
 
 ### 官方数据源 (最可靠)
@@ -170,6 +271,14 @@ python3 dce_trading_verifier.py --json > /tmp/dce_verify.json
    - 通知公告 → 休市安排
 2. **中国证监会官网** - `http://www.csrc.gov.cn`
 3. **中国期货业协会** - `http://www.cfachina.org`
+
+### AI 搜索验证工具 ⭐ (推荐用于自动化验证)
+1. **Tavily Search API** - `https://tavily.com`
+   - 专为 AI Agent 设计的搜索 API
+   - 支持时间过滤 (`days` 参数)
+   - 支持主题过滤 (`topic: "finance"`)
+   - 返回 AI 综合答案 + 引用来源
+   - **优势:** 干净结果无广告，适合自动化验证
 
 ### 第三方数据源 (需交叉验证)
 1. **东方财富网期货频道** - `https://futures.eastmoney.com`
@@ -181,6 +290,7 @@ python3 dce_trading_verifier.py --json > /tmp/dce_verify.json
 1. **多源交叉验证** - 至少 3 个独立来源确认
 2. **时间戳检查** - 优先采用最近 30 天的信息
 3. **官方优先** - 如有冲突，以官方公告为准
+4. **Tavily 快速验证** - 使用 `topic="finance"` + `days=7` 获取最新财经资讯
 
 ---
 
