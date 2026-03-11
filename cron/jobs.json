@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773240812549,
+      "updatedAtMs": 1773244404511,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773244393081,
-        "lastRunAtMs": 1773240793081,
+        "nextRunAtMs": 1773247993089,
+        "lastRunAtMs": 1773244393089,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19468,
+        "lastDurationMs": 11422,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773244393086
+        "runningAtMs": 1773247993093
       }
     },
     {
@@ -639,7 +639,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773244317930,
+      "updatedAtMs": 1773247928130,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -656,11 +656,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773246009690,
-        "lastRunAtMs": 1773244209690,
+        "nextRunAtMs": 1773249609704,
+        "lastRunAtMs": 1773247809704,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 108240,
+        "lastDurationMs": 118426,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
