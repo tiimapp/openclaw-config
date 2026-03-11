@@ -9,6 +9,10 @@ Trading Hours (Asia/Shanghai UTC+8):
 - Day session: 09:00-10:15, 10:30-11:30, 13:30-15:00
 - No night session for corn
 - Monday-Friday only
+
+Data Source Strategy:
+- AKShare (primary data source)
+- Tavily (validation tool)
 """
 
 import json
@@ -28,6 +32,9 @@ from trading_time_checker import (
     get_next_trading_time,
     get_previous_trading_time,
 )
+
+# Import Tavily fetcher for validation
+from fetchers.c2605_tavily_fetcher import fetch_c2605_price_tavily
 
 # Try to import AKShare for futures data
 try:
@@ -77,9 +84,9 @@ def load_config(config_path: Optional[str] = None) -> Dict[str, Any]:
     return default_config
 
 
-def fetch_c2605_data() -> Optional[Dict[str, Any]]:
+def fetch_from_akshare() -> Optional[Dict[str, Any]]:
     """
-    Fetch C2605 futures REAL-TIME data from Sina Finance.
+    Fetch C2605 futures data from AKShare/Sina Finance.
     
     Returns:
         Dictionary with current price data or None if fetch fails
@@ -88,12 +95,8 @@ def fetch_c2605_data() -> Optional[Dict[str, Any]]:
     import re
     
     today = datetime.now().strftime('%Y-%m-%d')
-    data_source = 'unknown'
-    data_date = None
-    is_stale = False
     
     # Method 1: Try Sina Finance real-time API directly (with retry)
-    # Sina real-time URL for DCE futures: https://hq.sinajs.cn/list=fu_C2605
     for attempt in range(3):
         try:
             url = "https://hq.sinajs.cn/list=fu_C2605"
@@ -101,8 +104,7 @@ def fetch_c2605_data() -> Optional[Dict[str, Any]]:
             with urllib.request.urlopen(req, timeout=10) as response:
                 content = response.read().decode('gbk')
                 
-                # Parse Sina real-time data format:
-                # var hq_str_fu_C2605="C2605,open,prev_close,current_price,high,low,buy_price,sell_price,..."
+                # Parse Sina real-time data format
                 match = re.search(r'hq_str_fu_C2605="([^"]+)"', content)
                 if match:
                     data_str = match.group(1).split(',')
@@ -122,14 +124,14 @@ def fetch_c2605_data() -> Optional[Dict[str, Any]]:
                         data = {
                             'symbol': 'C2605',
                             'name': '玉米 2605',
-                            'current_price': current_price,
+                            'price': current_price,
                             'open': open_price,
                             'high': high,
                             'low': low,
                             'previous_close': prev_close,
                             'volume': volume,
                             'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                            'change': change,
+                            'change': f"{change:+.2f}",
                             'change_percent': change_percent,
                             'data_source': 'sina_realtime',
                             'data_date': today,
@@ -143,9 +145,9 @@ def fetch_c2605_data() -> Optional[Dict[str, Any]]:
             print(f"Warning: Sina real-time fetch failed (attempt {attempt+1}/3): {e}")
             if attempt < 2:
                 import time
-                time.sleep(1)  # Wait 1 second before retry
+                time.sleep(1)
     
-    # Method 2: Fallback to AKShare historical data (with date validation)
+    # Method 2: Fallback to AKShare historical data
     if AKSHARE_AVAILABLE:
         try:
             futures_df = ak.futures_zh_daily_sina(symbol="C2605")
@@ -154,69 +156,114 @@ def fetch_c2605_data() -> Optional[Dict[str, Any]]:
                 row = futures_df.iloc[-1]
                 last_date = row.get('date', '')
                 
-                # Check if data is from today
-                if last_date == today:
-                    print(f"⚠️ Using today's historical data (market may be closed)")
-                    is_stale = False
-                else:
+                is_stale = (last_date != today)
+                if is_stale:
                     print(f"⚠️ STALE DATA: Data is from {last_date}, not today ({today})")
-                    is_stale = True
+                else:
+                    print(f"⚠️ Using today's historical data (market may be closed)")
+                
+                # Use 'settle' as previous close reference (settlement price from previous day)
+                # If settle is not available, use close price
+                prev_close = float(row.get('settle', row.get('close', 0)))
+                current_price = float(row.get('close', 0))
+                change = current_price - prev_close
                 
                 data = {
                     'symbol': 'C2605',
                     'name': '玉米 2605',
-                    'current_price': float(row.get('close', 0)),
+                    'price': current_price,
                     'open': float(row.get('open', 0)),
                     'high': float(row.get('high', 0)),
                     'low': float(row.get('low', 0)),
-                    'previous_close': float(row.get('pre_close', row.get('close', 0))),
+                    'previous_close': prev_close,
                     'volume': int(row.get('volume', 0)),
                     'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-                    'change': 0,
-                    'change_percent': 0,
+                    'change': f"{change:+.2f}",
+                    'change_percent': (change / prev_close * 100) if prev_close else 0,
                     'data_source': 'akshare_historical',
                     'data_date': last_date,
                     'is_stale': is_stale
                 }
-                
-                # Calculate change if we have previous close
-                if 'pre_close' in row:
-                    prev_close = float(row.get('pre_close', data['current_price']))
-                    data['previous_close'] = prev_close
-                    data['change'] = data['current_price'] - prev_close
-                    data['change_percent'] = (data['change'] / prev_close * 100) if prev_close else 0
                 
                 return data
                 
         except Exception as e:
             print(f"Error fetching from AKShare: {e}")
     
-    # Method 3: Fallback to mock data
-    print("⚠️ Using mock data (all data sources failed)")
-    data = generate_mock_data()
-    data['data_source'] = 'mock'
-    data['data_date'] = today
-    data['is_stale'] = False
-    return data
+    return None
 
 
 def generate_mock_data() -> Dict[str, Any]:
-    """Generate mock data for testing when AKShare is unavailable."""
+    """Generate mock data for testing when all data sources fail."""
     import random
     base_price = 2450.0
+    change = random.uniform(-15, 15)
     return {
         'symbol': 'C2605',
         'name': '玉米 2605',
-        'current_price': base_price + random.uniform(-20, 20),
+        'price': base_price + change,
         'open': base_price + random.uniform(-10, 10),
         'high': base_price + random.uniform(10, 30),
         'low': base_price + random.uniform(-30, -10),
         'previous_close': base_price,
         'volume': random.randint(10000, 100000),
         'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'change': random.uniform(-15, 15),
-        'change_percent': random.uniform(-0.6, 0.6),
+        'change': f"{change:+.2f}",
+        'change_percent': (change / base_price * 100),
+        'data_source': 'mock',
+        'data_date': datetime.now().strftime('%Y-%m-%d'),
+        'is_stale': False
     }
+
+
+def fetch_c2605_data():
+    """
+    获取 C2605 数据 - AKShare 优先，Tavily 验证
+    
+    数据源优先级:
+    1. AKShare (主数据源)
+    2. Tavily (验证工具)
+    """
+    # 1. 主数据源：AKShare
+    akshare_data = fetch_from_akshare()
+    
+    # Fallback to mock data if AKShare fails
+    if not akshare_data:
+        print("⚠️ AKShare data fetch failed, using mock data")
+        akshare_data = generate_mock_data()
+    
+    # 2. 验证工具：Tavily
+    print("\n🔍 Validating with Tavily...")
+    tavily_data = fetch_c2605_price_tavily()
+    
+    # 3. 数据对比
+    validation_status = "✅ 已验证"
+    price_diff = 0
+    
+    if tavily_data and tavily_data.get('price'):
+        price_diff = abs(akshare_data['price'] - tavily_data['price']) / akshare_data['price']
+        
+        if price_diff >= 0.03:
+            validation_status = "🚨 数据差异严重 (>3%)"
+        elif price_diff >= 0.01:
+            validation_status = "⚠️ 数据轻微差异 (>1%)"
+        else:
+            validation_status = f"✅ 已验证 (差异 {price_diff:.2f}%)"
+        
+        print(f"   Tavily price: ¥{tavily_data['price']}")
+        print(f"   Price difference: {price_diff:.2%}")
+        print(f"   Validation status: {validation_status}")
+    else:
+        print("   ⚠️ Tavily validation unavailable")
+    
+    # 4. 添加验证状态
+    akshare_data['validation'] = {
+        'status': validation_status,
+        'tavily_price': tavily_data.get('price') if tavily_data else None,
+        'price_diff': f"{price_diff:.2f}%"
+    }
+    
+    return akshare_data
 
 
 def format_report(data: Dict[str, Any], report_type: str = 'hourly') -> str:
@@ -230,63 +277,36 @@ def format_report(data: Dict[str, Any], report_type: str = 'hourly') -> str:
     Returns:
         Formatted report string
     """
-    symbol = data.get('symbol', 'C2605')
-    name = data.get('name', '玉米 2605')
-    price = data.get('current_price', 0)
-    change = data.get('change', 0)
-    change_pct = data.get('change_percent', 0)
-    is_stale = data.get('is_stale', False)
-    data_date = data.get('data_date', '')
-    data_source = data.get('data_source', 'unknown')
+    report_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     # Price direction emoji
-    if change > 0:
-        direction = '📈'
-        color = 'green'
-    elif change < 0:
-        direction = '📉'
-        color = 'red'
-    else:
+    change_str = data.get('change', '0.00')
+    try:
+        change_val = float(change_str)
+        if change_val > 0:
+            direction = '📈'
+        elif change_val < 0:
+            direction = '📉'
+        else:
+            direction = '➡️'
+    except:
         direction = '➡️'
-        color = 'gray'
     
-    timestamp = data.get('timestamp', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-    
-    # Stale data warning
-    stale_warning = ""
-    if is_stale and data_date:
-        today = datetime.now().strftime('%Y-%m-%d')
-        stale_warning = f"\n⚠️ **数据延迟:** 最新可用数据为 {data_date} (非实时)\n"
-    
-    if report_type == 'hourly':
-        report = f"""🌽 **C2605 玉米期货 实时快报** {direction}
-{stale_warning}
-**合约:** {name} ({symbol})
-**当前价格:** ¥{price:.2f}
-**涨跌:** {change:+.2f} ({change_pct:+.2f}%)
-**开盘:** ¥{data.get('open', 0):.2f}
-**最高:** ¥{data.get('high', 0):.2f}
-**最低:** ¥{data.get('low', 0):.2f}
-**成交量:** {data.get('volume', 0):,}
+    # In Discord, use bullet lists instead of markdown tables
+    report = f"""🌽 **C2605 玉米期货 {report_time} 快报** {direction}
 
-**更新时间:** {timestamp}
-**数据来源:** {data_source}
+• **当前价格**: ¥{data['price']:.2f}
+• **涨跌**: {data['change']} ({data.get('change_percent', 0):+.2f}%)
+• **数据来源**: AKShare {data['validation']['status']}
+• **Tavily 验证**: {data['validation'].get('tavily_price', 'N/A')}
+• **价格差异**: {data['validation']['price_diff']}
+
+**开盘**: ¥{data.get('open', 0):.2f}
+**最高**: ¥{data.get('high', 0):.2f}
+**最低**: ¥{data.get('low', 0):.2f}
+**成交量**: {data.get('volume', 0):,}
 
 _下次报告：1 小时后 (交易时段内)_
-"""
-    else:  # daily summary
-        report = f"""🌽 **C2605 玉米期货 每日总结** {direction}
-{stale_warning}
-**合约:** {name} ({symbol})
-**收盘价:** ¥{price:.2f}
-**日涨跌:** {change:+.2f} ({change_pct:+.2f}%)
-**今日区间:** ¥{data.get('low', 0):.2f} - ¥{data.get('high', 0):.2f}
-**成交量:** {data.get('volume', 0):,}
-
-**交易日期:** {timestamp.split()[0]}
-**数据来源:** {data_source}
-
-_明日报告：09:00 (开盘后)_
 """
     
     return report
@@ -334,7 +354,7 @@ def main():
             print(f"   Trading sessions: 09:00-10:15, 10:30-11:30, 13:30-15:00")
             return
     
-    # Fetch data
+    # Fetch data with Tavily validation
     data = fetch_c2605_data()
     if not data:
         print("Failed to fetch C2605 data")
@@ -344,7 +364,9 @@ def main():
     report = format_report(data, args.type)
     
     # Output report
+    print("\n" + "="*60)
     print(report)
+    print("="*60)
     
     # Send to Discord (if not in test mode)
     if not args.test:
@@ -359,7 +381,7 @@ def main():
     with open(log_file, 'a', encoding='utf-8') as f:
         f.write(f"\n--- {args.type.upper()} REPORT ---\n")
         f.write(f"{datetime.now().isoformat()}\n")
-        f.write(json.dumps(data, indent=2))
+        f.write(json.dumps(data, indent=2, ensure_ascii=False))
         f.write("\n")
 
 

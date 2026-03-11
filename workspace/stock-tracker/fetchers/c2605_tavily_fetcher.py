@@ -359,3 +359,23 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+
+
+def fetch_c2605_price_tavily(symbol: str = 'C2605') -> Optional[Dict[str, Any]]:
+    """
+    Wrapper function for C2605 price fetch - returns normalized data structure.
+    
+    This function is designed to be used as a validation source alongside AKShare.
+    
+    Returns:
+        Dictionary with 'price' key for compatibility
+    """
+    data = fetch_c2605_price(symbol)
+    
+    if data:
+        # Normalize to use 'price' instead of 'current_price' for compatibility
+        if 'current_price' in data and 'price' not in data:
+            data['price'] = data['current_price']
+        return data
+    
+    return None
