@@ -141,6 +141,23 @@
             },
             "contextWindow": 262144,
             "maxTokens": 32768
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768
           }
         ]
       }
@@ -149,7 +166,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "qwen3-max-2026-01-23/qwen3.5-plus"
+        "primary": "qwen3-max-2026-01-23/MiniMax-M2.5"
       },
       "models": {
         "qwen3-max-2026-01-23/qwen3.5-plus": {},

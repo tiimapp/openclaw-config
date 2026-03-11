@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773208249843,
+      "updatedAtMs": 1773211983121,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773211811623,
-        "lastRunAtMs": 1773208211623,
+        "nextRunAtMs": 1773215572871,
+        "lastRunAtMs": 1773211972871,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 38220,
+        "lastDurationMs": 10250,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773211972870
+        "runningAtMs": 1773215572875
       }
     },
     {
@@ -75,7 +75,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1773127870083,
+      "updatedAtMs": 1773214273502,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -88,11 +88,11 @@
         "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
       },
       "state": {
-        "nextRunAtMs": 1773214200000,
-        "lastRunAtMs": 1773127800005,
+        "nextRunAtMs": 1773300600000,
+        "lastRunAtMs": 1773214200006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 70078,
+        "lastDurationMs": 73496,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -441,7 +441,7 @@
       "name": "C2605  hourly-15:00",
       "enabled": true,
       "createdAtMs": 1772779225355,
-      "updatedAtMs": 1773126059601,
+      "updatedAtMs": 1773212435063,
       "schedule": {
         "expr": "0 15 * * 1-5",
         "kind": "cron",
@@ -459,11 +459,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773212400000,
-        "lastRunAtMs": 1773126000009,
+        "nextRunAtMs": 1773298800000,
+        "lastRunAtMs": 1773212400006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 59592,
+        "lastDurationMs": 35057,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -476,7 +476,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773208893087,
+      "updatedAtMs": 1773212555228,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -489,11 +489,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773212400000,
-        "lastRunAtMs": 1773208844828,
+        "nextRunAtMs": 1773216000000,
+        "lastRunAtMs": 1773212435063,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 48259,
+        "lastDurationMs": 120165,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -639,7 +639,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773211970859,
+      "updatedAtMs": 1773215542157,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -656,11 +656,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773213609565,
-        "lastRunAtMs": 1773211809565,
+        "nextRunAtMs": 1773217209578,
+        "lastRunAtMs": 1773215409578,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 161294,
+        "lastDurationMs": 132579,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false

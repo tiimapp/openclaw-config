@@ -81,6 +81,7 @@
 | 68 | 09:50 | ✅ Complete | 0 | skills.sh leaderboard refresh (all top publishers previously documented) |
 | 69 | 10:20 | ✅ Complete | 0 | Web search + skills.sh refresh (68 searches, 0 results - all publishers documented) |
 | 70 | 10:50 | ✅ Complete | 0 | Web search timeout + skills.sh refresh (69 searches, 0 results - all publishers documented) |
+| 71 | 15:20 | ✅ Complete | 4 | Web search + local skills: self-improving-agent, github, tavily-search, agent-reach |
 | **Report** | **07:00** | ⏳ Pending | - | **Final summary** |
 
 ---
@@ -1027,7 +1028,7 @@ skills.sh has broader ecosystem (multi-agent) vs clawhub (OpenClaw-specific)
 
 | Metric | Count |
 |--------|-------|
-| Total Searches | 70 |
+| Total Searches | 71 |
 | Skills Found | 181+ (52 built-in + 9 user-installed + 3 workspace + 76+ skills.sh + 20+ ClawHub/GitHub + 21 SKILL.md deep-dive) |
 | High Priority | 50+ |
 | Medium Priority | 80+ |
@@ -4668,3 +4669,104 @@ No actionable new skills found this search cycle.
 ---
 
 **Report Complete:** 2026-03-11 14:50 GMT+8 (Search #72)
+
+
+---
+
+### Search #71 - 15:20
+
+**Time:** 2026-03-11 15:20 GMT+8
+
+**Keywords:** OpenClaw skills, clawdhub skills, OpenClaw integrations, OpenClaw plugins
+
+**Sources:** Web search (Perplexity)
+
+**Search #71 findings (15:20 GMT+8):**
+
+- Web search found no public ClawdHub marketplace - appears to be private/internal deployment
+- 4 local skills documented via filesystem scan:
+  - self-improving-agent: Captures learnings/errors for continuous improvement
+  - github: Interact with GitHub using `gh` CLI  
+  - tavily-search: Web search via Tavily API
+  - agent-reach: Platform access tools (Twitter, Reddit, GitHub, etc.)
+- Similar agent platforms with skill ecosystems: AutoGen, LangChain, OpenHands, CrewAI, AgentScope
+
+**Last Updated:** 2026-03-11 15:20 (Search #71 complete - 4 local skills documented via filesystem)
+
+
+### Search #73 - 15:50
+
+**Time:** 2026-03-11 15:50 GMT+8
+**Keywords Used:** OpenClaw skills, clawdhub skills, OpenClaw integrations, OpenClaw plugins
+
+**Sources Searched:**
+- Web search (Perplexity) - 2 queries
+- GitHub search (via gh CLI)
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| **awesome-openclaw-skills** | Awesome collection of OpenClaw skills (5,400+ skills from official registry) | VoltAgent/awesome-openclaw-skills | `git clone https://github.com/VoltAgent/awesome-openclaw-skills.git` | High |
+| **awesome-openclaw-skills-zh** | OpenClaw Chinese skills library | clawdbot-ai/awesome-openclaw-skills-zh | `git clone https://github.com/clawdbot-ai/awesome-openclaw-skills-zh.git` | Medium |
+| **openclaw-master-skills** | 127+ best OpenClaw skills, weekly updated | LeoYeAI/openclaw-master-skills | `git clone https://github.com/LeoYeAI/openclaw-master-skills.git` | High |
+| **x-bookmarks** | Turn X bookmarks into agent actions | ythx-101/x-bookmarks | `npx skills add ythx-101/x-bookmarks@default -g -y` | Medium |
+| **x-tweet-fetcher** | Fetch tweets/replies without API keys | ythx-101/x-tweet-fetcher | `npx skills add ythx-101/x-tweet-fetcher@default -g -y` | Medium |
+| **clawpod** | Works with Massive proxy network | joinmassive/clawpod | `npx skills add joinmassive/clawpod@default -g -y` | Low |
+| **openclaw-search-skills** | Deep search - multi-source, content extraction, research reports | blessonism/openclaw-search-skills | `npx skills add blessonism/openclaw-search-skills@default -g -y` | High |
+| **model-hierarchy-skill** | Cost-optimized model routing based on task complexity | zscole/model-hierarchy-skill | `npx skills add zscole/model-hierarchy-skill@default -g -y` | Medium |
+| **capminal-openclaw-skills** | Capminal OpenClaw Skills | Capminal/openclaw-skills | `git clone https://github.com/Capminal/openclaw-skills.git` | Low |
+
+**Notes:**
+```
+Search #73 findings (15:50 GMT+8):
+GitHub search for "openclaw skills" yielded multiple relevant repositories:
+
+1. VoltAgent/awesome-openclaw-skills:
+   - 5,400+ curated skills from official ClawHub Skills Registry
+   - Filtered and categorized from 13,729 total registry skills
+   - Spam/bot filtering: 4,065 accounts removed
+   - Quality filters: 1,040 duplicates, 851 low-quality, 611 crypto/finance, 373 malicious
+
+2. clawdbot-ai/awesome-openclaw-skills-zh:
+   - Chinese translation of official ClawHub skills
+   - Categorized by scenario, supports Chinese natural language calls
+
+3. LeoYeAI/openclaw-master-skills:
+   - 127+ curated best skills
+   - Weekly updated from skills.sh, GitHub, ClawHub
+   - Powered by MyClaw.ai
+
+4. Individual skill repos found via GitHub search:
+   - x-bookmarks (ythx-101): X/Twitter bookmarks → agent actions
+   - x-tweet-fetcher (ythx-101): Fetch tweets without API
+   - clawpod (joinmassive): Massive proxy network integration
+   - openclaw-search-skills (blessonism): Multi-source search + research
+   - model-hierarchy-skill (zscole): Cost-optimized LLM routing
+   - capminal-openclaw-skills: Various Capminal skills
+
+Web search results:
+- "OpenClaw skills" still returns 1997 game (C++/SDL2)
+- "clawdhub" → MuleSoft CloudHub (enterprise iPaaS) confusion
+
+Total skills documented: 181+ across all searches
+
+High-priority new installs:
+- VoltAgent/awesome-openclaw-skills (curated registry reference)
+- LeoYeAI/openclaw-master-skills (127 best skills)
+- openclaw-search-skills (multi-source search)
+- x-bookmarks, x-tweet-fetcher (Twitter/X tools)
+```
+
+**Sources:**
+- https://github.com/VoltAgent/awesome-openclaw-skills
+- https://github.com/clawdbot-ai/awesome-openclaw-skills-zh
+- https://github.com/LeoYeAI/openclaw-master-skills
+- https://github.com/ythx-101/x-bookmarks
+- https://github.com/ythx-101/x-tweet-fetcher
+- https://github.com/joinmassive/clawpod
+- https://github.com/blessonism/openclaw-search-skills
+
+---
+
+**Last Updated:** 2026-03-11 15:50 (Search #73 complete - 9 new skills/repos from GitHub search)
