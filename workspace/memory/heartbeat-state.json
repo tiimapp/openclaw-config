@@ -9,7 +9,7 @@
     "calendar": null,
     "weather": null,
     "cron_configured": "2026-03-07T08:15:00+08:00",
-    "model_health": "2026-03-11T13:13:00+08:00",
+    "model_health": "2026-03-12T07:35:26+08:00",
     "night_trading_verify": "2026-03-11"
   },
   "lastHeartbeat": "2026-03-12T06:04:00+08:00",
@@ -20,7 +20,7 @@
     "heartbeat_cron": "STOPPED"
   },
   "notes": {
-    "2026-03-09T09:53": "Fixed cron args: --hourly \u2192 --type hourly, --daily \u2192 --type daily",
+    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily",
     "2026-03-09T18:08": "Model health recovered - both primary and fallback APIs responding after ~6h outage",
     "2026-03-10T21:44": "Heartbeat check - gateway running, trading day verified, night session status uncertain"
   },
