@@ -82,6 +82,7 @@
 | 69 | 10:20 | ✅ Complete | 0 | Web search + skills.sh refresh (68 searches, 0 results - all publishers documented) |
 | 70 | 10:50 | ✅ Complete | 0 | Web search timeout + skills.sh refresh (69 searches, 0 results - all publishers documented) |
 | 71 | 15:20 | ✅ Complete | 4 | Web search + local skills: self-improving-agent, github, tavily-search, agent-reach |
+| 72 | 02:20 | ✅ Complete | 0 | Web search - domain confusion persists (game/robotics/AI frameworks confused with OpenClaw) |
 | **Report** | **07:00** | ⏳ Pending | - | **Final summary** |
 
 ---
@@ -5836,3 +5837,65 @@ No actionable new skills found this search cycle.
 
 ---
 
+
+---
+
+### Search #95 - 02:50
+
+**Time:** 2026-03-12 02:50 GMT+8 (2026-03-11 18:50 UTC)
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 3 queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub, generic AI framework suggestions) | N/A | N/A | N/A |
+
+**Notes:**
+```
+Search #95 findings (02:50 GMT+8):
+- "OpenClaw skills repository" → 1997 platformer game (GitHub: OpenClaw/OpenClaw, C++/SDL2, pirate cat protagonist)
+- "clawdhub skills integrations" → MuleSoft CloudHub (iPaaS platform, Anypoint Platform, Salesforce company)
+- "OpenClaw plugins agents marketplace" → Generic AI frameworks (LangChain, AutoGen, CrewAI) suggested; no OpenClaw marketplace indexed
+
+Pattern confirmed (Search #95):
+Web search continues to return ZERO actionable results for OpenClaw AI agent framework:
+1. Name collision with 1997 game "Claw" / OpenClaw remake (C++ game engine, SDL2)
+2. "clawdhub" phonetically confused with MuleSoft CloudHub (enterprise iPaaS)
+3. Name collision with Khronos OpenCL (parallel computing framework)
+4. Name collision with UC San Diego robotics project (OpenCLAW)
+5. Search engines suggest alternative AI frameworks (OpenHands, AutoGen, LangChain, CrewAI)
+6. Framework has minimal public web presence as of March 2026
+
+PROVEN Discovery Channels (from Searches #1-95):
+1. Built-in: /usr/lib/node_modules/openclaw/skills/ (52 skills, all documented)
+2. User-installed: ~/.agents/skills/ (9 skills, all documented)
+3. Workspace: /home/admin/.openclaw/workspace/skills/ (3 skills)
+4. clawhub CLI: npm i -g clawhub (official OpenClaw marketplace - 5,490+ curated skills from VoltAgent/awesome-openclaw-skills)
+5. skills.sh: npx skills find/add (via find-skills skill - cross-agent ecosystem, 87K+ installs)
+6. GitHub: VoltAgent/awesome-openclaw-skills, clawdbot-ai/awesome-openclaw-skills-zh, LeoYeAI/openclaw-master-skills
+
+Web search effectiveness: NOT EFFECTIVE for OpenClaw skill discovery
+- 94 consecutive web searches yielded 0 new OpenClaw-specific skills via web search
+- All useful discoveries came from local filesystem exploration, direct CLI usage, and GitHub discovery
+- Name collisions make "OpenClaw" effectively unsearchable via public engines
+
+Recommendation: Direct CLI usage (clawhub, npx skills) and GitHub discovery remain the only effective methods. Web search should be abandoned for this task.
+
+No actionable new skills found this search cycle.
+```
+
+**Sources:**
+- Web search (Perplexity): query 1, query 2, query 3
+- Prior Search #94 analysis
+
+---
+
+**Last Updated:** 2026-03-12 02:50 (Search #95 complete - web search persistence confirmed, 0 new skills)
+
+**Report Complete:** 2026-03-12 02:50 GMT+8 (Search #95)
+
+---
