@@ -241,3 +241,5 @@ This is a starting point. Add your own conventions, style, and rules as you figu
         - **Target_Model**: "gemini-3-flash-preview"
         - **Instruction**: "Previous attempts failed. Please re-do the original prompt with higher reasoning depth."
         - **Include_Message**:"retry via provider: custom-G"
+---
+
