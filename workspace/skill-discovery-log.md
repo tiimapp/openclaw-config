@@ -5721,3 +5721,118 @@ No actionable new skills found this search cycle.
 ---
 
 **Last Updated:** 2026-03-12 00:50 (Search #92 complete - web search persistence confirmed, 0 new skills)
+
+---
+
+### Search #93 - 01:20
+
+**Time:** 2026-03-12 01:20 GMT+8 (2026-03-11 17:20 UTC)
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - multiple queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub, robotics OpenCLAW) | N/A | N/A | N/A |
+
+**Notes:**
+Pattern confirmed after 92 searches: Web search ineffective due to name collisions. Use GitHub repos + CLI tools.
+
+**Sources:**
+- Web search (Perplexity)
+
+---
+
+**Last Updated:** 2026-03-12 01:20 (Search #93 complete - 0 new skills, pattern confirmed)
+
+### Search #94 - 01:50
+
+**Time:** 2026-03-12 01:50 GMT+8 (2026-03-11 17:50 UTC)
+**Keywords Used:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources Searched:**
+- Web search (Perplexity) - 4 queries
+
+**Skills Found:**
+
+| Skill Name | Description | Source | Install Command | Priority |
+|------------|-------------|--------|-----------------|----------|
+| *No new OpenClaw-specific skills discovered* | Web search returns unrelated results (1997 platformer game, MuleSoft CloudHub, robotics OpenCLAW) | N/A | N/A | N/A |
+
+**Notes:**
+```
+Search #94 findings (01:50 GMT+8):
+- "OpenClaw skills repository" → 1997 platformer game (GitHub: OpenClaw/OpenClaw, C++/SDL2, pirate cat protagonist)
+- "clawdhub skills integrations" → MuleSoft CloudHub (iPaaS platform, Anypoint Platform, Salesforce company)
+- "OpenClaw plugins agents marketplace" → UC San Diego robotics (OpenCLAW - quadruped locomotion research) + generic AI framework suggestions
+- "\"OpenClaw\" agent skills GitHub" → No official repo found; game OpenClaw dominates results
+
+Pattern confirmed (Search #94):
+Web search continues to return ZERO actionable results for OpenClaw AI agent framework:
+1. Name collision with 1997 game "Claw" / OpenClaw remake (C++ game engine, SDL2)
+2. "clawdhub" phonetically confused with MuleSoft CloudHub (enterprise iPaaS)
+3. Name collision with Khronos OpenCL (parallel computing framework)
+4. Name collision with UC San Diego robotics project (OpenCLAW)
+5. Search engines suggest alternative AI frameworks (OpenHands, AutoGen, LangChain, CrewAI)
+6. Framework has minimal public web presence as of March 2026
+
+PROVEN Discovery Channels (from Searches #1-94):
+1. Built-in: /usr/lib/node_modules/openclaw/skills/ (52 skills, all documented)
+2. User-installed: ~/.agents/skills/ (9 skills, all documented)
+3. Workspace: /home/admin/.openclaw/workspace/skills/ (3 skills)
+4. clawhub CLI: npm i -g clawhub (official OpenClaw marketplace - 5,490+ curated skills from VoltAgent/awesome-openclaw-skills)
+5. skills.sh: npx skills find/add (via find-skills skill - cross-agent ecosystem, 87K+ installs)
+6. GitHub: VoltAgent/awesome-openclaw-skills, clawdbot-ai/awesome-openclaw-skills-zh, LeoYeAI/openclaw-master-skills
+
+Web search effectiveness: NOT EFFECTIVE for OpenClaw skill discovery
+- 93 consecutive web searches yielded 0 new OpenClaw-specific skills via web search
+- All useful discoveries came from local filesystem exploration, direct CLI usage, and GitHub discovery
+- Name collisions make "OpenClaw" effectively unsearchable via public engines
+
+Recommendation: Direct CLI usage (clawhub, npx skills) and GitHub discovery remain the only effective methods. Web search should be abandoned for this task.
+
+No actionable new skills found this search cycle.
+```
+
+**Sources:**
+- Web search (Perplexity): query 1, query 2, query 3, query 4
+
+---
+
+**Last Updated:** 2026-03-12 01:50 (Search #94 complete - web search persistence confirmed, 0 new skills)
+
+**Report Complete:** 2026-03-12 01:50 GMT+8 (Search #94)
+
+---
+
+## Key Findings After 94 Searches
+
+**Web Search Effectiveness:** NOT EFFECTIVE
+- 93 consecutive web searches yielded 0 OpenClaw-specific skills
+- Name collisions: 1997 game "Claw"/OpenClaw, MuleSoft CloudHub, Khronos OpenCL, UC San Diego robotics
+- Recommendation: Web search should be abandoned for OpenClaw skill discovery
+
+**Effective Discovery Channels:**
+1. **GitHub (PRIMARY)**: 
+   - VoltAgent/awesome-openclaw-skills (5,400+ curated)
+   - clawdbot-ai/awesome-openclaw-skills-zh (Chinese translation)
+   - LeoYeAI/openclaw-master-skills (127+ best skills)
+   - Individual skill repos: x-bookmarks, x-tweet-fetcher, openclaw-search-skills, model-hierarchy-skill
+2. **skills.sh**: Cross-agent marketplace (npx skills find/add, 87K+ installs)
+3. **Built-in**: /usr/lib/node_modules/openclaw/skills/ (52 skills)
+4. **User-installed**: ~/.agents/skills/ (9 skills)
+5. **Workspace**: /home/admin/.openclaw/workspace/skills/ (3 skills)
+6. **ClawHub CLI**: npm i -g clawhub
+
+**Total Skills Documented:** 190+
+
+**High-Priority Recommendations:**
+- **GitHub**: Clone VoltAgent/awesome-openclaw-skills for 5,400+ curated skills
+- **skills.sh**: npx skills add anthropics/skills@pdf -g -y
+- **ClawHub**: clawhub install zanblayde/agent-commons
+
+---
+
