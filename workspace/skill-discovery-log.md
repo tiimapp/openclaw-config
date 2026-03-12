@@ -340,3 +340,200 @@
 - **Official OpenClaw Repository**: https://github.com/openclaw/openclaw - Main OpenClaw AI assistant project
 
 **Note**: ClawHub CLI must be installed locally (`npm install clawhub`) to access these skills. Global installation may require elevated permissions.
+
+**Search #6: OpenClaw Skills Discovery**
+**Timestamp**: Friday, March 13th, 2026 — 6:20 AM (Asia/Shanghai)
+
+**New Skills Found:**
+
+**1. openclaw-console**
+- **Description**: OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 (OpenClaw visual management console - configuration management, model configuration, and Skills management)
+- **Install Command**: Clone from GitHub: `git clone https://github.com/xigpz/openclaw-console`
+- **Use Case**: Web-based interface for managing OpenClaw configurations and skills
+- **Source**: GitHub (searched March 13, 2026)
+
+**2. awesome-openclaw-skills (natan89)**
+- **Description**: Discover over 1715 community-driven OpenClaw skills, sorted by category, to enhance your projects and streamline your workflow
+- **Install Command**: Clone from GitHub: `git clone https://github.com/natan89/awesome-openclaw-skills`
+- **Use Case**: Comprehensive collection of community-created OpenClaw skills organized by category
+- **Source**: GitHub (searched March 13, 2026)
+
+**3. angela-skills-quest**
+- **Description**: OpenClaw skills repository
+- **Install Command**: Clone from GitHub: `git clone https://github.com/changjess1106-cloud/angela-skills-quest`
+- **Use Case**: Collection of OpenClaw skills for Angela AI assistant
+- **Source**: GitHub (searched March 13, 2026)
+
+**4. CraigClaw**
+- **Description**: Craig's OpenClaw workspace — personality, memory, skills, and deployment for Merit-Systems' AI agent
+- **Install Command**: Clone from GitHub: `git clone https://github.com/Merit-Systems/CraigClaw`
+- **Use Case**: Complete OpenClaw workspace configuration including skills, personality, and deployment settings
+- **Source**: GitHub (searched March 13, 2026)
+
+**5. openclaw-codex-pm-skills**
+- **Description**: OpenClaw skills for Codex project management
+- **Install Command**: Clone from GitHub: `git clone https://github.com/sonwr/openclaw-codex-pm-skills`
+- **Use Case**: Project management related skills for OpenClaw integration with Codex
+- **Source**: GitHub (searched March 13, 2026)
+
+**Additional Information:**
+- Local OpenClaw installation includes built-in skills like weather, github, healthcheck, etc.
+- ClawHub CLI (`npm install -g clawhub`) can be used to search, install, and manage skills from the ClawHub registry
+- Skills follow a standard structure with SKILL.md files containing metadata, description, and usage instructions
+- Most skills require specific CLI tools to be installed (e.g., gh for GitHub skill, curl for weather skill)
+
+**Note**: Some repositories may be experimental or personal projects. Verify compatibility and security before installing skills from unknown sources.
+
+**Search #6: OpenClaw Skills Discovery**
+**Timestamp**: Friday, March 13th, 2026 — 6:24 AM (Asia/Shanghai)
+
+**Newly Discovered Skills & Resources:**
+
+**1. openclaw-console**
+- **Description**: OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 (OpenClaw visual management console - configuration management, model configuration, and Skills management)
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Web-based interface for managing OpenClaw configurations and skills
+- **Source**: https://github.com/xigpz/openclaw-console
+
+**2. awesome-openclaw-skills (natan89)**
+- **Description**: Discover over 1715 community-driven OpenClaw skills, sorted by category, to enhance your projects and streamline your workflow
+- **Install Command**: Clone from GitHub repository or use clawhub CLI if available
+- **Use Case**: Comprehensive collection of community-created OpenClaw skills organized by category
+- **Source**: https://github.com/natan89/awesome-openclaw-skills
+
+**3. angela-skills-quest**
+- **Description**: OpenClaw skills repository
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Collection of OpenClaw skills for various tasks
+- **Source**: https://github.com/changjess1106-cloud/angela-skills-quest
+
+**4. CraigClaw**
+- **Description**: Craig's OpenClaw workspace — personality, memory, skills, and deployment for Merit-Systems' AI agent
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Complete OpenClaw workspace example with personality, memory, and skills implementation
+- **Source**: https://github.com/Merit-Systems/CraigClaw
+
+**5. openclaw-codex-pm-skills**
+- **Description**: OpenClaw skills focused on project management and Codex integration
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Project management capabilities within OpenClaw environment
+- **Source**: https://github.com/sonwr/openclaw-codex-pm-skills
+
+**Additional Notes:**
+- The ClawHub CLI (`npm install -g clawhub`) appears to be the official way to install and manage OpenClaw skills
+- Local OpenClaw installation already contains many built-in skills in `/usr/lib/node_modules/openclaw/skills/`
+- Most discovered repositories appear to be community-driven collections rather than official OpenClaw organization repositories
+- Skills follow a standard structure with SKILL.md files containing metadata, description, and usage instructions
+
+**Sources**: GitHub search results, web searches, and local OpenClaw installation analysis
+
+**6. OpenClaw Skills Discovery - March 13, 2026**
+- **Timestamp**: 2026-03-13 06:50:00 Asia/Shanghai
+- **Keywords Searched**: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Key Findings:**
+
+**1. VoltAgent/awesome-openclaw-skills**
+- **Description**: Community-curated collection of 5,400+ OpenClaw skills filtered and categorized from the official OpenClaw Skills Registry
+- **Install Command**: `git clone https://github.com/VoltAgent/awesome-openclaw-skills.git`
+- **Use Case**: Comprehensive reference for discovering available OpenClaw skills across categories
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**2. ClawHub CLI (Official Skills Registry)**
+- **Description**: Official command-line tool for searching, installing, updating, and publishing OpenClaw agent skills from clawhub.com
+- **Install Command**: `npm install -g clawhub`
+- **Use Case**: Centralized management of OpenClaw skills including version control, updates, and publishing
+- **Source**: Local skill documentation (`/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md`)
+
+**3. hesamsheikh/awesome-openclaw-usecases**
+- **Description**: Community collection of practical OpenClaw use cases for productivity and automation
+- **Install Command**: `git clone https://github.com/hesamsheikh/awesome-openclaw-usecases.git`
+- **Use Case**: Real-world examples and implementation patterns for OpenClaw agents
+- **Source**: https://github.com/hesamsheikh/awesome-openclaw-usecases
+
+**4. qwibitai/nanoclaw**
+- **Description**: Lightweight OpenClaw alternative that runs in containers with built-in messaging app integration (WhatsApp, Telegram, Slack, Discord, Gmail)
+- **Install Command**: `git clone https://github.com/qwibitai/nanoclaw.git`
+- **Use Case**: Secure, containerized OpenClaw deployment with multi-platform messaging support
+- **Source**: https://github.com/qwibitai/nanoclaw
+
+**5. farion1231/cc-switch**
+- **Description**: Cross-platform desktop All-in-One assistant tool supporting OpenClaw alongside Claude Code, Codex, OpenCode, and Gemini CLI
+- **Install Command**: `git clone https://github.com/farion1231/cc-switch.git`
+- **Use Case**: Unified interface for multiple AI assistant frameworks including OpenClaw
+- **Source**: https://github.com/farion1231/cc-switch
+
+**Additional Notes:**
+- The term "clawdhub" appears to be a typo; the correct term is "ClawHub" (clawhub.com)
+- OpenClaw has an extensive built-in skill ecosystem with 50+ pre-installed skills in standard installations
+- Skills follow standardized structure with SKILL.md metadata files containing installation and usage instructions
+- Community repositories focus on skill collections, use cases, and alternative implementations rather than individual skills
+- The official OpenClaw repository (openclaw/openclaw) serves as the core framework
+
+**Sources**: GitHub search results, local OpenClaw installation analysis, web searches via Perplexity
+
+**6. VoltAgent/awesome-openclaw-skills**
+- **Description**: The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry
+- **Install Command**: Clone from GitHub repository or use ClawHub CLI (`npm install -g clawhub`)
+- **Use Case**: Comprehensive repository of community-contributed OpenClaw skills for various purposes
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**7. ClawHub CLI**
+- **Description**: Official CLI tool to search, install, update, and publish agent skills from clawhub.com registry
+- **Install Command**: `npm install -g clawhub`
+- **Use Case**: Centralized skill management system for OpenClaw - discover, install, and share skills
+- **Source**: Built-in skill in `/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md`
+
+**8. hesamsheikh/awesome-openclaw-usecases**
+- **Description**: Community collection of OpenClaw use cases for making life easier
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Practical examples and implementations of OpenClaw for real-world automation tasks
+- **Source**: https://github.com/hesamsheikh/awesome-openclaw-usecases
+
+**9. qwibitai/nanoclaw**
+- **Description**: Lightweight alternative to OpenClaw that runs in containers for security, connects to multiple messaging platforms
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Secure, containerized OpenClaw alternative with messaging integrations (WhatsApp, Telegram, Slack, Discord, Gmail)
+- **Source**: https://github.com/qwibitai/nanoclaw
+
+**10. farion1231/cc-switch**
+- **Description**: Cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode, openclaw & Gemini CLI
+- **Install Command**: Clone from GitHub repository
+- **Use Case**: Unified interface for multiple AI assistant frameworks including OpenClaw
+- **Source**: https://github.com/farion1231/cc-switch
+
+**Timestamp**: Friday, March 13th, 2026 — 6:50 AM (Asia/Shanghai)
+**Sources**: GitHub search results, local OpenClaw installation analysis, and web searches
+
+**6. OpenClaw Skills Discovery - March 13, 2026 06:52 CST**
+- **VoltAgent/awesome-openclaw-skills**: The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞
+  - **Description**: Comprehensive curated collection of OpenClaw skills from the official registry
+  - **Install Command**: Clone repository or use ClawHub CLI (`npm install -g clawhub`)
+  - **Use Case**: Access to thousands of pre-built skills for various integrations and capabilities
+  - **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+- **ClawHub CLI**: Official OpenClaw skills management tool
+  - **Description**: Command-line interface for searching, installing, updating, and publishing OpenClaw skills from clawhub.com
+  - **Install Command**: `npm install -g clawhub`
+  - **Use Case**: Manage skill lifecycle, sync with latest versions, publish custom skills
+  - **Source**: Built-in skill in `/usr/lib/node_modules/openclaw/skills/clawhub/`
+
+- **hesamsheikh/awesome-openclaw-usecases**: Community collection of OpenClaw use cases
+  - **Description**: Real-world examples and patterns for implementing OpenClaw solutions
+  - **Install Command**: Clone repository for reference
+  - **Use Case**: Learning practical applications and best practices
+  - **Source**: https://github.com/hesamsheikh/awesome-openclaw-usecases
+
+- **Local Skills Repository**: Extensive built-in skills library
+  - **Description**: 50+ built-in skills covering messaging (Discord, Slack, WhatsApp), productivity (Notion, Obsidian, GitHub), media (Spotify, Sonos), development (coding-agent, gh-issues), and utilities (weather, healthcheck)
+  - **Install Command**: Pre-installed with OpenClaw
+  - **Use Case**: Immediate access to common integrations without additional setup
+  - **Source**: Local installation at `/usr/lib/node_modules/openclaw/skills/` and `~/.agents/skills/`
+
+**Key Findings**:
+- ClawHub (not "clawdhub") is the official skills registry and CLI tool for OpenClaw
+- Skills follow standardized structure with SKILL.md metadata files
+- Community repositories provide extensive collections beyond built-in skills
+- Most skills are designed for agent capabilities like messaging, APIs, file operations, and external service integration
+
+**Sources**: GitHub search (March 13, 2026), local OpenClaw installation analysis, web search via Perplexity
