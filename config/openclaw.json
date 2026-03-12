@@ -166,7 +166,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "qwen3-max-2026-01-23/qwen3-coder-next"
+        "primary": "qwen3-max-2026-01-23/qwen3-max-2026-01-23"
       },
       "models": {
         "qwen3-max-2026-01-23/qwen3.5-plus": {},
@@ -213,7 +213,7 @@
         "workspace": "/home/admin/.openclaw/workspace-code_g",
         "agentDir": "/home/admin/.openclaw/agents/code_g/agent",
         "model": {
-          "primary": "qwen3-max-2026-01-23/qwen3-coder-plus"
+          "primary": "qwen3-max-2026-01-23/qwen3-coder-next"
         },
         "subagents": {
           "allowAgents": [

@@ -2,10 +2,13 @@
   "mcpServers": {
     "exa": {
       "baseUrl": "https://mcp.exa.ai/mcp"
+    },
+    "dashscope-websearch": {
+      "baseUrl": "https://dashscope.aliyuncs.com/api/v1/mcps/WebSearch/mcp",
+      "headers": {
+        "Authorization": "Bearer sk-9fd1be825af0419c88382485d119451c"
+      }
     }
   },
-  "imports": [],
-  "tavily": {
-    "note": "Use tavily-python package directly (not via MCP)"
-  }
+  "imports": []
 }
