@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773320905132,
+      "updatedAtMs": 1773324501062,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773324485923,
-        "lastRunAtMs": 1773320885923,
+        "nextRunAtMs": 1773328085930,
+        "lastRunAtMs": 1773324485930,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19209,
+        "lastDurationMs": 15132,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773324485927
+        "runningAtMs": 1773328236132
       }
     },
     {
@@ -472,7 +472,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 18077,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1773328236132
       }
     },
     {
@@ -577,7 +578,8 @@
         "lastDurationMs": 43873,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1773328236132
       }
     },
     {
@@ -616,7 +618,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773323695246,
+      "updatedAtMs": 1773328234104,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -633,11 +635,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773325209998,
-        "lastRunAtMs": 1773323409998,
+        "nextRunAtMs": 1773328809551,
+        "lastRunAtMs": 1773325210004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 285248,
+        "lastDurationMs": 3024100,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
