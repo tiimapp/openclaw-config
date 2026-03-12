@@ -2440,3 +2440,99 @@ Note: OpenClaw appears to be primarily used in private or internal deployments r
 - GitHub repository searches (March 12, 2026)
 
 ---
+
+## Search #20 — Thursday, March 12th, 2026 — 7:50 PM (Asia/Shanghai) / 2026-03-12 11:50 UTC
+
+**Finding**: Discovered "Awesome OpenClaw Skills" repository with 5,494+ curated skills from ClawHub registry.
+
+**Details**:
+- **Name**: Awesome OpenClaw Skills
+- **Description**: A curated collection of 5,494+ community-built OpenClaw skills organized by category, filtered from the official ClawHub registry which hosts 13,729+ skills
+- **Install Command**: 
+  - Via ClawHub CLI: `clawhub install <skill-slug>`
+  - Manual: Copy skill folder to `~/.openclaw/skills/` (global) or `<project>/skills/` (workspace)
+- **Use Cases**: Extends OpenClaw capabilities across 25+ categories including:
+  - Coding Agents & IDEs (1,222 skills)
+  - Web & Frontend Development (938 skills)
+  - Browser & Automation (335 skills)
+  - Git & GitHub (170 skills)
+  - Image & Video Generation (169 skills)
+  - Communication tools (149 skills)
+  - DevOps & Cloud (409 skills)
+  - And many more specialized domains
+
+**Additional Resources**:
+- **Repository**: https://github.com/VoltAgent/awesome-openclaw-skills
+- **Ecosystem Tools**: Composio for managed OAuth across 1000+ apps
+- **Model Support**: Works with 25+ LLM providers out of the box
+
+**Recommendation**: 
+- Use the Awesome OpenClaw Skills repository as a primary resource for discovering and installing skills
+- Consider the ClawHub CLI for easy skill management
+- Explore category-specific skills based on your needs
+
+**Sources**:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (March 12, 2026)
+- Web search results clarifying OpenClaw as an AI assistant framework (March 12, 2026)
+
+---
+
+## Search #20 — Thursday, March 12th, 2026 — 7:53 PM (Asia/Shanghai) / 2026-03-12 19:53 UTC
+
+**Finding**: Discovered "Awesome OpenClaw Skills" repository with 5,494+ community-built skills organized by category.
+
+**Details**:
+- **Name**: Awesome OpenClaw Skills
+- **Description**: A curated collection of 5,494+ community-built OpenClaw skills, filtered from the official OpenClaw Skills Registry (which contains 13,729 skills). Skills are organized by category for easier discovery.
+- **Install Command**: 
+  - Via ClawHub CLI: `clawhub install <skill-slug>`
+  - Manual: Copy skill folder to `~/.openclaw/skills/` (global) or `<project>/skills/` (workspace)
+- **Use Case**: Extending OpenClaw's capabilities to interact with external services, automate workflows, and perform specialized tasks across various domains.
+
+**Key Categories**:
+- Coding Agents & IDEs (1,222 skills)
+- Web & Frontend Development (938 skills)
+- Browser & Automation (335 skills)
+- DevOps & Cloud (409 skills)
+- Git & GitHub (170 skills)
+- Image & Video Generation (169 skills)
+- Communication (149 skills)
+- AI & LLMs (197 skills)
+- Productivity & Tasks (206 skills)
+
+**Sources**:
+- GitHub Repository: https://github.com/VoltAgent/awesome-openclaw-skills
+- GitHub Search Results (March 12, 2026)
+- Web Search Results (March 12, 2026)
+
+---
+
+## Search #20 — Thursday, March 12th, 2026 — 7:53 PM (Asia/Shanghai) / 2026-03-12 19:53 UTC
+
+**Finding**: Discovered "Awesome OpenClaw Skills" repository with 5,494+ community-built skills organized by category.
+
+**Details**:
+- **Name**: Awesome OpenClaw Skills
+- **Description**: A curated collection of OpenClaw skills sourced from ClawHub (OpenClaw's public skills registry), filtered from 13,729+ community skills to exclude spam, duplicates, low-quality, and malicious entries.
+- **Install Command**: 
+  - ClawHub CLI: `clawhub install <skill-slug>`
+  - Manual: Copy skill folder to `~/.openclaw/skills/` (global) or `<project>/skills/` (workspace)
+- **Use Case**: Extending OpenClaw's capabilities to interact with external services, automate workflows, and perform specialized tasks across various domains.
+
+**Key Categories**:
+- Coding Agents & IDEs (1,222 skills)
+- Web & Frontend Development (938 skills)
+- Browser & Automation (335 skills)
+- DevOps & Cloud (409 skills)
+- Git & GitHub (170 skills)
+- Image & Video Generation (169 skills)
+- Communication (149 skills)
+- AI & LLMs (197 skills)
+- Productivity & Tasks (206 skills)
+
+**Sources**:
+- GitHub Repository: https://github.com/VoltAgent/awesome-openclaw-skills
+- GitHub Search Results (March 12, 2026)
+- Web Search Results (March 12, 2026)
+
+---
