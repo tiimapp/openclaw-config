@@ -1,7 +1,7 @@
 {
   "lastChecks": {
-    "trading_day_verify": "2026-03-12",
-    "is_trading_day": true,
+    "trading_day_verify": "2026-03-13",
+    "is_trading_day": false,
     "system": 1741614240,
     "github": 1740733740,
     "heartbeat": 1741734240,
@@ -14,13 +14,13 @@
   },
   "lastHeartbeat": "2026-03-12T06:04:00+08:00",
   "reportSchedule": {
-    "ashare_daily": "15:30",
-    "c2605_hourly": "09:00,10:00,11:00,14:00,15:00",
-    "c2605_daily": "15:30",
+    "ashare_daily": null,
+    "c2605_hourly": null,
+    "c2605_daily": null,
     "heartbeat_cron": "STOPPED"
   },
   "notes": {
-    "2026-03-09T09:53": "Fixed cron args: --hourly \u2192 --type hourly, --daily \u2192 --type daily",
+    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily",
     "2026-03-09T18:08": "Model health recovered - both primary and fallback APIs responding after ~6h outage",
     "2026-03-10T21:44": "Heartbeat check - gateway running, trading day verified, night session status uncertain"
   },

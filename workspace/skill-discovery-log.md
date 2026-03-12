@@ -4493,3 +4493,36 @@ Search #28 - Friday, March 13th, 2026 — 2:54 AM (Asia/Shanghai)
 - Web search results confirming limited public availability (skills primarily distributed through ClawHub registry)
 
 **Observation**: The OpenClaw skills ecosystem is well-structured with both utility skills (clawhub, healthcheck) and specialized domain skills (agent-reach for social media/web access). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities.
+
+## Search #2 (2026-03-12 19:50 UTC)
+
+### Skills Registry & Management
+| Name | Description | Install Command | Use Case |
+|------|-------------|-----------------|----------|
+| `clawhub` | CLI for searching, installing, updating, and publishing agent skills from clawhub.com | `npm install -g clawhub` | Centralized skill management and distribution |
+| `find-skills` | Helps discover and install agent skills from the open agent skills ecosystem | Built-in skill (uses `npx skills find [query]`) | Finding relevant skills for specific tasks |
+
+### Utility Skills
+| Name | Description | Install Command | Use Case |
+|------|-------------|-----------------|----------|
+| `mcporter` | CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio) | `npm install -g mcporter` | Working with Model Context Protocol (MCP) servers and tools |
+| `healthcheck` | Host security hardening and risk-tolerance configuration for OpenClaw deployments | Built-in skill | Security audits, firewall/SSH hardening, risk assessment |
+| `agent-reach` | Give AI agent eyes to see the entire internet (Twitter/X, Reddit, YouTube, GitHub, etc.) | `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto` | Social media monitoring and web research |
+
+### Domain-Specific Skills
+| Name | Description | Install Command | Use Case |
+|------|-------------|-----------------|----------|
+| `akshare-stock` | A股分析全能 Skill (real-time quotes, technical/fundamental analysis, sectors) | Built-in skill | Chinese stock market analysis |
+| `china-stock-analysis` | A股价值投资分析 tool (stock screening, deep analysis, industry comparison) | Built-in skill | Value investing in Chinese stocks |
+| `vercel-react-best-practices` | React and Next.js performance optimization guidelines from Vercel Engineering | Built-in skill | Optimizing React/Next.js applications |
+| `vercel-composition-patterns` | React composition patterns that scale (compound components, render props, context) | Built-in skill | Building flexible React component libraries |
+| `web-design-guidelines` | Review UI code for Web Interface Guidelines compliance | Built-in skill | UI/UX and accessibility auditing |
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- npm registry search results
+- GitHub repository search
+- Direct examination of skill directories
+
+**Observation**: The OpenClaw skills ecosystem appears to be primarily distributed through a combination of built-in skills, the ClawHub registry (clawhub.com), and the broader open agent skills ecosystem (skills.sh). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities across various domains including development, security, finance, and social media.
