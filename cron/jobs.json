@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773298775276,
+      "updatedAtMs": 1773302896322,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773302360083,
-        "lastRunAtMs": 1773298760083,
+        "nextRunAtMs": 1773306485895,
+        "lastRunAtMs": 1773302885895,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 15193,
+        "lastDurationMs": 10427,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773302885892
+        "runningAtMs": 1773306485901
       }
     },
     {
@@ -453,7 +453,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773299044123,
+      "updatedAtMs": 1773306032568,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -466,14 +466,13 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773302400000,
-        "lastRunAtMs": 1773299024732,
+        "nextRunAtMs": 1773309600000,
+        "lastRunAtMs": 1773306000007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19391,
+        "lastDurationMs": 32561,
         "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0,
-        "runningAtMs": 1773302885892
+        "consecutiveErrors": 0
       }
     },
     {
@@ -617,7 +616,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773302883862,
+      "updatedAtMs": 1773305684376,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -634,11 +633,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773303609913,
-        "lastRunAtMs": 1773301809913,
+        "nextRunAtMs": 1773307209924,
+        "lastRunAtMs": 1773305409924,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 1073949,
+        "lastDurationMs": 274452,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
