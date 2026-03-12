@@ -457,3 +457,323 @@ Web search for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "O
 | `yhfwsntz9b-a11y/openclaw-skill-developerguide` | OpenClaw skill developer guide | https://github.com/yhfwsntz9b-a11y/openclaw-skill-developerguide | Skill development documentation |
 
 Sources: GitHub API search, npm search
+
+## Search #3 (2026-03-12 06:20 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `stancsz/simpleclaw` | The 121-line "Claw" agent with high-tier autonomy on Free Tier hardware | https://github.com/stancsz/simpleclaw | Lightweight AI agent with browser + MCP + Skills support |
+| `ythx-101/openclaw-qa` | OpenClaw Q&A community focused on AI Agent memory systems, multi-agent architecture, and evolutionary systems | https://github.com/ythx-101/openclaw-qa | Community knowledge base for OpenClaw development |
+| `breakcafe/picoclaw` | Serverless-first Claude Agent runtime in the Claw ecosystem | https://github.com/breakcafe/picoclaw | HTTP API for stateful conversations and MCP tool integration, optimized for AWS Lambda |
+| `openclawq/clawmonitor` | Monitor OpenClaw Agents/Sessions | https://github.com/openclawq/clawmonitor | Agent and session monitoring tools |
+| `keyonzeng/fastslow-evo` | Dual-loop self-evolution system for AI agents | https://github.com/keyonzeng/fastslow-evo | Fast fixes for local mistakes and slow promotion for durable capabilities |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama |
+| `openclaw-cn` | Openclaw Chinese community version - WhatsApp gateway CLI | `npm install openclaw-cn` | WhatsApp integration for Chinese community |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities |
+
+Sources: GitHub API search, npm search
+
+## Search #4 (2026-03-12 06:20 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `stancsz/simpleclaw` | The 121-line "Claw" agent with high-tier autonomy on Free Tier hardware | https://github.com/stancsz/simpleclaw | Lightweight AI agent with browser + MCP + Skills support |
+| `ythx-101/openclaw-qa` | OpenClaw Q&A community focused on AI Agent memory systems, multi-agent architecture, and evolutionary systems | https://github.com/ythx-101/openclaw-qa | Community knowledge base for OpenClaw development |
+| `breakcafe/picoclaw` | Serverless-first Claude Agent runtime in the Claw ecosystem | https://github.com/breakcafe/picoclaw | HTTP API for stateful conversations and MCP tool integration, optimized for AWS Lambda |
+| `openclawq/clawmonitor` | Monitor OpenClaw Agents/Sessions | https://github.com/openclawq/clawmonitor | Agent and session monitoring tools |
+| `keyonzeng/fastslow-evo` | Dual-loop self-evolution system for AI agents | https://github.com/keyonzeng/fastslow-evo | Fast fixes for local mistakes and slow promotion for durable capabilities |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama |
+| `openclaw-cn` | Openclaw Chinese community version - WhatsApp gateway CLI | `npm install openclaw-cn` | WhatsApp integration for Chinese community |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities |
+
+Sources: GitHub API search, npm search
+
+## Search #5 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | Install Command | Use Case |
+|------|-------------|----------------|----------|
+| `stancsz/simpleclaw` | The 121-line "Claw" agent with high-tier autonomy on Free Tier hardware | `git clone https://github.com/stancsz/simpleclaw.git` | Lightweight AI agent with browser + MCP + Skills support |
+| `ythx-101/openclaw-qa` | OpenClaw Q&A community focused on AI Agent memory systems, multi-agent architecture, and evolutionary systems | `git clone https://github.com/ythx-101/openclaw-qa.git` | Community knowledge base for OpenClaw development |
+| `breakcafe/picoclaw` | Serverless-first Claude Agent runtime in the Claw ecosystem | `git clone https://github.com/breakcafe/picoclaw.git` | HTTP API for stateful conversations and MCP tool integration, optimized for AWS Lambda |
+| `openclawq/clawmonitor` | Monitor OpenClaw Agents/Sessions | `git clone https://github.com/openclawq/clawmonitor.git` | Agent and session monitoring tools |
+| `keyonzeng/fastslow-evo` | Dual-loop self-evolution system for AI agents | `git clone https://github.com/keyonzeng/fastslow-evo.git` | Fast fixes for local mistakes and slow promotion for durable capabilities |
+
+### NPM Packages
+| Name | Description | Install Command | Use Case |
+|------|-------------|----------------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama |
+| `openclaw-cn` | Openclaw Chinese community version - WhatsApp gateway CLI | `npm install openclaw-cn` | WhatsApp integration for Chinese community |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities |
+
+### Built-in Skills (from workspace)
+| Name | Description | Location | Use Case |
+|------|-------------|----------|----------|
+| `gh-issues` | Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs | `/usr/lib/node_modules/openclaw/skills/gh-issues/SKILL.md` | Automated GitHub issue management |
+| `github` | Interact with GitHub using the `gh` CLI | `~/.openclaw/workspace/skills/github/SKILL.md` | GitHub operations and API calls |
+| `healthcheck` | Host security hardening and risk-tolerance configuration | `/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md` | Security audits and system hardening |
+| `mcporter` | Use mcporter CLI to manage MCP servers/tools | `/usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md` | MCP server configuration and tool calling |
+| `skill-creator` | Create, edit, improve, or audit AgentSkills | `/usr/lib/node_modules/openclaw/skills/skill-creator/SKILL.md` | Skill development and maintenance |
+| `weather` | Get current weather and forecasts | `/usr/lib/node_modules/openclaw/skills/weather/SKILL.md` | Weather information retrieval |
+| `agent-reach` | Platform access tools for social media and web | `~/.agents/skills/agent-reach/SKILL.md` | Social media and web platform integration |
+| `akshare-stock` | A股 analysis全能 Skill | `~/.agents/skills/akshare-stock/SKILL.md` | Chinese stock market analysis |
+| `china-stock-analysis` | A股价值投资分析工具 | `~/.agents/skills/china-stock-analysis/SKILL.md` | Chinese value investing analysis |
+| `find-skills` | Discover and install agent skills | `~/.agents/skills/find-skills/SKILL.md` | Skill discovery and installation |
+| `vercel-composition-patterns` | React composition patterns | `~/.agents/skills/vercel-composition-patterns/SKILL.md` | React component architecture |
+| `vercel-react-best-practices` | React and Next.js performance optimization | `~/.agents/skills/vercel-react-best-practices/SKILL.md` | React/Next.js performance |
+| `vercel-react-native-skills` | React Native and Expo best practices | `~/.agents/skills/vercel-react-native-skills/SKILL.md` | React Native mobile app development |
+| `web-design-guidelines` | UI code review for Web Interface Guidelines | `~/.agents/skills/web-design-guidelines/SKILL.md` | UI/UX compliance review |
+| `self-improvement` | Continuous improvement through learnings | `~/.openclaw/workspace/skills/self-improving-agent/SKILL.md` | Error capture and capability improvement |
+
+Sources: Local workspace analysis, GitHub repositories, npm packages, OpenClaw documentation
+
+## Search #5 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11) |
+
+Sources: GitHub API search, npm registry search
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11) |
+
+Sources: GitHub API search, npm registry search
+
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11) |
+
+Sources: GitHub API search, npm registry search
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11) |
+
+Sources: GitHub API search, npm registry search
+
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+### Sources
+- GitHub API search results (Mar 12, 2026)
+- npm registry search results (Mar 12, 2026)
+- Direct repository inspection
+
+---
+*Generated by cron skill-search-1*
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+Sources: GitHub API search, npm registry search (March 12, 2026)
+
+---
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+### Sources
+- GitHub API search results (Mar 12, 2026)
+- npm registry search results (Mar 12, 2026)
+- Direct repository inspection
+
+---
+
+*Generated by cron skill-search-1*
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+Sources: GitHub API search, npm registry search
+
+---
+
+*Generated by cron skill-search-1*
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+### Sources
+- GitHub API search results (Mar 12, 2026)
+- npm registry search results (Mar 12, 2026)
+- Direct repository inspection
+
+---
+
+*Generated by cron skill-search-1*
+
+## Search #6 (2026-03-12 06:50 UTC)
+
+### GitHub Repositories
+| Name | Description | URL | Use Case |
+|------|-------------|-----|----------|
+| `rzbdz/openclaw-skills` | Junzhong's OpenClaw Skills | https://github.com/rzbdz/openclaw-skills | Custom skills for OpenClaw agent workflows |
+| `Lizonghai84/openclaw-skills` | My custom OpenClaw skills for agent workflows and automation | https://github.com/Lizonghai84/openclaw-skills | Personal collection of OpenClaw skills and automation scripts |
+| `xigpz/openclaw-console` | OpenClaw 可视化管理后台 - 配置管理、模型配置、Skills管理 | https://github.com/xigpz/openclaw-console | Visual management console for OpenClaw configuration, model settings, and Skills management |
+
+### NPM Packages (Latest Versions)
+| Name | Description | Install | Use Case |
+|------|-------------|---------|----------|
+| `openclaw` | Multi-channel AI gateway with extensible messaging integrations | `npm install openclaw` | Core OpenClaw framework (v2026.3.11, updated Mar 12, 2026) |
+| `@ollama/openclaw-web-search` | Ollama web search for OpenClaw | `npm install @ollama/openclaw-web-search` | Web search integration using Ollama (v0.1.7, updated Mar 10, 2026) |
+| `openclaw-cn` | Openclaw 中文社区版 - WhatsApp gateway CLI (Baileys web) with Pi RPC agent | `npm install openclaw-cn` | WhatsApp integration for Chinese community (v0.1.8-fix.3, updated Mar 10, 2026) |
+| `@openclaw/feishu` | OpenClaw Feishu/Lark channel plugin (community maintained by @m1heng) | `npm install @openclaw/feishu` | Feishu/Lark messaging platform integration (v2026.3.11, updated Mar 12, 2026) |
+| `@openclaw/voice-call` | OpenClaw voice-call plugin | `npm install @openclaw/voice-call` | Voice calling capabilities (v2026.3.11, updated Mar 12, 2026) |
+
+### Sources
+- GitHub API search results (Mar 12, 2026)
+- npm registry search results (Mar 12, 2026)
+- Direct repository inspection
+
+---
+
+*Generated by cron skill-search-1*

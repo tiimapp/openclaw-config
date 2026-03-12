@@ -244,16 +244,17 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 ---
 
 
-## 🌐 网络搜索优先级
+## 🌐 网络搜索工具和优先级
 
-**当需要访问网络获取信息时，优先使用 Tavily**：
-
-- 首选: `tavily-search` skill - AI 优化的搜索，无广告，结果精准
+**当需要访问网络获取信息时，优先使用 MCP服务器dashscope-websearch **：
+ - 目前已知网络搜索工具列表
+ 1. Tavily Search - 本地技能                                                                                                                                                 
+ 2. Web Search - 内置工具（Perplexity后端）                                                                                                                                          
+ 3. dashscope-websearch - MCP服务器                                                                                                                                                  
+ 4. exa - MCP服务器  
+- 首选: `dashscope-websearch` - MCP 服务器, AI 优化的搜索，无广告，结果精准
 - 支持中文搜索、时间过滤、主题筛选
 - 包含 AI 生成的直接答案
-
-**优先级规则**:
-1. 先尝试 Tavily（更精准、专为 AI 设计）
-2. 如需更广泛的结果，再考虑 `web_search` 作为备选
+- 如需更广泛的结果，再考虑 `Tavily Search` 作为备选
 
 **配置**: 确保 `TAVILY_API_KEY` 已设置在 `~/.openclaw/.env` 中
