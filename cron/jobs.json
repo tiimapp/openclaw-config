@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773273201182,
+      "updatedAtMs": 1773276800307,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773276793141,
-        "lastRunAtMs": 1773273193141,
+        "nextRunAtMs": 1773280393147,
+        "lastRunAtMs": 1773276793147,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 8041,
+        "lastDurationMs": 7160,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773276793146
+        "runningAtMs": 1773280393153
       }
     },
     {
@@ -272,36 +272,13 @@
       }
     },
     {
-      "id": "357e1782-2974-4068-8568-d6e230568ef1",
-      "agentId": "main",
-      "sessionKey": "agent:main:discord:channel:1479305137649483777",
-      "name": "\u82f1\u8bed\u590d\u4e60 - Globalization of Services (\u7b2c7\u5929)",
-      "enabled": true,
-      "deleteAfterRun": true,
-      "createdAtMs": 1772764697380,
-      "updatedAtMs": 1772764697380,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-12T01:00:00.000Z"
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "systemEvent",
-        "text": "\ud83d\udcda \u82f1\u8bed\u590d\u4e60\u63d0\u9192\uff08\u7b2c7\u5929\uff09\n\n\u6587\u7ae0\uff1aGlobalization of Services\n\u6536\u5230\u65e5\u671f\uff1a2026-03-05\n\n\u4eca\u5929\u662f\u590d\u4e60\u8fd9\u7bc7\u6587\u7ae0\u7684\u7b2c7\u5929\uff01\u8fd9\u662f\u6700\u540e\u4e00\u6b21\u6b63\u5f0f\u590d\u4e60\uff0c\u8bf7\u786e\u4fdd\u638c\u63e1\uff1a\n- \u6240\u6709\u65b0\u8bcd\u6c47\n- \u6838\u5fc3\u53e5\u578b\u7ed3\u6784\n- \u6587\u7ae0\u4e3b\u65e8\n\n\u590d\u4e60\u5b8c\u6210\u540e\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u6807\u8bb0\u8fd9\u7bc7\u6587\u7ae0\u4e3a\u5df2\u5b8c\u6210\u3002"
-      },
-      "state": {
-        "nextRunAtMs": 1773277200000
-      }
-    },
-    {
       "id": "707aed9a-b72c-4781-bc3b-f89cd6cad61f",
       "agentId": "main",
       "sessionKey": "agent:main:discord:channel:1475775915844960428",
       "name": "C2605  hourly-09:00",
       "enabled": true,
       "createdAtMs": 1772779072620,
-      "updatedAtMs": 1773190838881,
+      "updatedAtMs": 1773277559090,
       "schedule": {
         "expr": "0 9 * * 1-5",
         "kind": "cron",
@@ -319,11 +296,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773277200000,
-        "lastRunAtMs": 1773190800008,
+        "nextRunAtMs": 1773363600000,
+        "lastRunAtMs": 1773277526228,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 38873,
+        "lastDurationMs": 32862,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -476,7 +453,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773273611128,
+      "updatedAtMs": 1773277564586,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -489,11 +466,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773277200000,
-        "lastRunAtMs": 1773273600008,
+        "nextRunAtMs": 1773280800000,
+        "lastRunAtMs": 1773277559090,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 11120,
+        "lastDurationMs": 5496,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -639,7 +616,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773276683726,
+      "updatedAtMs": 1773280282372,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -656,11 +633,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773278409813,
-        "lastRunAtMs": 1773276609813,
+        "nextRunAtMs": 1773282009833,
+        "lastRunAtMs": 1773280209833,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 73913,
+        "lastDurationMs": 72539,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
