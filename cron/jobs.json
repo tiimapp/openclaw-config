@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773280402320,
+      "updatedAtMs": 1773284002999,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773283993154,
-        "lastRunAtMs": 1773280393154,
+        "nextRunAtMs": 1773287593161,
+        "lastRunAtMs": 1773283993161,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 9166,
+        "lastDurationMs": 9838,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773283993160
+        "runningAtMs": 1773287593166
       }
     },
     {
@@ -348,7 +348,7 @@
       "name": "C2605  hourly-11:00",
       "enabled": true,
       "createdAtMs": 1772779127218,
-      "updatedAtMs": 1773199836059,
+      "updatedAtMs": 1773284439595,
       "schedule": {
         "expr": "0 11 * * 1-5",
         "kind": "cron",
@@ -366,11 +366,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773284400000,
-        "lastRunAtMs": 1773199488848,
+        "nextRunAtMs": 1773370800000,
+        "lastRunAtMs": 1773284400007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 347211,
+        "lastDurationMs": 39588,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -453,7 +453,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773280852904,
+      "updatedAtMs": 1773284449761,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -466,11 +466,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773284400000,
-        "lastRunAtMs": 1773280842658,
+        "nextRunAtMs": 1773288000000,
+        "lastRunAtMs": 1773284439595,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 10246,
+        "lastDurationMs": 10166,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -616,7 +616,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773283884242,
+      "updatedAtMs": 1773287484180,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -633,11 +633,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773285609846,
-        "lastRunAtMs": 1773283809846,
+        "nextRunAtMs": 1773289209860,
+        "lastRunAtMs": 1773287409860,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 74396,
+        "lastDurationMs": 74320,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
