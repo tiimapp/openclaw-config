@@ -20,15 +20,14 @@
     "heartbeat_cron": "STOPPED"
   },
   "notes": {
-    "2026-03-09T09:53": "Fixed cron args: --hourly → --type hourly, --daily → --type daily",
+    "2026-03-09T09:53": "Fixed cron args: --hourly \u2192 --type hourly, --daily \u2192 --type daily",
     "2026-03-09T18:08": "Model health recovered - both primary and fallback APIs responding after ~6h outage",
     "2026-03-10T21:44": "Heartbeat check - gateway running, trading day verified, night session status uncertain"
   },
   "modelStatus": {
     "primary": "ok",
     "fallback": "ok",
-    "lastFailure": "2026-03-09T12:00:00+08:00",
-    "recoveredAt": "2026-03-09T18:08:00+08:00"
+    "lastCheck": "2026-03-12T08:34:00+08:00"
   },
   "gatewayStatus": {
     "running": true,
