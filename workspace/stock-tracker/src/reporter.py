@@ -198,7 +198,7 @@ def format_attention_section() -> str:
     return section
 
 
-def format_report(price_data: Dict, analysis: Dict, news_data: Dict, stock_type: str = "A") -> str:
+def format_report(price_data: Dict, analysis: Dict, news_data: Dict) -> str:
     """
     Format complete stock report.
     

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - OpenClaw Tips</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #eee; line-height: 1.8; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px 30px; border-radius: 15px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
+        .back-link { color: white; text-decoration: none; opacity: 0.9; }
+        .article-header { margin-bottom: 25px; }
+        .article-title { font-size: 1.8em; color: #fff; margin: 0 0 15px 0; line-height: 1.4; }
+        .article-meta { display: flex; gap: 15px; color: #888; font-size: 0.9em; flex-wrap: wrap; }
+        .article-meta span { background: rgba(102,126,234,0.2); padding: 3px 10px; border-radius: 8px; }
+        .article-content { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); }
+        .article-content h2 { color: #667eea; border-bottom: 1px solid rgba(102,126,234,0.3); padding-bottom: 10px; margin-top: 30px; }
+        .article-content h3 { color: #a78bfa; margin-top: 25px; }
+        .article-content p { color: #ccc; margin: 15px 0; }
+        .article-content code { background: rgba(102, 126, 234, 0.2); padding: 3px 8px; border-radius: 5px; font-family: 'Monaco', 'Consolas', monospace; color: #4facfe; }
+        .article-content pre { background: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px; overflow-x: auto; border-left: 4px solid #667eea; margin: 20px 0; }
+        .article-content pre code { background: none; padding: 0; color: #eee; }
+        .article-content ul, .article-content ol { padding-left: 25px; color: #ccc; }
+        .article-content li { margin: 10px 0; }
+        .article-content a { color: #4facfe; }
+        .nav-links { display: flex; justify-content: space-between; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .nav-links a { color: #4facfe; text-decoration: none; padding: 10px 20px; background: rgba(255,255,255,0.05); border-radius: 8px; }
+        .nav-links a:hover { background: rgba(102,126,234,0.2); }
+        footer { text-align: center; color: #666; margin-top: 40px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="list.html" class="back-link">← 返回列表</a>
+        <a href="index.html" class="back-link">首页</a>
+    </header>
+    <div class="article-header">
+        <h1 class="article-title" id="articleTitle">加载中...</h1>
+        <div class="article-meta">
+            <span id="articleDate">📅 2026-01-01</span>
+            <span id="articleViews">👁 0 阅读</span>
+            <span id="articleCat">📂 分类</span>
+            <span id="articleSource">📰 来源</span>
+        </div>
+    </div>
+    <div class="article-content" id="articleContent"></div>
+    <div class="nav-links">
+        <a href="#" id="prevLink">← 上一篇</a>
+        <a href="#" id="nextLink">下一篇 →</a>
+    </div>
+    <footer><p>🤖 OpenClaw AI 助手驱动 | 英文教程中文翻译</p></footer>
+    <script>
+        var articleDetails = {
+            1: { title: '安全设置 OpenClaw 的实用指南', category: 'security', categoryName: '安全配置', date: '2026-02-20', views: 123456, source: 'Medium @Sre Chakra Yeddula', content: '<h2>前言</h2><p>在部署 OpenClaw 时，安全性是首要考虑的因素。许多用户在初次安装 OpenClaw 时往往会忽略安全配置，直接将 Gateway 暴露在公网上，这会带来严重的安全风险。本文将详细介绍如何安全地配置 OpenClaw，保护你的隐私和数据安全。</p><h2>锁定 Gateway</h2><p>这应该是你首先要做的。设置 OpenClaw Gateway 时它是默认开放的。切勿将其暴露在公互联网上。Gateway 是整个系统的控制中枢，一旦被恶意访问，可能会导致严重后果。</p><p>正确的做法是始终将 Gateway 绑定到本地地址（127.0.0.1），然后通过 VPN 或安全隧道（如 Tailscale）进行远程访问。这样既保证了安全，又不影响正常使用。</p><h2>关键安全步骤</h2><ul><li><strong>永远不要将 Gateway 暴露在公网</strong> - 使用 Tailscale 或 VPN 进行远程访问。公网暴露会让任何人都能访问你的 AI 助手，这非常危险。</li><li><strong>对私信使用配对模式</strong> - 未知发送者需要手动批准。配对模式要求发送者输入验证码才能与你对话，有效防止垃圾信息和恶意攻击。</li><li><strong>定期运行 openclaw doctor</strong> - 检查安全配置错误。这个命令会扫描你的配置，找出可能的安全隐患。</li><li><strong>保持 Node.js 和 OpenClaw 更新</strong> - 最新版本包含安全修复。及时更新可以修复已知漏洞。</li></ul><h2>认证配置</h2><p>配置强认证方式是保护 OpenClaw 的关键。你可以使用多种认证方式来增强安全性：</p><p>第一种是带认证的 Tailscale，它提供了端到端加密和安全的身验证机制。第二种是带令牌或密码认证的 SSH 隧道，适合需要更高安全级别的用户。第三种是私信验证配对码，这是最基本但有效的保护方式。</p><h2>网络隔离最佳实践</h2><p>网络安全是保护 OpenClaw 的重要环节。以下是一些最佳实践：</p><ol><li><strong>仅在本地主机上运行 Gateway</strong>：这样可以避免外部直接访问你的服务。</li><li><strong>使用反向代理进行外部访问</strong>：通过 Nginx 或其他反向代理添加额外的安全层。</li><li><strong>配置防火墙规则</strong>：只允许受信任的 IP 地址访问你的服务。</li><li><strong>在所有渠道上启用认证</strong>：无论是 Telegram、Discord 还是其他平台，都要启用双因素认证。</li></ol><h2>定期安全审计</h2><p>建议每周运行一次安全检查，确保你的配置没有被更改。同时，关注 OpenClaw 的官方安全公告，及时修复已知漏洞。</p>' },
+            
+            2: { title: '掌握 OpenClaw：2026年个人AI助手终极设置指南', category: 'tutorial', categoryName: '教程', date: '2026-03-01', views: 98765, source: 'Medium @Vignaraj Ravi', content: '<h2>前言</h2><p>OpenClaw 是一个革命性的个人 AI 助手框架，它能够在任何操作系统上运行，并支持几乎所有主流消息平台。本文将带你全面了解 OpenClaw，从安装到高级配置，帮助你快速搭建属于自己的 AI 助手。</p><h2>为什么选择 OpenClaw？</h2><p>在众多 AI 助手解决方案中，OpenClaw 以其独特的优势脱颖而出。首先，它是完全开源的，这意味着你可以完全控制自己的数据。其次，它采用本地优先架构，所有数据都存储在你的设备上，保护隐私。最后，它的可扩展性极强，通过 Skills 系统可以轻松添加新功能。</p><h2>前置要求</h2><p>在开始安装之前，请确保你的系统满足以下要求：需要 Node.js 22 或更高版本，这是运行 OpenClaw 的基础。操作系统方面，支持 macOS、Linux 以及 Windows（通过 WSL2）。此外，你还需要获取你首选模型提供商的 API 密钥，如 OpenAI、Anthropic Claude 或 Google Gemini 等。</p><h2>分步安装指南</h2><h3>第一步：安装 OpenClaw</h3><p>打开终端，运行以下命令来全局安装 OpenClaw：</p><pre><code>npm install -g openclaw@latest\nopenclaw onboard</code></pre><p>安装过程会自动检查依赖项，并引导你完成初始配置。</p><h3>第二步：配置模型提供商</h3><p>OpenClaw 支持多种 AI 模型提供商。你可以在配置文件中选择你喜欢的模型。常见的选项包括 OpenAI 的 GPT 系列、Anthropic 的 Claude 系列、Google 的 Gemini 系列，以及国产的 DeepSeek 模型。每个模型都有其独特的特点，你可以根据需求选择。</p><h3>第三步：设置消息渠道</h3><p>OpenClaw 的强大之处在于支持多种消息平台。你可以同时连接 Telegram、Discord、Slack、WhatsApp 等多个渠道，统一管理你的所有对话。这意味着你可以通过任何一个平台与你的 AI 助手交互。</p><h3>第四步：安装 Skills</h3><p>Skills 是 OpenClaw 扩展功能的核心。通过安装不同的 Skills，你可以赋予 AI 助手各种能力：</p><pre><code>npx clawhub install browser\nnpx clawhub install github\nnpx clawhub install productivity</code></pre><h2>高级配置</h2><p>完成基础设置后，你可以探索一些高级功能：</p><ul><li><strong>多代理路由</strong>：创建多个专门的 AI 代理，分别处理不同类型的任务。</li><li><strong>Cron 任务</strong>：设置定时任务，让 AI 自动执行重复性工作。</li><li><strong>自定义技能开发</strong>：使用 SKILL.md 开发属于你自己的技能。</li><li><strong>记忆管理</strong>：配置会话记忆，让 AI 能够记住长期的上下文。</li></ul><h2>最佳实践建议</h2><p>使用 OpenClaw 时，建议从简单开始，逐步增加复杂性。先熟悉基础功能，然后再尝试高级特性。同时，定期备份你的配置文件，这样在出现问题时可以快速恢复。</p>' },
+            
+            3: { title: '如何安装和保护你的个人AI机器人', category: 'tutorial', categoryName: '教程', date: '2026-02-12', views: 87654, source: 'Medium @proflead', content: '<h2>概述</h2><p>本指南将详细介绍如何在本地机器上设置 OpenClaw（原名为 Clawdbot），以及如何正确配置安全选项，保护你的 AI 助手免受未经授权的访问。OpenClaw 是一个功能强大的工具，但正确配置安全性至关重要。</p><h2>为什么安全性很重要？</h2><p>OpenClaw 连接到真实的消息平台，这意味着它可以代表你发送消息、执行操作。如果不妥善保护，恶意用户可能会利用漏洞访问你的 AI 助手，甚至可能发送垃圾信息或执行恶意命令。因此，在将 OpenClaw 部署到生产环境之前，务必完成安全配置。</p><h2>安装步骤</h2><p>首先，确保你的系统已安装 Node.js 22 或更高版本。然后在终端中运行以下命令：</p><pre><code>npm install -g openclaw@latest\nopenclaw onboard --install-daemon</code></pre><p>这个命令会完成两件事：第一是全局安装 OpenClaw，第二是在你的系统上安装守护进程（daemon），使其能够在后台持续运行。</p><h2>安全配置详解</h2><h3>1. 禁用公开私信访问</h3><p>这是最基本的安全措施。将私信策略（dmPolicy）设置为"pairing"模式，要求所有未知发送者必须通过验证才能与你对话。这可以有效阻止垃圾信息和恶意攻击。</p><h3>2. Gateway 绑定</h3><p>始终将 gateway.bind 保持在 loopback 地址（127.0.0.1）。这样可以确保 Gateway 只接受本地连接，外部无法直接访问。如果需要远程访问，请使用 VPN 或安全隧道。</p><h3>3. 使用 Tailscale</h3><p>Tailscale 是一个基于 WireGuard 的安全组网工具，可以让你在不暴露服务到公网的情况下实现远程访问。这是访问本地服务的最佳方式之一。</p><h3>4. 定期审计</h3><p>使用 OpenClaw 内置的诊断工具定期检查配置：</p><pre><code>openclaw doctor</code></pre><p>这个命令会检查你的配置并提供安全建议。</p><h2>各平台渠道安全设置</h2><ul><li><strong>Telegram</strong>：启用配对模式，要求用户通过验证才能开始对话。</li><li><strong>Discord</strong>：限制私信权限，只允许已关注的用户发送消息。</li><li><strong>Slack</strong>：配置工作区权限，限制机器人可以访问的频道。</li></ul><h2>总结</h2><p>保护你的 OpenClaw 实例并不复杂，但需要认真对待。按照本指南的步骤操作，你可以确保你的 AI 助手安全可靠，同时保持完整的功能性。</p>' },
+            
+            4: { title: '深入理解 OpenClaw：多通道AI网关综合指南', category: 'guide', categoryName: '指南', date: '2026-02-20', views: 76543, source: 'Medium @Bill WANG', content: '<h2>什么是 OpenClaw？</h2><p>OpenClaw 是一个革命性的多通道 AI 网关，它能够在任何操作系统上运行。与传统的 AI 助手不同，OpenClaw 采用模块化设计，通过 Skills 系统可以无限扩展其功能。这使得它不仅仅是一个聊天机器人，而是一个真正能够帮助你完成实际工作的数字助手。</p><p>OpenClaw 的核心优势在于它的灵活性和本地优先的数据处理方式。所有对话数据都存储在你的设备上，而不是云端，这更好地保护了你的隐私。同时，它支持几乎所有主流的消息平台，让你可以在任何地方使用它。</p><h2>核心功能特性</h2><p>OpenClaw 提供了丰富的功能特性，使其成为最强大的个人 AI 助手框架之一：</p><ul><li><strong>多通道支持</strong>：同时连接 WhatsApp、Telegram、Slack、Discord 等多个平台，统一管理所有对话。</li><li><strong>本地优先架构</strong>：所有数据保存在本地设备上，确保隐私安全，不依赖云服务。</li><li><strong>完全开源</strong>：采用 MIT 许可证，代码完全透明，你可以自由修改和定制。</li><li><strong>Skills 系统</strong>：通过 SKILL.md 文件定义技能，轻松扩展功能。</li><li><strong>语音交互</strong>：支持 macOS、iOS 和 Android 平台的语音输入输出。</li></ul><h2>技术架构</h2><p>OpenClaw 采用 Gateway 架构，Gateway 作为整个系统的控制平面，负责管理会话、渠道连接、工具调用和事件处理。这种设计使得系统各组件职责清晰，便于维护和扩展。</p><p>Gateway 通过 WebSocket 与各个客户端保持实时连接，处理消息的收发和转发。同时，它还负责调度 Skills 执行具体的任务，如浏览器控制、文件操作等。</p><h2>常见使用场景</h2><p>OpenClaw 的灵活性使其适用于多种场景：</p><ol><li><strong>个人 AI 助手</strong>：帮助你处理日常任务，如日程管理、信息查询等。</li><li><strong>自动化工作流</strong>：通过编写自动化脚本，批量处理重复性工作。</li><li><li>企业客服机器人</li>：搭建 24/7 在线客服，自动回答常见问题。</li><li><li>开发工作流自动化</li>：集成 GitHub、GitLab 等工具，自动化代码审查和部署流程。</li></ol><h2>与其他工具的比较</h2><p>相比其他 AI 助手解决方案，OpenClaw 的优势在于：完全的数据控制权、无限的扩展能力、以及活跃的开源社区支持。它不需要订阅费用，所有功能都可以免费使用。</p>' },
+            
+            5: { title: '别再看 OpenClaw 安装教程了——这才是正确的方法', category: 'advanced', categoryName: '高级技巧', date: '2026-02-10', views: 65432, source: 'Medium @Shane Collins', content: '<h2>大多数人都做错了</h2><p>OpenClaw 正在 GitHub 上迅速走红，Star 数量已经突破 30 万。但是，我观察到大多数用户仍然停留在基础的安装配置阶段，完全没有发挥出这个工具的真正潜力。他们花费大量时间重复观看安装教程，却忽略了真正有价值的高级功能。</p><p>本文将向你展示如何真正"驯服"OpenClaw，让它成为你的强大生产力工具，而不是一个简单的聊天玩具。</p><h2>高级架构设计</h2><h3>1. 多代理系统架构</h3><p>不要只创建一个通用的 AI 助手。相反，根据任务类型创建多个专门的代理：</p><ul><li><strong>研究代理</strong>：专门负责信息收集和分析，可以调用浏览器技能进行网络搜索。</li><li><strong>写作代理</strong>：专注于内容创作，可以调用文档技能生成文章、报告。</li><li><li>代码代理</strong>：处理编程相关任务，集成 GitHub、代码审查等功能。</li><li><li>分析代理</strong>：处理数据分析任务，可以操作电子表格和数据库。</li></ul><p>这种分工方式可以让每个代理专注于特定领域，大大提高工作效率和输出质量。</p><h3>2. 技能组合工作流</h3><p>OpenClaw 的真正强大之处在于可以将多个 Skills 组合使用。例如：</p><pre><code>Browser + GitHub + Slack = 自动化代码审查</code></pre><p>这个组合可以自动抓取 PR、进行代码审查、并将审查结果发送到 Slack。又比如：</p><pre><code>Browser + Memory + Email = 定期行业简报</code></pre><p>这个组合可以自动抓取行业新闻、总结要点、并发送到你的邮箱。</p><h3>3. 智能记忆管理</h3><p>会话记忆是另一个关键优化点。不要让 AI 记住所有对话内容，而是建立结构化的记忆系统：短期记忆用于当前任务，长期记忆存储重要信息。这样可以显著减少 Token 消耗，提高响应速度。</p><h3>4. 自动化任务编排</h3><p>利用 Cron 和 Webhooks 创建复杂的自动化工作流：定时检查 GitHub Issues、自动生成周报、监控竞品动态等。关键是设计好触发条件和执行流程，让 AI 能够自主完成大部分工作。</p><h2>生产环境最佳实践</h2><ul><li><strong>环境变量管理</strong>：所有敏感信息（如 API 密钥）必须使用环境变量，绝不要硬编码在配置文件中。</li><li><strong>日志和监控</strong>：设置适当的日志级别，建立监控告警，及时发现和解决问题。</li><li><strong>备份策略</strong>：定期备份配置文件和工作数据，防止意外丢失。</li><li><li>速率限制</strong>：在公开渠道上实施速率限制，防止滥用和攻击。</li></ul><h2>结论</h2><p>掌握这些高级技巧后，你将能够充分发挥 OpenClaw 的潜力，将其变成真正的数字劳动力。不要再停留在基础教程了，开始探索高级功能吧！</p>' },
+            
+            6: { title: 'OpenClaw 完整教程：初学者指南', category: 'tutorial', categoryName: '教程', date: '2026-02-05', views: 54321, source: 'freeCodeCamp', content: '<h2>什么是 OpenClaw？</h2><p>OpenClaw 是一个开源的个人 AI 助手框架，它允许你通过常用的消息平台（如 WhatsApp、Telegram、Discord）来自动化各种数字任务。与传统的云端 AI 服务不同，OpenClaw 采用本地优先的架构，所有数据都存储在你的设备上，这更好地保护了你的隐私。</p><p>作为一个可扩展的框架，OpenClaw 通过 Skills 系统允许开发者添加各种自定义功能。从简单的天气查询到复杂的自动化工作流，几乎任何可以通过编程实现的任务都可以集成到 OpenClaw 中。</p><h2>为什么选择 OpenClaw？</h2><p>选择 OpenClaw 有多个充分的理由。首先，它完全免费且开源，你可以自由使用、修改和分发。其次，数据本地存储意味着你的对话内容和个人数据不会被发送到第三方服务器。第三，支持几乎所有主流消息平台，你可以在任何地方通过熟悉的渠道与 AI 交互。第四，强大的扩展性让你可以根据需要添加各种功能。</p><h2>快速开始</h2><h3>环境准备</h3><p>在安装 OpenClaw 之前，请确保你的系统满足以下要求：需要安装 Node.js 22 或更高版本。建议使用 nvm（Node Version Manager）来管理 Node.js 版本，这样可以轻松切换不同版本。</p><h3>安装步骤</h3><p>打开终端，执行以下命令来全局安装 OpenClaw：</p><pre><code>npm install -g openclaw@latest</code></pre><p>安装完成后，运行初始化命令：</p><pre><code>openclaw onboard</code></pre><p>这个向导会引导你完成整个设置过程，包括：Gateway 配置、工作区设置、选择要连接的消息平台、选择 AI 模型、以及安装必要的 Skills。整个过程通常只需要几分钟。</p><h2>核心概念理解</h2><p>为了更好地使用 OpenClaw，你需要理解几个核心概念：</p><ul><li><strong>Gateway</strong>：这是整个系统的控制平面，负责协调各个组件之间的通信。</li><li><strong>Session</strong>：代表一次对话的上下文，AI 通过它来理解对话历史。</li><li><li>Channel</li>：消息平台的连接，如 Telegram 或 Discord 机器人。</li><li><li>Skill</li>：扩展功能的模块，赋予 AI 执行特定任务的能力。</li></ul><h2>常用 Skills 推荐</h2><p>以下是一些最受欢迎的 Skills，安装它们可以快速扩展 OpenClaw 的功能：浏览器自动化 Skills 让你能够控制浏览器进行网页操作；GitHub Skills 集成 GitHub 功能，可以管理仓库和 Issues；文件操作 Skills 提供本地文件的读写能力；日历 Skills 帮助你管理日程安排；邮件 Skills 可以自动处理电子邮件。</p><h2>下一步学习</h2><p>完成基础设置后，建议探索以下高级主题：学习如何编写自定义 Skills；了解 Cron 任务实现自动化；研究多代理系统架构；以及掌握安全和性能优化技巧。</p>' },
+            
+            9: { title: 'OpenClaw 与其他AI助手的对比 - Reddit 讨论', category: 'discussion', categoryName: '社区讨论', date: '2026-02-18', views: 34567, source: 'Reddit r/OpenClaw', content: '<h2>社区热议话题</h2><p>近日，Reddit 上的 OpenClaw 社区热烈讨论了一个话题：OpenClaw 与其他商业 AI 助手相比有什么优势？本文整理了讨论中的主要观点，帮助你更好地了解 OpenClaw 的定位。</p><h2>本地优先架构的优势</h2><p>社区成员普遍认为，OpenClaw 的本地优先架构是其最显著的优势。与 ChatGPT、Claude 等商业产品不同，OpenClaw 不需要将数据发送到云端处理。所有对话都在本地设备上完成，这意味着你的隐私数据不会被第三方获取。</p><p>一位用户分享道："我已经受够了把所有数据都交给云端AI处理。使用 OpenClaw 后，我的对话记录、文件内容都保存在自己的电脑上，这种掌控感是无价的。"</p><h2>完全的数据控制</h2><p>数据控制是另一个被频繁提及的优势。使用 OpenClaw，你可以：完全掌控数据的存储位置和方式；自行决定哪些数据需要备份；随时导出或删除所有数据；不需要担心服务条款变更导致的数据问题。</p><p>相比之下，商业 AI 助手往往对数据有各种限制，你的数据可能会被用于模型训练，或者在服务终止时丢失。</p><h2>开源透明带来的信任</h2><p>作为一个开源项目，OpenClaw 的代码完全透明。任何人都可以审查代码、报告漏洞、提交修复。这种透明性让用户可以验证系统确实按照声称的方式工作，不会偷偷收集或滥用数据。</p><p>有社区成员指出："开源意味着我可以自己部署、审计、甚至修改代码。这种信任是闭源产品无法提供的。"</p><h2>多平台支持</h2><p>OpenClaw 支持几乎所有主流消息平台，包括 WhatsApp、Telegram、Discord、Slack 等。这种多平台支持让你可以在任何常用的渠道使用 AI 助手，不需要改变已有的沟通习惯。</p><h2>可扩展性</h2><p>通过 Skills 系统，OpenClaw 具有无限的扩展能力。用户可以根据自己的需求开发自定义技能，集成各种外部服务。这种灵活性是大多数商业产品无法比拟的。</p><h2>总结</h2><p>综合社区讨论，OpenClaw 的核心优势可以归纳为：隐私优先的数据处理方式、完整的数据控制权、开源透明的运作方式、灵活的多平台支持、以及强大的可扩展性。对于注重隐私和自主控制的用户来说，OpenClaw 无疑是最佳选择。</p>' },
+            
+            10: { title: '来自 Twitter/X 社区的 OpenClaw 技巧', category: 'social', categoryName: '社交媒体', date: '2026-02-25', views: 28900, source: 'Twitter/X @OpenClaw', content: '<h2>社区精华技巧汇总</h2><p>Twitter 上的 OpenClaw 社区非常活跃，每天都有用户分享使用技巧和最佳实践。本文汇总了最近最受好评的一些技巧，帮助你更好地使用 OpenClaw。</p><h2>配置管理技巧</h2><p>社区推荐使用配置 Profiles 功能来管理不同使用场景。你可以创建多个配置文件，每个配置针对不同的任务或场景。例如，创建"工作模式"配置用于日常工作，"开发模式"配置用于编程任务。这样可以在不同场景间快速切换，无需重新配置。</p><p>一个高级技巧是使用环境变量来管理敏感信息。将 API 密钥、数据库密码等存储在环境变量中，而不是直接写在配置文件中，这样可以提高安全性，同时也便于在不同环境间迁移。</p><h2>自动化任务技巧</h2><p>Cron 任务是 OpenClaw 最强大的功能之一。社区分享了许多创意用法：</p><ul><li>每天早上自动发送天气情况和日程摘要</li><li>定时抓取行业新闻并汇总发送</li><li>自动监控 GitHub 仓库的 Issue 和 PR 状态</li><li>定期生成数据报告并发送到邮箱</li><li>定时清理临时文件和缓存</li></ul><p>关键是要设计合理的触发条件和执行频率，既能自动化工作，又不会过度消耗资源。</p><h2>记忆管理优化</h2><p>很多用户分享了记忆管理的最佳实践。核心建议是保持会话精简，只保留必要的历史信息。可以通过设置记忆阈值、定期清理等方式来控制上下文长度。</p><p>一个高级技巧是使用结构化的长期记忆系统。将重要信息存储在本地数据库或知识库中，需要时再调用，这样可以大幅减少 Token 消耗。</p><h2>技能组合创意</h2><p>社区最热门的技能组合分享：</p><pre><code>浏览器 + 记忆 = 智能阅读助手\n自动抓取文章、提取要点、存入记忆库</code></pre><pre><code>GitHub + 邮件 = 代码审查助手\n自动审查 PR、发送审查意见到邮箱</code></pre><pre><code>日历 + 提醒 + 天气 = 生活管家\n每天自动发送天气预报和日程提醒</code></pre><p>这些组合展示了 OpenClaw 的无限可能性，你也可以发挥创意，组合出适合自己的工作流。</p><h2>性能优化建议</h2><p>社区建议的性能优化技巧包括：定期重启 Gateway 清理内存；使用轻量级模型处理简单任务；合理设置超时时间；以及监控资源使用情况及时发现问题。</p><h2>总结</h2><p>OpenClaw 社区是一个宝贵的资源库。建议经常关注社区动态，学习他人的使用经验，同时也可以分享自己的技巧，帮助其他用户。</p>' }
+        };
+
+        var urlParams = new URLSearchParams(window.location.search);
+        var articleId = parseInt(urlParams.get('id')) || 1;
+        var cat = urlParams.get('cat') || 'tutorial';
+
+        var article = articleDetails[articleId];
+        if (!article) {
+            article = { title: '文章不存在', category: cat, categoryName: '分类', date: '2026-03-12', views: 0, source: 'N/A', content: '<p>抱歉，您要查找的文章不存在。</p>' };
+        }
+
+        document.getElementById('articleTitle').textContent = article.title;
+        document.getElementById('articleDate').textContent = '📅 ' + article.date;
+        document.getElementById('articleViews').textContent = '👁 ' + article.views.toLocaleString() + ' 阅读';
+        document.getElementById('articleCat').textContent = '📂 ' + article.categoryName;
+        document.getElementById('articleSource').textContent = '📰 ' + article.source;
+        document.getElementById('articleContent').innerHTML = article.content;
+        document.title = article.title + ' - OpenClaw Tips';
+
+        document.getElementById('prevLink').href = 'detail.html?id=' + (articleId - 1) + '&cat=' + cat;
+        document.getElementById('nextLink').href = 'detail.html?id=' + (articleId + 1) + '&cat=' + cat;
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - OpenClaw Tips</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #eee; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        h1 { margin: 0; font-size: 1.8em; }
+        .back-link { color: white; text-decoration: none; opacity: 0.9; }
+        
+        .search-box { flex: 1; max-width: 400px; min-width: 200px; }
+        .search-input { width: 100%; padding: 10px 15px; font-size: 14px; border: none; border-radius: 20px; background: rgba(255,255,255,0.9); color: #333; outline: none; }
+        
+        .category-title { margin-bottom: 20px; color: #667eea; font-size: 1.3em; }
+        .article-list { list-style: none; padding: 0; margin: 0; }
+        .article-item { background: rgba(255,255,255,0.08); padding: 20px; border-radius: 12px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.2s; }
+        .article-item:hover { transform: translateX(5px); }
+        .article-item a { color: inherit; text-decoration: none; display: block; }
+        .article-item h3 { margin: 0 0 8px 0; color: #a78bfa; }
+        .article-item p { margin: 0 0 10px 0; color: #aaa; font-size: 0.9em; }
+        .article-meta { display: flex; gap: 15px; font-size: 0.8em; color: #666; }
+        .article-meta span { background: rgba(102,126,234,0.2); padding: 2px 8px; border-radius: 8px; }
+        
+        .source-medium { background: #00b800 !important; }
+        .source-reddit { background: #ff4500 !important; }
+        .source-twitter { background: #1da1f2 !important; }
+        .source-freecodecamp { background: #006400 !important; }
+        
+        footer { text-align: center; color: #666; margin-top: 40px; padding: 20px; }
+        a { color: #4facfe; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 文章列表</h1>
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索文章..." oninput="searchArticles(this.value)">
+        </div>
+        <a href="index.html" class="back-link">← 返回首页</a>
+    </header>
+    
+    <div class="category-title" id="categoryTitle">加载中...</div>
+    
+    <ul class="article-list" id="articleList"></ul>
+    
+    <footer><p>🤖 OpenClaw AI 助手驱动 | 英文教程中文翻译</p></footer>
+    
+    <script>
+        var articles = {
+            'tutorial': [
+                { id: 2, title: '掌握 OpenClaw：2026年个人AI助手终极设置指南', desc: '安装、DeepSeek 和 OpenAI 集成、代理配置', date: '2026-03-01', views: 98765, source: 'Medium' },
+                { id: 3, title: '如何安装和保护你的个人AI机器人', desc: '在本地机器上设置 OpenClaw 并保护它免受未经授权的访问', date: '2026-02-12', views: 87654, source: 'Medium' },
+                { id: 6, title: 'OpenClaw 完整教程：初学者指南', desc: '涵盖安装和配置的完整初学者指南', date: '2026-02-05', views: 54321, source: 'freeCodeCamp' }
+            ],
+            'security': [
+                { id: 1, title: '安全设置 OpenClaw 的实用指南', desc: '锁定 Gateway——切勿暴露在公网。关键安全步骤和最佳实践', date: '2026-02-20', views: 123456, source: 'Medium' }
+            ],
+            'guide': [
+                { id: 4, title: '深入理解 OpenClaw：多通道AI网关综合指南', desc: '什么是 OpenClaw 及其核心功能', date: '2026-02-20', views: 76543, source: 'Medium' }
+            ],
+            'advanced': [
+                { id: 5, title: '别再看 OpenClaw 安装教程了——这才是正确的方法', desc: '高级架构和多代理系统', date: '2026-02-10', views: 65432, source: 'Medium' }
+            ],
+            'discussion': [
+                { id: 9, title: 'OpenClaw 与其他AI助手的对比 - Reddit 讨论', desc: 'Reddit 上的社区讨论', date: '2026-02-18', views: 34567, source: 'Reddit' }
+            ],
+            'social': [
+                { id: 10, title: '来自 Twitter/X 社区的 OpenClaw 技巧', desc: 'OpenClaw 社区分享的技巧', date: '2026-02-25', views: 28900, source: 'Twitter' }
+            ]
+        };
+
+        var categoryNames = { 'tutorial': '📖 教程', 'security': '🔒 安全配置', 'guide': '📘 指南', 'advanced': '🚀 高级技巧', 'discussion': '💬 社区讨论', 'social': '🐦 社交媒体' };
+
+        var urlParams = new URLSearchParams(window.location.search);
+        var cat = urlParams.get('cat') || 'tutorial';
+
+        document.getElementById('categoryTitle').textContent = categoryNames[cat] || '文章列表';
+
+        var articleList = articles[cat] || [];
+        
+        function getSourceClass(source) {
+            if (source === 'Medium') return 'source-medium';
+            if (source === 'Reddit') return 'source-reddit';
+            if (source === 'Twitter') return 'source-twitter';
+            if (source === 'freeCodeCamp') return 'source-freecodecamp';
+            return '';
+        }
+        
+        function renderArticles(list) {
+            var listEl = document.getElementById('articleList');
+            
+            if (list.length === 0) {
+                listEl.innerHTML = '<p style="text-align:center;color:#666;padding:40px;">暂无文章</p>';
+            } else {
+                listEl.innerHTML = list.map(function(a) {
+                    var sourceClass = getSourceClass(a.source);
+                    return '<li class="article-item"><a href="detail.html?id=' + a.id + '&cat=' + cat + '"><h3>' + a.title + '</h3><p>' + a.desc + '</p><div class="article-meta"><span>📅 ' + a.date + '</span><span>👁 ' + a.views.toLocaleString() + ' 阅读</span><span class="' + sourceClass + '">📰 ' + a.source + '</span></div></a></li>';
+                }).join('');
+            }
+        }
+        
+        renderArticles(articleList);
+        
+        function searchArticles(query) {
+            if (query.length < 2) {
+                renderArticles(articleList);
+                return;
+            }
+            
+            query = query.toLowerCase();
+            var results = articleList.filter(function(article) {
+                return article.title.toLowerCase().indexOf(query) > -1 || 
+                       article.desc.toLowerCase().indexOf(query) > -1;
+            });
+            
+            renderArticles(results);
+        }
+    </script>
+</body>
+</html>

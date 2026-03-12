@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenClaw Tips - 英文教程翻译</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 900px; margin: 0 auto; padding: 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #eee; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 20px; margin-bottom: 40px; text-align: center; }
+        h1 { margin: 0 0 10px 0; font-size: 2.5em; }
+        .subtitle { opacity: 0.9; font-size: 1.1em; }
+        
+        .search-box { margin: 20px auto; max-width: 500px; }
+        .search-input { width: 100%; padding: 15px 20px; font-size: 16px; border: none; border-radius: 30px; background: rgba(255,255,255,0.9); color: #333; outline: none; }
+        
+        .search-results { display: none; margin-top: 20px; }
+        .search-results.active { display: block; }
+        
+        .result-item { background: rgba(255,255,255,0.08); padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.1); }
+        .result-item a { color: inherit; text-decoration: none; display: block; }
+        .result-item:hover { background: rgba(255,255,255,0.12); }
+        .result-item h4 { margin: 0 0 5px 0; color: #a78bfa; }
+        .result-item p { margin: 0; color: #aaa; font-size: 0.9em; }
+        
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .category-card { background: rgba(255,255,255,0.08); padding: 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); text-align: center; transition: transform 0.2s; }
+        .category-card:hover { transform: translateY(-5px); box-shadow: 0 10px 40px rgba(102,126,234,0.3); }
+        .category-card a { color: inherit; text-decoration: none; display: block; }
+        .category-icon { font-size: 2.5em; margin-bottom: 10px; }
+        .category-name { font-size: 1.1em; font-weight: bold; margin-bottom: 8px; color: #a78bfa; }
+        .category-desc { color: #aaa; font-size: 0.85em; }
+        .category-count { margin-top: 12px; background: rgba(102,126,234,0.3); padding: 4px 12px; border-radius: 20px; display: inline-block; font-size: 0.75em; }
+        
+        footer { text-align: center; color: #666; margin-top: 50px; padding: 20px; }
+        .sources { margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 15px; }
+        .sources h3 { color: #667eea; margin-bottom: 15px; }
+        .source-tag { padding: 5px 15px; border-radius: 20px; font-size: 0.8em; background: #00b800; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🦞 OpenClaw Tips</h1>
+        <p class="subtitle">英文教程中文翻译</p>
+        
+        <div class="search-box">
+            <input type="text" class="search-input" id="searchInput" placeholder="🔍 搜索文章..." oninput="searchArticles(this.value)">
+        </div>
+        
+        <div class="search-results" id="searchResults"></div>
+    </header>
+    
+    <div class="category-grid" id="categoryGrid">
+        <div class="category-card">
+            <a href="list.html?cat=tutorial">
+                <div class="category-icon">📖</div>
+                <div class="category-name">教程</div>
+                <div class="category-desc">分步指南</div>
+                <div class="category-count">3 篇文章</div>
+            </a>
+        </div>
+        
+        <div class="category-card">
+            <a href="list.html?cat=security">
+                <div class="category-icon">🔒</div>
+                <div class="category-name">安全配置</div>
+                <div class="category-desc">保护你的安装</div>
+                <div class="category-count">1 篇文章</div>
+            </a>
+        </div>
+        
+        <div class="category-card">
+            <a href="list.html?cat=guide">
+                <div class="category-icon">📘</div>
+                <div class="category-name">指南</div>
+                <div class="category-desc">综合指南</div>
+                <div class="category-count">1 篇文章</div>
+            </a>
+        </div>
+        
+        <div class="category-card">
+            <a href="list.html?cat=advanced">
+                <div class="category-icon">🚀</div>
+                <div class="category-name">高级技巧</div>
+                <div class="category-desc">高级用户技巧</div>
+                <div class="category-count">1 篇文章</div>
+            </a>
+        </div>
+        
+        <div class="category-card">
+            <a href="list.html?cat=discussion">
+                <div class="category-icon">💬</div>
+                <div class="category-name">社区讨论</div>
+                <div class="category-desc">Reddit 讨论</div>
+                <div class="category-count">1 篇文章</div>
+            </a>
+        </div>
+        
+        <div class="category-card">
+            <a href="list.html?cat=social">
+                <div class="category-icon">🐦</div>
+                <div class="category-name">社交媒体</div>
+                <div class="category-desc">Twitter 技巧</div>
+                <div class="category-count">1 篇文章</div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="sources">
+        <h3>📰 来源</h3>
+        <span class="source-tag">Medium</span>
+        <span class="source-tag">Reddit</span>
+        <span class="source-tag">freeCodeCamp</span>
+    </div>
+    
+    <footer>
+        <p>🤖 OpenClaw AI 助手驱动 | 更新于 2026-03-12</p>
+        <p>⚠️ 注意：文章由英文翻译为中文</p>
+    </footer>
+    
+    <script>
+        var allArticles = [
+            { id: 1, title: '安全设置 OpenClaw 的实用指南', desc: '锁定 Gateway——切勿暴露在公网。关键安全步骤和最佳实践', cat: 'security', source: 'Medium' },
+            { id: 2, title: '掌握 OpenClaw：2026年个人AI助手终极设置指南', desc: '安装、DeepSeek 和 OpenAI 集成、代理配置', cat: 'tutorial', source: 'Medium' },
+            { id: 3, title: '如何安装和保护你的个人AI机器人', desc: '在本地机器上设置 OpenClaw 并保护它免受未经授权的访问', cat: 'tutorial', source: 'Medium' },
+            { id: 4, title: '深入理解 OpenClaw：多通道AI网关综合指南', desc: '什么是 OpenClaw 及其核心功能', cat: 'guide', source: 'Medium' },
+            { id: 5, title: '别再看 OpenClaw 安装教程了——这才是正确的方法', desc: '高级架构和多代理系统', cat: 'advanced', source: 'Medium' },
+            { id: 6, title: 'OpenClaw 完整教程：初学者指南', desc: '涵盖安装和配置的完整初学者指南', cat: 'tutorial', source: 'freeCodeCamp' },
+            { id: 9, title: 'OpenClaw 与其他AI助手的对比 - Reddit 讨论', desc: 'Reddit 上的社区讨论', cat: 'discussion', source: 'Reddit' },
+            { id: 10, title: '来自 Twitter/X 社区的 OpenClaw 技巧', desc: 'OpenClaw 社区分享的技巧', cat: 'social', source: 'Twitter' }
+        ];
+        
+        function searchArticles(query) {
+            var resultsDiv = document.getElementById('searchResults');
+            var categoryGrid = document.getElementById('categoryGrid');
+            
+            if (query.length < 2) {
+                resultsDiv.classList.remove('active');
+                categoryGrid.style.display = 'grid';
+                return;
+            }
+            
+            query = query.toLowerCase();
+            var results = allArticles.filter(function(article) {
+                return article.title.toLowerCase().indexOf(query) > -1 || 
+                       article.desc.toLowerCase().indexOf(query) > -1;
+            });
+            
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<h3 style="color:#667eea;">🔍 搜索结果</h3><p style="color:#666;">未找到"' + query + '"相关文章</p>';
+            } else {
+                var html = '<h3 style="color:#667eea;">🔍 搜索结果 (' + results.length + ')</h3>';
+                results.forEach(function(article) {
+                    html += '<div class="result-item"><a href="detail.html?id=' + article.id + '&cat=' + article.cat + '"><h4>' + article.title + '</h4><p>' + article.desc + '</p></a></div>';
+                });
+                resultsDiv.innerHTML = html;
+            }
+            
+            resultsDiv.classList.add('active');
+            categoryGrid.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
