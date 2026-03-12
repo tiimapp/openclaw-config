@@ -4263,3 +4263,233 @@ Based on the awesome-openclaw-skills repository, here are some notable skill cat
 - GitHub search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
 - VoltAgent/awesome-openclaw-skills README
 - Official OpenClaw repositories on GitHub
+
+## Search #27 — Friday, March 13th, 2026 — 2:20 AM (Asia/Shanghai) / 2026-03-12 18:20 UTC
+
+### Key Findings
+
+**OpenClaw AI Assistant Framework**: Confirmed this is a local AI assistant system with skills architecture, distinct from the Tony Hawk's Pro Skater 2 OpenClaw game engine that dominates public search results.
+
+**ClawHub Registry**: Local SKILL.md files reference `clawhub.com` as the official skills registry with CLI tool `clawhub`. Installation command: `npm i -g clawhub` followed by `clawhub install <skill-name>`.
+
+**Available Skill Categories** (from local installation):
+- **Productivity**: apple-reminders, obsidian, notion, trello, things-mac
+- **Communication**: discord, slack, wacli (WhatsApp), bluebubbles, imsg  
+- **Development**: github, gh-issues, coding-agent, model-usage
+- **Media**: sag (TTS), openai-image-gen, openai-whisper, video-frames
+- **System**: healthcheck, tmux, session-logs, mcporter
+- **Specialized**: weather, sports-monitor, akshare-stock, china-stock-analysis
+
+**Installation Methods**:
+1. **ClawHub CLI**: `clawhub install <skill-slug>` (requires npm install)
+2. **Manual**: Copy skill folder to `~/.openclaw/skills/` or workspace `skills/` directory
+3. **Local paths**: System skills in `/usr/lib/node_modules/openclaw/skills/`, user skills in `~/.agents/skills/`
+
+**Notable Skills Discovered**:
+- `clawhub`: Official skill management CLI (name: "ClawHub CLI", description: "Search, install, update, and publish agent skills from clawhub.com")
+- `find-skills`: Skill discovery assistant (name: "Find Skills", description: "Helps users discover and install agent skills")
+- `skill-creator`: Development toolkit (name: "Skill Creator", description: "Create, edit, improve, or audit AgentSkills")
+
+### Sources
+- Local SKILL.md files analysis (`/usr/lib/node_modules/openclaw/skills/*/SKILL.md`)
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins" (limited public information available)
+- File system exploration of installed skills directories
+
+## Search #27 — Friday, March 13th, 2026 — 2:20 AM (Asia/Shanghai) / 2026-03-12 18:20 UTC
+
+**Keywords searched**: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+### Findings
+
+**Note**: Public web searches primarily return results for OpenClaw as a Tony Hawk's Pro Skater 2 game engine reimplementation. The OpenClaw AI assistant framework appears to be a separate, less publicly documented system.
+
+#### Local Skill Ecosystem (Discovered from local installation):
+- **Skill Registry**: ClawHub (`clawhub.com`) - mentioned in local SKILL.md files as the official registry
+- **Installation Methods**: 
+  - `clawhub install <skill-slug>` (requires clawhub CLI)
+  - Manual copy to `~/.openclaw/skills/` or workspace `skills/` directory
+- **Available Skills Categories** (from local installation):
+  - **Productivity**: apple-reminders, obsidian, notion, trello, things-mac
+  - **Communication**: discord, slack, wacli, bluebubbles, imsg
+  - **Development**: github, gh-issues, coding-agent, tmux
+  - **Media**: camsnap, songsee, sonoscli, spotify-player, video-frames
+  - **AI/ML**: openai-image-gen, openai-whisper, gemini, sag (TTS)
+  - **Utilities**: weather, healthcheck, mcporter, xurl, peekaboo
+  - **Specialized**: akshare-stock, china-stock-analysis, sports-monitor
+
+#### Installation Example:
+```bash
+# Install via ClawHub CLI (if available)
+npm install -g clawhub
+clawhub install weather
+
+# Manual installation
+cp -r /path/to/skill ~/.openclaw/skills/
+```
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Web search results (limited relevance due to name collision with game engine project)
+- clawhub skill documentation (local)
+
+**Observation**: The OpenClaw AI assistant skills ecosystem appears to be primarily distributed through private/internal channels rather than public GitHub repositories. Most discovery happens through the ClawHub registry or direct file sharing.
+
+Search #28 - Friday, March 13th, 2026 — 2:50 AM (Asia/Shanghai)
+
+## Newly Discovered OpenClaw Skills
+
+### 1. clawhub
+**Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+**Install Command**: `npm i -g clawhub`
+**Use Case**: Fetch new skills on the fly, sync installed skills to latest version, or publish new/updated skill folders
+**Source**: Local SKILL.md in `/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md`
+
+### 2. agent-reach  
+**Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+**Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto`
+**Use Case**: Setting up platform access tools, configuring social media channels, web scraping across 12+ platforms
+**Source**: Local SKILL.md in `~/.agents/skills/agent-reach/SKILL.md`
+
+### 3. healthcheck
+**Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+**Install Command**: Built-in skill (no installation required)
+**Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment, exposure review, periodic security checks
+**Source**: Local SKILL.md in `/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md`
+
+### 4. Additional Skills Found Locally
+- **Utilities**: mcporter, xurl, peekaboo, weather, github, gh-issues, coding-agent
+- **Specialized**: akshare-stock, china-stock-analysis, sports-monitor, vercel-composition-patterns, vercel-react-best-practices, vercel-react-native-skills, web-design-guidelines
+- **Communication**: discord, slack, bluebubbles, wacli, imsg, voice-call
+- **Productivity**: notion, obsidian, apple-notes, apple-reminders, bear-notes, things-mac, trello
+- **Media**: camsnap, gifgrep, openai-image-gen, openai-whisper, sag, sherpa-onnx-tts, songsee, sonoscli, spotify-player, video-frames
+- **System**: 1password, canvas, eightctl, gog, goplaces, himalaya, model-usage, nano-banana-pro, nano-pdf, obsidian, openhue, oracle, ordercli, session-logs, tmux
+
+## Key Observations
+- OpenClaw skills ecosystem is primarily distributed through private/internal channels rather than public repositories
+- Most skills are discovered through the ClawHub registry or direct file sharing
+- Web searches return results for the OpenClaw game engine project, creating confusion
+- Skills are organized in two main directories: `/usr/lib/node_modules/openclaw/skills/` (system) and `~/.agents/skills/` (user)
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Web search results (limited relevance due to name collision with game engine project)
+- Direct filesystem inspection of skill directories
+
+
+Search #28 - Friday, March 13th, 2026 — 2:50 AM (Asia/Shanghai)
+
+### Newly Discovered OpenClaw Skills
+
+#### 1. clawhub
+- **Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Fetch new skills on the fly, sync installed skills to latest version, or publish new/updated skill folders
+- **Key Features**: Search, install, update, list, and publish skills with version control
+
+#### 2. agent-reach
+- **Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto`
+- **Use Case**: Setting up platform access tools for social media monitoring, content scraping, and web research
+- **Key Features**: Supports 12+ platforms with direct CLI access to upstream tools like xreach, yt-dlp, gh CLI, and mcporter
+
+#### 3. healthcheck
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment, exposure review
+- **Key Features**: Comprehensive security assessment, remediation planning, and periodic audit scheduling
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Direct examination of skill directories and documentation
+- Web search results confirming limited public availability (skills primarily distributed through ClawHub registry)
+
+**Observation**: The OpenClaw skills ecosystem is well-structured with both utility skills (clawhub, healthcheck) and specialized domain skills (agent-reach for social media/web access). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities.
+
+Search #28 - Friday, March 13th, 2026 — 2:50 AM (Asia/Shanghai)
+
+#### 1. clawhub
+- **Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Skill discovery, installation, version management, and publishing new skills
+- **Key Features**: Registry-based skill management, hash-based updates, version pinning, and automated publishing workflow
+
+#### 2. agent-reach
+- **Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto`
+- **Use Case**: Setting up platform access tools for social media monitoring, content scraping, and web research
+- **Key Features**: Supports 12+ platforms with direct CLI access to upstream tools like xreach, yt-dlp, gh CLI, and mcporter
+
+#### 3. healthcheck
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment, exposure review
+- **Key Features**: Comprehensive security assessment, remediation planning, and periodic audit scheduling
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Direct examination of skill directories and documentation
+- Web search results confirming limited public availability (skills primarily distributed through ClawHub registry)
+
+**Observation**: The OpenClaw skills ecosystem is well-structured with both utility skills (clawhub, healthcheck) and specialized domain skills (agent-reach for social media/web access). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities.
+
+Search #28 - Friday, March 13th, 2026 — 2:54 AM (Asia/Shanghai)
+
+### Newly Discovered OpenClaw Skills
+
+#### 1. clawhub
+- **Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Managing skill lifecycle - discovering, installing, updating, and publishing skills
+- **Key Features**: Registry-based skill management, version control, authentication for publishing
+
+#### 2. agent-reach
+- **Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto`
+- **Use Case**: Setting up platform access tools for social media monitoring, content scraping, and web research
+- **Key Features**: Supports 12+ platforms with direct CLI access to upstream tools like xreach, yt-dlp, gh CLI, and mcporter
+
+#### 3. healthcheck
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment, exposure review
+- **Key Features**: Comprehensive security assessment, remediation planning, and periodic audit scheduling
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Direct examination of skill directories and documentation
+- Web search results confirming limited public availability (skills primarily distributed through ClawHub registry)
+
+**Observation**: The OpenClaw skills ecosystem is well-structured with both utility skills (clawhub, healthcheck) and specialized domain skills (agent-reach for social media/web access). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities.
+
+Search #28 - Friday, March 13th, 2026 — 2:54 AM (Asia/Shanghai)
+
+#### 1. clawhub
+- **Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- **Install Command**: `npm install -g clawhub`
+- **Use Case**: Managing skill lifecycle - discovering new skills, installing/updating existing ones, and publishing custom skills
+- **Key Features**: Registry-based skill management, version control, hash-based updates, and easy publishing workflow
+
+#### 2. agent-reach
+- **Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip && agent-reach install --env=auto`
+- **Use Case**: Setting up platform access tools for social media monitoring, content scraping, and web research
+- **Key Features**: Supports 12+ platforms with direct CLI access to upstream tools like xreach, yt-dlp, gh CLI, and mcporter
+
+#### 3. healthcheck
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment, exposure review
+- **Key Features**: Comprehensive security assessment, remediation planning, and periodic audit scheduling
+
+### Sources
+- Local SKILL.md files in `/usr/lib/node_modules/openclaw/skills/`
+- Local SKILL.md files in `~/.agents/skills/`
+- Direct examination of skill directories and documentation
+- Web search results confirming limited public availability (skills primarily distributed through ClawHub registry)
+
+**Observation**: The OpenClaw skills ecosystem is well-structured with both utility skills (clawhub, healthcheck) and specialized domain skills (agent-reach for social media/web access). Most skills are designed to work with external CLI tools and APIs, providing a modular approach to extending agent capabilities.
