@@ -157,11 +157,22 @@ def fetch_from_dashscope_websearch(today: str) -> Optional[Dict[str, Any]]:
         if price_data:
             price_data['data_source'] = 'dashscope-websearch'
             price_data['data_date'] = today
+            # Ensure is_today is properly set based on data
+            price_data['is_today'] = price_data.get('is_today', False)
             price_data['is_stale'] = not price_data.get('is_today', False)
             price_data['timestamp'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             
-            print(f"✅ Real-time data fetched from dashscope-websearch: ¥{price_data.get('price', 'N/A')}")
-            return price_data
+            # Check if data is fresh (from today)
+            if price_data.get('is_today', False):
+                print(f"✅ Real-time data fetched from dashscope-websearch: ¥{price_data.get('price', 'N/A')}")
+                return price_data
+            else:
+                print(f"⚠️ dashscope-websearch data is stale (date: {price_data.get('date_in_response', 'unknown')}), will try AKShare")
+        
+        print("⚠️ Could not extract fresh price from dashscope-websearch response")
+        if 'text' in data['output']:
+            print(f"   Response text: {data['output']['text'][:500]}")
+        return None
         
         print("⚠️ Could not extract price from dashscope-websearch response")
         print(f"   Response text: {text[:500]}")
@@ -199,6 +210,7 @@ def extract_price_from_dashscope_text(text: str) -> Optional[Dict[str, Any]]:
         'high': r'最高价[:：]?\s*¥?\s*([\d.]+)',
         'low': r'最低价[:：]?\s*¥?\s*([\d.]+)',
         'previous_close': r'(?:昨结算|昨收|上一交易日结算价)[:：]?\s*¥?\s*([\d.]+)',
+        'volume': r'成交量[:：]?\s*([\d.]+)手',
     }
     
     for field, pattern in patterns.items():
@@ -206,7 +218,10 @@ def extract_price_from_dashscope_text(text: str) -> Optional[Dict[str, Any]]:
         if match:
             try:
                 value = float(match.group(1))
-                if 2000 <= value <= 3500:  # Validate price range
+                # For volume, no need to check price range
+                if field == 'volume':
+                    result[field] = int(value)
+                elif 2000 <= value <= 3500:  # Validate price range for price fields
                     result[field] = value
             except (ValueError, IndexError):
                 continue
@@ -223,11 +238,28 @@ def extract_price_from_dashscope_text(text: str) -> Optional[Dict[str, Any]]:
         else:
             result['is_today'] = False
     
+    # Extract volume if available (e.g., "成交量为46.60万手")
+    volume_match = re.search(r'成交量[:：]?\s*([\d.]+)万手', text)
+    if volume_match:
+        try:
+            volume = int(float(volume_match.group(1)) * 10000)
+            result['volume'] = volume
+        except (ValueError, IndexError):
+            pass
+    
+    # Calculate change if we have previous close and today's data
+    if 'price' in result and 'previous_close' in result:
+        price = result['price']
+        prev_close = result['previous_close']
+        change = price - prev_close
+        change_percent = (change / prev_close * 100) if prev_close else 0
+        result['change'] = f"{change:+.2f}"
+        result['change_percent'] = change_percent
+        result['is_today'] = True  # We have today's data if prev_close is included
+    
     # If we got at least the price, return the result
     if 'price' in result:
         return result
-    
-    return None
 
 
 def fetch_from_akshare() -> Optional[Dict[str, Any]]:

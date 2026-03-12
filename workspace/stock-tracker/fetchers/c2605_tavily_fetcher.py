@@ -7,8 +7,7 @@ from multiple Chinese financial websites.
 
 Fallback chain:
 1. Tavily Search → Extract from search results
-2. Direct web_fetch → Chinese financial websites
-3. AKShare → Historical data (last resort)
+2. AKShare Historical (reliable, but may be stale)
 
 Usage:
     python3 c2605_tavily_fetcher.py [--test]
@@ -269,13 +268,15 @@ def fetch_c2605_price(symbol: str = 'C2605') -> Optional[Dict[str, Any]]:
     Priority:
     1. Tavily Search (AI-powered, real-time)
     2. AKShare Historical (reliable, but may be stale)
-    3. Mock data (last resort)
     
     Args:
         symbol: Futures symbol
     
     Returns:
         Dictionary with price data
+    
+    Raises:
+        RuntimeError: If all sources fail
     """
     print(f"🔍 Fetching {symbol} price data...")
     print(f"   Tavily API: {'✅ Configured' if TAVILY_API_KEY else '❌ Not configured'}")
@@ -298,30 +299,15 @@ def fetch_c2605_price(symbol: str = 'C2605') -> Optional[Dict[str, Any]]:
         print(f"✅ Success! Price: ¥{data['current_price']} (AKShare)")
         return data
     
-    # Last resort: Mock data
-    print("⚠️ All sources failed, using mock data")
-    return generate_mock_data(symbol)
-
-
-def generate_mock_data(symbol: str = 'C2605') -> Dict[str, Any]:
-    """Generate mock data for testing."""
-    import random
-    base_price = 2380.0
-    return {
-        'symbol': symbol,
-        'name': '玉米 2605',
-        'current_price': base_price + random.uniform(-20, 20),
-        'open': base_price + random.uniform(-10, 10),
-        'high': base_price + random.uniform(10, 30),
-        'low': base_price + random.uniform(-30, -10),
-        'previous_close': base_price,
-        'volume': random.randint(100000, 1000000),
-        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        'change': random.uniform(-15, 15),
-        'change_percent': random.uniform(-0.6, 0.6),
-        'data_source': 'mock',
-        'is_stale': False
-    }
+    # All sources failed - raise exception
+    error_msg = (
+        f"❌ 无法获取 {symbol} 数据：\n"
+        "   1. Tavily Search 无法获取数据\n"
+        "   2. AKShare 也无法获取数据\n"
+        "请检查网络连接或稍后重试。"
+    )
+    print(error_msg)
+    raise RuntimeError(error_msg)
 
 
 def main():
