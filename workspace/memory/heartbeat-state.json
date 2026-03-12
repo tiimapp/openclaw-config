@@ -9,7 +9,7 @@
     "calendar": null,
     "weather": null,
     "cron_configured": "2026-03-07T08:15:00+08:00",
-    "model_health": "2026-03-12T07:35:26+08:00",
+    "model_health": "2026-03-12T10:05:00+08:00",
     "night_trading_verify": "2026-03-11"
   },
   "lastHeartbeat": "2026-03-12T06:04:00+08:00",
@@ -25,9 +25,9 @@
     "2026-03-10T21:44": "Heartbeat check - gateway running, trading day verified, night session status uncertain"
   },
   "modelStatus": {
-    "primary": "ok",
-    "fallback": "ok",
-    "lastCheck": "2026-03-12T08:34:00+08:00"
+    "primary": "failed",
+    "fallback": "failed",
+    "note": "API timeouts at 10:05"
   },
   "gatewayStatus": {
     "running": true,

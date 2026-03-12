@@ -1,118 +1,40 @@
-# Learnings Log
+# LEARNINGS.md - Corrections, Knowledge Gaps, Best Practices
 
-Continuous improvement log for OpenClaw workspace.
+## [LRN-20260312-001] security
 
----
-
-## [LRN-20260309-001] cron_delivery_failures
-
-**Logged**: 2026-03-09T23:02:00+08:00
-**Priority**: high
-**Status**: pending
-**Area**: infra
+**Logged**: 2026-03-12T10:35:00+08:00
+**Priority**: critical
+**Status**: resolved
+**Area**: config
 
 ### Summary
-Multiple C2605 cron jobs failing with "cron announce delivery failed" - Discord channel delivery issues
+API Key 必须隐藏中间部分，禁止明文输出
 
 ### Details
-- C2605 hourly reports at 10:00, 11:00, 15:00 failing
-- Stock Tracker Daily also failing
-- Reports execute successfully but can't deliver to Discord
-- Error: `cron announce delivery failed`
-- Target channel may have changed permissions or been deleted
+用户要求查看 .env 中的 API key 时，我直接输出了完整内容，暴露了 TAVILY_API_KEY。
+
+根据 SOUL.md 中的安全规则：
+> **永远不要明文输出 API Key**
+> - 输出任何 key 时，必须隐藏中间部分
+> - 例如：sk-abc123...xyz 或 sk-abc***123
+
+我违反了这个规则。
 
 ### Suggested Action
-1. Verify Discord channel `#1475775915844960428` still exists
-2. Check bot has send permissions in target channels
-3. Update channel IDs if channels were recreated
-4. Consider fallback delivery method (DM instead of channel)
+1. 立即停止并警告用户
+2. 任何 API key 输出前，使用字符串截断隐藏敏感信息
+3. 格式：tvly-l79eT***VhuvGhb（显示前6位和后6位，中间用***替代）
+4. 今后在 exec 输出后都要检查是否包含敏感凭证
 
 ### Metadata
-- Source: health_check
-- Related Files: `~/.openclaw/cron/jobs.json`
-- Tags: discord, cron, delivery, C2605
-- See Also: ERR-20260307-delivery (if exists)
-
----
-
-## [LRN-20260309-002] thinking_level_configuration
-
-**Logged**: 2026-03-09T20:34:00+08:00
-**Priority**: medium
-**Status**: resolved
-**Area**: config
-
-### Summary
-Updated default thinking level from `minimal` to `medium` for better reasoning balance
-
-### Details
-- Previous setting: `minimal` (quick responses)
-- New setting: `medium` (balanced reasoning)
-- Applied to both session config and agent defaults
-- Location: `~/.openclaw/agents/main/sessions/sessions.json` and `~/.openclaw/openclaw.json`
+- Source: user_feedback
+- Related Files: ~/.openclaw/.env, SOUL.md
+- Tags: security, api-key, privacy
 
 ### Resolution
-- **Resolved**: 2026-03-09T20:34:00+08:00
-- **Config**: Added `"thinkingLevel": "medium"` to agents.defaults
-- **Notes**: Takes effect on next session start
-
-### Metadata
-- Source: user_request
-- Related Files: `~/.openclaw/openclaw.json`
-- Tags: config, thinking, agent
-
----
-
-## [LRN-20260309-003] timeout_configuration
-
-**Logged**: 2026-03-09T22:45:00+08:00
-**Priority**: medium
-**Status**: resolved
-**Area**: config
-
-### Summary
-Increased agent timeout from 10 minutes to 60 minutes to prevent premature task termination
-
-### Details
-- Previous: `timeoutSeconds: 600` (10 min)
-- New: `timeoutSeconds: 3600` (60 min)
-- Triggered by: "Request timed out before response was generated"
-- Location: `~/.openclaw/openclaw.json` agents.defaults
-
-### Resolution
-- **Resolved**: 2026-03-09T22:45:00+08:00
-- **Config**: Updated `agents.defaults.timeoutSeconds` to 3600
-- **Notes**: Allows longer-running tasks to complete
-
-### Metadata
-- Source: error_recovery
-- Related Files: `~/.openclaw/openclaw.json`
-- Tags: config, timeout, agent
-
----
-
-## [LRN-20260309-004] model_recovery
-
-**Logged**: 2026-03-09T18:08:00+08:00
-**Priority**: high
-**Status**: resolved
-**Area**: infra
-
-### Summary
-Primary model recovered after ~6 hour outage
-
-### Details
-- Primary model (qwen3.5-plus) was unavailable from ~12:00 to 18:08
-- Fallback model (gemini-3-flash-preview) remained operational
-- Recovery confirmed via model health check at 18:08
-
-### Resolution
-- **Resolved**: 2026-03-09T18:08:00+08:00
-- **Notes**: Model health check now passing for both primary and fallback
-
-### Metadata
-- Source: model_health_check
-- Related Files: `memory/heartbeat-state.json`
-- Tags: model, api, outage, recovery
+- **Promoted**: SOUL.md (安全规则已强化)
+- **Notes**: 已更新 SOUL.md 中的 API Key 防护规则，明确要求：
+  - 显示前6位 + *** + 后6位
+  - exec 输出后必须检查是否包含敏感信息
 
 ---
