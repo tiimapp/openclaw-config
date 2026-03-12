@@ -2536,3 +2536,83 @@ Note: OpenClaw appears to be primarily used in private or internal deployments r
 - Web Search Results (March 12, 2026)
 
 ---
+
+Search #18 - Thursday, March 12th, 2026 — 8:24 PM (Asia/Shanghai)
+
+## OpenClaw AI Agent Framework Skills
+
+Based on local environment analysis and limited web search results, here are the key findings about OpenClaw skills:
+
+### 1. **clawhub CLI**
+- **Description**: Official marketplace CLI for OpenClaw skills - enables searching, installing, updating, and publishing community skills
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Primary tool for discovering and managing OpenClaw skills from the ClawHub registry
+- **Sources**: Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md)
+
+### 2. **Local Built-in Skills**
+The OpenClaw framework includes numerous built-in skills in the local installation:
+- **gh-issues**: GitHub issue management and PR automation
+- **github**: General GitHub interaction using gh CLI
+- **healthcheck**: Host security hardening and risk assessment
+- **mcporter**: MCP server/tool integration
+- **skill-creator**: Create and manage AgentSkills
+- **weather**: Weather and forecast information
+- **agent-reach**: Internet platform access (Twitter, Reddit, YouTube, etc.)
+- **akshare-stock** & **china-stock-analysis**: A股 stock analysis
+- **find-skills**: Skill discovery assistance
+- **vercel-composition-patterns**, **vercel-react-best-practices**, **vercel-react-native-skills**: Development best practices
+- **web-design-guidelines**: UI/UX compliance review
+- **self-improvement**: Continuous learning and error capture
+
+### 3. **Skill Structure**
+- Skills are stored as directories containing SKILL.md files
+- Global skills location: `/usr/lib/node_modules/openclaw/skills/`
+- Workspace-specific skills: `~/.openclaw/workspace/skills/`
+- Skills can be installed via clawhub CLI or manually copied
+
+### 4. **Key Categories Available**
+- Coding Agents & IDE Integration
+- Web & Frontend Development  
+- Browser Automation
+- DevOps & Cloud Management
+- Git & GitHub Tools
+- AI & LLM Integration
+- Productivity & Task Management
+- Communication Platforms
+- Financial Analysis (A股 focused)
+
+**Note**: Web searches for "OpenClaw skills" primarily return results for the video game OpenClaw rather than the AI agent framework. The AI agent framework appears to be a specialized/niche project with skills primarily distributed through the clawhub CLI and local installations.
+
+**Sources**:
+- Local OpenClaw installation analysis
+- GitHub repository search results (March 12, 2026)
+- Web search results (March 12, 2026)
+- ClawHub skill documentation
+
+---
+
+Search #18 - Thursday, March 12th, 2026 — 8:24 PM (Asia/Shanghai)
+
+**Finding 1: ClawHub CLI**
+- **Name**: clawhub
+- **Description**: Official marketplace CLI for OpenClaw skills - enables searching, installing, updating, and publishing community skills
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Central hub for discovering and managing OpenClaw agent skills from the community registry
+- **Source**: Local OpenClaw installation (/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md)
+
+**Finding 2: Built-in Skills Repository**
+- **Name**: OpenClaw Core Skills
+- **Description**: Collection of 50+ built-in skills covering various domains including GitHub integration, health checks, weather, coding agents, communication platforms, and more
+- **Install Command**: Pre-installed with OpenClaw framework
+- **Use Case**: Provides immediate functionality for common tasks like file operations, web searches, system monitoring, and external service integration
+- **Source**: Local OpenClaw installation (/usr/lib/node_modules/openclaw/skills/)
+
+**Finding 3: User Workspace Skills**
+- **Name**: Custom Skills
+- **Description**: User-defined skills stored in workspace directory, including tavily-search, github, and self-improving-agent
+- **Install Command**: Manual placement in ~/.openclaw/workspace/skills/ or project-specific skills directory
+- **Use Case**: Extending OpenClaw capabilities with custom functionality tailored to specific needs
+- **Source**: Local workspace (~/.openclaw/workspace/skills/)
+
+Note: Web searches for "OpenClaw skills" primarily return results for an unrelated video game reimplementation. The AI agent framework appears to be a specialized/niche project with skills primarily distributed through the ClawHub CLI and local installations.
+

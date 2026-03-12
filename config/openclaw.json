@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.8",
-    "lastTouchedAt": "2026-03-12T03:04:54.945Z"
+    "lastTouchedAt": "2026-03-12T12:21:13.206Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-23T13:25:29.036Z",
@@ -202,8 +202,7 @@
             "sessions_send",
             "sessions_spawn",
             "web_search",
-            "exec",
-            "aliyun-websearch:*"
+            "exec"
           ]
         }
       },
@@ -227,8 +226,7 @@
             "sessions_send",
             "sessions_spawn",
             "web_search",
-            "exec",
-            "aliyun-websearch:*"
+            "exec"
           ]
         }
       }
@@ -250,6 +248,13 @@
     },
     "sessions": {
       "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "main",
+        "code_g"
+      ]
     }
   },
   "bindings": [

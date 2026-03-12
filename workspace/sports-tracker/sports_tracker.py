@@ -10,16 +10,26 @@ import sys
 import os
 from datetime import datetime
 
-def call_dashscope_websearch(query):
+def call_dashscope_websearch(query, count=5):
     """调用 dashscope-websearch MCP 工具进行搜索"""
     try:
-        # 构建 MCP 调用命令
+        # 设置工作目录为 OpenClaw 工作目录，确保 mcporter 能找到配置文件
+        openclaw_workspace = os.path.expanduser("~/.openclaw/workspace")
+        
+        # 使用正确的参数格式: query=value count=value
         cmd = [
-            "mcporter", "call", "dashscope-websearch", "web_search",
-            "--input-json", json.dumps({"query": query, "count": 5})
+            "mcporter", "call", "dashscope-websearch.bailian_web_search",
+            "query=" + query,
+            "count=" + str(count)
         ]
         
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        result = subprocess.run(
+            cmd, 
+            capture_output=True, 
+            text=True, 
+            timeout=30,
+            cwd=openclaw_workspace  # 设置工作目录
+        )
         
         if result.returncode == 0:
             try:
@@ -34,74 +44,79 @@ def call_dashscope_websearch(query):
         print(f"调用 dashscope-websearch 时出错: {e}")
         return None
 
+def extract_matches_from_results(search_results):
+    """从搜索结果中提取比赛信息"""
+    matches = []
+    
+    if not isinstance(search_results, dict):
+        return matches
+    
+    # dashscope-websearch 返回的格式包含 pages 数组
+    pages = search_results.get('pages', [])
+    
+    for page in pages:
+        if isinstance(page, dict):
+            title = page.get('title', '')
+            snippet = page.get('snippet', '')
+            url = page.get('url', '')
+            
+            # 检查是否包含比赛相关信息
+            if any(keyword in title.lower() or keyword in snippet.lower() 
+                   for keyword in ['比赛', '赛事', 'vs', '对阵', '比分', '赛程', 'nba', 'cba', '中超', '足球', '篮球', '常规赛', '直播']):
+                matches.append({
+                    'title': title,
+                    'snippet': snippet,
+                    'url': url
+                })
+    
+    return matches
+
 def generate_sports_summary():
     """生成体育赛事摘要"""
-    # 搜索查询
-    sites = ["腾讯体育", "网易体育", "懂球帝", "直播吧"]
+    # 搜索查询 - 针对中文体育网站和热门赛事
     queries = [
-        f"site:{" OR site:".join([s.lower().replace('体育', '') for s in sites])} 最新热门比赛",
-        "中超 CBA 热门比赛 最新赛况",
-        "NBA 足球 热门赛事 今日比赛"
+        "今日热门体育比赛 NBA CBA 中超",
+        "最新体育赛事 比分 时间 直播",
+        "腾讯体育 网易体育 懂球帝 直播吧 热门比赛"
     ]
     
-    all_results = []
+    all_matches = []
     
     # 执行多次搜索以获取全面信息
     for query in queries:
         print(f"正在搜索: {query}")
-        result = call_dashscope_websearch(query)
+        result = call_dashscope_websearch(query, count=3)
         if result:
-            all_results.append(result)
+            matches = extract_matches_from_results(result)
+            all_matches.extend(matches)
     
-    if not all_results:
+    if not all_matches:
         return "未能获取到体育赛事信息。"
-    
-    # 提取关键信息并生成摘要
-    summary = "# 🏆 今日热门体育赛事\n\n"
-    
-    # 这里需要根据实际返回的数据结构进行解析
-    # 由于我们不知道确切的返回格式，先创建一个通用的处理方式
-    matches_info = []
-    
-    for result in all_results:
-        if isinstance(result, dict) and 'results' in result:
-            for item in result['results']:
-                if 'title' in item and 'url' in item:
-                    # 提取比赛信息
-                    title = item['title']
-                    # 简单提取对阵双方和比分/时间
-                    matches_info.append({
-                        'title': title,
-                        'url': item['url'],
-                        'snippet': item.get('snippet', '')
-                    })
-        elif isinstance(result, list):
-            for item in result:
-                if isinstance(item, dict) and 'title' in item:
-                    matches_info.append({
-                        'title': item['title'],
-                        'url': item.get('url', ''),
-                        'snippet': item.get('snippet', '')
-                    })
     
     # 去重并限制数量
     unique_matches = []
     seen_titles = set()
     
-    for match in matches_info:
-        if match['title'] not in seen_titles and len(unique_matches) < 10:
-            seen_titles.add(match['title'])
+    for match in all_matches:
+        # 使用标题和片段的组合作为去重键
+        title_key = (match['title'] + " " + match['snippet'])[:100]
+        if title_key not in seen_titles and len(unique_matches) < 8:
+            seen_titles.add(title_key)
             unique_matches.append(match)
     
     if not unique_matches:
         return "未能解析到具体的比赛信息。"
     
     # 生成简洁摘要
-    for i, match in enumerate(unique_matches[:8], 1):
+    summary = "# 🏆 今日热门体育赛事\n\n"
+    
+    for i, match in enumerate(unique_matches, 1):
         summary += f"{i}. **{match['title']}**\n"
         if match['snippet']:
-            # 提取关键信息如比分、时间等
-            snippet = match['snippet'][:100] + "..." if len(match['snippet']) > 100 else match['snippet']
+            # 清理和格式化片段
+            snippet = match['snippet'].replace('\n', ' ').strip()
+            if len(snippet) > 120:
+                snippet = snippet[:120] + "..."
             summary += f"   {snippet}\n"
         summary += "\n"
     
@@ -117,6 +132,7 @@ def main():
         
         # 将结果保存到文件，以便后续推送
         output_file = os.path.expanduser("~/.openclaw/workspace/sports-tracker/latest_summary.md")
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(summary)
         
