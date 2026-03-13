@@ -544,3 +544,458 @@
 - OpenClaw Skills Registry: https://github.com/openclaw/skills
 - Local repository: /home/admin/.openclaw/workspace/awesome-openclaw-skills/
 - Local skills directory: /home/admin/.openclaw/workspace/skills/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. gh-issues
+- **Description:** Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments
+- **Install Command:** `clawhub install gh-issues`
+- **Use Case:** Automated bug fixing workflow - automatically detect, fix, and submit pull requests for GitHub issues
+- **Source:** /usr/lib/node_modules/openclaw/skills/gh-issues
+
+#### 2. agent-reach
+- **Description:** Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command:** `clawhub install agent-reach`
+- **Use Case:** Setting up platform access tools for social media monitoring, content aggregation, and cross-platform integration
+- **Source:** /home/admin/.agents/skills/agent-reach
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Security audits, firewall/SSH/update hardening, risk posture, exposure review
+- **Install Command:** `clawhub install healthcheck`
+- **Use Case:** Securing OpenClaw deployments on laptops, workstations, Pi, or VPS with automated security hardening
+- **Source:** /usr/lib/node_modules/openclaw/skills/healthcheck
+
+#### 4. akshare-stock
+- **Description:** A股分析全能 Skill（实时行情、技术面、基本面、板块、衍生品与跨市场），基于 akshare + 自然语言路由
+- **Install Command:** `clawhub install akshare-stock`
+- **Use Case:** Comprehensive Chinese stock market analysis with real-time quotes, technical/fundamental analysis, and cross-market data
+- **Source:** /home/admin/.agents/skills/akshare-stock
+
+#### 5. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation
+- **Install Command:** `clawhub install mcporter`
+- **Use Case:** Direct interaction with Model Context Protocol (MCP) servers for tool integration and server management
+- **Source:** /usr/lib/node_modules/openclaw/skills/mcporter
+
+### Additional Notes
+- OpenClaw skills are organized in two main locations: system-wide skills (/usr/lib/node_modules/openclaw/skills/) and user-specific skills (~/.agents/skills/)
+- Many skills support both automatic installation via clawhub and manual placement in skill directories
+- Skills like agent-reach provide extensive platform integration capabilities for social media and web content
+- Financial analysis skills (akshare-stock, china-stock-analysis) offer specialized A-share market functionality
+- Security-focused skills like healthcheck provide automated hardening for various deployment scenarios
+
+### Sources
+- Local system skills directory: /usr/lib/node_modules/openclaw/skills/
+- Local user skills directory: /home/admin/.agents/skills/
+- OpenClaw Skills Registry: https://github.com/openclaw/skills
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Enables dynamic skill management and distribution.
+- **Install Command:** `npm i -g clawhub` then `clawhub install <skill-name>`
+- **Use Case:** Managing the complete lifecycle of OpenClaw skills including discovery, installation, updates, and publishing to share with others
+- **Source:** /usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Direct integration with Model Context Protocol (MCP) servers for accessing external tools and services through standardized interfaces
+- **Source:** /usr/lib/node_modules/openclaw/skills/mcporter/SKILL.md
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system posture assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Securing OpenClaw deployments on laptops, workstations, servers, or VPS instances with risk-appropriate hardening recommendations
+- **Source:** /usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X" or express interest in extending capabilities using the Skills CLI ecosystem.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Guiding users to discover relevant skills from the open agent skills ecosystem and helping them install appropriate tools for their needs
+- **Source:** /home/admin/.agents/skills/find-skills/SKILL.md
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and updates for various leagues and competitions
+- **Install Command:** Built-in custom skill
+- **Use Case:** Tracking live sports scores, schedules, and updates for fans who want to stay informed about their favorite teams and events
+- **Source:** /home/admin/.agents/skills/sports-monitor/
+
+### Additional Notes
+- OpenClaw has both system-level skills (in /usr/lib/node_modules/openclaw/skills/) and user-custom skills (in /home/admin/.agents/skills/)
+- The clawhub skill provides a centralized registry for skill discovery and management
+- MCP (Model Context Protocol) integration via mcporter enables standardized tool access across different AI systems
+- Security hardening is treated as a first-class concern with the healthcheck skill providing comprehensive audit capabilities
+- The find-skills skill demonstrates the agent's ability to help users discover and extend capabilities dynamically
+
+### Sources
+- Local system skills directory: /usr/lib/node_modules/openclaw/skills/
+- User custom skills directory: /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol specification: http://mcporter.dev
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Enables on-the-fly skill management and version control.
+- **Install Command:** `npm i -g clawhub` then use `clawhub install <skill-name>`
+- **Use Case:** Managing the complete lifecycle of OpenClaw skills including discovery, installation, updates, and publishing new skills to the community registry
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Direct integration with Model Context Protocol (MCP) servers for accessing external tools and services, enabling dynamic tool calling and server management
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system posture assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Securing OpenClaw deployments on various systems (laptops, workstations, VPS, Raspberry Pi) with risk-appropriate hardening recommendations and automated remediation
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X" or express interest in extending capabilities using the Skills CLI ecosystem.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery and recommendation system that helps users find relevant capabilities from the open agent skills ecosystem at skills.sh
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Enables dynamic skill management and version control for OpenClaw agents.
+- **Install Command:** `npm i -g clawhub` (then use `clawhub install <skill-name>`)
+- **Use Case:** Managing the complete lifecycle of OpenClaw skills including discovery, installation, updates, and publishing to share with others
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Integrating external Model Context Protocol (MCP) tools and services, enabling access to databases, APIs, and other external systems through standardized interfaces
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system posture assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Securing OpenClaw deployments on various systems (laptops, workstations, VPS, Raspberry Pi) with risk-appropriate hardening recommendations and automated fixes
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (uses `npx skills find [query]` for discovery)
+- **Use Case:** Skill discovery and recommendation based on user needs, connecting users with relevant skills from the open agent skills ecosystem
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management capabilities for OpenClaw skills with version control and authentication.
+- **Install Command:** `npm i -g clawhub` (then use `clawhub install <skill-name>`)
+- **Use Case:** Managing skill lifecycle including discovery, installation, updates, and publishing of custom skills to share with the community
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Integrating with external MCP (Model Context Protocol) servers and tools, enabling direct API calls and tool orchestration
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system posture assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, and maintaining secure OpenClaw deployments across different environments (laptop, workstation, Pi, VPS)
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (uses `npx skills` CLI)
+- **Use Case:** Skill discovery and recommendation based on user needs, bridging natural language requests to available skill packages
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management functionality for OpenClaw skills ecosystem.
+- **Install Command:** `npm i -g clawhub` (built-in, but can be updated via npm)
+- **Use Case:** Managing skill lifecycle including discovery, installation, updates, and publishing of new skills to the registry
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter` (built-in, but can be updated via npm)
+- **Use Case:** Integrating with external MCP (Model Context Protocol) servers and tools, enabling direct API calls and tool execution
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, system hardening, and risk assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security audits, firewall/SSH hardening, exposure review, and periodic security checks for machines running OpenClaw
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery and recommendation based on user needs, bridging the gap between user requests and available skill functionality
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management capabilities for OpenClaw skills ecosystem.
+- **Install Command:** `npm i -g clawhub` (then use `clawhub install <skill-name>`)
+- **Use Case:** Managing skill dependencies, discovering new skills, publishing custom skills, and keeping skills up to date
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP (Model Context Protocol) servers/tools directly via HTTP or stdio, including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Integrating external tools and services through MCP protocol, calling remote APIs, generating type definitions, and managing MCP server configurations
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system exposure reviews.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, risk assessment, and periodic security checks for machines running OpenClaw
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X" or express interest in extending capabilities. Integrates with the skills.sh ecosystem.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery, helping users find relevant capabilities, and facilitating skill installation through the Skills CLI
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management capabilities for OpenClaw skills with version control and authentication.
+- **Install Command:** `npm i -g clawhub` (then use `clawhub install <skill-name>`)
+- **Use Case:** Managing skill dependencies, updating to latest versions, publishing custom skills to share with others
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Integrating external MCP (Model Context Protocol) tools and services, calling remote APIs, generating type definitions and CLI interfaces
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system posture assessment.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, periodic health checks, and maintaining secure OpenClaw deployments on various host types
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery, helping users find existing solutions for their tasks, and guiding installation of relevant skills from the ecosystem
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Package manager for OpenClaw skills that enables searching, installing, updating, and publishing agent skills from clawhub.com
+- **Install Command:** `npm i -g clawhub` (built-in in most OpenClaw installations)
+- **Use Case:** Managing skill lifecycle, discovering new skills, and publishing custom skills to share with the community
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** CLI tool for working with MCP (Model Context Protocol) servers and tools directly via HTTP or stdio, including configuration, authentication, and type generation
+- **Install Command:** `npm i -g mcporter` (built-in in most OpenClaw installations)
+- **Use Case:** Integrating external tools and services through MCP protocol, calling remote tools, and generating client code
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Comprehensive host security hardening and risk-tolerance configuration tool for OpenClaw deployments with firewall, SSH, and system audit capabilities
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, risk assessment, and periodic security checks for machines running OpenClaw
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Skill discovery assistant that helps users find and install relevant agent skills from the open ecosystem when they ask "how do I do X" or similar questions
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Helping users discover existing skills for specific tasks, searching the skills.sh registry, and facilitating skill installation
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management capabilities for OpenClaw skills with version control and authentication.
+- **Install Command:** `npm i -g clawhub` (built-in in most OpenClaw installations)
+- **Use Case:** Managing skill dependencies, publishing custom skills, updating existing skills, and discovering new skills from the clawhub registry
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter` (built-in in most OpenClaw installations)
+- **Use Case:** Integrating with external MCP (Model Context Protocol) services, calling remote tools, managing authentication, and generating type definitions for MCP servers
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall analysis, and system hardening recommendations.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, risk assessment, periodic security checks, and ensuring safe OpenClaw deployment configurations
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery, helping users find relevant capabilities, bridging user needs with existing skill ecosystem, and facilitating skill installation via Skills CLI
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
+test
+
+### Search #13 - March 13, 2026 (09:50 UTC)
+
+#### 1. clawhub
+- **Description:** Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Provides package management capabilities for OpenClaw skills with version control and authentication.
+- **Install Command:** `npm i -g clawhub` (then use `clawhub install <skill-name>`)
+- **Use Case:** Managing skill dependencies, updating to latest versions, publishing custom skills to the registry, and discovering new skills from the community
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/clawhub)
+
+#### 2. mcporter
+- **Description:** Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.
+- **Install Command:** `npm i -g mcporter`
+- **Use Case:** Integrating external MCP (Model Context Protocol) tools and services, calling remote APIs, generating type definitions, and managing MCP server configurations
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/mcporter)
+
+#### 3. healthcheck
+- **Description:** Host security hardening and risk-tolerance configuration for OpenClaw deployments. Provides comprehensive security audits, firewall/SSH hardening, and system exposure reviews.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Security auditing, system hardening, risk assessment, periodic security checks, and maintaining secure OpenClaw deployments on various platforms
+- **Source:** Local skill directory (/usr/lib/node_modules/openclaw/skills/healthcheck)
+
+#### 4. find-skills
+- **Description:** Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", or express interest in extending capabilities.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Skill discovery, helping users find relevant capabilities from the open agent skills ecosystem, and facilitating skill installation via the Skills CLI
+- **Source:** Local skill directory (/home/admin/.agents/skills/find-skills)
+
+#### 5. sports-monitor
+- **Description:** Real-time sports monitoring and alerting system for tracking games, scores, and events across multiple leagues and sports.
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Providing live sports updates, score tracking, and personalized alerts for specific teams, players, or events
+- **Source:** Local skill directory (/home/admin/.agents/skills/sports-monitor)
+
+### Additional Notes
+- OpenClaw has a rich ecosystem of both built-in skills (in /usr/lib/node_modules/openclaw/skills/) and user-customized skills (in /home/admin/.agents/skills/)
+- The clawhub CLI serves as the primary package manager for OpenClaw skills, similar to npm for Node.js packages
+- MCP (Model Context Protocol) integration via mcporter enables seamless access to external tools and services
+- Security hardening is a first-class concern with the healthcheck skill providing comprehensive system audits
+- Skill discovery is facilitated through both local capabilities and the external skills.sh registry
+
+### Sources
+- Local skill directories: /usr/lib/node_modules/openclaw/skills/ and /home/admin/.agents/skills/
+- ClawHub CLI documentation: https://clawhub.com
+- MCP Protocol: http://mcporter.dev
+- Skills CLI ecosystem: https://skills.sh/
