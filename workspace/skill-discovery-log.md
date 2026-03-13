@@ -113,3 +113,61 @@
 - Install ClawHub CLI: `npm i -g clawhub`
 - Authenticate for publishing: `clawhub login`
 
+
+## Search #2
+**Date:** Friday, March 13th, 2026 — 3:50 PM (Asia/Shanghai)
+**Keywords:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+### Found Skills
+
+#### 1. agent-autonomy-kit
+- **Description:** Stop waiting for prompts - enables autonomous agent behavior
+- **Install Command:** `clawhub install agent-autonomy-kit`
+- **Use Case:** Creating self-directed AI agents that can operate without constant prompting
+- **Source:** awesome-openclaw-skills/ai-and-llms.md
+
+#### 2. agent-church
+- **Description:** Identity formation for AI agents via SOUL.md
+- **Install Command:** `clawhub install agent-church`
+- **Use Case:** Helping AI agents develop consistent personalities and identity frameworks
+- **Source:** awesome-openclaw-skills/ai-and-llms.md
+
+#### 3. 1sec-security
+- **Description:** Install, configure, and manage 1-SEC — an open-source, all-in-one cybersecurity platform (16 modules, single binary)
+- **Install Command:** `clawhub install 1sec-security`
+- **Use Case:** Comprehensive security management and monitoring
+- **Source:** awesome-openclaw-skills/devops-and-cloud.md
+
+#### 4. aegis-audit
+- **Description:** Deep behavioral security audit for AI agent skills and MCP tools
+- **Install Command:** `clawhub install aegis-audit`
+- **Use Case:** Security auditing of AI agent behaviors and tool usage
+- **Source:** awesome-openclaw-skills/devops-and-cloud.md
+
+#### 5. agent-autonomy-primitives
+- **Description:** Build long-running autonomous agent loops using ClawVault primitives (tasks, projects, memory types, templates)
+- **Install Command:** `clawhub install agent-autonomy-primitives`
+- **Use Case:** Creating persistent autonomous agent workflows with memory and task management
+- **Source:** awesome-openclaw-skills/devops-and-cloud.md
+
+#### 6. academic-research
+- **Description:** Search academic papers and conduct literature reviews using OpenAlex API (free, no key needed)
+- **Install Command:** `clawhub install academic-research`
+- **Use Case:** Academic research and paper discovery without requiring API keys
+- **Source:** awesome-openclaw-skills/coding-agents-and-ides.md
+
+#### 7. abaddon
+- **Description:** Red team security mode for OpenClaw
+- **Install Command:** `clawhub install abaddon`
+- **Use Case:** Security testing and red teaming capabilities for OpenClaw
+- **Source:** awesome-openclaw-skills/coding-agents-and-ides.md
+
+### Additional Notes
+- The "awesome-openclaw-skills" repository contains over 5,490 community-built skills organized by category
+- Categories include AI & LLMs (197 skills), DevOps & Cloud (409 skills), and Coding Agents & IDEs (1,223 skills)
+- Skills can be installed using the `clawhub install <skill-slug>` command
+- The repository is actively maintained with regular updates
+
+### Sources
+- Local repository: /home/admin/.openclaw/workspace/awesome-openclaw-skills/
+- GitHub repository: https://github.com/VoltAgent/awesome-clawdbot-skills

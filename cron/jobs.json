@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773382257129,
+      "updatedAtMs": 1773385860064,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773385836245,
-        "lastRunAtMs": 1773382236245,
+        "nextRunAtMs": 1773389436253,
+        "lastRunAtMs": 1773385836253,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 20884,
+        "lastDurationMs": 23811,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773385836252
+        "runningAtMs": 1773389436257
       }
     },
     {
@@ -75,7 +75,7 @@
       "name": "Stock Tracker Daily Report",
       "enabled": true,
       "createdAtMs": 1772547580788,
-      "updatedAtMs": 1773300619846,
+      "updatedAtMs": 1773387042570,
       "schedule": {
         "kind": "cron",
         "expr": "30 15 * * 1-5",
@@ -88,11 +88,11 @@
         "message": "Run the stock tracker daily report: cd /home/admin/.openclaw/workspace/stock-tracker && python3 src/main.py --config config/settings.json\n\nThis should fetch price data, analyze MACD, and send the report to Discord channel #show-me-the-money (1475775915844960428)."
       },
       "state": {
-        "nextRunAtMs": 1773387000000,
-        "lastRunAtMs": 1773300600007,
+        "nextRunAtMs": 1773646200000,
+        "lastRunAtMs": 1773387000006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 19839,
+        "lastDurationMs": 42564,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -453,7 +453,7 @@
       "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
       "enabled": true,
       "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773385230750,
+      "updatedAtMs": 1773388826760,
       "schedule": {
         "kind": "cron",
         "expr": "0 7-23 * * *",
@@ -466,11 +466,11 @@
         "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
       },
       "state": {
-        "nextRunAtMs": 1773388800000,
-        "lastRunAtMs": 1773385225659,
+        "nextRunAtMs": 1773392400000,
+        "lastRunAtMs": 1773388800007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5091,
+        "lastDurationMs": 26753,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -616,7 +616,7 @@
       "name": "skill-search-1",
       "enabled": true,
       "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773384874583,
+      "updatedAtMs": 1773388389127,
       "schedule": {
         "kind": "every",
         "everyMs": 1800000,
@@ -633,11 +633,11 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773386409816,
-        "lastRunAtMs": 1773384609816,
+        "nextRunAtMs": 1773390009828,
+        "lastRunAtMs": 1773388209828,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 264767,
+        "lastDurationMs": 179299,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false
