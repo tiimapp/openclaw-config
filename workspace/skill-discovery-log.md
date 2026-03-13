@@ -999,3 +999,102 @@ test
 - ClawHub CLI documentation: https://clawhub.com
 - MCP Protocol: http://mcporter.dev
 - Skills CLI ecosystem: https://skills.sh/
+
+### Search #14
+**Timestamp:** 2026-03-13 18:50 (Asia/Shanghai)
+
+#### 1. awesome-openclaw-skills
+- **Description:** A curated collection of 5,495+ community-built OpenClaw skills filtered from the official OpenClaw Skills Registry (which contains 13,729+ skills). Skills are organized by category including Git & GitHub, Coding Agents & IDEs, Web Development, DevOps, AI & LLMs, and many more.
+- **Install Command:** `clawhub install <skill-slug>` or manual installation by copying skill folders to `~/.openclaw/skills/` or workspace-specific skill directories
+- **Use Case:** Discovering and installing pre-built skills for extending OpenClaw's capabilities across various domains like development, productivity, communication, and automation
+- **Source:** https://github.com/VoltAgent/awesome-openclaw-skills
+
+#### 2. 1password
+- **Description:** Integration with 1Password CLI (op) for secure secret management, including installation, desktop app integration, authentication, and secret operations
+- **Install Command:** `brew install 1password-cli` (on macOS) or via other package managers as specified in the skill
+- **Use Case:** Securely accessing and managing passwords, API keys, and other sensitive information within OpenClaw workflows
+- **Source:** https://github.com/openclaw/openclaw/tree/main/skills/1password
+
+#### 3. OpenClaw Core Skills Platform
+- **Description:** Built-in skills platform that supports bundled, managed, and workspace skills with install gating and UI. Skills are defined with SKILL.md files containing metadata, description, and implementation details.
+- **Install Command:** Skills can be installed via ClawHub CLI (`clawhub install <skill-name>`) or manually by placing skill directories in the appropriate location
+- **Use Case:** Extending OpenClaw's core functionality with specialized capabilities for interacting with external services, automating workflows, and performing domain-specific tasks
+- **Source:** https://github.com/openclaw/openclaw, https://docs.openclaw.ai/tools/skills
+
+#### 4. ClawHub Registry
+- **Description:** Official public skills registry for OpenClaw containing over 13,700 community-built skills as of February 2026. Provides a centralized repository for discovering, sharing, and installing skills.
+- **Install Command:** `clawhub install <skill-slug>` after enabling ClawHub integration
+- **Use Case:** Finding and installing pre-built skills without needing to manually download or configure them
+- **Source:** https://clawhub.com, https://github.com/openclaw/openclaw
+
+### Additional Notes
+- OpenClaw skills follow a standardized structure with SKILL.md files containing metadata, description, and implementation details
+- Skills can be installed globally (`~/.openclaw/skills/`) or per-workspace (`<project>/skills/`)
+- The VoltAgent/awesome-openclaw-skills repository provides a curated subset of the full registry, filtering out spam, duplicates, low-quality, and potentially malicious skills
+- Security is a key consideration when installing skills, with recommendations to review source code and use tools like VirusTotal scanning (available through ClawHub) before installation
+
+### Sources
+- GitHub: https://github.com/openclaw/openclaw
+- Awesome OpenClaw Skills: https://github.com/VoltAgent/awesome-openclaw-skills
+- Official Documentation: https://docs.openclaw.ai/tools/skills
+- ClawHub: https://clawhub.com
+
+### Search #14
+**Date:** 2026-03-13 10:54 UTC
+
+#### 1. awesome-openclaw-skills
+- **Description:** The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.
+- **Install Command:** `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/` or `<project>/skills/`
+- **Use Case:** Discovering and installing community-built OpenClaw skills across various categories including Git & GitHub, Coding Agents, Browser Automation, DevOps, and more.
+- **Source:** https://github.com/VoltAgent/awesome-openclaw-skills
+
+#### 2. 1password
+- **Description:** Set up and use 1Password CLI (op) for secure secret management and authentication.
+- **Install Command:** `brew install 1password-cli` (on macOS) or via other package managers
+- **Use Case:** Securely managing and accessing secrets, passwords, and credentials within OpenClaw workflows with proper tmux session isolation.
+- **Source:** https://github.com/openclaw/openclaw/tree/main/skills/1password
+
+#### 3. openclaw-core
+- **Description:** The core OpenClaw personal AI assistant platform that runs locally on your machine and connects to various messaging platforms.
+- **Install Command:** Follow the onboarding wizard with `openclaw onboard` or install via npm/pnpm/bun
+- **Use Case:** Running a personal AI assistant that integrates with WhatsApp, Telegram, Slack, Discord, and other communication channels while maintaining privacy and local execution.
+- **Source:** https://github.com/openclaw/openclaw
+
+#### 4. clawhub-registry
+- **Description:** OpenClaw's public skills registry (ClawHub) hosting over 13,000 community-built skills as of February 2026.
+- **Install Command:** Access via `clawhub install <skill-name>` or through the OpenClaw interface
+- **Use Case:** Finding, installing, and managing OpenClaw skills with security scanning via VirusTotal partnership.
+- **Source:** https://clawhub.com
+
+### Additional Notes
+- OpenClaw skills follow a standard structure with SKILL.md files containing metadata, description, and implementation details
+- Skills can be installed globally (`~/.openclaw/skills/`) or per workspace (`<project>/skills/`)
+- The VoltAgent/awesome-openclaw-skills repository curates high-quality skills from the larger ClawHub registry, filtering out spam, duplicates, and potentially malicious entries
+- Security is a priority with recommended tools like Snyk Skill Security Scanner and Agent Trust Hub for vetting skills before installation
+
+### Sources
+- GitHub: https://github.com/openclaw/openclaw
+- GitHub: https://github.com/VoltAgent/awesome-openclaw-skills
+- Official Website: https://openclaw.ai
+- Skills Registry: https://clawhub.com
+
+### Search #15
+**Timestamp:** 2026-03-13 18:50 (Asia/Shanghai)
+
+#### 1. awesome-openclaw-skills
+- **Description:** A curated collection of 5,495+ community-built OpenClaw skills filtered from the official OpenClaw Skills Registry (which contains 13,729+ skills). Skills are organized by category including Git & GitHub, Coding Agents & IDEs, Web Development, DevOps, AI & LLMs, and many more.
+- **Install Command:** `clawhub install <skill-slug>` or manual installation by copying skill folders to `~/.openclaw/skills/` or workspace-specific skill directories
+- **Use Case:** Discovering and installing pre-built skills for extending OpenClaw's capabilities across various domains like development, productivity, communication, and automation
+- **Source:** https://github.com/VoltAgent/awesome-openclaw-skills
+
+#### 2. openclaw-core
+- **Description:** The core OpenClaw personal AI assistant platform that runs locally on your machine and connects to various messaging platforms including WhatsApp, Telegram, Slack, Discord, and more.
+- **Install Command:** Follow the onboarding wizard with `openclaw onboard` or install via npm/pnpm/bun
+- **Use Case:** Running a personal AI assistant that maintains privacy through local execution while providing access to external services and automation capabilities
+- **Source:** https://github.com/openclaw/openclaw
+
+#### 3. clawhub-registry
+- **Description:** OpenClaw's public skills registry hosting over 13,000 community-built skills as of February 2026, with security scanning via VirusTotal partnership
+- **Install Command:** Access via `clawhub install <skill-name>` or through the OpenClaw interface
+- **Use Case:** Finding, installing, and managing OpenClaw skills with confidence in their security and quality
+- **Source:** https://clawhub.com
