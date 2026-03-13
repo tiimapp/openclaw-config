@@ -1523,3 +1523,619 @@ Note: Web searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrati
 **Sources**: 
 - github.com/VoltAgent/awesome-clawdbot-skills (5,495 curated skills as of Feb 28, 2026)
 - Local workspace inspection of /home/admin/.openclaw/workspace/awesome-openclaw-skills/
+
+## Search #1 - March 13, 2026
+
+**Timestamp**: 2026-03-13 11:20 AM (Asia/Shanghai)
+
+**Sources**: 
+- ClawHub CLI search (clawhub.com)
+- Web search (Perplexity)
+
+### Found Skills:
+
+1. **openclaw-skills-setup-cn**
+   - **Description**: ClawHub 安装与配置 | ClawHub setup. 帮助中文用户安装 ClawHub、配置镜像（如阿里云）、找技能（发现/推荐）、以及技能的安装/更新/启用/禁用。
+   - **Install Command**: `clawhub install openclaw-skills-setup-cn`
+   - **Use Case**: For Chinese users needing help with ClawHub installation, mirror configuration (like Alibaba Cloud), skill discovery, and skill management.
+   - **Owner**: binbin
+   - **Latest Version**: 1.0.0
+
+2. **openclaw-ops-skills**
+   - **Description**: Provides production-ready autonomous agent operations with cost optimization, task autonomy, persistent memory, security, and scheduled execution workflows.
+   - **Install Command**: `clawhub install openclaw-ops-skills`
+   - **Use Case**: Production environments requiring autonomous agent operations with cost optimization, security features, and scheduled workflows.
+   - **Owner**: Erich1566
+   - **Latest Version**: 1.0.0
+
+3. **clawops**
+   - **Description**: The orchestration tool for OpenClaw, managing and coordinating all your skills seamlessly.
+   - **Install Command**: `clawhub install clawops`
+   - **Use Case**: Orchestration and coordination of multiple OpenClaw skills in complex workflows.
+   - **Owner**: okoddcat
+   - **Latest Version**: 1.0.0
+
+4. **clawdex**
+   - **Description**: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it's safe.
+   - **Install Command**: `clawhub install clawdex`
+   - **Use Case**: Security verification of skills before installation to ensure they are safe.
+   - **Owner**: wearekoi
+   - **Latest Version**: 1.0.2
+
+Note: No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework. Skills appear to be primarily distributed through ClawHub (clawhub.com).
+
+## Search #2 - March 13, 2026 (11:20 AM Asia/Shanghai)
+
+**Keywords**: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**Sources**: 
+- ClawHub CLI search (clawhub.com)
+- Web search (Perplexity)
+
+**Findings**:
+
+1. **openclaw-skills-setup-cn**
+   - **Description**: ClawHub 安装与配置 | ClawHub setup. 帮助中文用户安装 ClawHub、配置镜像（如阿里云）、 找技能（发现/推荐）、以及技能的安装/更新/启用/禁用。
+   - **Install Command**: `clawhub install openclaw-skills-setup-cn`
+   - **Use Case**: Helping Chinese users install and configure ClawHub, find skills, and manage skill installation/updates.
+   - **Owner**: binbin
+   - **Latest Version**: 1.0.0
+
+2. **openclaw-ops-skills**
+   - **Description**: Provides production-ready autonomous agent operations with cost optimization, task autonomy, persistent memory, security, and scheduled execution workflows.
+   - **Install Command**: `clawhub install openclaw-ops-skills`
+   - **Use Case**: Production environments requiring autonomous agent operations with cost optimization, security features, and scheduled workflows.
+   - **Owner**: Erich1566
+   - **Latest Version**: 1.0.0
+
+3. **clawops**
+   - **Description**: The orchestration tool for OpenClaw, managing and coordinating all your skills seamlessly.
+   - **Install Command**: `clawhub install clawops`
+   - **Use Case**: Orchestration and coordination of multiple OpenClaw skills in complex workflows.
+   - **Owner**: okoddcat
+   - **Latest Version**: 1.0.0
+
+4. **clawdex**
+   - **Description**: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it's safe.
+   - **Install Command**: `clawhub install clawdex`
+   - **Use Case**: Security verification of skills before installation to ensure they are safe.
+   - **Owner**: wearekoi
+   - **Latest Version**: 1.0.2
+
+5. **clawbridge-skill-latest**
+   - **Description**: Clawbridge - Find your connections
+   - **Install Command**: `clawhub install clawbridge-skill-latest`
+   - **Use Case**: Finding connections between different skills or agents.
+   - **Latest Version**: Not specified in search results
+
+6. **jarvis-skills**
+   - **Description**: JARVIS AI Skills
+   - **Install Command**: `clawhub install jarvis-skills`
+   - **Use Case**: AI assistant capabilities similar to JARVIS.
+   - **Latest Version**: Not specified in search results
+
+**Note**: No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework. Skills appear to be primarily distributed through ClawHub (clawhub.com). The term "ClawdHub" appears to be a misspelling or variation of "ClawHub".
+
+## Search #2 - March 13, 2026
+
+**Timestamp**: 2026-03-13 11:20 AM (Asia/Shanghai)
+
+**Sources**: 
+- ClawHub CLI search results
+- Web search for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+**Findings**:
+
+1. **openclaw-skills-setup-cn**
+   - **Description**: ClawHub 安装与配置 | ClawHub setup. 帮助中文用户安装 ClawHub、配置镜像（如阿里云）、 找技能（发现/推荐）、以及技能的安装/更新/启用/禁用。
+   - **Install Command**: `clawhub install openclaw-skills-setup-cn`
+   - **Use Case**: Assisting Chinese users with ClawHub installation, mirror configuration (e.g., Alibaba Cloud), skill discovery/recommendation, and skill management.
+   - **Owner**: binbin
+   - **Latest Version**: 1.0.0
+
+2. **openclaw-ops-skills**
+   - **Description**: Provides production-ready autonomous agent operations with cost optimization, task autonomy, persistent memory, security, and scheduled execution workflows.
+   - **Install Command**: `clawhub install openclaw-ops-skills`
+   - **Use Case**: Production environments requiring autonomous agent operations with cost optimization, security features, and scheduled workflows.
+   - **Owner**: Erich1566
+   - **Latest Version**: 1.0.0
+
+3. **clawops**
+   - **Description**: The orchestration tool for OpenClaw, managing and coordinating all your skills seamlessly.
+   - **Install Command**: `clawhub install clawops`
+   - **Use Case**: Orchestration and coordination of multiple OpenClaw skills in complex workflows.
+   - **Owner**: okoddcat
+   - **Latest Version**: 1.0.0
+
+4. **clawdex**
+   - **Description**: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it's safe.
+   - **Install Command**: `clawhub install clawdex`
+   - **Use Case**: Security verification of skills before installation to ensure they are safe.
+   - **Owner**: wearekoi
+   - **Latest Version**: 1.0.2
+
+5. **clawbridge-skill-latest**
+   - **Description**: Clawbridge - Find your connections
+   - **Install Command**: `clawhub install clawbridge-skill-latest`
+   - **Use Case**: Finding and managing connections within the OpenClaw ecosystem.
+   - **Latest Version**: Not specified in search results
+
+6. **jarvis-skills**
+   - **Description**: JARVIS AI Skills
+   - **Install Command**: `clawhub install jarvis-skills`
+   - **Use Case**: AI assistant capabilities inspired by JARVIS.
+   - **Latest Version**: Not specified in search results
+
+7. **find-skills-skill**
+   - **Description**: Find Skills Skill
+   - **Install Command**: `clawhub install find-skills-skill`
+   - **Use Case**: Discovering and finding other skills in the ClawHub registry.
+   - **Latest Version**: Not specified in search results
+
+8. **openclaw-security-monitor**
+   - **Description**: Openclaw Security Monitor
+   - **Install Command**: `clawhub install openclaw-security-monitor`
+   - **Use Case**: Monitoring and security features for OpenClaw deployments.
+   - **Latest Version**: Not specified in search results
+
+9. **vassili-clawhub-cli**
+   - **Description**: ClawHub CLI
+   - **Install Command**: `clawhub install vassili-clawhub-cli`
+   - **Use Case**: Command-line interface for interacting with ClawHub.
+   - **Latest Version**: Not specified in search results
+
+Note: No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework. Skills appear to be primarily distributed through ClawHub (clawhub.com).
+
+## Search #2 - March 13, 2026 (11:20 AM CST)
+
+**Sources**: ClawHub CLI search (clawhub.com registry), Web searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+**Findings**:
+
+10. **openclaw-server-secure-skill**
+    - **Description**: Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill when the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+    - **Install Command**: `clawhub install openclaw-server-secure-skill`
+    - **Use Case**: Server security hardening, OpenClaw agent installation, Tailscale/Firewall configuration.
+    - **Owner**: kime541200
+    - **Latest Version**: 1.0.0
+
+11. **create-new-openclaw-in-gcp**
+    - **Description**: Deploy and configure an OpenClaw instance on a GCP VM with Tailscale networking, Brave Search integration, and secure credential handling.
+    - **Install Command**: `clawhub install create-new-openclaw-in-gcp`
+    - **Use Case**: Cloud deployment of OpenClaw on Google Cloud Platform with secure networking and search integration.
+    - **Owner**: Divide-By-0
+    - **Latest Version**: 1.0.0
+
+12. **openclaw-shield**
+    - **Description**: Enterprise AI security scanner using static analysis, runtime guards, and ClamAV to detect credential theft, data leaks, malware, and ensure audit logging.
+    - **Install Command**: `clawhub install openclaw-shield`
+    - **Use Case**: Enterprise-grade security scanning for AI agents, detecting security threats and ensuring compliance.
+    - **Owner**: pfaria32
+    - **Latest Version**: 1.0.3
+
+13. **openclaw-cli**
+    - **Description**: OpenClaw CLI
+    - **Install Command**: `clawhub install openclaw-cli`
+    - **Use Case**: Command-line interface for OpenClaw operations.
+    - **Latest Version**: Not specified in search results
+
+14. **openclaw-browser-auto**
+    - **Description**: OpenClaw浏览器自动化配置 (OpenClaw browser automation configuration)
+    - **Install Command**: `clawhub install openclaw-browser-auto`
+    - **Use Case**: Browser automation capabilities for OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+15. **openclaw-money-playbook**
+    - **Description**: Openclaw Money Playbook
+    - **Install Command**: `clawhub install openclaw-money-playbook`
+    - **Use Case**: Financial and monetary operations playbook for OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+16. **openclaw-docs-cn**
+    - **Description**: Openclaw Docs
+    - **Install Command**: `clawhub install openclaw-docs-cn`
+    - **Use Case**: Documentation for OpenClaw (Chinese language).
+    - **Latest Version**: Not specified in search results
+
+17. **openclaw-power-ops**
+    - **Description**: OpenClaw Power Ops
+    - **Install Command**: `clawhub install openclaw-power-ops`
+    - **Use Case**: Advanced operational capabilities for OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+18. **openclaw-ops-guardrails**
+    - **Description**: OpenClaw Ops Guardrails
+    - **Install Command**: `clawhub install openclaw-ops-guardrails`
+    - **Use Case**: Operational guardrails and safety measures for OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+19. **openclaw-mcp-debugger**
+    - **Description**: OpenClaw MCP Debugger
+    - **Install Command**: `clawhub install openclaw-mcp-debugger`
+    - **Use Case**: Debugging MCP (Model Control Protocol) interactions in OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+Note: No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework. Skills appear to be primarily distributed through ClawHub (clawhub.com). The OpenClaw framework seems to be a local/private AI agent system with a rich ecosystem of skills managed through the ClawHub registry.
+
+## Search #2 - March 13, 2026
+
+**Timestamp**: 2026-03-13 11:20 AM (Asia/Shanghai)
+
+**Sources**: 
+- ClawHub CLI search results (clawhub.com)
+- Web searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+**Findings**:
+
+1. **openclaw-server-secure-skill**
+   - **Description**: Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill when the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+   - **Install Command**: `clawhub install openclaw-server-secure-skill`
+   - **Use Case**: Server security hardening, OpenClaw agent installation, Tailscale/Firewall configuration.
+   - **Owner**: kime541200
+   - **Latest Version**: 1.0.0
+
+2. **create-new-openclaw-in-gcp**
+   - **Description**: Deploy and configure an OpenClaw instance on a GCP VM with Tailscale networking, Brave Search integration, and secure credential handling.
+   - **Install Command**: `clawhub install create-new-openclaw-in-gcp`
+   - **Use Case**: Cloud deployment of OpenClaw on Google Cloud Platform with secure networking and search integration.
+   - **Owner**: Divide-By-0
+   - **Latest Version**: 1.0.0
+
+3. **openclaw-shield**
+   - **Description**: Enterprise AI security scanner using static analysis, runtime guards, and ClamAV to detect credential theft, data leaks, malware, and ensure audit logging.
+   - **Install Command**: `clawhub install openclaw-shield`
+   - **Use Case**: Enterprise-grade security scanning and protection for AI agents.
+   - **Owner**: pfaria32
+   - **Latest Version**: 1.0.3
+
+4. **openclaw-cli**
+   - **Description**: OpenClaw CLI
+   - **Install Command**: `clawhub install openclaw-cli`
+   - **Use Case**: Command-line interface for OpenClaw management.
+   - **Latest Version**: Not specified in search results
+
+5. **openclaw-browser-auto**
+   - **Description**: OpenClaw浏览器自动化配置 (OpenClaw browser automation configuration)
+   - **Install Command**: `clawhub install openclaw-browser-auto`
+   - **Use Case**: Browser automation capabilities for OpenClaw.
+   - **Latest Version**: Not specified in search results
+
+6. **openclaw-money-playbook**
+   - **Description**: Openclaw Money Playbook
+   - **Install Command**: `clawhub install openclaw-money-playbook`
+   - **Use Case**: Financial and monetary operations playbook for OpenClaw.
+   - **Latest Version**: Not specified in search results
+
+7. **openclaw-docs-cn**
+   - **Description**: Openclaw Docs
+   - **Install Command**: `clawhub install openclaw-docs-cn`
+   - **Use Case**: Documentation for OpenClaw (Chinese language).
+   - **Latest Version**: Not specified in search results
+
+8. **openclaw-power-ops**
+   - **Description**: OpenClaw Power Ops
+   - **Install Command**: `clawhub install openclaw-power-ops`
+   - **Use Case**: Advanced operational capabilities for OpenClaw.
+   - **Latest Version**: Not specified in search results
+
+9. **openclaw-ops-guardrails**
+   - **Description**: OpenClaw Ops Guardrails
+   - **Install Command**: `clawhub install openclaw-ops-guardrails`
+   - **Use Case**: Operational guardrails and safety measures for OpenClaw.
+   - **Latest Version**: Not specified in search results
+
+10. **openclaw-mcp-debugger**
+    - **Description**: OpenClaw MCP Debugger
+    - **Install Command**: `clawhub install openclaw-mcp-debugger`
+    - **Use Case**: Debugging MCP (Model Control Protocol) interactions in OpenClaw.
+    - **Latest Version**: Not specified in search results
+
+**Summary**: 
+No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework. Skills appear to be primarily distributed through ClawHub (clawhub.com). The OpenClaw framework seems to be a local/private AI agent system with a rich ecosystem of skills managed through the ClawHub registry. The skills cover a wide range of capabilities including security, cloud deployment, enterprise features, and operational tools.
+
+## Search #2 - March 13, 2026 (11:20 AM Asia/Shanghai)
+
+### Sources:
+- ClawHub CLI search results using keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+- Direct queries to clawhub.com registry via clawhub CLI
+
+### Key Findings:
+
+**1. openclaw-skills-setup-cn**
+- **Description**: ClawHub 安装与配置 | ClawHub setup. 帮助中文用户安装 ClawHub、配置镜像（如阿里云）、 找技能（发现/推荐）、以及技能的安装/更新/启用/禁用。
+- **Install Command**: `clawhub install openclaw-skills-setup-cn`
+- **Use Case**: Assisting Chinese users with ClawHub installation, mirror configuration (e.g., Alibaba Cloud), skill discovery, and management.
+- **Owner**: binbin
+- **Latest Version**: 1.0.0
+
+**2. openclaw-ops-skills**
+- **Description**: Provides production-ready autonomous agent operations with cost optimization, task autonomy, persistent memory, security, and scheduled execution workflows.
+- **Install Command**: `clawhub install openclaw-ops-skills`
+- **Use Case**: Production environments requiring autonomous agent operations with cost optimization, security features, and scheduled workflows.
+- **Owner**: Erich1566
+- **Latest Version**: 1.0.0
+
+**3. clawops**
+- **Description**: The orchestration tool for OpenClaw, managing and coordinating all your skills seamlessly.
+- **Install Command**: `clawhub install clawops`
+- **Use Case**: Orchestration and coordination of multiple OpenClaw skills in complex workflows.
+- **Owner**: okoddcat
+- **Latest Version**: 1.0.0
+
+**4. clawdex**
+- **Description**: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it's safe.
+- **Install Command**: `clawhub install clawdex`
+- **Use Case**: Security verification of skills before installation to ensure they are safe.
+- **Owner**: wearekoi
+- **Latest Version**: 1.0.2
+
+**5. find-skills-skill**
+- **Description**: Find Skills Skill
+- **Install Command**: `clawhub install find-skills-skill`
+- **Use Case**: Discovering and finding other skills in the ClawHub registry.
+- **Latest Version**: Not specified in search results
+
+**6. openclaw-security-monitor**
+- **Description**: Openclaw Security Monitor
+- **Install Command**: `clawhub install openclaw-security-monitor`
+- **Use Case**: Monitoring and security features for OpenClaw deployments.
+- **Latest Version**: Not specified in search results
+
+**7. vassili-clawhub-cli**
+- **Description**: ClawHub CLI
+- **Install Command**: `clawhub install vassili-clawhub-cli`
+- **Use Case**: Command-line interface for interacting with ClawHub.
+- **Latest Version**: Not specified in search results
+
+**8. openclaw-server-secure-skill**
+- **Description**: Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill when the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+- **Install Command**: `clawhub install openclaw-server-secure-skill`
+- **Use Case**: Server security hardening, OpenClaw agent installation, and network configuration.
+- **Owner**: kime541200
+- **Latest Version**: 1.0.0
+
+**9. create-new-openclaw-in-gcp**
+- **Description**: Deploy and configure an OpenClaw instance on a GCP VM with Tailscale networking, Brave Search integration, and secure credential handling.
+- **Install Command**: `clawhub install create-new-openclaw-in-gcp`
+- **Use Case**: Cloud deployment of OpenClaw on Google Cloud Platform with networking and security configurations.
+- **Owner**: Divide-By-0
+- **Latest Version**: 1.0.0
+
+**10. openclaw-shield**
+- **Description**: Enterprise AI security scanner using static analysis, runtime guards, and ClamAV to detect credential theft, data leaks, malware, and ensure audit logging.
+- **Install Command**: `clawhub install openclaw-shield`
+- **Use Case**: Enterprise-grade security scanning and protection for AI agents.
+- **Owner**: pfaria32
+- **Latest Version**: 1.0.3
+
+**11. openclaw-cli**
+- **Description**: OpenClaw CLI
+- **Install Command**: `clawhub install openclaw-cli`
+- **Use Case**: Command-line interface for OpenClaw framework.
+- **Latest Version**: Not specified in search results
+
+**12. openclaw-browser-auto**
+- **Description**: OpenClaw浏览器自动化配置
+- **Install Command**: `clawhub install openclaw-browser-auto`
+- **Use Case**: Browser automation configuration for OpenClaw (Chinese language support).
+- **Latest Version**: Not specified in search results
+
+**13. openclaw-money-playbook**
+- **Description**: Openclaw Money Playbook
+- **Install Command**: `clawhub install openclaw-money-playbook`
+- **Use Case**: Financial and monetary workflow automation.
+- **Latest Version**: Not specified in search results
+
+**14. openclaw-docs-cn**
+- **Description**: Openclaw Docs
+- **Install Command**: `clawhub install openclaw-docs-cn`
+- **Use Case**: Chinese language documentation for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**15. openclaw-power-ops**
+- **Description**: OpenClaw Power Ops
+- **Install Command**: `clawhub install openclaw-power-ops`
+- **Use Case**: Advanced operational capabilities for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**16. openclaw-ops-guardrails**
+- **Description**: OpenClaw Ops Guardrails
+- **Install Command**: `clawhub install openclaw-ops-guardrails`
+- **Use Case**: Operational guardrails and safety measures for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**17. openclaw-mcp-debugger**
+- **Description**: OpenClaw MCP Debugger
+- **Install Command**: `clawhub install openclaw-mcp-debugger`
+- **Use Case**: Debugging MCP (Model Control Protocol) interactions in OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**Summary**: 
+No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework using traditional web search. Skills appear to be primarily distributed through ClawHub (clawhub.com) registry. The OpenClaw framework seems to be a local/private AI agent system with a rich ecosystem of skills managed through the ClawHub registry. The skills cover a wide range of capabilities including security, cloud deployment, enterprise features, operational tools, and internationalization (Chinese language support).
+
+## Search #2 - March 13, 2026 (11:20 AM Asia/Shanghai)
+
+### Sources:
+- ClawHub CLI search results using keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+- Direct queries to clawhub.com registry via clawhub CLI
+
+### Key Findings:
+
+**1. openclaw-skills-setup-cn**
+- **Description**: ClawHub 安装与配置 | ClawHub setup. 帮助中文用户安装 ClawHub、配置镜像（如阿里云）、找技能（发现/推荐）、以及技能的安装/更新/启用/禁用。
+- **Install Command**: `clawhub install openclaw-skills-setup-cn`
+- **Use Case**: Helping Chinese users install and configure ClawHub, find skills, and manage skill lifecycle.
+- **Owner**: binbin
+- **Latest Version**: 1.0.0
+
+**2. openclaw-ops-skills**
+- **Description**: Provides production-ready autonomous agent operations with cost optimization, task autonomy, persistent memory, security, and scheduled execution workflows.
+- **Install Command**: `clawhub install openclaw-ops-skills`
+- **Use Case**: Production environments requiring autonomous agent operations with cost optimization, security features, and scheduled workflows.
+- **Owner**: Erich1566
+- **Latest Version**: 1.0.0
+
+**3. clawops**
+- **Description**: The orchestration tool for OpenClaw, managing and coordinating all your skills seamlessly.
+- **Install Command**: `clawhub install clawops`
+- **Use Case**: Orchestration and coordination of multiple OpenClaw skills in complex workflows.
+- **Owner**: okoddcat
+- **Latest Version**: 1.0.0
+
+**4. clawdex**
+- **Description**: Security check for ClawHub skills powered by Koi. Query the Clawdex API before installing any skill to verify it's safe.
+- **Install Command**: `clawhub install clawdex`
+- **Use Case**: Security verification of skills before installation to ensure they are safe.
+- **Owner**: wearekoi
+- **Latest Version**: 1.0.2
+
+**5. openclaw-server-secure-skill**
+- **Description**: Comprehensive security hardening and installation guide for OpenClaw (formerly Clawdbot/Moltbot). Use this skill when the user wants to secure a server, install the OpenClaw agent, or configure Tailscale/Firewall for the agent.
+- **Install Command**: `clawhub install openclaw-server-secure-skill`
+- **Use Case**: Server security hardening, OpenClaw agent installation, and network configuration.
+- **Owner**: kime541200
+- **Latest Version**: 1.0.0
+
+**6. create-new-openclaw-in-gcp**
+- **Description**: Deploy and configure an OpenClaw instance on a GCP VM with Tailscale networking, Brave Search integration, and secure credential handling.
+- **Install Command**: `clawhub install create-new-openclaw-in-gcp`
+- **Use Case**: Cloud deployment of OpenClaw instances on Google Cloud Platform with secure networking and search integration.
+- **Owner**: Divide-By-0
+- **Latest Version**: 1.0.0
+
+**7. openclaw-shield**
+- **Description**: Enterprise AI security scanner using static analysis, runtime guards, and ClamAV to detect credential theft, data leaks, malware, and ensure audit logging.
+- **Install Command**: `clawhub install openclaw-shield`
+- **Use Case**: Enterprise-grade security scanning and protection for AI agents.
+- **Owner**: pfaria32
+- **Latest Version**: 1.0.3
+
+**8. openclaw-cli**
+- **Description**: OpenClaw CLI
+- **Install Command**: `clawhub install openclaw-cli`
+- **Use Case**: Command-line interface for OpenClaw operations.
+- **Latest Version**: Not specified in search results
+
+**9. openclaw-browser-auto**
+- **Description**: OpenClaw浏览器自动化配置
+- **Install Command**: `clawhub install openclaw-browser-auto`
+- **Use Case**: Browser automation configuration for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**10. openclaw-money-playbook**
+- **Description**: Openclaw Money Playbook
+- **Install Command**: `clawhub install openclaw-money-playbook`
+- **Use Case**: Financial and monetary operations playbook for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**11. openclaw-docs-cn**
+- **Description**: Openclaw Docs
+- **Install Command**: `clawhub install openclaw-docs-cn`
+- **Use Case**: Documentation for OpenClaw in Chinese.
+- **Latest Version**: Not specified in search results
+
+**12. openclaw-power-ops**
+- **Description**: OpenClaw Power Ops
+- **Install Command**: `clawhub install openclaw-power-ops`
+- **Use Case**: Advanced operational capabilities for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**13. openclaw-ops-guardrails**
+- **Description**: OpenClaw Ops Guardrails
+- **Install Command**: `clawhub install openclaw-ops-guardrails`
+- **Use Case**: Operational guardrails and safety measures for OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**14. openclaw-mcp-debugger**
+- **Description**: OpenClaw MCP Debugger
+- **Install Command**: `clawhub install openclaw-mcp-debugger`
+- **Use Case**: Debugging MCP (Model Control Protocol) interactions in OpenClaw.
+- **Latest Version**: Not specified in search results
+
+**15. jarvis-skills**
+- **Description**: JARVIS AI Skills
+- **Install Command**: `clawhub install jarvis-skills`
+- **Use Case**: AI skills inspired by JARVIS assistant capabilities.
+- **Latest Version**: Not specified in search results
+
+**16. find-skills-skill**
+- **Description**: Find Skills Skill
+- **Install Command**: `clawhub install find-skills-skill`
+- **Use Case**: Discovering and finding other skills in the ClawHub registry.
+- **Latest Version**: Not specified in search results
+
+**17. openclaw-security-monitor**
+- **Description**: Openclaw Security Monitor
+- **Install Command**: `clawhub install openclaw-security-monitor`
+- **Use Case**: Monitoring and security features for OpenClaw deployments.
+- **Latest Version**: Not specified in search results
+
+**18. vassili-clawhub-cli**
+- **Description**: ClawHub CLI
+- **Install Command**: `clawhub install vassili-clawhub-cli`
+- **Use Case**: Command-line interface for interacting with ClawHub.
+- **Latest Version**: Not specified in search results
+
+### Summary:
+No publicly available GitHub repositories or web documentation found for OpenClaw AI agent framework matching the search keywords. Skills appear to be primarily distributed through the ClawHub registry (clawhub.com). The OpenClaw framework seems to be a local/private AI agent system with a rich ecosystem of skills managed through the ClawHub registry. The skills cover a wide range of capabilities including security, cloud deployment, enterprise features, operational tools, and language-specific support (particularly Chinese).
+
+
+## Search #2 - March 13, 2026 (11:50 AM Asia/Shanghai)
+
+### Sources:
+- GitHub repositories: VoltAgent/awesome-openclaw-skills, LeoYeAI/openclaw-master-skills, clawdbot-ai/awesome-openclaw-skills-zh
+- Local OpenClaw installation skills directories: /usr/lib/node_modules/openclaw/skills/, ~/.agents/skills/, ~/.openclaw/workspace/skills/
+- ClawHub CLI documentation and local skill SKILL.md files
+
+### Key Findings:
+
+**1. VoltAgent/awesome-openclaw-skills**
+- **Description**: The awesome collection of OpenClaw skills with 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry
+- **Install Command**: `clawhub install voltagent-awesome-openclaw-skills` or clone from GitHub
+- **Use Case**: Comprehensive repository of curated OpenClaw skills across all categories
+- **Stars**: 36,477 ⭐
+- **Last Updated**: March 13, 2026
+
+**2. LeoYeAI/openclaw-master-skills**
+- **Description**: Curated collection of 339+ best OpenClaw skills — weekly updated by MyClaw.ai from ClawHub, GitHub & community covering AI, productivity, development, marketing, finance and more
+- **Install Command**: `clawhub install leoyeai-openclaw-master-skills`
+- **Use Case**: High-quality, regularly updated selection of the most useful OpenClaw skills
+- **Stars**: 1,491 ⭐
+- **Last Updated**: March 13, 2026
+
+**3. clawdbot-ai/awesome-openclaw-skills-zh**
+- **Description**: OpenClaw Chinese official skill library - translated from Clawdbot official skills, organized by scenario, supporting Chinese natural language invocation
+- **Install Command**: `clawhub install clawdbot-ai-awesome-openclaw-skills-zh`
+- **Use Case**: Chinese language support for OpenClaw skills with scenario-based organization
+- **Stars**: 3,077 ⭐
+- **Last Updated**: March 13, 2026
+
+**4. ClawHub CLI (core skill)**
+- **Description**: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- **Install Command**: `npm i -g clawhub` (core CLI), then `clawhub install <skill-name>` for individual skills
+- **Use Case**: Centralized skill management system for discovering, installing, and publishing OpenClaw skills
+- **Key Commands**: `clawhub search`, `clawhub install`, `clawhub update`, `clawhub publish`
+
+**5. Agent Reach Skill**
+- **Description**: Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `pip install https://github.com/Panniantong/agent-reach/archive/main.zip` followed by `agent-reach install --env=auto`
+- **Use Case**: Comprehensive internet access and platform integration for multi-platform data gathering and interaction
+
+**6. Healthcheck Skill**
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Pre-installed in `/usr/lib/node_modules/openclaw/skills/healthcheck/`
+- **Use Case**: Security audits, firewall/SSH hardening, risk posture assessment, and periodic security checks for OpenClaw host machines
+
+**7. Find Skills Skill**
+- **Description**: Helps users discover and install agent skills when they ask questions like "how do I do X" or express interest in extending capabilities
+- **Install Command**: Located in `~/.agents/skills/find-skills/`
+- **Use Case**: Skill discovery assistant that searches the open agent skills ecosystem and helps users find relevant capabilities
+
+### Summary:
+The OpenClaw AI agent framework has a rich ecosystem of skills distributed through multiple channels:
+1. **Official ClawHub Registry** (clawhub.com) - Primary distribution method via `clawhub install`
+2. **GitHub Repositories** - Community-curated collections like VoltAgent's 5,400+ skills repository
+3. **Local Installation** - Core skills pre-installed in system directories
+4. **Specialized Tools** - Platform-specific integrations like Agent Reach for internet access
+
+The framework supports both English and Chinese language skills, with regular updates and community contributions. Skills cover diverse domains including security, social media, development, productivity, and platform integrations.
