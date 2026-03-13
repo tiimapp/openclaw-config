@@ -2,16 +2,16 @@
 """
 OpenClaw Config Backup Script
 Backs up configuration files to a git repository with secret sanitization.
+NOTE: Workspace is excluded (too large for hourly config backup).
 """
 
 import json
 import logging
-import shutil
 import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Set
+from typing import Dict, Set
 
 # Configuration
 SOURCE_DIR = Path.home() / ".openclaw"
@@ -21,10 +21,10 @@ GITHUB_REPO = "https://github.com/tiimapp/openclaw-config"
 
 # Secrets to sanitize (exact key matches only)
 SENSITIVE_KEYS: Set[str] = {
-    "apiKey",      # Exact match for API keys
-    "token",       # Exact match for tokens (not maxTokens, etc.)
-    "auth",        # Auth objects
-    "password",    # Passwords
+    "apiKey",
+    "token",
+    "auth",
+    "password",
 }
 
 # Keys that should NEVER be sanitized (config settings, not secrets)
@@ -36,7 +36,7 @@ CONFIG_KEYS: Set[str] = {
     "output",
 }
 
-# Files to backup
+# Files to backup (workspace excluded - too large for config backup)
 FILES_TO_BACKUP = {
     "openclaw.json": "config/openclaw.json",
     "cron/jobs.json": "cron/jobs.json",
@@ -52,24 +52,15 @@ def setup_logging() -> logging.Logger:
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     )
     
-    # File handler
     fh = logging.FileHandler(LOG_FILE)
     fh.setFormatter(formatter)
     logger.addHandler(fh)
     
-    # Console handler
     ch = logging.StreamHandler(sys.stdout)
     ch.setFormatter(formatter)
     logger.addHandler(ch)
     
     return logger
-
-
-def sanitize_value(key: str, value) -> str:
-    """Sanitize sensitive values."""
-    if isinstance(value, str) and any(sk in key.lower() for sk in SENSITIVE_KEYS):
-        return f"<${key.upper()}>"
-    return value
 
 
 def sanitize_config(data, parent_key: str = "") -> dict:
@@ -81,10 +72,8 @@ def sanitize_config(data, parent_key: str = "") -> dict:
     for key, value in data.items():
         full_key = f"{parent_key}.{key}" if parent_key else key
         
-        # Never sanitize config settings (maxTokens, contextWindow, etc.)
         if key in CONFIG_KEYS:
             sanitized[key] = value
-        # Sanitize exact sensitive key matches only
         elif key in SENSITIVE_KEYS:
             sanitized[key] = f"<${key.upper()}>"
         elif isinstance(value, dict):
@@ -121,6 +110,7 @@ def backup_file(src_name: str, dest_path: str, logger: logging.Logger) -> bool:
             with open(dest, 'w') as f:
                 json.dump(sanitized, f, indent=2)
         else:
+            import shutil
             shutil.copy2(src, dest)
         
         logger.info(f"Backed up: {src_name} -> {dest_path}")
@@ -131,35 +121,9 @@ def backup_file(src_name: str, dest_path: str, logger: logging.Logger) -> bool:
         return False
 
 
-def backup_workspace(logger: logging.Logger) -> bool:
-    """Backup workspace markdown files (excluding .git)."""
-    src = SOURCE_DIR / "workspace"
-    dest = BACKUP_DIR / "workspace"
-    
-    if not src.exists():
-        logger.warning("Workspace directory not found")
-        return False
-    
-    try:
-        if dest.exists():
-            shutil.rmtree(dest)
-        
-        # Copy tree but ignore .git directories
-        def ignore_git(dir, contents):
-            return ['.git'] if '.git' in contents else []
-        
-        shutil.copytree(src, dest, ignore=ignore_git)
-        logger.info("Backed up: workspace/")
-        return True
-    except Exception as e:
-        logger.error(f"Failed to backup workspace: {e}")
-        return False
-
-
 def git_setup_remote(logger: logging.Logger) -> bool:
     """Setup GitHub remote if not already configured."""
     try:
-        # Check if remote exists
         result = subprocess.run(
             ["git", "remote", "get-url", "origin"],
             cwd=BACKUP_DIR,
@@ -167,7 +131,6 @@ def git_setup_remote(logger: logging.Logger) -> bool:
         )
         
         if result.returncode != 0:
-            # Add remote
             subprocess.run(
                 ["git", "remote", "add", "origin", GITHUB_REPO],
                 cwd=BACKUP_DIR,
@@ -196,7 +159,7 @@ def git_push(logger: logging.Logger) -> bool:
             cwd=BACKUP_DIR,
             check=True,
             capture_output=True,
-            timeout=60
+            timeout=120
         )
         logger.info("Pushed to GitHub successfully")
         return True
@@ -215,7 +178,6 @@ def git_push(logger: logging.Logger) -> bool:
 def git_commit(logger: logging.Logger, push_to_github: bool = False) -> bool:
     """Commit changes to git repository."""
     try:
-        # Add all changes first
         subprocess.run(
             ["git", "add", "."],
             cwd=BACKUP_DIR,
@@ -223,7 +185,6 @@ def git_commit(logger: logging.Logger, push_to_github: bool = False) -> bool:
             capture_output=True
         )
         
-        # Check if there are changes to commit
         result = subprocess.run(
             ["git", "diff", "--cached", "--quiet"],
             cwd=BACKUP_DIR,
@@ -232,12 +193,10 @@ def git_commit(logger: logging.Logger, push_to_github: bool = False) -> bool:
         
         if result.returncode == 0:
             logger.info("No changes to commit")
-            # Still push in case there are pending commits
             if push_to_github:
                 git_push(logger)
             return True
         
-        # Commit
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
         subprocess.run(
             ["git", "commit", "-m", f"Backup: {timestamp}"],
@@ -248,7 +207,6 @@ def git_commit(logger: logging.Logger, push_to_github: bool = False) -> bool:
         
         logger.info(f"Committed changes at {timestamp}")
         
-        # Push to GitHub if enabled
         if push_to_github:
             git_push(logger)
         
@@ -267,25 +225,18 @@ def main():
     logger = setup_logging()
     logger.info("Starting OpenClaw config backup")
     
-    # Setup GitHub remote if needed
     git_setup_remote(logger)
     
     changed = False
     
-    # Backup config files
+    # Backup config files only (workspace excluded - too large)
     for src, dest in FILES_TO_BACKUP.items():
         if backup_file(src, dest, logger):
             changed = True
     
-    # Backup workspace
-    if backup_workspace(logger):
-        changed = True
-    
-    # Git commit and push if changes detected
     if changed:
         git_commit(logger, push_to_github=True)
     else:
-        # Even if no changes, try to push in case there are pending commits
         git_push(logger)
     
     logger.info("Backup completed")

@@ -1161,3 +1161,108 @@ Sources: Web search, Local OpenClaw installation
    - Use case: Setting up platform access tools for Twitter/X, Reddit, YouTube, GitHub, etc.
 
 Note: OpenClaw appears to be a local AI assistant framework with a skills system. Skills are organized in directories under ~/.agents/skills/, ~/.openclaw/workspace/skills/, and /usr/lib/node_modules/openclaw/skills/. The clawhub skill provides a registry mechanism for discovering and installing additional skills.
+
+### Search #17
+**Timestamp:** Friday, March 13th, 2026 — 8:20 PM (Asia/Shanghai) / 2026-03-13 12:20 UTC
+
+#### 1. instant_search
+- **Description:** Instant search capability for OpenClaw with real-time results and fast indexing
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Fast, real-time search across documents, messages, and workspace files
+- **Source:** /usr/lib/node_modules/openclaw/skills/instant_search
+
+#### 2. apple-notes
+- **Description:** Access and manage Apple Notes directly from OpenClaw
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Reading, creating, and managing notes in Apple Notes app
+- **Source:** /usr/lib/node_modules/openclaw/skills/apple-notes
+
+#### 3. apple-reminders
+- **Description:** Interface with Apple Reminders for task and reminder management
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Creating, updating, and checking reminders via Siri/Apple Reminders
+- **Source:** /usr/lib/node_modules/openclaw/skills/apple-reminders
+
+#### 4. bear-notes
+- **Description:** Integration with Bear notes app for markdown-based note management
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Managing markdown notes with Bear's unique linking and tagging system
+- **Source:** /usr/lib/node_modules/openclaw/skills/bear-notes
+
+#### 5. obsidian
+- **Description:** Full Obsidian vault integration with markdown file management
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Reading, creating, and managing Obsidian notes with bidirectional links
+- **Source:** /usr/lib/node_modules/openclaw/skills/obsidian
+
+#### 6. notion
+- **Description:** Notion workspace integration for database and page management
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Accessing Notion databases, creating pages, and managing workspaces
+- **Source:** /usr/lib/node_modules/openclaw/skills/notion
+
+#### 7. spotify-player
+- **Description:** Control Spotify playback directly from OpenClaw via CLI
+- **Install Command:** Built-in skill (requires Spotify account and CLI tools)
+- **Use Case:** Playing music, managing playlists, and controlling playback
+- **Source:** /usr/lib/node_modules/openclaw/skills/spotify-player
+
+#### 8. sonoscli
+- **Description:** Command-line control for Sonos speakers and audio systems
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Controlling Sonos multi-room audio, playback, and grouping
+- **Source:** /usr/lib/node_modules/openclaw/skills/sonoscli
+
+#### 9. trello
+- **Description:** Trello board and card management integration
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Creating cards, managing boards, and tracking Trello tasks
+- **Source:** /usr/lib/node_modules/openclaw/skills/trello
+
+#### 10. blogwatcher
+- **Description:** Monitor and track blog content, RSS feeds, and web updates
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Content monitoring, RSS tracking, and blog update notifications
+- **Source:** /usr/lib/node_modules/openclaw/skills/blogwatcher
+
+#### 11. video-frames
+- **Description:** Extract frames from video files for analysis and processing
+- **Install Command:** Built-in skill (requires ffmpeg)
+- **Use Case:** Video analysis, thumbnail generation, frame extraction
+- **Source:** /usr/lib/node_modules/openclaw/skills/video-frames
+
+#### 12. sports-station
+- **Description:** Advanced sports monitoring and live score tracking system
+- **Install Command:** Built-in skill (no installation required)
+- **Use Case:** Real-time sports updates, live scores, schedules, and statistics
+- **Source:** /home/admin/.agents/skills/sports-station
+
+### Additional Notes
+- OpenClaw has 55+ built-in system skills in /usr/lib/node_modules/openclaw/skills/
+- Additional user-defined skills in /home/admin/.agents/skills/ extend functionality further
+- Note-taking integrations cover Apple ecosystem (Notes, Reminders), Bear, Obsidian, and Notion
+- Media control skills include Spotify, Sonos, and video processing capabilities
+- The instant_search skill was recently added (Mar 13, 2026) for faster search functionality
+
+### Sources
+- Local system skills: /usr/lib/node_modules/openclaw/skills/
+- Local user skills: /home/admin/.agents/skills/
+- Web search: Perplexity AI search
+
+## Search #18
+**Timestamp:** Friday, March 13th, 2026 — 8:50 PM (Asia/Shanghai) / 2026-03-13 12:50 UTC
+**Keywords:** 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+### Search Status
+- Web search timed out - no new web results obtained
+
+### Additional Notes
+- Attempted web search for OpenClaw skills/frameworks but search requests timed out
+- Previous searches have documented 50+ skills available in the OpenClaw ecosystem
+- Skills are maintained in: /usr/lib/node_modules/openclaw/skills/ (system), ~/.agents/skills/ (user), ~/.openclaw/workspace/skills/ (workspace)
+- The ClawHub registry at clawhub.com hosts 13,000+ community skills
+
+### Sources
+- ClawHub: https://clawhub.com
+- Awesome OpenClaw Skills: https://github.com/VoltAgent/awesome-openclaw-skills
+- Local system skills: /usr/lib/node_modules/openclaw/skills/
