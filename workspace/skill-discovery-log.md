@@ -2675,3 +2675,371 @@ Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenCl
 
 ### Summary:
 The OpenClaw ecosystem features a robust skill system with over 50+ built-in skills covering development, security, social media, and automation. Skills are managed through the ClawHub CLI which provides a central registry for discovery and installation. Key capabilities include GitHub integration with automated issue fixing, comprehensive security hardening, and multi-platform social media reach. The primary installation method is through npm for the ClawHub CLI, with many skills available as built-in components of the OpenClaw framework.
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw installation directories: /usr/lib/node_modules/openclaw/skills/ and ~/.agents/skills/
+- Web search results for "OpenClaw AI assistant skills plugins integrations GitHub repository"
+- GitHub search attempts
+
+### Key Findings:
+
+**Note**: Public web searches primarily return results for "OpenClaw" as a game engine remake, not as an AI assistant framework. This suggests OpenClaw AI assistant may be a private/internal project or newer implementation with limited public documentation.
+
+**Available Local Skills**:
+
+**1. Core System Skills (/usr/lib/node_modules/openclaw/skills/)**
+- **skill-creator**: Create, edit, improve, or audit AgentSkills
+- **mcporter**: Use mcporter CLI to list, configure, auth, and call MCP servers/tools
+- **healthcheck**: Host security hardening and risk-tolerance configuration
+- **gh-issues**: Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs
+- **github**: Interact with GitHub using the `gh` CLI
+- **weather**: Get current weather and forecasts via wttr.in or Open-Meteo
+- **xurl**: URL handling and processing
+- **apple-reminders**: Apple Reminders integration
+- **trello**: Trello board and card management
+- **openai-image-gen**: OpenAI image generation
+- **voice-call**: Voice calling capabilities
+- **wacli**: WhatsApp CLI integration
+- **obsidian**: Obsidian vault interaction
+- **goplaces**: Google Places API integration
+- **blucli**: Bluetooth CLI tools
+- **1password**: 1Password integration
+- **canvas**: Canvas drawing and manipulation
+- **openai-whisper**: OpenAI Whisper speech-to-text
+- **blogwatcher**: Blog monitoring and updates
+- **peekaboo**: File and content preview
+- **nano-banana-pro**: Nano banana pro integration
+- **gog**: GOG game platform integration
+- **spotify-player**: Spotify music player control
+- **summarize**: Content summarization
+
+**2. User Custom Skills (~/.agents/skills/)**
+- **agent-reach**: Platform access tools for Twitter/X, Reddit, YouTube, GitHub, etc.
+- **akshare-stock**: A股 analysis全能 Skill (real-time quotes, technical/fundamental analysis)
+- **china-stock-analysis**: A股价值投资分析工具
+- **find-skills**: Discover and install agent skills
+- **sports-monitor**: Sports event monitoring
+- **vercel-composition-patterns**: React composition patterns
+- **vercel-react-best-practices**: React and Next.js performance optimization
+- **vercel-react-native-skills**: React Native and Expo best practices
+- **web-design-guidelines**: UI code review for Web Interface Guidelines compliance
+
+**Installation Methods**:
+- System skills: Pre-installed in /usr/lib/node_modules/openclaw/skills/
+- User skills: Located in ~/.agents/skills/ 
+- Manual installation: Copy skill directory to appropriate location with SKILL.md
+- Future potential: `clawhub install <skill-name>` (based on previous search findings)
+
+**Discovery Recommendations**:
+- Use the built-in `find-skills` skill to discover functionality
+- Check local skill directories for available capabilities
+- Monitor ~/.agents/skills/ for user-added custom skills
+- Consider creating custom skills using the `skill-creator` skill
+
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw"
+- Local OpenClaw installation skill directories
+- Web search results for OpenClaw AI assistant framework
+
+### Key Findings:
+
+**1. OpenClaw Core Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Install Command: `npm install -g openclaw`
+- Use Case: Base framework for running AI assistants across multiple messaging platforms
+- Source: https://www.npmjs.com/package/openclaw
+
+**2. Channel Plugins (npm packages)**
+- **Feishu/Lark Integration**: `@openclaw/feishu` or `@larksuiteoapi/feishu-openclaw-plugin`
+- **BlueBubbles (iMessage)**: `@openclaw/bluebubbles`
+- **Matrix**: `@openclaw/matrix`
+- **Microsoft Teams**: `@openclaw/msteams`
+- **Zalo**: `@openclaw/zalo`
+- **WeCom (企业微信)**: `@wecom/wecom-openclaw-plugin`
+- **Quiubo**: `openclaw-quiubo`
+- **AgenticMail (Email/SMS/Phone)**: `@agenticmail/openclaw`
+- Use Case: Connect OpenClaw agents to various messaging platforms
+
+**3. Memory & Utility Plugins**
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Enhanced memory capabilities
+- **Voice Call**: `@openclaw/voice-call` - Voice calling functionality
+- Use Case: Extend agent capabilities beyond basic messaging
+
+**4. Local System Skills**
+- Location: `/usr/lib/node_modules/openclaw/skills/`
+- Available skills include: github, mcporter, voice-call, wacli, obsidian, goplaces, 1password, canvas, openai-whisper, summarize, blogwatcher, peekaboo, nano-banana-pro, gog, spotify-player, apple-reminders, openai-image-gen, trello, xurl
+- Use Case: Built-in functionality for common tasks and integrations
+
+**5. User Custom Skills**
+- Location: `~/.openclaw/workspace/skills/`
+- Available skills include: agent-reach, akshare-stock, china-stock-analysis, find-skills, sports-monitor, vercel-composition-patterns, vercel-react-best-practices, vercel-react-native-skills, web-design-guidelines, github, self-improving-agent, tavily-search
+- Use Case: User-specific customizations and specialized functionality
+
+**Note**: While "ClawHub" was mentioned in previous search results as a potential skill registry, no public GitHub repository or npm package with this exact name was found. Skills appear to be distributed via npm packages and local installation directories.
+
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw"
+- GitHub repository analysis
+- Local OpenClaw installation skills directories
+
+### Key Findings:
+
+**1. Main OpenClaw Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Repository: https://github.com/openclaw/openclaw
+- Install Command: `npm install -g openclaw`
+- Use Case: Core framework for running AI assistants with multiple channel support
+
+**2. Channel Plugins (Official @openclaw scope)**
+- **Feishu/Lark**: `@openclaw/feishu` - Official Feishu/Lark channel plugin
+- **BlueBubbles**: `@openclaw/bluebubbles` - BlueBubbles channel plugin for iMessage
+- **Matrix**: `@openclaw/matrix` - Matrix chat platform integration
+- **Microsoft Teams**: `@openclaw/msteams` - Microsoft Teams channel plugin
+- **Zalo**: `@openclaw/zalo` - Zalo messaging platform integration
+- **Voice Call**: `@openclaw/voice-call` - Voice calling capabilities
+- Install Command: `npm install @openclaw/<plugin-name>`
+
+**3. Community Channel Plugins**
+- **Feishu (Community)**: `@m1heng-clawd/feishu` - Community maintained Feishu plugin
+- **Feishu (Official)**: `@larksuiteoapi/feishu-openclaw-plugin` - Official Feishu team plugin
+- **WeCom**: `@wecom/wecom-openclaw-plugin` - Official Tencent WeCom (企业微信) plugin
+- **Quiubo**: `openclaw-quiubo` - Quiubo messaging platform integration
+- **OpenClaw App**: `openclaw-app` - Mobile app relay bridge
+
+**4. Specialized Skills/Plugins**
+- **AgenticMail**: `@agenticmail/openclaw` - Email, SMS, and phone number access for agents
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Memory enhancement plugin
+- **Tlon/Urbit**: `@tloncorp/tlon-skill` - Tlon/Urbit platform integration
+- **Ollama Web Search**: `@ollama/openclaw-web-search` - Ollama-powered web search capability
+
+**5. Local Skills Structure**
+- System Skills: `/usr/lib/node_modules/openclaw/skills/` (20+ built-in skills)
+- User Skills: `~/.openclaw/workspace/skills/` (11+ custom skills including stock analysis, React best practices, etc.)
+
+**6. Chinese Community Versions**
+- **OpenClaw-CN**: `openclaw-cn` - Chinese community edition with WhatsApp gateway
+- **OpenClaw-ZH**: `@jerryan999/openclaw-zh` - Chinese translation/stable release
+
+### Installation Methods:
+1. **npm install**: For official and community plugins from npm registry
+2. **Manual installation**: Copy skill directories to `~/.openclaw/workspace/skills/`
+3. **ClawHub** (referenced in previous search): Potential centralized skill registry (not found in public repositories)
+
+### Notes:
+- OpenClaw appears to be primarily distributed via npm with a modular plugin architecture
+- Skills are implemented as directories with SKILL.md files following AgentSkills specification
+- Channel plugins extend messaging platform support
+- Specialized plugins add capabilities like memory, email, web search, etc.
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw"
+- GitHub repositories from npm package links
+- Local OpenClaw installation skill directories
+
+### Key Findings:
+
+**1. Main OpenClaw Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Repository: https://github.com/openclaw/openclaw
+- Install Command: `npm install -g openclaw`
+- Use Case: Core framework for running AI assistants with multiple channel support
+
+**2. Channel Plugins (Official @openclaw scope)**
+- **Feishu/Lark**: `@openclaw/feishu` - Official Feishu/Lark integration
+- **BlueBubbles**: `@openclaw/bluebubbles` - iMessage integration via BlueBubbles
+- **Matrix**: `@openclaw/matrix` - Matrix chat protocol integration  
+- **Microsoft Teams**: `@openclaw/msteams` - Microsoft Teams channel plugin
+- **Zalo**: `@openclaw/zalo` - Zalo messaging platform integration
+- Install Command: `npm install @openclaw/<channel-name>`
+- Use Case: Extend OpenClaw to work with different messaging platforms
+
+**3. Third-party Skills & Plugins**
+- **AgenticMail**: `@agenticmail/openclaw` - Email, SMS, and phone number access
+  - Repository: https://github.com/agenticmail/agenticmail
+  - Use Case: Give agents access to communication channels beyond messaging apps
+  
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Memory enhancement plugin
+  - Use Case: Persistent memory and recall capabilities for agents
+  
+- **Tlon/Urbit Skill**: `@tloncorp/tlon-skill` - Tlon/Urbit integration
+  - Repository: https://github.com/tloncorp/tlon-skill
+  - Use Case: Integration with the Tlon/Urbit decentralized computing platform
+
+**4. Community Channel Plugins**
+- **WeCom Plugin**: `@wecom/wecom-openclaw-plugin` - Official Tencent WeCom integration
+  - Repository: https://github.com/WecomTeam/wecom-openclaw-plugin
+  - Use Case: Enterprise WeChat integration for Chinese market
+  
+- **Clawdbot Feishu**: `@m1heng-clawd/feishu` - Community Feishu plugin
+  - Repository: https://github.com/m1heng/clawdbot-feishu
+  - Use Case: Alternative Feishu integration with community features
+
+**5. Local Skills Structure**
+- System Skills: `/usr/lib/node_modules/openclaw/skills/` (20+ built-in skills)
+- User Skills: `~/.openclaw/workspace/skills/` (11 custom skills including A股 analysis, React best practices, etc.)
+- Installation: Skills can be installed globally or in user workspace directory
+
+**Note**: The term "ClawHub" mentioned in previous searches appears to refer to a skill registry concept but no public implementation was found. Skills are currently distributed via npm packages and manual installation to skill directories.
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw"
+- GitHub repositories from npm package links
+- Local OpenClaw installation skill directories
+
+### Key Findings:
+
+**1. Main OpenClaw Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Repository: https://github.com/openclaw/openclaw
+- Install Command: `npm install -g openclaw`
+- Use Case: Core framework for running AI assistants with multiple channel support
+
+**2. Channel Plugins (Official @openclaw scope)**
+- **Feishu/Lark**: `@openclaw/feishu` - Official Feishu/Lark integration
+- **BlueBubbles**: `@openclaw/bluebubbles` - iMessage integration via BlueBubbles
+- **Matrix**: `@openclaw/matrix` - Matrix chat protocol integration  
+- **Microsoft Teams**: `@openclaw/msteams` - Microsoft Teams channel plugin
+- **Zalo**: `@openclaw/zalo` - Zalo messaging platform integration
+- Install Command: `npm install @openclaw/<channel-name>`
+- Use Case: Extend OpenClaw to work with different messaging platforms
+
+**3. Third-party Skills & Plugins**
+- **AgenticMail**: `@agenticmail/openclaw` - Email, SMS, and phone number access
+  - Repository: https://github.com/agenticmail/agenticmail
+  - Use Case: Give agents access to communication channels beyond messaging apps
+  
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Memory enhancement plugin
+  - Use Case: Persistent memory and recall capabilities for agents
+  
+- **Tlon/Urbit Skill**: `@tloncorp/tlon-skill` - Tlon/Urbit integration
+  - Repository: https://github.com/tloncorp/tlon-skill
+  - Use Case: Integration with the Tlon/Urbit decentralized computing platform
+
+**4. Community Channel Plugins**
+- **WeCom Plugin**: `@wecom/wecom-openclaw-plugin` - Official Tencent WeCom integration
+  - Repository: https://github.com/WecomTeam/wecom-openclaw-plugin
+  - Use Case: Enterprise WeChat integration for Chinese market
+  
+- **Clawdbot Feishu**: `@m1heng-clawd/feishu` - Community Feishu plugin
+  - Repository: https://github.com/m1heng/clawdbot-feishu
+  - Use Case: Alternative Feishu integration with community features
+
+**5. Local Skills Structure**
+- System Skills: `/usr/lib/node_modules/openclaw/skills/` (20+ built-in skills)
+- User Skills: `~/.openclaw/workspace/skills/` (11 custom skills including A股 analysis, React best practices, etc.)
+- Installation: Skills can be installed globally or in user workspace directory
+
+**Note**: The term "ClawHub" mentioned in previous searches appears to refer to a skill registry concept but no public implementation was found. Skills are currently distributed via npm packages and manual installation to skill directories.
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw"
+- GitHub repositories from npm package links
+- Local OpenClaw installation skill directories
+
+### Key Findings:
+
+**1. Main OpenClaw Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Repository: https://github.com/openclaw/openclaw
+- Install Command: `npm install -g openclaw`
+- Use Case: Core framework for running AI assistants with multiple channel support
+
+**2. Channel Plugins (Official @openclaw scope)**
+- **Feishu/Lark**: `@openclaw/feishu` - Official Feishu/Lark integration
+- **BlueBubbles**: `@openclaw/bluebubbles` - iMessage integration via BlueBubbles
+- **Matrix**: `@openclaw/matrix` - Matrix chat protocol integration  
+- **Microsoft Teams**: `@openclaw/msteams` - Microsoft Teams channel plugin
+- **Zalo**: `@openclaw/zalo` - Zalo messaging platform integration
+- Install Command: `npm install @openclaw/<channel-name>`
+- Use Case: Extend OpenClaw to work with different messaging platforms
+
+**3. Third-party Skills & Plugins**
+- **AgenticMail**: `@agenticmail/openclaw` - Email, SMS, and phone number access
+  - Repository: https://github.com/agenticmail/agenticmail
+  - Use Case: Give agents access to communication channels beyond messaging apps
+  
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Memory enhancement plugin
+  - Use Case: Persistent memory and recall capabilities for agents
+  
+- **Tlon/Urbit Skill**: `@tloncorp/tlon-skill` - Tlon/Urbit integration
+  - Repository: https://github.com/tloncorp/tlon-skill
+  - Use Case: Integration with the Tlon/Urbit decentralized computing platform
+
+**4. Community Channel Plugins**
+- **WeCom Plugin**: `@wecom/wecom-openclaw-plugin` - Official Tencent WeCom integration
+  - Repository: https://github.com/WecomTeam/wecom-openclaw-plugin
+  - Use Case: Enterprise WeChat integration for Chinese market
+  
+- **Clawdbot Feishu**: `@m1heng-clawd/feishu` - Community Feishu plugin
+  - Repository: https://github.com/m1heng/clawdbot-feishu
+  - Use Case: Alternative Feishu integration with community features
+
+**5. Local Skills Structure**
+- System Skills: `/usr/lib/node_modules/openclaw/skills/` (20+ built-in skills)
+- User Skills: `~/.openclaw/workspace/skills/` (11 custom skills including A股 analysis, React best practices, etc.)
+- Installation: Skills can be installed globally or in user workspace directory
+
+**Note**: The term "ClawHub" mentioned in previous searches appears to refer to a skill registry concept but no public implementation was found. Skills are currently distributed via npm packages and manual installation to skill directories.
+
+## Search #2 - March 13, 2026 (1:20 PM Asia/Shanghai)
+
+### Sources:
+- npm package registry search for "openclaw" and related packages
+- GitHub repositories linked from npm packages
+- Local OpenClaw installation skill directories analysis
+
+### Key Findings:
+
+**1. Main OpenClaw Framework**
+- Description: Multi-channel AI gateway with extensible messaging integrations
+- Repository: https://github.com/openclaw/openclaw
+- Install Command: `npm install -g openclaw`
+- Use Case: Core framework for running AI assistants with multiple channel support
+
+**2. Official Channel Plugins (@openclaw scope)**
+- **Feishu/Lark**: `@openclaw/feishu` - Official Feishu/Lark integration
+- **BlueBubbles**: `@openclaw/bluebubbles` - iMessage integration via BlueBubbles  
+- **Matrix**: `@openclaw/matrix` - Matrix chat protocol integration
+- **Microsoft Teams**: `@openclaw/msteams` - Microsoft Teams channel plugin
+- **Zalo**: `@openclaw/zalo` - Zalo messaging platform integration
+- Install Command: `npm install @openclaw/<channel-name>`
+- Use Case: Extend OpenClaw to work with different messaging platforms
+
+**3. Third-party Skills & Plugins**
+- **AgenticMail**: `@agenticmail/openclaw` - Email, SMS, and phone number access
+  - Repository: https://github.com/agenticmail/agenticmail
+  - Use Case: Give agents access to communication channels beyond messaging apps
+  
+- **Supermemory**: `@supermemory/openclaw-supermemory` - Memory enhancement plugin
+  - Use Case: Persistent memory and recall capabilities for agents
+
+**4. Community Channel Plugins**
+- **WeCom Plugin**: `@wecom/wecom-openclaw-plugin` - Official Tencent WeCom integration
+  - Repository: https://github.com/WecomTeam/wecom-openclaw-plugin
+  - Use Case: Enterprise WeChat integration for Chinese market
+  
+- **Clawdbot Feishu**: `@m1heng-clawd/feishu` - Community Feishu plugin
+  - Repository: https://github.com/m1heng/clawdbot-feishu
+  - Use Case: Alternative Feishu integration with community features
+
+**5. Local Skills Ecosystem**
+- System Skills: `/usr/lib/node_modules/openclaw/skills/` (20+ built-in skills including mcporter, weather, healthcheck, etc.)
+- User Skills: `~/.openclaw/workspace/skills/` (11 custom skills including A股 analysis, React best practices, agent-reach, etc.)
+- Installation Methods: Global npm packages, manual directory placement, or workspace-specific installation
+- Skill Structure: Each skill has a SKILL.md file with usage instructions and metadata
+
+**Note**: No public "ClawHub" skill registry was found in this search. Skills appear to be distributed primarily through npm packages and direct repository installation. The ecosystem shows active development with both official and community-contributed plugins.
