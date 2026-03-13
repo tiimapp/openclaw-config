@@ -2139,3 +2139,539 @@ The OpenClaw AI agent framework has a rich ecosystem of skills distributed throu
 4. **Specialized Tools** - Platform-specific integrations like Agent Reach for internet access
 
 The framework supports both English and Chinese language skills, with regular updates and community contributions. Skills cover diverse domains including security, social media, development, productivity, and platform integrations.
+
+## Search #2 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub repository: openclaw/openclaw (official OpenClaw AI assistant)
+- Web search results for "OpenClaw AI assistant skills plugins integrations GitHub"
+
+### Key Findings:
+
+**1. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and structured collaboration
+
+**2. Agent Reach Skill**
+- **Description**: Give your AI agent eyes to see the entire internet with support for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: `clawhub install agent-reach`
+- **Use Case**: Comprehensive internet access and platform integration for multi-platform data gathering and interaction
+
+**3. Web & Frontend Development Skills Collection**
+- **Description**: Collection of 938 skills for web development, including browser automation, AEO optimization, analytics, and agent dashboards
+- **Install Command**: Individual skills via `clawhub install <skill-name>` or browse at https://github.com/openclaw/skills
+- **Use Case**: Web development, SEO/AEO optimization, website analytics, and frontend tooling
+
+**4. Search & Research Skills Collection**
+- **Description**: Collection of 350 skills for academic research, deep research, paper digestion, and knowledge management
+- **Install Command**: Individual skills via `clawhub install <skill-name>`
+- **Use Case**: Academic writing, research paper analysis, knowledge base management, and deep research capabilities
+
+**5. Git & GitHub Skills Collection**
+- **Description**: Collection of 170 skills for GitHub integration, security auditing, agent lifecycle management, and GitOps workflows
+- **Install Command**: Individual skills via `clawhub install <skill-name>`
+- **Use Case**: GitHub repository management, security auditing, automated deployments, and agent skill verification
+
+**6. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security validation and risk assessment of installed OpenClaw skills
+
+**7. Find Skills Skill**
+- **Description**: Helps users discover and install agent skills when they ask questions like "how do I do X" or express interest in extending capabilities
+- **Install Command**: Pre-installed in `~/.agents/skills/find-skills/`
+- **Use Case**: Skill discovery assistant that searches the open agent skills ecosystem and helps users find relevant capabilities
+
+### Summary:
+The OpenClaw ecosystem has grown significantly with over 5,400 curated skills available through the VoltAgent awesome list. The skills are organized into 20+ categories covering diverse domains including AI/LLMs, web development, Git/GitHub, search/research, communication, productivity, and more. Installation is primarily through the ClawHub CLI (`clawhub install <skill-slug>`) or manual installation to skill directories. The ecosystem supports both individual specialized skills and comprehensive collections for specific domains.
+
+
+## Search #2 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search results for "OpenClaw AI assistant skills plugins integrations"
+- Web search results for OpenClaw AI framework (distinguishing from game engine)
+
+### Key Findings:
+
+**1. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and handoffs
+
+**2. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection across all installed OpenClaw skills
+
+**3. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory management and knowledge retention for AI agents
+
+**4. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Web automation and data extraction from any website without pre-built integrations
+
+**5. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+
+**6. Agent Analytics Skill**
+- **Description**: Simple website analytics your AI agent controls end-to-end
+- **Install Command**: `clawhub install agent-analytics`
+- **Use Case**: Privacy-focused website analytics managed entirely by the AI agent
+
+**7. AEO Analytics Free Skill**
+- **Description**: Track AI visibility — measure whether a brand is mentioned and cited by AI assistants (Gemini, ChatGPT, Perplexity)
+- **Install Command**: `clawhub install aeo-analytics-free`
+- **Use Case**: Answer Engine Optimization (AEO) monitoring and brand visibility tracking in AI responses
+
+### Summary:
+The VoltAgent/awesome-openclaw-skills repository contains 5,495 curated skills across 28 categories, filtered from 13,729+ community-built skills in the official registry. Key categories include Coding Agents & IDEs (1,222 skills), Web & Frontend Development (938 skills), and Browser & Automation (335 skills). Skills can be installed via the ClawHub CLI (`clawhub install <skill-slug>`) or manually copied to skill directories. The ecosystem emphasizes security, with dedicated vetting tools and security audit capabilities built into the framework.
+
+
+## Search #2 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories
+- Web search for "OpenClaw AI assistant skills plugins integrations"
+
+### Key Findings:
+
+**1. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents to work together on complex tasks requiring specialized roles
+
+**2. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability scanning of installed OpenClaw skills and configurations
+
+**3. Search & Research Skills Collection**
+- **Description**: 350+ skills focused on information retrieval, academic research, and data analysis
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Deep research capabilities including academic paper analysis, web scraping, and data extraction
+
+**4. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend tooling
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+
+**5. Git & GitHub Skills Collection**
+- **Description**: 170+ skills for version control, repository management, and GitHub workflows
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Automated PR management, code review assistance, and repository analytics
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+## Search #2 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for "OpenClaw AI assistant skills plugins integrations"
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring role-based collaboration
+
+**2. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security vulnerability assessment and risk mitigation for OpenClaw deployments
+
+**3. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and scientific research assistance with proper source attribution
+
+**4. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+
+**5. Git & GitHub Skills Collection**
+- **Description**: 170+ skills for version control, repository management, and GitHub workflows
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Automated PR management, code review assistance, and repository analytics
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+## Search #2 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories
+- Web search results for "OpenClaw AI assistant skills plugins integrations GitHub"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, and automation
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and collaboration
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection for OpenClaw skill installations
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+
+**5. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+## Search #3 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories  
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills as of February 28, 2026)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, automation, and productivity
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and structured collaboration
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack with vulnerability detection
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and risk mitigation for OpenClaw deployments and skill installations
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification capabilities
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research assistance with proper source attribution and verification
+
+**5. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, and hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory management and knowledge retention for AI agents with efficient retrieval mechanisms
+
+**6. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, and form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website without pre-built integrations
+
+**7. Search & Research Skills Category**
+- **Description**: Collection of 350+ skills focused on information retrieval, academic research, and data analysis
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Deep research capabilities including academic paper analysis, web scraping, and knowledge base management
+
+### Summary:
+The OpenClaw ecosystem demonstrates significant maturity with over 5,400 curated skills available through community repositories like VoltAgent's awesome list. The skills are well-organized into functional categories covering diverse domains including AI/LLMs (197 skills), Coding Agents & IDEs (1,222 skills), Web & Frontend Development (938 skills), Git & GitHub (170 skills), and Search & Research (350 skills). Installation is standardized through the ClawHub CLI (`clawhub install <skill-slug>`) with clear use cases and descriptions. The ecosystem emphasizes both functionality and security, with dedicated skills for team orchestration, security auditing, and persistent memory management.
+
+
+## Search #3 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories  
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, and automation
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and collaboration
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/arminnaimi/agent-team-orchestration/SKILL.md
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection for OpenClaw skill installations
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/trypto1019/arc-security-audit/SKILL.md
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/kesslerio/academic-deep-research/SKILL.md
+
+**5. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+- **Source**: https://github.com/openclaw/skills/tree/main/categories/web-and-frontend-development.md
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/dobrinalexandru/agent-brain/SKILL.md
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/adcentury/actionbook/SKILL.md
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+## Search #3 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories  
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, and automation
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and collaboration
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/arminnaimi/agent-team-orchestration/SKILL.md
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection for OpenClaw skill installations
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/trypto1019/arc-security-audit/SKILL.md
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/kesslerio/academic-deep-research/SKILL.md
+
+**5. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+- **Source**: https://github.com/openclaw/skills/tree/main/categories/web-and-frontend-development.md
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/dobrinalexandru/agent-brain/SKILL.md
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/adcentury/actionbook/SKILL.md
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+## Search #3 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories  
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, and automation
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and collaboration
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/arminnaimi/agent-team-orchestration/SKILL.md
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection for OpenClaw skill installations
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/trypto1019/arc-security-audit/SKILL.md
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/kesslerio/academic-deep-research/SKILL.md
+
+**5. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+- **Source**: https://github.com/openclaw/skills/tree/main/categories/web-and-frontend-development.md
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/dobrinalexandru/agent-brain/SKILL.md
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/adcentury/actionbook/SKILL.md
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+## Search #3 - March 13, 2026 (12:20 PM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: VoltAgent/awesome-openclaw-skills (5,495 curated skills)
+- GitHub API search for OpenClaw-related repositories  
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. VoltAgent Awesome OpenClaw Skills Collection**
+- **Description**: Curated collection of 5,495+ community-built OpenClaw skills from the official OpenClaw Skills Registry (filtered from 13,729 total skills)
+- **Install Command**: `clawhub install <skill-slug>` or manual installation to `~/.openclaw/skills/`
+- **Use Case**: Comprehensive skill discovery across 30+ categories including coding, web development, research, and automation
+- **Source**: https://github.com/VoltAgent/awesome-openclaw-skills
+
+**2. Agent Team Orchestration Skill**
+- **Description**: Orchestrate multi-agent teams with defined roles, task lifecycles, handoff protocols, and review workflows
+- **Install Command**: `clawhub install agent-team-orchestration`
+- **Use Case**: Coordinating multiple AI agents for complex workflows requiring specialized roles and collaboration
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/arminnaimi/agent-team-orchestration/SKILL.md
+
+**3. Arc Security Audit Skill**
+- **Description**: Comprehensive security audit for an agent's full skill stack
+- **Install Command**: `clawhub install arc-security-audit`
+- **Use Case**: Security assessment and vulnerability detection for OpenClaw skill installations
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/trypto1019/arc-security-audit/SKILL.md
+
+**4. Academic Deep Research Skill**
+- **Description**: Transparent, rigorous research with full citation tracking and source verification
+- **Install Command**: `clawhub install academic-deep-research`
+- **Use Case**: Academic and professional research with proper source attribution and verification
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/kesslerio/academic-deep-research/SKILL.md
+
+**5. Web & Frontend Development Skills Collection**
+- **Description**: 938+ skills for web development, browser automation, and frontend engineering
+- **Install Command**: Various individual skills via `clawhub install <skill-name>`
+- **Use Case**: Web development assistance, automated testing, and frontend code generation
+- **Source**: https://github.com/openclaw/skills/tree/main/categories/web-and-frontend-development.md
+
+**6. Agent Brain Skill**
+- **Description**: Local-first persistent memory for AI agents with SQLite storage, orchestrated retrieve/extract loops, hybrid search
+- **Install Command**: `clawhub install agent-brain`
+- **Use Case**: Long-term memory and knowledge retention for AI agents with efficient retrieval mechanisms
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/dobrinalexandru/agent-brain/SKILL.md
+
+**7. ActionBook Skill**
+- **Description**: Browser automation, web scraping, screenshots, form interaction for any website
+- **Install Command**: `clawhub install actionbook`
+- **Use Case**: Automated web interactions and data extraction from any website
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/adcentury/actionbook/SKILL.md
+
+### Summary:
+The OpenClaw ecosystem continues to grow with over 5,400 curated skills available through the VoltAgent awesome list. Key categories include team orchestration, security auditing, research capabilities, web development, and GitHub integration. The primary installation method remains `clawhub install <skill-slug>`, with skills organized by functional categories for easy discovery. Many skills focus on enhancing agent capabilities through memory persistence, web automation, and multi-agent coordination.
+
+Search #15 - Friday, March 13th, 2026 — 12:50 PM (Asia/Shanghai)
+Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+
+**1. OpenClaw GitHub Skill**
+- **Description**: GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries
+- **Install Command**: `npm i -g gh` (GitHub CLI) + built-in skill
+- **Use Case**: Managing GitHub repositories, creating/issues, PR management, CI monitoring
+- **Source**: Local installation (/usr/lib/node_modules/openclaw/skills/github/SKILL.md)
+
+**2. OpenClaw GH-Issues Skill**
+- **Description**: Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments
+- **Install Command**: Built-in skill (requires GH_TOKEN configured)
+- **Use Case**: Automated bug fixing, issue triage, and PR management with AI sub-agents
+- **Source**: Local installation (/usr/lib/node_modules/openclaw/skills/gh-issues/SKILL.md)
+
+**3. ClawHub CLI**
+- **Description**: Central registry for OpenClaw skills with search, install, update, and publish capabilities
+- **Install Command**: `npm i -g clawhub`
+- **Use Case**: Discovering and managing OpenClaw skills from the central repository
+- **Source**: Local installation (/usr/lib/node_modules/openclaw/skills/clawhub/SKILL.md)
+
+**4. OpenClaw Healthcheck Skill**
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment
+- **Source**: Local installation (/usr/lib/node_modules/openclaw/skills/healthcheck/SKILL.md)
+
+**5. OpenClaw Agent-Reach Skill**
+- **Description**: Platform access tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS
+- **Install Command**: Built-in skill
+- **Use Case**: Social media monitoring, content aggregation, platform integration
+- **Source**: Local installation (~/.agents/skills/agent-reach/SKILL.md)
+
+### Summary:
+The OpenClaw ecosystem features a robust skill system with over 50+ built-in skills covering development, security, social media, and automation. Skills are managed through the ClawHub CLI which provides a central registry for discovery and installation. Key capabilities include GitHub integration with automated issue fixing, comprehensive security hardening, and multi-platform social media reach. The primary installation method is through npm for the ClawHub CLI, with many skills available as built-in components of the OpenClaw framework.
