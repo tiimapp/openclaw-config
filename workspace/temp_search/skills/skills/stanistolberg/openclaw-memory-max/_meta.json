@@ -1,0 +1,17 @@
+{
+  "owner": "stanistolberg",
+  "slug": "openclaw-memory-max",
+  "displayName": "Openclaw Memory Max",
+  "latest": {
+    "version": "3.0.1",
+    "publishedAt": 1773163668170,
+    "commit": "https://github.com/openclaw/skills/commit/9fea7a687150ca3f5be52ad114b7e69cc8df82b8"
+  },
+  "history": [
+    {
+      "version": "0.1.0",
+      "publishedAt": 1773160608341,
+      "commit": "https://github.com/openclaw/skills/commit/788ce45429e4bb095cda646c9e4710162267a18f"
+    }
+  ]
+}

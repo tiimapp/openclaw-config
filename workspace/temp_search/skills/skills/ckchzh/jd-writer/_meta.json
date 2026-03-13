@@ -1,0 +1,22 @@
+{
+  "owner": "ckchzh",
+  "slug": "jd-writer",
+  "displayName": "Jd Writer",
+  "latest": {
+    "version": "1.2.0",
+    "publishedAt": 1773152194954,
+    "commit": "https://github.com/openclaw/skills/commit/f248caa0c7d177cb4cd4496f0aeb59909f7be09c"
+  },
+  "history": [
+    {
+      "version": "1.1.1",
+      "publishedAt": 1773140995111,
+      "commit": "https://github.com/openclaw/skills/commit/7f4cd5d8392a1b0cd754ed076f71f3c0ebb16548"
+    },
+    {
+      "version": "1.1.0",
+      "publishedAt": 1773121840638,
+      "commit": "https://github.com/openclaw/skills/commit/5165ce4dc8644398941bc0c3f349b0a7e8c97db2"
+    }
+  ]
+}

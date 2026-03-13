@@ -1,0 +1,11 @@
+{
+  "owner": "learsea",
+  "slug": "openclaw-optimizer-pro",
+  "displayName": "OpenClaw Optimizer",
+  "latest": {
+    "version": "1.2.0",
+    "publishedAt": 1773145009792,
+    "commit": "https://github.com/openclaw/skills/commit/d78afbe806fe6ab2eb3dd61f675e95d7669b92df"
+  },
+  "history": []
+}

@@ -1,0 +1,11 @@
+{
+  "owner": "membranedev",
+  "slug": "cohere",
+  "displayName": "Cohere",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773190942856,
+    "commit": "https://github.com/openclaw/skills/commit/b7af80b82dac4784794ae3b29af5efbf937abeb3"
+  },
+  "history": []
+}

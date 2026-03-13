@@ -1,0 +1,11 @@
+{
+  "owner": "regevguym",
+  "slug": "monday-com",
+  "displayName": "monday.com",
+  "latest": {
+    "version": "1.2.0",
+    "publishedAt": 1773172406450,
+    "commit": "https://github.com/openclaw/skills/commit/a3f156dcbc1f909b1f10a21e5b0d24fb0433e680"
+  },
+  "history": []
+}

@@ -1,0 +1,11 @@
+{
+  "owner": "ksuriuri",
+  "slug": "noizai-tts",
+  "displayName": "tts",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773043611693,
+    "commit": "https://github.com/openclaw/skills/commit/6fcafa4fb62cec4252f0cf041bf6b00bd81e4564"
+  },
+  "history": []
+}

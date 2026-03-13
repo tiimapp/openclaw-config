@@ -1,0 +1,11 @@
+{
+  "owner": "gora050",
+  "slug": "webflow-integration",
+  "displayName": "Webflow",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772996585986,
+    "commit": "https://github.com/openclaw/skills/commit/6de9a49d65aee671baeed936e538c4c59738242e"
+  },
+  "history": []
+}

@@ -1,0 +1,22 @@
+{
+  "owner": "tjefferson",
+  "slug": "stock-price-query",
+  "displayName": "Stock Price Query",
+  "latest": {
+    "version": "1.0.7",
+    "publishedAt": 1773326920974,
+    "commit": "https://github.com/openclaw/skills/commit/216a5ae84fd6d43eb7e6bce90a87974f0ffcf0ea"
+  },
+  "history": [
+    {
+      "version": "1.0.4",
+      "publishedAt": 1772106486405,
+      "commit": "https://github.com/openclaw/skills/commit/5205cd890aaeaa1a14c9e58685f4877efd939587"
+    },
+    {
+      "version": "1.0.3",
+      "publishedAt": 1772008624465,
+      "commit": "https://github.com/openclaw/skills/commit/5cbd15adb400f537a1471dbeba256ceb955cf2b8"
+    }
+  ]
+}

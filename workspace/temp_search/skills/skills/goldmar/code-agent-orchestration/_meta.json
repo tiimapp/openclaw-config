@@ -1,0 +1,11 @@
+{
+  "owner": "goldmar",
+  "slug": "code-agent-orchestration",
+  "displayName": "Code Agent Orchestration",
+  "latest": {
+    "version": "2.0.5",
+    "publishedAt": 1773213235712,
+    "commit": "https://github.com/openclaw/skills/commit/9fb5cbfa641c67691c0acb9c3bd777cfbe9aeeb1"
+  },
+  "history": []
+}

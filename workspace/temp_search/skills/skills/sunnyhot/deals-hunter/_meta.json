@@ -1,0 +1,11 @@
+{
+  "owner": "sunnyhot",
+  "slug": "deals-hunter",
+  "displayName": "Deals Hunter",
+  "latest": {
+    "version": "2.1.0",
+    "publishedAt": 1773228567793,
+    "commit": "https://github.com/openclaw/skills/commit/23f9a468d3aa2f03d9bb6d1e3aba9a9e7fc734a5"
+  },
+  "history": []
+}

@@ -1,0 +1,11 @@
+{
+  "owner": "nickflach",
+  "slug": "kannaka-radio",
+  "displayName": "Kannaka Radio",
+  "latest": {
+    "version": "1.0.1",
+    "publishedAt": 1773103661777,
+    "commit": "https://github.com/openclaw/skills/commit/7c4c69da0fa3e33118c8eb6e503439dc44964aed"
+  },
+  "history": []
+}

@@ -1,0 +1,11 @@
+{
+  "owner": "gora050",
+  "slug": "pushover",
+  "displayName": "Pushover",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772982160106,
+    "commit": "https://github.com/openclaw/skills/commit/ae448d1bfb0c7bfee31f848b455598ec3ca11a8a"
+  },
+  "history": []
+}

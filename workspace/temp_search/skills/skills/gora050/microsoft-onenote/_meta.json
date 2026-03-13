@@ -1,0 +1,11 @@
+{
+  "owner": "gora050",
+  "slug": "microsoft-onenote",
+  "displayName": "Microsoft Onenote",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773180197498,
+    "commit": "https://github.com/openclaw/skills/commit/cc6616181bf070093e1a876a963400a69684233b"
+  },
+  "history": []
+}

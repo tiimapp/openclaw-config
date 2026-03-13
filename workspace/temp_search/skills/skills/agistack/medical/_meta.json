@@ -1,0 +1,17 @@
+{
+  "owner": "agistack",
+  "slug": "medical",
+  "displayName": "Medical",
+  "latest": {
+    "version": "2.0.0",
+    "publishedAt": 1773059984856,
+    "commit": "https://github.com/openclaw/skills/commit/96f83c19457432d5b8450b94f12eb364f32de653"
+  },
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1772913442670,
+      "commit": "https://github.com/openclaw/skills/commit/88212304c849aaccd25adbf014a5b895e5dc4a40"
+    }
+  ]
+}

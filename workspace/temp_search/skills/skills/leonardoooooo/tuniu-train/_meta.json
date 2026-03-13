@@ -1,0 +1,11 @@
+{
+  "owner": "leonardoooooo",
+  "slug": "tuniu-train",
+  "displayName": "途牛火车票预订技能",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773151150255,
+    "commit": "https://github.com/openclaw/skills/commit/d71cc983d1f5baa7194a11d24d99d0ed34bcd5c4"
+  },
+  "history": []
+}

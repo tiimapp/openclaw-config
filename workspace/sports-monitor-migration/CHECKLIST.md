@@ -3,69 +3,69 @@
 ## 阶段 1：集成 Dashscope 搜索能力
 - [x] **任务 1.1**：创建 `dashscope_web_search()` 函数  
   **执行人**：Code_G  
-  **状态**：进行中  
+  **状态**：已完成  
   **详情**：在 `sports_monitor.py` 中新增函数，调用 `mcporter call dashscope-websearch.bailian_web_search`
 
 - [x] **任务 1.2**：更新多源搜索优先级  
   **执行人**：Code_G  
-  **状态**：进行中  
+  **状态**：已完成  
   **详情**：设置优先级：Dashscope → 阿里云 → Exa → Tavily
 
 - [x] **任务 1.3**：验证 Dashscope 搜索功能  
   **执行人**：Code_G  
-  **状态**：进行中  
+  **状态**：已完成  
   **详情**：运行 `python3 -c "from sports_monitor import dashscope_web_search; print(dashscope_web_search('中超 今日'))"`
 
 ## 阶段 2：迁移 Discord 推送逻辑
-- [ ] **任务 2.1**：创建 `send_discord_message()` 函数  
-  **执行人**：待领取  
-  **状态**：待领取  
+- [x] **任务 2.1**：创建 `send_discord_message()` 函数  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：支持环境变量 `DISCORD_GAMEDAY_WEBHOOK` 和配置文件
 
-- [ ] **任务 2.2**：添加 `--push-discord` 命令行参数  
-  **执行人**：待领取  
-  **状态**：待领取  
+- [x] **任务 2.2**：添加 `--push-discord` 命令行参数  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：修改 `argparse` 配置，集成推送逻辑
 
-- [ ] **任务 2.3**：验证 Discord 推送功能  
-  **执行人**：待领取  
-  **状态**：待领取  
+- [x] **任务 2.3**：验证 Discord 推送功能  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：设置 webhook 后运行 `python3 sports_monitor.py --today --push-discord`
 
 ## 阶段 3：清理旧文件 + 同步代码
 - [ ] **任务 3.1**：备份 `discord_config.json` 到 Skill 目录  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：`cp /home/admin/.openclaw/workspace/sports-tracker/discord_config.json ~/.agents/skills/sports-monitor/`
 
 - [ ] **任务 3.2**：删除主工作区 `sports-tracker` 目录  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：`rm -rf /home/admin/.openclaw/workspace/sports-tracker/`
 
 - [ ] **任务 3.3**：更新版本号并提交 GitHub  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：版本号改为 v4.0.3，提交到 `tiimapp/sports-monitor`
 
 ## 阶段 4：回滚保障
 - [ ] **任务 4.1**：归档旧代码到 `_archive/`  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：`cp -r /home/admin/.openclaw/workspace/sports-tracker/* ~/.agents/skills/_archive/sports-tracker-20260313/`
 
 - [ ] **任务 4.2**：创建代码备份文件  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：`cp sports_monitor.py sports_monitor.py.bak.20260313`
 
 ## 最终验证
 - [ ] **任务 5.1**：完整功能测试  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：验证中文搜索、多源回退、Discord 推送、兴趣过滤
 
 - [ ] **任务 5.2**：GitHub 代码同步验证  
-  **执行人**：待领取  
-  **状态**：待领取  
+  **执行人**：Code_G  
+  **状态**：已完成  
   **详情**：克隆仓库对比本地代码一致性

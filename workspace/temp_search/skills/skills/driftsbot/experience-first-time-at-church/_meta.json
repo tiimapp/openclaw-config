@@ -1,0 +1,11 @@
+{
+  "owner": "driftsbot",
+  "slug": "experience-first-time-at-church",
+  "displayName": "First Time at Church — AI Experience",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773193820229,
+    "commit": "https://github.com/openclaw/skills/commit/85f614b2361a7d2a57e537327703b59e6584419d"
+  },
+  "history": []
+}

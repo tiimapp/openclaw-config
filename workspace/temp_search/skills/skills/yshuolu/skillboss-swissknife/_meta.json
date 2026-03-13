@@ -1,0 +1,17 @@
+{
+  "owner": "yshuolu",
+  "slug": "skillboss-swissknife",
+  "displayName": "Skillboss",
+  "latest": {
+    "version": "1.2.0",
+    "publishedAt": 1773209152105,
+    "commit": "https://github.com/openclaw/skills/commit/6ea390dd130c05e534eedb1c44a76c364cb50c06"
+  },
+  "history": [
+    {
+      "version": "1.1.0",
+      "publishedAt": 1773208723652,
+      "commit": "https://github.com/openclaw/skills/commit/d8552adb26a5cb4ed7da11aa2e095be9e7074ac0"
+    }
+  ]
+}

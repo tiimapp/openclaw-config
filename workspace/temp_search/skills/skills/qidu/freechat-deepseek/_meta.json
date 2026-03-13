@@ -1,0 +1,11 @@
+{
+  "owner": "qidu",
+  "slug": "freechat-deepseek",
+  "displayName": "Chat DeepSeek by Browser",
+  "latest": {
+    "version": "1.0.1",
+    "publishedAt": 1773072504857,
+    "commit": "https://github.com/openclaw/skills/commit/31432c12c02ec9227f168665ab77edacb2dbcee9"
+  },
+  "history": []
+}

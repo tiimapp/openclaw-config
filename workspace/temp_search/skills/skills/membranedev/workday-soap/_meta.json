@@ -1,0 +1,11 @@
+{
+  "owner": "membranedev",
+  "slug": "workday-soap",
+  "displayName": "Workday Soap",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772938939865,
+    "commit": "https://github.com/openclaw/skills/commit/b444a8fafcba9a2ad8e289febdb2e4fd756d6fe7"
+  },
+  "history": []
+}

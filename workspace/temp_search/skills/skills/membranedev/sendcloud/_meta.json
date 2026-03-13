@@ -1,0 +1,11 @@
+{
+  "owner": "membranedev",
+  "slug": "sendcloud",
+  "displayName": "Sendcloud",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773093759487,
+    "commit": "https://github.com/openclaw/skills/commit/336157ca882efb17d96c3270b2fa5a84f1e8553a"
+  },
+  "history": []
+}

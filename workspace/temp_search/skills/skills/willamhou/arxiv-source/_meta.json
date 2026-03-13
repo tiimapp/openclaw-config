@@ -1,0 +1,11 @@
+{
+  "owner": "willamhou",
+  "slug": "arxiv-source",
+  "displayName": "arXiv Source",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772967494933,
+    "commit": "https://github.com/openclaw/skills/commit/54edbbf98e265a1b41e3b9a973391ede050af6eb"
+  },
+  "history": []
+}

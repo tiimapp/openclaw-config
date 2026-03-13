@@ -1,0 +1,11 @@
+{
+  "owner": "gora050",
+  "slug": "waboxapp",
+  "displayName": "Waboxapp",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773191040651,
+    "commit": "https://github.com/openclaw/skills/commit/1c0a9dcbad0ce25bfca0951ace4bf5696d33d67d"
+  },
+  "history": []
+}

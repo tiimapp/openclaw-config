@@ -1,0 +1,11 @@
+{
+  "owner": "mfy-apl",
+  "slug": "airport-pickups-london",
+  "displayName": "Airport Pickups London",
+  "latest": {
+    "version": "1.0.2",
+    "publishedAt": 1773101052798,
+    "commit": "https://github.com/openclaw/skills/commit/53914703c14446e689edd5d7bf2086749f4fd8a9"
+  },
+  "history": []
+}

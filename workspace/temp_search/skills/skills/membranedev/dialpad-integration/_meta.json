@@ -1,0 +1,11 @@
+{
+  "owner": "membranedev",
+  "slug": "dialpad-integration",
+  "displayName": "Dialpad",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772960539781,
+    "commit": "https://github.com/openclaw/skills/commit/74ab1836386daf779ca1b29c467ae5ce8ce005bb"
+  },
+  "history": []
+}

@@ -1,0 +1,11 @@
+{
+  "owner": "qasim-nylas",
+  "slug": "nylas",
+  "displayName": "Nylas Email, Calendar & Contacts",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773203580314,
+    "commit": "https://github.com/openclaw/skills/commit/4196a63e9eb9fc9f30fc51d644202be2a8920c2c"
+  },
+  "history": []
+}

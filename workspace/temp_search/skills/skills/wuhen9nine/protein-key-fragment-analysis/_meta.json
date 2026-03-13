@@ -1,0 +1,11 @@
+{
+  "owner": "wuhen9nine",
+  "slug": "protein-key-fragment-analysis",
+  "displayName": "Protein Key Fragment Analysis",
+  "latest": {
+    "version": "1.0.1",
+    "publishedAt": 1773224370631,
+    "commit": "https://github.com/openclaw/skills/commit/ffe256a4709318191f74a15d2ebba2c33bb263b0"
+  },
+  "history": []
+}

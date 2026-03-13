@@ -1,0 +1,29 @@
+{
+    "id": "openclaw-memory-max",
+    "name": "OpenClaw Memory Max",
+    "version": "3.0.0",
+    "description": "SOTA Memory Suite: Auto-Recall Hooks, Cross-Encoder Reranking, Multi-Hop Deep Search, Semantic Causal Graph, Episodic Memory, Utility Vectors, and Nightly Sleep-Cycle Consolidation.",
+    "kind": "memory",
+    "main": "dist/index.js",
+    "configSchema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+            "enableRulePinning": {
+                "type": "boolean",
+                "default": false,
+                "description": "Enable YAML rule pinning from MEMORY.md into the system prompt. Off by default — must be explicitly opted in."
+            },
+            "enableAutoCapture": {
+                "type": "boolean",
+                "default": true,
+                "description": "Enable automatic capture of high-value user messages (rules, corrections, preferences) to sidecar files."
+            },
+            "enableAutoRecall": {
+                "type": "boolean",
+                "default": true,
+                "description": "Enable automatic memory injection before each agent turn."
+            }
+        }
+    }
+}

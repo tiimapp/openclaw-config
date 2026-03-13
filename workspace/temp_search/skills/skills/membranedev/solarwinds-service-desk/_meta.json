@@ -1,0 +1,11 @@
+{
+  "owner": "membranedev",
+  "slug": "solarwinds-service-desk",
+  "displayName": "Solarwinds Service Desk",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1773180139851,
+    "commit": "https://github.com/openclaw/skills/commit/fc47d21f93ad849ab4af077d3cc29a49b42e30c3"
+  },
+  "history": []
+}

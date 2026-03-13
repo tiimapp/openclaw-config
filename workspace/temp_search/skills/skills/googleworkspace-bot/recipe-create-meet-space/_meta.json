@@ -1,0 +1,11 @@
+{
+  "owner": "googleworkspace-bot",
+  "slug": "recipe-create-meet-space",
+  "displayName": "Recipe Create Meet Space",
+  "latest": {
+    "version": "1.0.0",
+    "publishedAt": 1772933761947,
+    "commit": "https://github.com/openclaw/skills/commit/7fc6142b0a834f0da7edcb2df582bbad9407df8b"
+  },
+  "history": []
+}
