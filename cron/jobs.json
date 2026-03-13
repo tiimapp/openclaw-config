@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773407826581,
+      "updatedAtMs": 1773411083761,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773411036298,
-        "lastRunAtMs": 1773407436298,
+        "nextRunAtMs": 1773414636303,
+        "lastRunAtMs": 1773411036303,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 390283,
+        "lastDurationMs": 47458,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773411036302
+        "runningAtMs": 1773414636308
       }
     },
     {
@@ -447,35 +447,6 @@
       }
     },
     {
-      "id": "15c45cce-a054-4d93-a747-f91ff7a9c24e",
-      "agentId": "main",
-      "sessionKey": "agent:main:discord:channel:1479649544458338405",
-      "name": "Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5",
-      "enabled": true,
-      "createdAtMs": 1772878291499,
-      "updatedAtMs": 1773410520204,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 7-23 * * *",
-        "tz": "Asia/Shanghai"
-      },
-      "sessionTarget": "main",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "systemEvent",
-        "text": "\ud83d\udcca Sports Monitor \u5f00\u53d1\u8fdb\u5ea6\u6c47\u62a5\uff08\u6bcf\u5c0f\u65f6\uff09"
-      },
-      "state": {
-        "nextRunAtMs": 1773414000000,
-        "lastRunAtMs": 1773410400005,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 120199,
-        "lastDeliveryStatus": "not-requested",
-        "consecutiveErrors": 0
-      }
-    },
-    {
       "id": "ed12c71e-8f4b-4c83-8cae-99d41d1fa65b",
       "agentId": "main",
       "sessionKey": "agent:main:discord:channel:1475775915844960428",
@@ -552,7 +523,7 @@
       "name": "C2605 hourly-23:00",
       "enabled": true,
       "createdAtMs": 1773057871118,
-      "updatedAtMs": 1773328543321,
+      "updatedAtMs": 1773414022433,
       "schedule": {
         "expr": "0 23 * * 1-5",
         "kind": "cron",
@@ -570,77 +541,14 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773414000000,
-        "lastRunAtMs": 1773328264726,
+        "nextRunAtMs": 1773673200000,
+        "lastRunAtMs": 1773414000006,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 278595,
+        "lastDurationMs": 22427,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "69e8ae7f-ef8e-4a62-883c-5fb9c5a5924d",
-      "name": "self-improvement-morning-report",
-      "enabled": false,
-      "deleteAfterRun": true,
-      "createdAtMs": 1773069023153,
-      "updatedAtMs": 1773104663273,
-      "schedule": {
-        "kind": "at",
-        "at": "2026-03-10T01:00:00.000Z"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Read ~/.openclaw/workspace/.learnings/LEARNINGS.md and create a summary report of all learnings from yesterday (2026-03-09). Include: 1) Total learnings logged, 2) High priority items, 3) Resolved items, 4) Pending actions needed. Format as a clean markdown report and send to Discord DM."
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "discord"
-      },
-      "state": {
-        "lastRunAtMs": 1773104624757,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 38516,
-        "lastError": "Discord recipient is required. Use \"channel:<id>\" for channels or \"user:<id>\" for DMs.",
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1
-      }
-    },
-    {
-      "id": "0a9b7449-c60f-4213-b790-7505455ab659",
-      "name": "skill-search-1",
-      "enabled": true,
-      "createdAtMs": 1773071409551,
-      "updatedAtMs": 1773410022160,
-      "schedule": {
-        "kind": "every",
-        "everyMs": 1800000,
-        "anchorMs": 1773071409551
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Search GitHub and web for OpenClaw skills. Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'. Find useful skills with: name, description, install command, use case. Append to /home/admin/.openclaw/workspace/skill-discovery-log.md in the next available Search # slot. Include timestamp and sources. Keep entries concise."
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "last"
-      },
-      "state": {
-        "nextRunAtMs": 1773411609577,
-        "lastRunAtMs": 1773409809577,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 212583,
-        "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": false
       }
     },
     {
