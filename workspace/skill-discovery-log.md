@@ -1242,3 +1242,284 @@ Key Skills Discovered:
    Use Case: Skill management, publishing custom skills
 
 Note: Web searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", and "OpenClaw plugins" did not return public information, suggesting these may be internal/private projects. The ClawHub CLI appears to be the intended package manager for skills but is not currently installed in this environment.
+
+## Search #15 - March 13, 2026 (10:20 AM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: openclaw/openclaw
+- Local OpenClaw installation skill directories
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. OpenClaw Official Repository**
+- Description: Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞
+- Source: https://github.com/openclaw/openclaw
+- Contains built-in skills directory with 50+ pre-installed skills
+
+**2. Skill Structure Standard**
+- Description: All OpenClaw skills follow a standardized structure with SKILL.md files containing YAML frontmatter with name, description, and metadata
+- Key Components:
+  - Required `SKILL.md` with metadata section
+  - Optional directories: `scripts/`, `references/`, `assets/`
+  - Skills declare runtime requirements (bins, env vars) in metadata
+  - Emoji association for visual identification
+
+**3. Notable Built-in Skills from Official Repository:**
+
+**GitHub Integration Skill (github)**
+- Description: GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries
+- Install Command: Requires `gh` CLI (`brew install gh` or `apt install gh`)
+- Use Case: Managing GitHub repositories, checking PR status, creating issues, viewing CI logs
+
+**Weather Skill (weather)**
+- Description: Get current weather and forecasts via wttr.in or Open-Meteo without API keys
+- Install Command: Requires `curl` (typically pre-installed)
+- Use Case: Weather queries, temperature checks, forecasts for any location
+
+**ClawHub CLI Skill (clawhub)**
+- Description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+- Install Command: `npm i -g clawhub`
+- Use Case: Centralized skill management, publishing custom skills, updating existing skills
+
+**4. Additional Built-in Skills Categories:**
+- **Productivity**: apple-notes, apple-reminders, bear-notes, obsidian
+- **Communication**: discord, bluebubbles, whatsapp, telegram
+- **Development**: coding-agent, gh-issues, git, npm
+- **Media**: camsnap, gifgrep, spotify, sonos
+- **Security**: 1password, healthcheck, mcporter
+- **Utilities**: canvas, eightctl, blucli, xurl
+
+**5. Skill Installation Methods:**
+- **Built-in**: Pre-installed with OpenClaw framework
+- **ClawHub CLI**: `clawhub install <skill-slug>` for community skills
+- **Manual**: Copy skill directory to `~/.agents/skills/` or workspace skills directory
+- **Package Managers**: Some skills require external tools (gh, curl, npm packages)
+
+**6. Clarification on Terminology:**
+- Correct term is "ClawHub" (not "clawdhub") - it's the official skills registry and CLI tool
+- OpenClaw is confirmed as an AI assistant framework (not related to the game reimplementation found in some search results)
+- Skills are designed for agent capabilities like external service integration, messaging platforms, productivity tools, and system management
+
+**Sources**: 
+- GitHub repository analysis: https://github.com/openclaw/openclaw
+- Local filesystem inspection of skill directories
+- Web search results via Perplexity (March 13, 2026)
+
+## Search #15 - March 13, 2026 (10:25 AM Asia/Shanghai)
+
+### Sources:
+- GitHub repository: openclaw/openclaw
+- Local OpenClaw installation skill directories
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. Official OpenClaw Repository Structure**
+- Description: OpenClaw is an AI assistant framework with a comprehensive skills system built into the core repository
+- Location: https://github.com/openclaw/openclaw
+- Skills Directory: Contains 50+ built-in skills in the main repository under `/skills/` directory
+
+**2. Skill Structure Standardization**
+- Description: All OpenClaw skills follow a standardized format with SKILL.md files containing YAML frontmatter
+- Required Fields: `name`, `description`
+- Optional Fields: `homepage`, `metadata` (including emoji, required binaries, installation instructions)
+- Use Case Guidelines: Clear ✅ USE and ❌ DON'T USE sections for proper skill application
+
+**3. GitHub Integration Skill (github)**
+- Description: Comprehensive GitHub operations via `gh` CLI including issues, PRs, CI runs, code review, and API queries
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux) followed by `gh auth login`
+- Use Case: Managing GitHub repositories, checking PR status and CI logs, creating/commenting on issues, and querying GitHub API with structured JSON output
+
+**4. Weather Information Skill (weather)**
+- Description: Get current weather and forecasts via wttr.in or Open-Meteo without requiring API keys
+- Install Command: Built-in (requires curl)
+- Use Case: Providing weather information, temperature, and forecasts for any location with simple natural language queries and various output formats (text, JSON, PNG)
+
+**5. ClawHub CLI Skill (clawhub)**
+- Description: Centralized skill registry management for searching, installing, updating, and publishing agent skills from clawhub.com
+- Install Command: `npm i -g clawhub`
+- Use Case: Primary method for discovering and managing OpenClaw skills with version control, authentication support, and publishing capabilities
+
+**6. Additional Notable Built-in Skills** (from repository inspection):
+- **coding-agent**: Full-stack development capabilities with multiple AI coding models
+- **healthcheck**: Host security hardening and risk-tolerance configuration
+- **mcporter**: MCP server integration for calling external tools directly
+- **agent-reach**: Platform access configuration for Twitter/X, Reddit, YouTube, GitHub, etc.
+- **gh-issues**: Automated GitHub issue fetching and PR creation workflows
+- **find-skills**: Skill discovery assistance for finding relevant skills based on user needs
+
+**Skill Installation Methods:**
+1. **Built-in Skills**: Pre-installed with OpenClaw framework (no additional installation required beyond underlying CLI tools)
+2. **ClawHub CLI**: `npm i -g clawhub` followed by `clawhub install <skill-slug>` for community skills
+3. **Manual Installation**: Copy skill directories to `~/.agents/skills/` or workspace skills directory
+
+**Clarification on Terminology:**
+- The correct term is "ClawHub" (not "clawdhub") - it's the official skills registry and CLI tool for OpenClaw
+- OpenClaw appears to be a legitimate AI assistant framework with extensive built-in functionality, contrary to some web search results that confuse it with game reimplementation projects
+- Skills are designed primarily for agent capabilities like external service integration, messaging platforms, productivity tools, and system management
+
+
+## Search #15 - March 13, 2026 (10:25 AM Asia/Shanghai)
+
+### Sources:
+- Direct inspection of OpenClaw GitHub repository (openclaw/openclaw)
+- Analysis of skills directory structure in official repository
+- Web search results for "OpenClaw AI assistant skills framework plugins"
+
+### Key Findings:
+
+**1. Official OpenClaw Repository Confirmed**
+- Description: OpenClaw is indeed a legitimate AI assistant framework ("Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞")
+- Repository: https://github.com/openclaw/openclaw
+- Last Updated: March 13, 2026
+- Contains extensive built-in skills system with 50+ pre-installed skills
+
+**2. ClawHub CLI (Official Skills Registry)**
+- Description: Centralized skill registry for OpenClaw that allows searching, installing, updating, and publishing agent skills from clawhub.com
+- Install Command: `npm i -g clawhub`
+- Use Case: Primary method for discovering and managing OpenClaw skills with version control, authentication support, and publishing capabilities
+
+**3. GitHub Integration Skill (github)**
+- Description: Comprehensive GitHub operations via `gh` CLI including issues, PRs, CI runs, code review, and API queries with JSON output support
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux) followed by `gh auth login`
+- Use Case: Managing GitHub repositories, checking PR status and CI logs, creating issues, and querying GitHub API with structured output
+
+**4. Weather Information Skill (weather)**
+- Description: Get current weather and forecasts via wttr.in or Open-Meteo without requiring API keys
+- Install Command: Built-in skill (requires curl)
+- Use Case: Providing weather information, temperature, and forecasts for any location with simple natural language queries
+
+**5. Skill Structure Standardization**
+- All skills follow standardized SKILL.md format with YAML frontmatter containing name, description, and metadata
+- Metadata includes emoji, required binaries, and installation instructions
+- Skills include comprehensive documentation with usage examples, when to use/not use guidance, and common commands
+
+**6. Additional Notable Built-in Skills** (from repository inspection):
+- **coding-agent**: Full-stack development capabilities with multiple AI coding models
+- **healthcheck**: Host security hardening and risk-tolerance configuration  
+- **mcporter**: MCP server integration for calling external tools directly
+- **agent-reach**: Platform access configuration for Twitter/X, Reddit, YouTube, GitHub, etc.
+- **gh-issues**: Automated GitHub issue fetching and PR creation workflows
+- **find-skills**: Skill discovery assistance for finding relevant skills based on user needs
+
+**Skill Installation Methods:**
+1. **Built-in Skills**: Pre-installed with OpenClaw framework (no additional installation required beyond underlying CLI tools)
+2. **ClawHub CLI**: `npm i -g clawhub` followed by `clawhub install <skill-slug>` for community skills
+3. **Manual Installation**: Copy skill directories to `~/.agents/skills/` or workspace skills directory
+
+**Clarification on Terminology:**
+- The correct term is "ClawHub" (not "clawdhub") - it's the official skills registry and CLI tool for OpenClaw
+- OpenClaw appears to be a legitimate AI assistant framework with extensive built-in functionality, contrary to some web search results that confuse it with game reimplementation projects
+- Skills are designed primarily for agent capabilities like external service integration, messaging platforms, productivity tools, and system management
+
+
+## Search #16 - Friday, March 13th, 2026 — 10:50 AM (Asia/Shanghai)
+
+**Discovered Skills from Awesome OpenClaw Skills Repository (github.com/VoltAgent/awesome-clawdbot-skills):**
+
+**1. gh-issues**
+- **Description**: Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments
+- **Install Command**: Built-in skill (pre-installed with OpenClaw)
+- **Use Case**: Automated GitHub issue triage and resolution workflows
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/gh-issues/SKILL.md
+
+**2. healthcheck**  
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (pre-installed with OpenClaw)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/healthcheck/SKILL.md
+
+**3. mcporter**
+- **Description**: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly
+- **Install Command**: Built-in skill (pre-installed with OpenClaw)  
+- **Use Case**: Direct integration with Model Context Protocol (MCP) servers for external tool access
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/mcporter/SKILL.md
+
+**4. agent-reach**
+- **Description**: Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: Built-in skill (pre-installed with OpenClaw)
+- **Use Case**: Setting up platform access tools for comprehensive internet reach
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/agent-reach/SKILL.md
+
+**5. find-skills**
+- **Description**: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can..."
+- **Install Command**: Built-in skill (pre-installed with OpenClaw)
+- **Use Case**: Skill discovery assistance for extending agent capabilities
+- **Source**: https://github.com/openclaw/skills/tree/main/skills/find-skills/SKILL.md
+
+**Repository Stats**: Awesome OpenClaw Skills contains 5,495 curated skills from a total of 13,729 community-built skills in ClawHub registry as of February 28, 2026.
+
+**Installation Methods**: 
+- Built-in skills: Pre-installed with OpenClaw framework
+- Community skills: `clawhub install <skill-slug>` (requires ClawHub CLI)
+- Manual: Copy skill folders to `~/.openclaw/skills/` or workspace skills directory
+
+**Sources**: 
+- https://github.com/VoltAgent/awesome-clawdbot-skills
+- https://github.com/openclaw/skills
+- Local workspace inspection
+
+## Search #16 - Friday, March 13th, 2026 — 10:50 AM (Asia/Shanghai)
+
+**Discovered Skills from awesome-openclaw-skills repository (github.com/VoltAgent/awesome-clawdbot-skills):**
+
+**1. gh-issues**
+- **Description**: Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Automated GitHub issue triage and resolution workflows
+
+**2. healthcheck**  
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment
+
+**3. mcporter**
+- **Description**: Use mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio)
+- **Install Command**: Built-in skill (no installation required)  
+- **Use Case**: Direct integration with external MCP servers and tools
+
+**4. agent-reach**
+- **Description**: Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Setting up platform access tools and enabling multi-platform agent capabilities
+
+**5. find-skills**
+- **Description**: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can..."
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Skill discovery assistance and capability extension guidance
+
+**Sources**: 
+- github.com/VoltAgent/awesome-clawdbot-skills (5,495 curated skills as of Feb 28, 2026)
+- Local workspace inspection of /home/admin/.openclaw/workspace/awesome-openclaw-skills/
+
+## Search #16 - Friday, March 13th, 2026 — 10:50 AM (Asia/Shanghai)
+
+**1. gh-issues**
+- **Description**: Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Automated GitHub issue triage, bug fixing workflows, and PR management
+
+**2. healthcheck**
+- **Description**: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Security audits, firewall/SSH/update hardening, risk posture assessment
+
+**3. mcporter**
+- **Description**: Use mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio)
+- **Install Command**: Built-in skill (no installation required)  
+- **Use Case**: Direct integration with external MCP servers and tools
+
+**4. agent-reach**
+- **Description**: Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, Douyin, LinkedIn, Boss直聘, RSS, and any web page
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Setting up platform access tools and enabling multi-platform agent capabilities
+
+**5. find-skills**
+- **Description**: Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can..."
+- **Install Command**: Built-in skill (no installation required)
+- **Use Case**: Skill discovery assistance and capability extension guidance
+
+**Sources**: 
+- github.com/VoltAgent/awesome-clawdbot-skills (5,495 curated skills as of Feb 28, 2026)
+- Local workspace inspection of /home/admin/.openclaw/workspace/awesome-openclaw-skills/
