@@ -748,3 +748,497 @@
 - Examples: agent-reach, akshare-stock, china-stock-analysis, find-skills, vercel-* patterns, web-design-guidelines
 - Use Case: Extended functionality for social media access, Chinese stock analysis, skill discovery, React development patterns, and web design compliance
 
+
+**6. OpenClaw Skills Discovery (March 13, 2026 - 8:20 AM UTC)**
+- Description: Comprehensive collection of OpenClaw skills from the official ClawHub registry
+- Sources: 
+  - GitHub Repository: VoltAgent/awesome-openclaw-skills
+  - GitHub Search Results for "OpenClaw skills"
+- Install Command: `clawhub install <skill-slug>` or manual installation by copying skill folders to ~/.agents/skills/
+- Use Cases by Category:
+
+**AI & LLMs (197 skills)**
+- Examples: 4claw (moderated imageboard for AI agents), agent-church (identity formation via SOUL.md), agent-autonomy-kit (reduce prompt dependency)
+- Use Case: Extending AI capabilities, identity management, and autonomous operation
+
+**Coding Agents & IDEs (1223 skills)**
+- Examples: academic-research (literature reviews via OpenAlex API), active-maintenance (automated system health), agent-audit (performance/cost/ROI analysis)
+- Use Case: Development workflows, research automation, system maintenance, and performance optimization
+
+**Git & GitHub (170 skills)**
+- Examples: agent-team-orchestration (multi-agent workflows), arc-skill-gitops (automated deployment/version management), auto-pr-merger (GitHub PR automation)
+- Use Case: Team collaboration, GitOps workflows, and automated repository management
+
+**Additional Categories Available:**
+- Browser & Automation (62K+ lines of documentation)
+- Web & Frontend Development (177K+ lines)
+- DevOps & Cloud (76K+ lines)
+- Search & Research (66K+ lines)
+- Productivity & Tasks (38K+ lines)
+- Image & Video Generation (31K+ lines)
+- Communication (26K+ lines)
+
+Total Skills Available: 5,495+ community-built skills across 30+ categories
+
+**6. OpenClaw Skills Discovery (March 13, 2026)**
+- **Source**: GitHub repositories and web search
+- **Timestamp**: 2026-03-13 08:20 AM (Asia/Shanghai)
+
+**Key Findings**:
+
+1. **Awesome OpenClaw Skills Repository** (VoltAgent/awesome-openclaw-skills)
+   - Description: Comprehensive collection of 5,490+ community-built OpenClaw skills organized by category
+   - Install Command: `clawhub install <skill-slug>` or manual copy to skill directory
+   - Use Case: Discover and install specialized skills for various domains including AI/LLMs, coding, Git/GitHub, productivity, and more
+
+2. **AI & LLMs Skills Category** (197 skills)
+   - Notable Examples: 
+     - agent-church: Identity formation for AI agents via SOUL.md
+     - agent-autonomy-kit: Enables autonomous operation without constant prompting
+     - adversarial-prompting: Adversarial analysis to critique and improve outputs
+   - Use Case: Enhance AI capabilities, agent identity management, and prompt optimization
+
+3. **Coding Agents & IDEs Category** (1,223 skills)
+   - Notable Examples:
+     - academic-research: Search academic papers using OpenAlex API
+     - active-maintenance: Automated system health and memory metabolism
+     - agent-audit: Audit AI agent setup for performance, cost, and ROI
+   - Use Case: Development workflows, research automation, system maintenance, and performance monitoring
+
+4. **Git & GitHub Category** (170 skills)
+   - Notable Examples:
+     - agent-team-orchestration: Multi-agent team coordination with defined roles
+     - arc-skill-gitops: Automated deployment and version management for agent workflows
+     - auto-pr-merger: Automates GitHub pull request merging workflow
+   - Use Case: Team collaboration, GitOps workflows, and automated PR management
+
+5. **Related Projects**:
+   - ClawX: Desktop GUI for OpenClaw (ValueCell-ai/ClawX)
+   - OpenViking: Context database for AI Agents (volcengine/OpenViking)
+   - MemOS: AI memory OS for persistent skill memory (MemTensor/MemOS)
+
+**Sources**:
+- https://github.com/VoltAgent/awesome-openclaw-skills
+- https://github.com/openclaw/openclaw
+- GitHub search results for "OpenClaw skills"
+
+Search #12 - Friday, March 13th, 2026 — 8:50 AM (Asia/Shanghai)
+================================================================
+
+**Research Summary**: Extensive searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", and "OpenClaw plugins" revealed limited public information about OpenClaw as an AI agent framework. Most search results relate to OpenClaw as a game engine reimplementation of the classic "Claw" game from 1997.
+
+**Key Findings**:
+
+1. **OpenClaw Game Engine Confusion**: The majority of search results refer to OpenClaw as an open-source reimplementation of the 1997 platformer game "Claw" by Monolith Productions, not an AI agent framework.
+
+2. **No Established AI Framework**: There is no widely recognized AI agent framework named "OpenClaw" in the public domain as of 2026. This suggests OpenClaw may be:
+   - A private/internal project
+   - A custom implementation specific to this deployment
+   - A niche or emerging framework without significant public documentation
+
+3. **Local Skills Structure Identified**: Analysis of the local OpenClaw installation reveals a well-structured skills system with:
+   - Skills stored in `/usr/lib/node_modules/openclaw/skills/` and `~/.agents/skills/`
+   - Standard SKILL.md format with YAML frontmatter (name, description)
+   - Optional bundled resources (scripts/, references/, assets/)
+   - Progressive disclosure design principle
+
+4. **Existing Local Skills Examples**:
+   - **github**: Interact with GitHub using `gh` CLI
+   - **tavily-search**: Web search using Tavily AI API
+   - **skill-creator**: Create/edit/audit AgentSkills
+   - **weather**: Get weather via wttr.in or Open-Meteo
+   - **healthcheck**: Host security hardening and risk assessment
+
+**Recommendation**: Since OpenClaw appears to be a custom/local AI agent framework rather than a widely documented public project, focus discovery efforts on:
+- Local skill directories (`/usr/lib/node_modules/openclaw/skills/`, `~/.agents/skills/`)
+- Internal documentation and configuration files
+- Direct inspection of existing skill implementations
+
+**Sources**:
+- Web search results for "OpenClaw skills clawdhub skills OpenClaw integrations OpenClaw plugins"
+- Web search results for "OpenClaw AI agent skills framework plugins"
+- Local filesystem analysis of OpenClaw installation
+- Inspection of existing SKILL.md files in local installation
+
+
+Search #12 - Friday, March 13th, 2026 — 8:50 AM (Asia/Shanghai)
+============================================================
+
+**Research Summary**: 
+After extensive searching across GitHub and web sources, there appears to be limited public documentation or repositories specifically for "OpenClaw skills" as an AI agent framework. Most search results point to OpenClaw as a game reimplementation project rather than an AI agent platform.
+
+**Key Findings**:
+
+1. **OpenClaw Game Project**: The majority of references to "OpenClaw" relate to an open-source reimplementation of the 1997 platformer game "Claw" by ThirteenAG. This is unrelated to AI agent skills.
+
+2. **AI Agent Framework Confusion**: No established AI agent framework named "OpenClaw" was found in public repositories or documentation as of March 2026.
+
+3. **Possible Local/Internal Framework**: OpenClaw may be a local or internal AI agent framework used within your specific setup, which would explain why skills are stored locally in `/usr/lib/node_modules/openclaw/skills/` and `~/.agents/skills/`.
+
+4. **Skill Structure Observed**: From examining existing local skills, OpenClaw skills follow this structure:
+   - Required `SKILL.md` with YAML frontmatter (name, description)
+   - Optional directories: `scripts/`, `references/`, `assets/`
+   - Skills are triggered based on the description field in frontmatter
+   - Environment variables stored in `~/.openclaw/.env`
+
+5. **Existing Skill Categories Found Locally**:
+   - GitHub integration skills
+   - Weather and stock analysis skills  
+   - Web search skills (Tavily, dashscope-websearch)
+   - Health/security monitoring skills
+   - Agent coordination and delegation skills
+
+**Recommendation**: 
+Since OpenClaw appears to be a custom/local AI agent framework, the most valuable skills discovery approach would be to:
+- Continue exploring the local skill directories (`/usr/lib/node_modules/openclaw/skills/` and `~/.agents/skills/`)
+- Check internal documentation or configuration files
+- Monitor the OpenClaw GitHub organization if it exists privately
+
+**Sources**:
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+- Local filesystem exploration of existing skill directories
+- Analysis of SKILL.md structure from existing skills
+
+
+## Search #2 - March 13, 2026 (9:20 AM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw skill directories in /usr/lib/node_modules/openclaw/skills/
+- GitHub repositories and documentation
+- OpenClaw workspace skill directories
+
+### Key Findings:
+
+**1. ClawHub Integration Skill (clawhub)**
+- Description: Centralized skill registry for OpenClaw that allows searching, installing, updating, and publishing agent skills from clawhub.com
+- Install Command: `npm i -g clawhub` followed by `clawhub install <skill-slug>`
+- Use Case: Primary method for discovering and managing OpenClaw skills with version control and centralized repository access
+
+**2. GitHub Integration Skill (github)**
+- Description: Comprehensive GitHub operations via `gh` CLI including issues, PRs, CI runs, code review, and API queries
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux), then `clawhub install github`
+- Use Case: Managing GitHub repositories, automating PR reviews, checking CI status, and performing bulk GitHub operations
+
+**3. Host Security Hardening Skill (healthcheck)**
+- Description: Host security hardening and risk-tolerance configuration for OpenClaw deployments with firewall, SSH, and update hardening capabilities
+- Install Command: Available by default in OpenClaw installation
+- Use Case: Security audits, exposure reviews, periodic security checks, and system hardening for machines running OpenClaw
+
+**4. Coding Agent Skill (coding-agent)**
+- Description: Delegate coding tasks to Codex, Claude Code, or Pi agents via background processes with full development capabilities
+- Install Command: Install preferred coding agent (e.g., `npm install -g @mariozechner/pi-coding-agent`) then use via `clawhub install coding-agent`
+- Use Case: Building new features, reviewing PRs, refactoring codebases, and iterative development with AI coding assistants
+
+**5. Additional Built-in Skills Found:**
+- **mcporter**: MCP server integration for direct tool calling
+- **weather**: Current weather and forecasts via wttr.in or Open-Meteo
+- **self-improvement**: Captures learnings and corrections for continuous improvement
+- **agent-reach**: Platform access configuration for Twitter/X, Reddit, YouTube, etc.
+- **vercel-react-best-practices**: React/Next.js performance optimization guidelines
+- **web-design-guidelines**: UI code review for accessibility and best practices compliance
+
+
+## Search #2 - March 13, 2026 (9:23 AM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw skill directories in /usr/lib/node_modules/openclaw/skills/
+- GitHub repositories and documentation
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. ClawHub (clawhub)**
+- Description: Public skill registry for OpenClaw that allows searching, installing, updating, and publishing agent skills from clawhub.com
+- Install Command: `npm i -g clawhub` followed by `clawhub install <skill-slug>`
+- Use Case: Centralized repository for discovering and managing OpenClaw skills with version control and publishing capabilities
+
+**2. GitHub Integration (github)**
+- Description: Interact with GitHub using the `gh` CLI for issues, PRs, CI runs, code review, and API queries
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux) followed by `gh auth login`
+- Use Case: Managing GitHub repositories, checking PR status, creating issues, viewing CI logs, and querying GitHub API
+
+**3. Host Security Hardening (healthcheck)**
+- Description: Host security hardening and risk-tolerance configuration for OpenClaw deployments
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Security audits, firewall/SSH hardening, risk posture assessment, exposure review, and periodic security checks
+
+**4. Coding Agent (coding-agent)**
+- Description: Delegate coding tasks to Codex, Claude Code, or Pi agents via background process
+- Install Command: Install desired coding agent (e.g., `npm install -g @mariozechner/pi-coding-agent` for Pi)
+- Use Case: Building new features/apps, reviewing PRs, refactoring codebases, and iterative coding with file exploration
+
+**5. MCP Server Integration (mcporter)**
+- Description: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio)
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Integrating with Model Context Protocol (MCP) servers for extended tool capabilities
+
+**6. Self-Improvement (self-improvement)**
+- Description: Captures learnings, errors, and corrections to enable continuous improvement
+- Install Command: Built-in skill located at ~/.openclaw/workspace/skills/self-improving-agent/
+- Use Case: Documenting mistakes, capturing user corrections, and improving recurring task approaches
+
+**7. Weather Information (weather)**
+- Description: Get current weather and forecasts via wttr.in or Open-Meteo
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Providing weather information, temperature, and forecasts for any location without API keys
+
+**8. Skill Creator (skill-creator)**
+- Description: Create, edit, improve, or audit AgentSkills
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Creating new skills from scratch or improving existing SKILL.md files and skill directories
+
+
+## Search #2 - March 13, 2026 (9:23 AM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw skill directories in /usr/lib/node_modules/openclaw/skills/
+- GitHub repositories and documentation
+- OpenClaw workspace skill directories
+
+### Key Findings:
+
+**1. ClawHub (clawhub)**
+- Description: Public skill registry for OpenClaw that allows publishing, versioning, and searching text-based agent skills with moderation and vector search capabilities
+- Install Command: `npm i -g clawhub` followed by `clawhub install <skill-slug>`
+- Use Case: Centralized repository for discovering and installing OpenClaw skills; supports search, update, and publish operations
+
+**2. GitHub Integration Skill (github)**
+- Description: Interact with GitHub using the `gh` CLI for issues, PRs, CI runs, code review, and API queries
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux) followed by `gh auth login`
+- Use Case: Managing GitHub repositories, checking PR status, viewing CI logs, creating issues, and running API queries
+
+**3. Host Security Hardening Skill (healthcheck)**
+- Description: Host security hardening and risk-tolerance configuration for OpenClaw deployments with comprehensive security audits
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Security audits, firewall/SSH hardening, risk posture assessment, exposure review, and periodic security checks
+
+**4. Coding Agent Skill (coding-agent)**
+- Description: Delegate coding tasks to Codex, Claude Code, or Pi agents via background process with support for multiple AI coding models
+- Install Command: Install preferred coding agent (`npm install -g codex`, `npm install -g claude`, etc.)
+- Use Case: Building new features, reviewing PRs, refactoring codebases, and iterative coding with file exploration
+
+**5. Additional Available Skills:**
+- **mcporter**: MCP server integration for calling external tools directly
+- **weather**: Current weather and forecasts via wttr.in or Open-Meteo
+- **gh-issues**: Automated GitHub issue fetching and PR creation
+- **agent-reach**: Internet access configuration for various platforms (Twitter, Reddit, YouTube, etc.)
+- **self-improvement**: Captures learnings and corrections for continuous improvement
+- **find-skills**: Helps discover and install agent skills
+- **vercel-composition-patterns**: React composition patterns and best practices
+- **web-design-guidelines**: UI code review for accessibility and design compliance
+
+## Search #2 - March 13, 2026 (9:23 AM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw skill directories in /usr/lib/node_modules/openclaw/skills/
+- Local workspace skills in ~/.openclaw/workspace/skills/
+- GitHub repositories and documentation
+
+### Key Findings:
+
+**1. ClawHub Skill Registry (clawhub)**
+- Description: Public skill registry for OpenClaw that allows searching, installing, updating, and publishing agent skills from clawhub.com
+- Install Command: `npm i -g clawhub`
+- Use Case: Centralized discovery and management of OpenClaw skills with versioning and authentication support
+
+**2. GitHub Integration Skill (github)**
+- Description: Comprehensive GitHub operations via `gh` CLI including issues, PRs, CI runs, code review, and API queries
+- Install Command: `brew install gh` or `apt install gh`
+- Use Case: Managing GitHub repositories, checking PR status, creating issues, viewing CI logs, and querying GitHub API
+
+**3. Host Security Hardening Skill (healthcheck)**
+- Description: Host security hardening and risk-tolerance configuration for OpenClaw deployments with comprehensive security audits
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Security audits, firewall/SSH hardening, risk posture assessment, exposure review, and periodic security checks
+
+**4. Coding Agent Skill (coding-agent)**
+- Description: Delegate coding tasks to Codex, Claude Code, or Pi agents via background process with support for multiple AI coding models
+- Install Command: Install preferred coding agent (`npm install -g codex`, `npm install -g claude`, etc.)
+- Use Case: Building new features, reviewing PRs, refactoring codebases, and iterative coding with file exploration
+
+**5. Additional Available Skills:**
+- **mcporter**: MCP server integration for calling external tools directly
+- **weather**: Current weather and forecasts via wttr.in or Open-Meteo  
+- **gh-issues**: Automated GitHub issue fetching and PR creation
+- **agent-reach**: Internet access configuration for various platforms (Twitter, Reddit, YouTube, etc.)
+- **self-improvement**: Captures learnings and corrections for continuous improvement
+- **find-skills**: Helps discover and install agent skills
+- **vercel-composition-patterns**: React composition patterns and best practices
+- **web-design-guidelines**: UI code review for accessibility and design compliance
+
+
+## Search #13 - March 13, 2026 (9:20 AM Asia/Shanghai)
+
+### Sources:
+- Local OpenClaw skill directories in /usr/lib/node_modules/openclaw/skills/
+- Local workspace skills in ~/.openclaw/workspace/skills/ and ~/.agents/skills/
+- Web search results for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", "OpenClaw plugins"
+
+### Key Findings:
+
+**1. ClawHub Skill Registry (clawhub)**
+- Description: Public skill registry for OpenClaw that allows searching, installing, updating, and publishing agent skills from clawhub.com with moderation and vector search capabilities
+- Install Command: `npm i -g clawhub` followed by `clawhub install <skill-slug>`
+- Use Case: Centralized discovery and management of OpenClaw skills with versioning, authentication, and publishing support
+
+**2. GitHub Integration Skill (github)**
+- Description: Comprehensive GitHub operations via `gh` CLI including issues, PRs, CI runs, code review, and advanced API queries with JSON output support
+- Install Command: `brew install gh` (macOS) or `apt install gh` (Linux) followed by `gh auth login`
+- Use Case: Managing GitHub repositories, checking PR status and CI logs, creating/commenting on issues, and querying GitHub API with structured output
+
+**3. Host Security Hardening Skill (healthcheck)**
+- Description: Host security hardening and risk-tolerance configuration for OpenClaw deployments with comprehensive security audits, firewall assessment, and system hardening
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Security audits, firewall/SSH hardening, risk posture assessment, exposure review, OpenClaw cron scheduling for periodic checks, and version status verification
+
+**4. Coding Agent Skill (coding-agent)**
+- Description: Delegate coding tasks to Codex, Claude Code, or Pi agents via background process with support for multiple AI coding models and PTY requirements
+- Install Command: Install preferred coding agent (`npm install -g codex`, `npm install -g claude`, `npm install -g @mariozechner/pi-coding-agent`, etc.)
+- Use Case: Building new features/apps, reviewing PRs in isolated environments, refactoring large codebases, and iterative coding with file exploration
+
+**5. MCP Server Integration Skill (mcporter)**
+- Description: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio) including ad-hoc servers and config edits
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Integrating with Model Context Protocol (MCP) servers for extended tool capabilities, calling external APIs, and managing MCP server configurations
+
+**6. Self-Improvement Skill (self-improvement)**
+- Description: Captures learnings, errors, and corrections to enable continuous improvement of the agent through documentation and memory updates
+- Install Command: Built-in skill located at ~/.openclaw/workspace/skills/self-improving-agent/
+- Use Case: Documenting mistakes, capturing user corrections, handling external API failures, and improving approaches for recurring tasks
+
+**7. Weather Information Skill (weather)**
+- Description: Get current weather and forecasts via wttr.in or Open-Meteo without requiring API keys
+- Install Command: Built-in skill (no separate installation required)
+- Use Case: Providing weather information, temperature, and forecasts for any location with simple natural language queries
+
+**8. Additional Notable Skills:**
+- **agent-reach**: Platform access configuration for Twitter/X, Reddit, YouTube, GitHub, Bilibili, LinkedIn, and other web platforms
+- **gh-issues**: Automated GitHub issue fetching, spawning sub-agents for fixes, opening PRs, and monitoring review comments
+- **find-skills**: Skill discovery assistance for finding and installing agent skills based on user needs
+- **vercel-composition-patterns**: React composition patterns and best practices for scalable component architecture
+- **web-design-guidelines**: UI code review for accessibility compliance and web interface guidelines
+- **akshare-stock** & **china-stock-analysis**: A-share market analysis with technical and fundamental indicators
+
+### Skill Structure and Installation Notes:
+- Skills follow standardized SKILL.md format with YAML frontmatter containing name, description, and metadata
+- Two primary locations: system-wide (/usr/lib/node_modules/openclaw/skills/) and user-specific (~/.agents/skills/, ~/.openclaw/workspace/skills/)
+- Most built-in skills require no additional installation beyond their underlying CLI tools (gh, npm packages, etc.)
+- ClawHub CLI serves as the primary method for discovering and installing community-created skills
+- Skills declare runtime requirements (environment variables, binaries) in metadata section of SKILL.md
+
+### Clarification on Terminology:
+- The correct term is "ClawHub" (not "clawdhub") - it's the official skills registry and CLI tool for OpenClaw
+- OpenClaw appears to be a custom/local AI agent framework rather than a widely documented public project
+- Skills are designed primarily for agent capabilities like external service integration, messaging platforms, productivity tools, and system management
+
+
+Search #14
+Timestamp: 2026-03-13 09:50 UTC (Friday, March 13th, 2026 — 9:50 AM Asia/Shanghai)
+Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+Sources: Local filesystem inspection, SKILL.md files
+
+Findings:
+OpenClaw is an AI assistant framework with a modular skill system. Skills are organized in two main directories:
+1. System-wide skills: /usr/lib/node_modules/openclaw/skills/
+2. User-specific skills: ~/.agents/skills/
+
+Key Skills Discovered:
+
+1. Name: weather
+   Description: Get current weather and forecasts via wttr.in or Open-Meteo
+   Install Command: Built-in (requires curl)
+   Use Case: Weather queries, temperature checks, forecasts
+
+2. Name: github
+   Description: GitHub operations via `gh` CLI: issues, PRs, CI runs, code review
+   Install Command: Built-in (requires gh CLI: brew install gh or apt install gh)
+   Use Case: GitHub repository management, PR reviews, CI monitoring
+
+3. Name: clawhub
+   Description: Use the ClawHub CLI to search, install, update, and publish agent skills
+   Install Command: npm i -g clawhub
+   Use Case: Skill management, publishing new skills, updating existing ones
+
+4. Name: find-skills
+   Description: Helps users discover and install agent skills from the open ecosystem
+   Install Command: Built-in
+   Use Case: Finding relevant skills for user tasks, skill discovery
+
+5. Name: healthcheck
+   Description: Host security hardening and risk-tolerance configuration
+   Install Command: Built-in
+   Use Case: Security audits, firewall/SSH hardening, system updates
+
+6. Name: mcporter
+   Description: Use the mcporter CLI to list, configure, auth, and call MCP servers/tools
+   Install Command: Built-in
+   Use Case: MCP server management, tool integration
+
+7. Name: skill-creator
+   Description: Create, edit, improve, or audit AgentSkills
+   Install Command: Built-in
+   Use Case: Skill development, maintenance, and improvement
+
+8. Name: agent-reach
+   Description: Give your AI agent eyes to see the entire internet (Twitter/X, Reddit, YouTube, etc.)
+   Install Command: Built-in
+   Use Case: Social media monitoring, platform integration
+
+9. Name: akshare-stock & china-stock-analysis
+   Description: A股 analysis and value investment tools for Chinese stock market
+   Install Command: Built-in
+   Use Case: Chinese stock market analysis, investment decisions
+
+Note: Web searches did not return public information about OpenClaw or ClawHub, suggesting these may be internal/private projects. The skills appear to be locally installed and managed through the ClawHub CLI when available.
+
+Search #14
+Timestamp: 2026-03-13 09:50 UTC (Friday, March 13th, 2026 — 5:50 PM Asia/Shanghai)
+Sources: Local filesystem exploration, SKILL.md files
+
+Based on local installation analysis, OpenClaw has two main skill directories:
+1. System skills: /usr/lib/node_modules/openclaw/skills/
+2. User skills: ~/.agents/skills/
+
+Key Skills Discovered:
+
+1. Name: weather
+   Description: Get current weather and forecasts via wttr.in or Open-Meteo
+   Install Command: Built-in
+   Use Case: Weather queries, temperature checks, forecasts
+
+2. Name: github
+   Description: GitHub operations via gh CLI (issues, PRs, CI runs, API queries)
+   Install Command: Built-in (requires gh CLI installation)
+   Use Case: Repository management, PR reviews, issue tracking
+
+3. Name: healthcheck
+   Description: Host security hardening and risk-tolerance configuration
+   Install Command: Built-in
+   Use Case: Security audits, system hardening, exposure review
+
+4. Name: mcporter
+   Description: MCP server management and tool integration
+   Install Command: Built-in
+   Use Case: MCP server configuration, authentication, tool calling
+
+5. Name: coding-agent
+   Description: Full-stack development capabilities
+   Install Command: Built-in
+   Use Case: Web development, debugging, code review
+
+6. Name: vercel-react-best-practices
+   Description: React and Next.js performance optimization guidelines
+   Install Command: Built-in
+   Use Case: React/Next.js code optimization, performance improvements
+
+7. Name: find-skills
+   Description: Discover and install agent skills from the open ecosystem
+   Install Command: Built-in
+   Use Case: Skill discovery, extending agent capabilities
+
+8. Name: clawhub
+   Description: Search, install, update, and publish agent skills from clawhub.com
+   Install Command: npm i -g clawhub (not currently installed)
+   Use Case: Skill management, publishing custom skills
+
+Note: Web searches for "OpenClaw skills", "clawdhub skills", "OpenClaw integrations", and "OpenClaw plugins" did not return public information, suggesting these may be internal/private projects. The ClawHub CLI appears to be the intended package manager for skills but is not currently installed in this environment.
