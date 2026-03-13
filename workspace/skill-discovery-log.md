@@ -1098,3 +1098,66 @@ test
 - **Install Command:** Access via `clawhub install <skill-name>` or through the OpenClaw interface
 - **Use Case:** Finding, installing, and managing OpenClaw skills with confidence in their security and quality
 - **Source:** https://clawhub.com
+
+Search #16
+Timestamp: 2026-03-13 19:50:00 Asia/Shanghai
+Keywords: 'OpenClaw skills', 'clawdhub skills', 'OpenClaw integrations', 'OpenClaw plugins'
+Sources: Web search, local filesystem inspection
+
+Findings:
+1. **clawhub** - Skill for managing OpenClaw skills via ClawHub CLI
+   - Description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+   - Install command: `npm i -g clawhub`
+   - Use case: Fetch new skills on the fly, sync installed skills to latest version, or publish new/updated skill folders
+   - Location: /usr/lib/node_modules/openclaw/skills/clawhub
+
+2. **OpenClaw Skills Structure** - OpenClaw uses a modular skill system with skills organized in three directories:
+   - System skills: /usr/lib/node_modules/openclaw/skills/
+   - User workspace skills: /home/admin/.openclaw/workspace/skills/
+   - Agent-specific skills: /home/admin/.agents/skills/
+   
+3. **Skill Format** - Skills follow a standard format with:
+   - YAML frontmatter containing name, description, and metadata
+   - Installation instructions (when applicable)
+   - Usage guidelines and command examples
+   - When to use/when not to use sections
+
+4. **Available Skills** - Found 50+ skills across various categories including:
+   - GitHub integration (gh-issues, github)
+   - Web services (weather, discord, slack)
+   - Development tools (coding-agent, vercel-react-best-practices)
+   - System utilities (healthcheck, mcporter)
+   - Specialized domains (akshare-stock, china-stock-analysis)
+
+Note: Web searches primarily returned information about OpenClaw as a game engine or pinball controller firmware, not the AI assistant framework. The actual OpenClaw AI assistant appears to be a custom/private framework with skills managed through the clawhub system.
+
+Search #16
+Timestamp: 2026-03-13 19:50 CST (Asia/Shanghai)
+Sources: Web search, Local OpenClaw installation
+
+1. **clawhub**
+   - Description: Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com
+   - Install command: `npm i -g clawhub`
+   - Use case: Fetch new skills on the fly, sync installed skills to latest version, or publish new/updated skill folders
+
+2. **weather**
+   - Description: Get current weather and forecasts via wttr.in or Open-Meteo
+   - Install command: Requires curl (usually pre-installed)
+   - Use case: Answer weather queries for any location without API keys
+
+3. **github**
+   - Description: GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries
+   - Install command: `brew install gh` or `apt install gh`
+   - Use case: Interact with GitHub repositories, check PR status, view CI logs, manage issues
+
+4. **find-skills**
+   - Description: Helps users discover and install agent skills when they ask questions like "how do I do X"
+   - Install command: Built-in skill
+   - Use case: Assist users in finding functionality that might exist as an installable skill
+
+5. **agent-reach**
+   - Description: Give your AI agent eyes to see the entire internet by installing and configuring upstream tools for various platforms
+   - Install command: Built-in skill
+   - Use case: Setting up platform access tools for Twitter/X, Reddit, YouTube, GitHub, etc.
+
+Note: OpenClaw appears to be a local AI assistant framework with a skills system. Skills are organized in directories under ~/.agents/skills/, ~/.openclaw/workspace/skills/, and /usr/lib/node_modules/openclaw/skills/. The clawhub skill provides a registry mechanism for discovering and installing additional skills.
