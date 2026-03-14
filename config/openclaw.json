@@ -186,6 +186,11 @@
       "maxConcurrent": 8,
       "subagents": {
         "maxConcurrent": 8
+      },
+      "heartbeat": {
+        "every": "1h",
+        "suppressToolErrorWarnings": false,
+        "directPolicy": "allow"
       }
     },
     "list": [
@@ -229,6 +234,11 @@
             "web_search",
             "exec"
           ]
+        },
+        "heartbeat": {
+          "every": "1h",
+          "suppressToolErrorWarnings": false,
+          "directPolicy": "allow"
         }
       }
     ]
