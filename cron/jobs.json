@@ -6,7 +6,7 @@
       "name": "config-backup",
       "enabled": true,
       "createdAtMs": 1772155573016,
-      "updatedAtMs": 1773634261390,
+      "updatedAtMs": 1773637862663,
       "schedule": {
         "kind": "every",
         "everyMs": 3600000,
@@ -23,15 +23,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1773637836721,
-        "lastRunAtMs": 1773634236721,
+        "nextRunAtMs": 1773641436728,
+        "lastRunAtMs": 1773637836728,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 24669,
+        "lastDurationMs": 25935,
         "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0,
         "lastDelivered": false,
-        "runningAtMs": 1773637836727
+        "runningAtMs": 1773641436732
       }
     },
     {
@@ -355,7 +355,7 @@
       "name": "C2605  hourly-14:00",
       "enabled": true,
       "createdAtMs": 1772779163606,
-      "updatedAtMs": 1773381804334,
+      "updatedAtMs": 1773640833020,
       "schedule": {
         "expr": "0 14 * * 1-5",
         "kind": "cron",
@@ -373,11 +373,11 @@
         "to": "1475775915844960428"
       },
       "state": {
-        "nextRunAtMs": 1773640800000,
-        "lastRunAtMs": 1773381600007,
+        "nextRunAtMs": 1773727200000,
+        "lastRunAtMs": 1773640800007,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 204327,
+        "lastDurationMs": 33013,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
